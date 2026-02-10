@@ -9,6 +9,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Container } from "@/components/container";
 import { useCart } from "@/components/providers/cart-provider";
+import { useFontTheme, type FontTheme } from "@/components/providers/font-theme-provider";
 import { useStore } from "@/components/providers/store-provider";
 import { formatPrice } from "@/lib/format";
 import type { Category } from "@/lib/types";
@@ -28,6 +29,7 @@ const NAV_ITEMS = [
 export function SiteHeader({ categories }: SiteHeaderProps) {
   const pathname = usePathname();
   const { selectedStore, stores, setSelectedStoreId } = useStore();
+  const { theme, setTheme, options: fontOptions } = useFontTheme();
   const { items, totalItems, totalAmount, removeItem } = useCart();
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -357,52 +359,69 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
 
           <div className="border-t border-border py-2 text-sm">
             <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-              <div ref={storeMenuRef} className="relative w-full max-w-[380px]">
-                <button
-                  type="button"
-                  onClick={() => setStoreMenuOpen((value) => !value)}
-                  className="flex w-full items-center justify-between rounded-md border border-border bg-white px-3 py-2 text-left text-[12px] uppercase tracking-[0.08em]"
-                >
-                  <span className="inline-flex items-center gap-2 text-text-secondary">
-                    <MapPin size={14} />
-                    {selectedStore.name}, {selectedStore.city}
-                  </span>
-                  <ChevronDown size={14} className={storeMenuOpen ? "rotate-180 transition" : "transition"} />
-                </button>
+              <div className="flex w-full flex-col gap-2 lg:flex-row lg:items-center">
+                <div ref={storeMenuRef} className="relative w-full max-w-[380px]">
+                  <button
+                    type="button"
+                    onClick={() => setStoreMenuOpen((value) => !value)}
+                    className="flex w-full items-center justify-between rounded-md border border-border bg-white px-3 py-2 text-left text-[12px] uppercase tracking-[0.08em]"
+                  >
+                    <span className="inline-flex items-center gap-2 text-text-secondary">
+                      <MapPin size={14} />
+                      {selectedStore.name}, {selectedStore.city}
+                    </span>
+                    <ChevronDown size={14} className={storeMenuOpen ? "rotate-180 transition" : "transition"} />
+                  </button>
 
-                <AnimatePresence>
-                  {storeMenuOpen && (
-                    <motion.div
-                      className="absolute left-0 top-[calc(100%+6px)] z-30 w-full rounded-md border border-border bg-white p-1 shadow-lg"
-                      initial={{ opacity: 0, y: -4 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -4 }}
-                      transition={{ duration: 0.15 }}
-                    >
-                      {stores.map((store) => {
-                        const active = selectedStore.id === store.id;
-                        return (
-                          <button
-                            key={store.id}
-                            type="button"
-                            onClick={() => {
-                              setSelectedStoreId(store.id);
-                              setStoreMenuOpen(false);
-                            }}
-                            className={`flex w-full items-center justify-between rounded px-3 py-2 text-left text-xs uppercase tracking-[0.08em] ${
-                              active ? "bg-text-primary text-white" : "hover:bg-bg-secondary"
-                            }`}
-                          >
-                            <span>
-                              {store.name}, {store.city}
-                            </span>
-                            {active && <Check size={13} />}
-                          </button>
-                        );
-                      })}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                  <AnimatePresence>
+                    {storeMenuOpen && (
+                      <motion.div
+                        className="absolute left-0 top-[calc(100%+6px)] z-30 w-full rounded-md border border-border bg-white p-1 shadow-lg"
+                        initial={{ opacity: 0, y: -4 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -4 }}
+                        transition={{ duration: 0.15 }}
+                      >
+                        {stores.map((store) => {
+                          const active = selectedStore.id === store.id;
+                          return (
+                            <button
+                              key={store.id}
+                              type="button"
+                              onClick={() => {
+                                setSelectedStoreId(store.id);
+                                setStoreMenuOpen(false);
+                              }}
+                              className={`flex w-full items-center justify-between rounded px-3 py-2 text-left text-xs uppercase tracking-[0.08em] ${
+                                active ? "bg-text-primary text-white" : "hover:bg-bg-secondary"
+                              }`}
+                            >
+                              <span>
+                                {store.name}, {store.city}
+                              </span>
+                              {active && <Check size={13} />}
+                            </button>
+                          );
+                        })}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+
+                <div className="w-full max-w-[290px]">
+                  <select
+                    value={theme}
+                    onChange={(event) => setTheme(event.target.value as FontTheme)}
+                    className="w-full rounded-md border border-border bg-white px-3 py-2 text-[12px] uppercase tracking-[0.08em] text-text-secondary"
+                    aria-label="Выбор типографики"
+                  >
+                    {fontOptions.map((option) => (
+                      <option key={option.value} value={option.value}>
+                        {option.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
 
               <nav className={`hidden items-center gap-6 md:flex ${compact ? "opacity-0" : "opacity-100"}`}>
