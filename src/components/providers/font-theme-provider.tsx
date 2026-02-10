@@ -18,11 +18,11 @@ interface FontThemeContextValue {
 const FONT_THEME_KEY = "mia-font-theme";
 
 const FONT_OPTIONS: FontThemeOption[] = [
-  { value: "current", label: "Current (Cormorant + Manrope)" },
+  { value: "current", label: "Текущий (Cormorant + Manrope)" },
   { value: "proxima", label: "12S: Proxima Nova" },
-  { value: "montserrat", label: "12S Alt: Montserrat" },
-  { value: "sofia", label: "12S Alt: Sofia Pro" },
-  { value: "gotham", label: "12S Alt: Gotham" }
+  { value: "montserrat", label: "12S альтернатива: Montserrat" },
+  { value: "sofia", label: "12S альтернатива: Sofia Pro" },
+  { value: "gotham", label: "12S альтернатива: Gotham" }
 ];
 
 const FontThemeContext = createContext<FontThemeContextValue | null>(null);
