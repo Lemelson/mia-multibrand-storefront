@@ -18,6 +18,10 @@ export function ProductCard({ product }: ProductCardProps) {
   const images = activeColor?.images ?? [];
   const currentImage = images[imageIndex] ?? images[0] ?? "https://picsum.photos/600/800";
   const hasSale = typeof product.oldPrice === "number" && product.oldPrice > product.price;
+  const discountPercent =
+    hasSale && typeof product.oldPrice === "number"
+      ? getRoundedDiscountPercent(product.oldPrice, product.price)
+      : null;
 
   function handleMouseMove(event: React.MouseEvent<HTMLDivElement>) {
     if (!images.length) {
@@ -83,25 +87,43 @@ export function ProductCard({ product }: ProductCardProps) {
         <Link href={`/product/${product.slug}`} className="line-clamp-2 text-[13px] text-text-primary">
           {product.name}
         </Link>
-        <div className="flex items-center gap-2 text-[13px]">
-          {product.oldPrice && (
-            <span className="text-text-muted line-through">{formatPrice(product.oldPrice)}</span>
+        <div className="flex items-start justify-between gap-2">
+          {hasSale && product.oldPrice ? (
+            <div className="space-y-0.5">
+              <div className="flex items-baseline gap-2">
+                <span className="text-[11px] tracking-[0.05em] tabular-nums text-text-muted line-through">
+                  {formatPrice(product.oldPrice)}
+                </span>
+                <span className="text-[13px] tracking-[0.06em] tabular-nums text-sale">
+                  {formatPrice(product.price)}
+                </span>
+              </div>
+              <p className="text-[11px] text-sale">-{discountPercent}%</p>
+            </div>
+          ) : (
+            <span className="text-[13px] tracking-[0.06em] tabular-nums text-text-primary">
+              {formatPrice(product.price)}
+            </span>
           )}
-          <span className={product.oldPrice ? "text-sale" : "text-text-primary"}>
-            {formatPrice(product.price)}
-          </span>
-        </div>
-        <div className="flex gap-1">
-          {product.colors.slice(0, 4).map((color) => (
-            <span
-              key={color.id}
-              title={color.name}
-              className="inline-block h-2.5 w-2.5 rounded-full border border-border"
-              style={{ backgroundColor: color.hex }}
-            />
-          ))}
+
+          <div className="mt-0.5 flex gap-1">
+            {product.colors.slice(0, 4).map((color) => (
+              <span
+                key={color.id}
+                title={color.name}
+                className="inline-block h-2.5 w-2.5 rounded-full border border-border"
+                style={{ backgroundColor: color.hex }}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </article>
   );
+}
+
+function getRoundedDiscountPercent(oldPrice: number, price: number): number {
+  const raw = ((oldPrice - price) / oldPrice) * 100;
+  const roundedToFive = Math.round(raw / 5) * 5;
+  return Math.max(5, Math.min(95, roundedToFive));
 }

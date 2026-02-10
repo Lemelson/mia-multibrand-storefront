@@ -26,6 +26,14 @@ const NAV_ITEMS = [
   { href: "/catalog?brands=", label: "Бренды" }
 ];
 
+const FONT_BUTTON_LABELS: Record<FontTheme, string> = {
+  current: "Текущий",
+  proxima: "Proxima",
+  montserrat: "Montserrat",
+  sofia: "Sofia",
+  gotham: "Gotham"
+};
+
 export function SiteHeader({ categories }: SiteHeaderProps) {
   const pathname = usePathname();
   const { selectedStore, stores, setSelectedStoreId } = useStore();
@@ -36,9 +44,11 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
   const [cartOpen, setCartOpen] = useState(false);
   const [compact, setCompact] = useState(false);
   const [storeMenuOpen, setStoreMenuOpen] = useState(false);
+  const [fontMenuOpen, setFontMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   const storeMenuRef = useRef<HTMLDivElement>(null);
+  const fontMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -63,6 +73,9 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
       if (storeMenuRef.current && !storeMenuRef.current.contains(target)) {
         setStoreMenuOpen(false);
       }
+      if (fontMenuRef.current && !fontMenuRef.current.contains(target)) {
+        setFontMenuOpen(false);
+      }
     };
 
     document.addEventListener("mousedown", onPointerDown);
@@ -75,6 +88,7 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
         setMenuOpen(false);
         setCartOpen(false);
         setStoreMenuOpen(false);
+        setFontMenuOpen(false);
       }
     };
 
@@ -335,7 +349,103 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
               </Link>
             </div>
 
-            <div className="flex items-center gap-3 md:gap-4">
+            <div className="flex items-center gap-2 md:gap-3">
+              <div ref={storeMenuRef} className="relative hidden md:block">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setStoreMenuOpen((value) => !value);
+                    setFontMenuOpen(false);
+                  }}
+                  className="inline-flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 text-[11px] uppercase tracking-[0.08em] text-text-secondary"
+                  aria-label="Выбор магазина"
+                >
+                  <MapPin size={13} />
+                  {selectedStore.name}
+                  <ChevronDown size={13} className={storeMenuOpen ? "rotate-180 transition" : "transition"} />
+                </button>
+
+                <AnimatePresence>
+                  {storeMenuOpen && (
+                    <motion.div
+                      className="absolute right-0 top-[calc(100%+6px)] z-30 min-w-[220px] rounded-md border border-border bg-white p-1 shadow-lg"
+                      initial={{ opacity: 0, y: -4 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -4 }}
+                      transition={{ duration: 0.15 }}
+                    >
+                      {stores.map((store) => {
+                        const active = selectedStore.id === store.id;
+                        return (
+                          <button
+                            key={store.id}
+                            type="button"
+                            onClick={() => {
+                              setSelectedStoreId(store.id);
+                              setStoreMenuOpen(false);
+                            }}
+                            className={`flex w-full items-center justify-between rounded px-3 py-2 text-left text-xs uppercase tracking-[0.08em] ${
+                              active ? "bg-text-primary text-white" : "hover:bg-bg-secondary"
+                            }`}
+                          >
+                            <span>{store.name}</span>
+                            {active && <Check size={13} />}
+                          </button>
+                        );
+                      })}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              <div ref={fontMenuRef} className="relative hidden md:block">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setFontMenuOpen((value) => !value);
+                    setStoreMenuOpen(false);
+                  }}
+                  className="inline-flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 text-[11px] uppercase tracking-[0.08em] text-text-secondary"
+                  aria-label="Выбор шрифта"
+                >
+                  Шрифт
+                  <span className="hidden lg:inline text-text-muted">· {FONT_BUTTON_LABELS[theme]}</span>
+                  <ChevronDown size={13} className={fontMenuOpen ? "rotate-180 transition" : "transition"} />
+                </button>
+
+                <AnimatePresence>
+                  {fontMenuOpen && (
+                    <motion.div
+                      className="absolute right-0 top-[calc(100%+6px)] z-30 min-w-[260px] rounded-md border border-border bg-white p-1 shadow-lg"
+                      initial={{ opacity: 0, y: -4 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -4 }}
+                      transition={{ duration: 0.15 }}
+                    >
+                      {fontOptions.map((option) => {
+                        const active = theme === option.value;
+                        return (
+                          <button
+                            key={option.value}
+                            type="button"
+                            onClick={() => {
+                              setTheme(option.value as FontTheme);
+                              setFontMenuOpen(false);
+                            }}
+                            className={`flex w-full items-center justify-between rounded px-3 py-2 text-left text-xs uppercase tracking-[0.08em] ${
+                              active ? "bg-text-primary text-white" : "hover:bg-bg-secondary"
+                            }`}
+                          >
+                            <span>{option.label}</span>
+                            {active && <Check size={13} />}
+                          </button>
+                        );
+                      })}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
               <button className="text-text-primary" type="button" aria-label="Поиск">
                 <Search size={20} />
               </button>
@@ -359,91 +469,24 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
           </div>
 
           <div className="border-t border-border py-2 text-sm">
-            <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-              <div className="flex w-full flex-col gap-2 lg:flex-row lg:items-center">
-                <div ref={storeMenuRef} className="relative w-full max-w-[380px]">
-                  <button
-                    type="button"
-                    onClick={() => setStoreMenuOpen((value) => !value)}
-                    className="flex w-full items-center justify-between rounded-md border border-border bg-white px-3 py-2 text-left text-[12px] uppercase tracking-[0.08em]"
+            <nav className={`hidden items-center justify-end gap-6 md:flex ${compact ? "opacity-0" : "opacity-100"}`}>
+              {NAV_ITEMS.map((item) => {
+                const active = pathname === item.href;
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`border-b pb-1 text-[13px] uppercase tracking-[0.1em] transition ${
+                      active
+                        ? "border-text-primary text-text-primary"
+                        : "border-transparent text-text-secondary hover:border-text-primary hover:text-text-primary"
+                    }`}
                   >
-                    <span className="inline-flex items-center gap-2 text-text-secondary">
-                      <MapPin size={14} />
-                      {selectedStore.name}, {selectedStore.city}
-                    </span>
-                    <ChevronDown size={14} className={storeMenuOpen ? "rotate-180 transition" : "transition"} />
-                  </button>
-
-                  <AnimatePresence>
-                    {storeMenuOpen && (
-                      <motion.div
-                        className="absolute left-0 top-[calc(100%+6px)] z-30 w-full rounded-md border border-border bg-white p-1 shadow-lg"
-                        initial={{ opacity: 0, y: -4 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -4 }}
-                        transition={{ duration: 0.15 }}
-                      >
-                        {stores.map((store) => {
-                          const active = selectedStore.id === store.id;
-                          return (
-                            <button
-                              key={store.id}
-                              type="button"
-                              onClick={() => {
-                                setSelectedStoreId(store.id);
-                                setStoreMenuOpen(false);
-                              }}
-                              className={`flex w-full items-center justify-between rounded px-3 py-2 text-left text-xs uppercase tracking-[0.08em] ${
-                                active ? "bg-text-primary text-white" : "hover:bg-bg-secondary"
-                              }`}
-                            >
-                              <span>
-                                {store.name}, {store.city}
-                              </span>
-                              {active && <Check size={13} />}
-                            </button>
-                          );
-                        })}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-
-                <div className="w-full max-w-[290px]">
-                  <select
-                    value={theme}
-                    onChange={(event) => setTheme(event.target.value as FontTheme)}
-                    className="w-full rounded-md border border-border bg-white px-3 py-2 text-[12px] uppercase tracking-[0.08em] text-text-secondary"
-                    aria-label="Выбор типографики"
-                  >
-                    {fontOptions.map((option) => (
-                      <option key={option.value} value={option.value}>
-                        {option.label}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-
-              <nav className={`hidden items-center gap-6 md:flex ${compact ? "opacity-0" : "opacity-100"}`}>
-                {NAV_ITEMS.map((item) => {
-                  const active = pathname === item.href;
-                  return (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className={`border-b pb-1 text-[13px] uppercase tracking-[0.1em] transition ${
-                        active
-                          ? "border-text-primary text-text-primary"
-                          : "border-transparent text-text-secondary hover:border-text-primary hover:text-text-primary"
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
-                  );
-                })}
-              </nav>
-            </div>
+                    {item.label}
+                  </Link>
+                );
+              })}
+            </nav>
           </div>
         </Container>
       </header>
