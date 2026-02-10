@@ -1,0 +1,848 @@
+[
+  {
+    "id": "p-001",
+    "slug": "shelkovoe-plate-noa",
+    "name": "Шелковое платье Noa",
+    "brand": "Mia Collection",
+    "description": "Легкое платье из натурального шелка с мягким блеском. Подходит для ужина и вечерних выходов.",
+    "composition": "100% шелк",
+    "care": "Деликатная стирка до 30°",
+    "category": "dresses",
+    "gender": "women",
+    "price": 18500,
+    "oldPrice": 21900,
+    "colors": [
+      {
+        "id": "p-001-c1",
+        "name": "Бежевый",
+        "hex": "#D4B896",
+        "images": [
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1464863979621-258859e62245?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": false
+          },
+          {
+            "size": "XL",
+            "inStock": false
+          }
+        ]
+      },
+      {
+        "id": "p-001-c2",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-01-10T12:00:00.000Z",
+    "updatedAt": "2026-01-15T12:00:00.000Z"
+  },
+  {
+    "id": "p-002",
+    "slug": "kashemirovyi-kardigan-aria",
+    "name": "Кашемировый кардиган Aria",
+    "brand": "Mia Atelier",
+    "description": "Мягкий кардиган из смесового кашемира с акцентными пуговицами.",
+    "composition": "70% шерсть, 30% кашемир",
+    "care": "Ручная стирка",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 12900,
+    "colors": [
+      {
+        "id": "p-002-c1",
+        "name": "Молочный",
+        "hex": "#F1E8D8",
+        "images": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": false
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2026-01-05T12:00:00.000Z",
+    "updatedAt": "2026-01-05T12:00:00.000Z"
+  },
+  {
+    "id": "p-003",
+    "slug": "hlopkovaya-rubashka-lina",
+    "name": "Хлопковая рубашка Lina",
+    "brand": "Weekend Edit",
+    "description": "Свободная рубашка из плотного хлопка в классическом силуэте.",
+    "composition": "100% хлопок",
+    "care": "Машинная стирка до 40°",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 8900,
+    "colors": [
+      {
+        "id": "p-003-c1",
+        "name": "Белый",
+        "hex": "#FFFFFF",
+        "images": [
+          "https://images.unsplash.com/photo-1551232864-3f0890e580d9?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      },
+      {
+        "id": "p-003-c2",
+        "name": "Голубой",
+        "hex": "#A8C7E5",
+        "images": [
+          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": false
+          },
+          {
+            "size": "L",
+            "inStock": false
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-01-17T12:00:00.000Z",
+    "updatedAt": "2026-01-20T12:00:00.000Z"
+  },
+  {
+    "id": "p-004",
+    "slug": "bryuki-palacco-mira",
+    "name": "Брюки palazzo Mira",
+    "brand": "Mia Collection",
+    "description": "Высокая посадка и широкая линия для элегантного повседневного образа.",
+    "composition": "62% вискоза, 35% полиэстер, 3% эластан",
+    "care": "Деликатная стирка до 30°",
+    "category": "pants",
+    "gender": "women",
+    "price": 11400,
+    "colors": [
+      {
+        "id": "p-004-c1",
+        "name": "Графит",
+        "hex": "#4B4F58",
+        "images": [
+          "https://images.unsplash.com/photo-1495385794356-15371f348c31?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      },
+      {
+        "id": "p-004-c2",
+        "name": "Молочный",
+        "hex": "#E8E1D6",
+        "images": [
+          "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1495121605193-b116b5b09a53?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": false
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": false
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2025-12-29T12:00:00.000Z",
+    "updatedAt": "2026-01-02T12:00:00.000Z",
+    "oldPrice": 13800
+  },
+  {
+    "id": "p-005",
+    "slug": "kozhanaya-sumka-aura",
+    "name": "Кожаная сумка Aura",
+    "brand": "Mia Accessories",
+    "description": "Небольшая структурная сумка из натуральной кожи.",
+    "composition": "100% натуральная кожа",
+    "care": "Протирать сухой тканью",
+    "category": "accessories",
+    "gender": "women",
+    "price": 15200,
+    "colors": [
+      {
+        "id": "p-005-c1",
+        "name": "Коньяк",
+        "hex": "#8B5A2B",
+        "images": [
+          "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1614179689702-355944cd0918?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "ONE",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-01-22T12:00:00.000Z",
+    "updatedAt": "2026-01-22T12:00:00.000Z"
+  },
+  {
+    "id": "p-006",
+    "slug": "muzhskaya-rubashka-linen-core",
+    "name": "Мужская рубашка Linen Core",
+    "brand": "Foundry",
+    "description": "Льняная рубашка свободного кроя для теплого климата.",
+    "composition": "100% лен",
+    "care": "Машинная стирка до 30°",
+    "category": "men-shirts",
+    "gender": "men",
+    "price": 9600,
+    "colors": [
+      {
+        "id": "p-006-c1",
+        "name": "Песочный",
+        "hex": "#C9B59A",
+        "images": [
+          "https://images.unsplash.com/photo-1488161628813-04466f872be2?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516826957135-700dedea698c?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": false
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      },
+      {
+        "id": "p-006-c2",
+        "name": "Белый",
+        "hex": "#F5F5F3",
+        "images": [
+          "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": false
+      }
+    ],
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2025-12-20T12:00:00.000Z",
+    "updatedAt": "2026-01-04T12:00:00.000Z"
+  },
+  {
+    "id": "p-007",
+    "slug": "muzhskie-chinos-urban",
+    "name": "Мужские chinos Urban",
+    "brand": "Foundry",
+    "description": "Брюки chinos на каждый день в универсальном крое.",
+    "composition": "98% хлопок, 2% эластан",
+    "care": "Машинная стирка до 30°",
+    "category": "men-pants",
+    "gender": "men",
+    "price": 8400,
+    "colors": [
+      {
+        "id": "p-007-c1",
+        "name": "Темно-синий",
+        "hex": "#1D2A44",
+        "images": [
+          "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": false
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      },
+      {
+        "id": "p-007-c2",
+        "name": "Песочный",
+        "hex": "#C8B89A",
+        "images": [
+          "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1506629905607-d405b7a66970?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1507007727303-1532f71109cf?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": false
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": false
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-01-24T12:00:00.000Z",
+    "updatedAt": "2026-01-24T12:00:00.000Z",
+    "oldPrice": 10200
+  },
+  {
+    "id": "p-008",
+    "slug": "muzhskoe-polo-coast",
+    "name": "Мужское поло Coast",
+    "brand": "Foundry",
+    "description": "Классическое поло из мягкого хлопка пике.",
+    "composition": "100% хлопок",
+    "care": "Машинная стирка до 30°",
+    "category": "men-tshirts-polo",
+    "gender": "men",
+    "price": 6100,
+    "colors": [
+      {
+        "id": "p-008-c1",
+        "name": "Белый",
+        "hex": "#FFFFFF",
+        "images": [
+          "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2025-12-12T12:00:00.000Z",
+    "updatedAt": "2026-01-03T12:00:00.000Z"
+  },
+  {
+    "id": "p-009",
+    "slug": "detskaya-kurtka-breeze",
+    "name": "Детская куртка Breeze",
+    "brand": "Little M",
+    "description": "Легкая демисезонная куртка для активных прогулок.",
+    "composition": "100% полиэстер",
+    "care": "Машинная стирка до 30°",
+    "category": "kids-all",
+    "gender": "kids",
+    "price": 7500,
+    "colors": [
+      {
+        "id": "p-009-c1",
+        "name": "Оливковый",
+        "hex": "#7A8450",
+        "images": [
+          "https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "104",
+            "inStock": true
+          },
+          {
+            "size": "116",
+            "inStock": true
+          },
+          {
+            "size": "128",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-01-18T12:00:00.000Z",
+    "updatedAt": "2026-01-18T12:00:00.000Z"
+  },
+  {
+    "id": "p-010",
+    "slug": "detskiy-dzhemper-soft",
+    "name": "Детский джемпер Soft",
+    "brand": "Little M",
+    "description": "Теплый джемпер из трикотажа с мягкой фактурой.",
+    "composition": "60% хлопок, 40% акрил",
+    "care": "Машинная стирка до 30°",
+    "category": "kids-all",
+    "gender": "kids",
+    "price": 4200,
+    "colors": [
+      {
+        "id": "p-010-c1",
+        "name": "Лавандовый",
+        "hex": "#B6A6D7",
+        "images": [
+          "https://images.unsplash.com/photo-1469504512102-900f29606341?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "98",
+            "inStock": true
+          },
+          {
+            "size": "104",
+            "inStock": false
+          },
+          {
+            "size": "116",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": false
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2026-01-07T12:00:00.000Z",
+    "updatedAt": "2026-01-07T12:00:00.000Z"
+  },
+  {
+    "id": "p-011",
+    "slug": "zhenskiy-trench-linea",
+    "name": "Женский тренч Linea",
+    "brand": "Mia Atelier",
+    "description": "Классический тренч свободного кроя с поясом.",
+    "composition": "65% хлопок, 35% полиэстер",
+    "care": "Химчистка",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 23600,
+    "colors": [
+      {
+        "id": "p-011-c1",
+        "name": "Песочный",
+        "hex": "#C9B08A",
+        "images": [
+          "https://images.unsplash.com/photo-1542272604-787c3835535d?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": false
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-01-26T12:00:00.000Z",
+    "updatedAt": "2026-01-26T12:00:00.000Z",
+    "oldPrice": 27900
+  },
+  {
+    "id": "p-012",
+    "slug": "muzhskie-lofery-lido",
+    "name": "Мужские лоферы Lido",
+    "brand": "Mia Shoes",
+    "description": "Легкие лоферы из мягкой замши.",
+    "composition": "Натуральная замша",
+    "care": "Уход спреем для замши",
+    "category": "men-shoes",
+    "gender": "men",
+    "price": 14900,
+    "colors": [
+      {
+        "id": "p-012-c1",
+        "name": "Темно-коричневый",
+        "hex": "#4C3324",
+        "images": [
+          "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "41",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "43",
+            "inStock": false
+          }
+        ]
+      },
+      {
+        "id": "p-012-c2",
+        "name": "Светло-бежевый",
+        "hex": "#CAB9A2",
+        "images": [
+          "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=900&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=900&q=80&auto=format&fit=crop"
+        ],
+        "sizes": [
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "41",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": false
+          },
+          {
+            "size": "43",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2026-01-02T12:00:00.000Z",
+    "updatedAt": "2026-01-08T12:00:00.000Z"
+  }
+]

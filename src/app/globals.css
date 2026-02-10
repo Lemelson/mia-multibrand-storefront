@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f3f0;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --text-muted: #9e9e9e;
+  --accent: #8b7355;
+  --sale: #b85c47;
+  --border: #e5e2de;
+  --error: #c4453c;
+  --success: #3b7d4f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-logo {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+}
+
+.font-body {
+  font-family: "Manrope", "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}

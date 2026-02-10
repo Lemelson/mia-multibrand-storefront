@@ -1,0 +1,35 @@
+[
+  {
+    "id": "camellia-sochi",
+    "name": "Камелия",
+    "city": "Сочи",
+    "address": "Курортный проспект, 89, Сочи",
+    "phone": "+7 862 555-21-11",
+    "workingHours": "10:00 — 22:00",
+    "coordinates": { "lat": 43.56071, "lng": 39.77056 },
+    "whatsapp": "+79991234567",
+    "telegram": "mia_camellia"
+  },
+  {
+    "id": "mantera-sirius",
+    "name": "Мантера",
+    "city": "Сириус",
+    "address": "Олимпийский проспект, 3, Сириус",
+    "phone": "+7 862 555-21-22",
+    "workingHours": "10:00 — 22:00",
+    "coordinates": { "lat": 43.40332, "lng": 39.95566 },
+    "whatsapp": "+79991234568",
+    "telegram": "mia_mantera"
+  },
+  {
+    "id": "radisson-lazurnaya",
+    "name": "Рэдиссон Лазурная",
+    "city": "Сочи",
+    "address": "Курортный проспект, 103, Сочи",
+    "phone": "+7 862 555-21-33",
+    "workingHours": "10:00 — 22:00",
+    "coordinates": { "lat": 43.52841, "lng": 39.82621 },
+    "whatsapp": "+79991234569",
+    "telegram": "mia_radisson"
+  }
+]

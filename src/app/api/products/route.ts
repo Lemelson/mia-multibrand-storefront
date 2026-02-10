@@ -1,0 +1,92 @@
+import { cookies } from "next/headers";
+import { NextResponse } from "next/server";
+import { getCatalog } from "@/lib/catalog";
+import { ADMIN_COOKIE, verifyAdminToken } from "@/lib/auth";
+import { createProduct, getProducts } from "@/lib/server-data";
+import type { CatalogFilters, Product } from "@/lib/types";
+
+function parseList(value: string | null): string[] {
+  if (!value) {
+    return [];
+  }
+
+  return value
+    .split(",")
+    .map((part) => part.trim())
+    .filter(Boolean);
+}
+
+function parseFilters(searchParams: URLSearchParams): CatalogFilters {
+  const sort = (searchParams.get("sort") ?? "new") as CatalogFilters["sort"];
+  const priceMinValue = searchParams.get("priceMin");
+  const priceMaxValue = searchParams.get("priceMax");
+
+  return {
+    sizes: parseList(searchParams.get("sizes")),
+    brands: parseList(searchParams.get("brands")),
+    colors: parseList(searchParams.get("colors")),
+    sort,
+    priceMin: priceMinValue ? Number(priceMinValue) : undefined,
+    priceMax: priceMaxValue ? Number(priceMaxValue) : undefined
+  };
+}
+
+function isAdmin(): boolean {
+  const token = cookies().get(ADMIN_COOKIE)?.value;
+  return verifyAdminToken(token);
+}
+
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const rawPage = Number(searchParams.get("page") ?? "1");
+  const rawPageSize = Number(searchParams.get("pageSize") ?? "20");
+
+  const page = Number.isFinite(rawPage) && rawPage > 0 ? rawPage : 1;
+  const pageSize = Number.isFinite(rawPageSize) && rawPageSize > 0 ? rawPageSize : 20;
+
+  const products = await getProducts();
+  const catalog = getCatalog(products, {
+    gender: searchParams.get("gender") ?? undefined,
+    category: searchParams.get("category") ?? undefined,
+    storeId: searchParams.get("storeId") ?? undefined,
+    page,
+    pageSize,
+    filters: parseFilters(searchParams)
+  });
+
+  return NextResponse.json(catalog);
+}
+
+export async function POST(request: Request) {
+  if (!isAdmin()) {
+    return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
+  }
+
+  const payload = (await request.json()) as Partial<Product>;
+
+  if (!payload.name || !payload.brand || !payload.gender || !payload.category || !payload.price) {
+    return NextResponse.json(
+      { message: "Missing required fields" },
+      { status: 400 }
+    );
+  }
+
+  const product = await createProduct({
+    slug: payload.slug,
+    name: payload.name,
+    brand: payload.brand,
+    description: payload.description ?? "",
+    composition: payload.composition ?? "",
+    care: payload.care ?? "",
+    category: payload.category,
+    gender: payload.gender,
+    price: Number(payload.price),
+    oldPrice: payload.oldPrice ? Number(payload.oldPrice) : undefined,
+    colors: payload.colors ?? [],
+    stores: payload.stores ?? [],
+    isNew: Boolean(payload.isNew),
+    isActive: payload.isActive ?? true
+  });
+
+  return NextResponse.json(product, { status: 201 });
+}

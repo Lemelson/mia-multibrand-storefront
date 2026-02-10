@@ -1,0 +1,19 @@
+[
+  { "id": "cat-w-dresses", "slug": "dresses", "name": "Платья", "gender": "women" },
+  { "id": "cat-w-shirts", "slug": "shirts-blouses", "name": "Рубашки и блузы", "gender": "women" },
+  { "id": "cat-w-pants", "slug": "pants", "name": "Брюки", "gender": "women" },
+  { "id": "cat-w-skirts", "slug": "skirts", "name": "Юбки", "gender": "women" },
+  { "id": "cat-w-outerwear", "slug": "outerwear", "name": "Верхняя одежда", "gender": "women" },
+  { "id": "cat-w-knitwear", "slug": "knitwear", "name": "Трикотаж", "gender": "women" },
+  { "id": "cat-w-jeans", "slug": "jeans", "name": "Джинсы", "gender": "women" },
+  { "id": "cat-w-shoes", "slug": "shoes", "name": "Обувь", "gender": "women" },
+  { "id": "cat-w-accessories", "slug": "accessories", "name": "Аксессуары", "gender": "women" },
+  { "id": "cat-m-shirts", "slug": "men-shirts", "name": "Рубашки", "gender": "men" },
+  { "id": "cat-m-tshirts", "slug": "men-tshirts-polo", "name": "Футболки и поло", "gender": "men" },
+  { "id": "cat-m-pants", "slug": "men-pants", "name": "Брюки", "gender": "men" },
+  { "id": "cat-m-jeans", "slug": "men-jeans", "name": "Джинсы", "gender": "men" },
+  { "id": "cat-m-outerwear", "slug": "men-outerwear", "name": "Верхняя одежда", "gender": "men" },
+  { "id": "cat-m-shoes", "slug": "men-shoes", "name": "Обувь", "gender": "men" },
+  { "id": "cat-m-accessories", "slug": "men-accessories", "name": "Аксессуары", "gender": "men" },
+  { "id": "cat-k-all", "slug": "kids-all", "name": "Детское", "gender": "kids" }
+]
