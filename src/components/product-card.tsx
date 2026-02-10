@@ -55,21 +55,21 @@ export function ProductCard({ product }: ProductCardProps) {
 
           {hasSale ? (
             <span className="absolute left-2 top-2 bg-sale px-2 py-1 text-[10px] uppercase tracking-[0.08em] text-white">
-              Sale
+              Скидка
             </span>
           ) : product.isNew ? (
             <span className="absolute left-2 top-2 bg-accent px-2 py-1 text-[10px] uppercase tracking-[0.08em] text-white">
-              New
+              Новинка
             </span>
           ) : null}
 
           {hovered && images.length > 1 && (
-            <div className="absolute bottom-2 left-1/2 flex -translate-x-1/2 gap-1">
+            <div className="absolute inset-x-3 bottom-3 flex items-center gap-1.5">
               {images.map((_, index) => (
                 <span
                   key={index}
-                  className={`h-1.5 w-1.5 rounded-full ${
-                    index === imageIndex ? "bg-white" : "bg-white/50"
+                  className={`h-[2px] flex-1 rounded-full transition ${
+                    index === imageIndex ? "bg-white" : "bg-white/45"
                   }`}
                 />
               ))}

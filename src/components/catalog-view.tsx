@@ -43,18 +43,18 @@ type PricePreset = "all" | "budget" | "middle" | "premium";
 type PriceRange = { min?: number; max?: number };
 
 const SORT_OPTIONS: Array<{ value: SortUi; label: string }> = [
-  { value: "relevance", label: "Relevance" },
-  { value: "newest", label: "Newest first" },
-  { value: "best", label: "Best selling" },
-  { value: "price-desc", label: "Price: High to Low" },
-  { value: "price-asc", label: "Price: Low to High" }
+  { value: "relevance", label: "По релевантности" },
+  { value: "newest", label: "Сначала новые" },
+  { value: "best", label: "Хиты продаж" },
+  { value: "price-desc", label: "Сначала дорогие" },
+  { value: "price-asc", label: "Сначала недорогие" }
 ];
 
 const PRICE_PRESET_OPTIONS: Array<{ value: PricePreset; label: string }> = [
-  { value: "all", label: "All prices" },
-  { value: "budget", label: "Budget" },
-  { value: "middle", label: "Middle range" },
-  { value: "premium", label: "Premium" }
+  { value: "all", label: "Любая цена" },
+  { value: "budget", label: "До средней" },
+  { value: "middle", label: "Средний диапазон" },
+  { value: "premium", label: "Выше средней" }
 ];
 
 const COLOR_PALETTE: Record<string, string> = {
@@ -252,7 +252,7 @@ export function CatalogView({
 
   const availabilityLabel = useMemo(() => {
     if (availabilityMode === "any") {
-      return inStockOnly ? "In stock · Any store" : "Any store";
+      return inStockOnly ? "В наличии · Любой магазин" : "Любой магазин";
     }
 
     const storeName =
@@ -261,15 +261,15 @@ export function CatalogView({
         : selectedStore.name;
 
     if (!storeName) {
-      return inStockOnly ? "In stock" : "Availability";
+      return inStockOnly ? "В наличии" : "Наличие";
     }
 
-    return inStockOnly ? `In stock · ${storeName}` : storeName;
+    return inStockOnly ? `В наличии · ${storeName}` : storeName;
   }, [availabilityMode, inStockOnly, stores, availabilityStoreId, selectedStore.name]);
 
-  const sortLabel = SORT_OPTIONS.find((option) => option.value === sortUi)?.label ?? "Relevance";
-  const priceLabel = PRICE_PRESET_OPTIONS.find((option) => option.value === pricePreset)?.label ?? "Price";
-  const saleLabel = saleOnly ? "Sale only" : "Sale";
+  const sortLabel = SORT_OPTIONS.find((option) => option.value === sortUi)?.label ?? "Сортировка";
+  const priceLabel = PRICE_PRESET_OPTIONS.find((option) => option.value === pricePreset)?.label ?? "Цена";
+  const saleLabel = saleOnly ? "Только со скидкой" : "Скидка";
 
   function toggleValue(setter: Dispatch<SetStateAction<string[]>>, value: string) {
     setter((current) =>
@@ -281,21 +281,21 @@ export function CatalogView({
 
   return (
     <section>
-      <div className="mb-6 flex items-end justify-between gap-4">
+      <div className="mb-6">
         <h1 className="font-logo text-3xl md:text-[42px]">{title}</h1>
-        <p className="text-sm text-text-secondary">{total} товаров</p>
+        <p className="mt-1 text-sm text-text-secondary">{total} товаров</p>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[260px_1fr] xl:gap-8">
-        <aside className="h-fit border-r border-border pr-4 lg:sticky lg:top-28">
+        <aside className="h-fit pr-4 lg:sticky lg:top-28">
           <p className="mb-4 text-sm text-text-secondary">{title}</p>
-          <nav className="space-y-1 text-[15px]">
+          <nav className="space-y-1 border-l border-border pl-3 text-[15px]">
             {gender && (
               <Link
                 href={`/catalog/${gender}?sort=new`}
                 className="block px-1 py-2 text-text-secondary hover:text-text-primary"
               >
-                New in
+                Новинки
               </Link>
             )}
 
@@ -305,8 +305,10 @@ export function CatalogView({
                 <Link
                   key={item.id}
                   href={`/catalog/${item.slug}`}
-                  className={`block px-1 py-2 transition ${
-                    active ? "text-text-primary" : "text-text-secondary hover:text-text-primary"
+                  className={`block px-2 py-2 transition ${
+                    active
+                      ? "bg-[#efe8dd] text-text-primary"
+                      : "text-text-secondary hover:bg-bg-secondary hover:text-text-primary"
                   }`}
                 >
                   {item.name}
@@ -317,12 +319,12 @@ export function CatalogView({
         </aside>
 
         <div>
-          <div ref={filterBarRef} className="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-border pb-3">
+          <div ref={filterBarRef} className="mb-5 flex flex-wrap items-center justify-between gap-3 pb-3">
             <div className="flex flex-wrap items-center gap-3">
               <DropdownFilter
                 open={openMenu === "size"}
                 onToggle={() => setOpenMenu((current) => (current === "size" ? null : "size"))}
-                label={selectedSizes.length > 0 ? `Size (${selectedSizes.length})` : "Size"}
+                label={selectedSizes.length > 0 ? `Размер (${selectedSizes.length})` : "Размер"}
               >
                 <FilterCheckList
                   options={sizes}
@@ -334,13 +336,13 @@ export function CatalogView({
               <DropdownFilter
                 open={openMenu === "color"}
                 onToggle={() => setOpenMenu((current) => (current === "color" ? null : "color"))}
-                label={selectedColors.length > 0 ? `Colour (${selectedColors.length})` : "Colour"}
+                label={selectedColors.length > 0 ? `Цвет (${selectedColors.length})` : "Цвет"}
               >
                 <div className="space-y-1">
                   {colorOptions.map((color) => {
                     const selected = selectedColors.includes(color);
                     const isMulticolor = color === "__MULTICOLOR__";
-                    const label = isMulticolor ? "Multicolor" : color;
+                    const label = isMulticolor ? "Мультиколор" : color;
                     const hex = isMulticolor ? "#b7a594" : getColorHex(color);
 
                     return (
@@ -371,11 +373,11 @@ export function CatalogView({
                       checked={inStockOnly}
                       onChange={(event) => setInStockOnly(event.target.checked)}
                     />
-                    In stock
+                    Только в наличии
                   </label>
 
                   <div className="border-t border-border pt-2 text-sm">
-                    <p className="mb-2 text-xs uppercase tracking-[0.08em] text-text-muted">Store</p>
+                    <p className="mb-2 text-xs uppercase tracking-[0.08em] text-text-muted">Магазин</p>
                     <label className="mb-1 flex items-center gap-2">
                       <input
                         type="radio"
@@ -383,7 +385,7 @@ export function CatalogView({
                         checked={availabilityMode === "selected"}
                         onChange={() => setAvailabilityMode("selected")}
                       />
-                      Selected ({selectedStore.name})
+                      Выбранный ({selectedStore.name})
                     </label>
                     <label className="mb-1 flex items-center gap-2">
                       <input
@@ -392,7 +394,7 @@ export function CatalogView({
                         checked={availabilityMode === "any"}
                         onChange={() => setAvailabilityMode("any")}
                       />
-                      Any store
+                      Любой магазин
                     </label>
                     <label className="mb-2 flex items-center gap-2">
                       <input
@@ -401,7 +403,7 @@ export function CatalogView({
                         checked={availabilityMode === "specific"}
                         onChange={() => setAvailabilityMode("specific")}
                       />
-                      Choose store
+                      Выбрать магазин
                     </label>
 
                     {availabilityMode === "specific" && (
@@ -465,7 +467,7 @@ export function CatalogView({
                       !saleOnly ? "bg-bg-secondary" : "hover:bg-bg-secondary/60"
                     }`}
                   >
-                    All items
+                    Все товары
                     {!saleOnly && <Check size={14} />}
                   </button>
                   <button
@@ -478,7 +480,7 @@ export function CatalogView({
                       saleOnly ? "bg-bg-secondary" : "hover:bg-bg-secondary/60"
                     }`}
                   >
-                    Sale only
+                    Только со скидкой
                     {saleOnly && <Check size={14} />}
                   </button>
                 </div>
