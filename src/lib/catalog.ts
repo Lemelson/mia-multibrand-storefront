@@ -61,6 +61,18 @@ export function getCatalog(products: Product[], query: CatalogQuery): CatalogRes
   const maxPrice = prices.length ? Math.max(...prices) : 0;
 
   if (filters) {
+    if (filters.saleOnly) {
+      filtered = filtered.filter(
+        (product) => typeof product.oldPrice === "number" && product.oldPrice > product.price
+      );
+    }
+
+    if (filters.inStockOnly) {
+      filtered = filtered.filter((product) =>
+        product.colors.some((color) => color.sizes.some((size) => size.inStock))
+      );
+    }
+
     if (filters.sizes.length > 0) {
       filtered = filtered.filter((product) =>
         product.colors.some((color) =>
@@ -74,7 +86,9 @@ export function getCatalog(products: Product[], query: CatalogQuery): CatalogRes
     }
 
     if (filters.colors.length > 0) {
+      const includesMulticolor = filters.colors.includes("__MULTICOLOR__");
       filtered = filtered.filter((product) =>
+        (includesMulticolor && product.colors.length > 1) ||
         product.colors.some((color) => filters.colors.includes(color.name))
       );
     }

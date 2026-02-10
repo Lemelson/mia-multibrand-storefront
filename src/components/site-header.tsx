@@ -315,7 +315,8 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
 
   return (
     <>
-      <header className="sticky top-0 z-[140] border-b border-border bg-white/95">
+      <header className="sticky top-0 z-[140] border-b border-border bg-white">
+        <div className="h-[env(safe-area-inset-top)] bg-white" />
         <Container>
           <div className="flex h-16 items-center justify-between">
             <button

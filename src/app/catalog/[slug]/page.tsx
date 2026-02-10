@@ -16,9 +16,11 @@ export default async function CatalogSegmentPage({
   params: { slug: string };
 }) {
   const { slug } = params;
+  const categories = await getCategories();
 
   if (slug in GENDER_TITLES) {
     const title = GENDER_TITLES[slug];
+    const genderCategories = categories.filter((item) => item.gender === slug);
 
     return (
       <Container className="py-6 md:py-8">
@@ -29,12 +31,11 @@ export default async function CatalogSegmentPage({
             { label: title }
           ]}
         />
-        <CatalogView title={title} gender={slug} />
+        <CatalogView title={title} gender={slug} sidebarCategories={genderCategories} />
       </Container>
     );
   }
 
-  const categories = await getCategories();
   const category = categories.find((item) => item.slug === slug);
 
   if (!category) {
@@ -53,7 +54,13 @@ export default async function CatalogSegmentPage({
           { label: category.name }
         ]}
       />
-      <CatalogView title={category.name} gender={category.gender} category={category.slug} />
+      <CatalogView
+        title={category.name}
+        gender={category.gender}
+        category={category.slug}
+        sidebarCategories={categories.filter((item) => item.gender === category.gender)}
+        activeCategorySlug={category.slug}
+      />
     </Container>
   );
 }

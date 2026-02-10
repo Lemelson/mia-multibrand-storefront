@@ -17,7 +17,11 @@ function parseList(value: string | null): string[] {
 }
 
 function parseFilters(searchParams: URLSearchParams): CatalogFilters {
-  const sort = (searchParams.get("sort") ?? "new") as CatalogFilters["sort"];
+  const sortParam = searchParams.get("sort");
+  const sort: CatalogFilters["sort"] =
+    sortParam === "popular" || sortParam === "price-asc" || sortParam === "price-desc" || sortParam === "new"
+      ? sortParam
+      : "new";
   const priceMinValue = searchParams.get("priceMin");
   const priceMaxValue = searchParams.get("priceMax");
 
@@ -25,6 +29,8 @@ function parseFilters(searchParams: URLSearchParams): CatalogFilters {
     sizes: parseList(searchParams.get("sizes")),
     brands: parseList(searchParams.get("brands")),
     colors: parseList(searchParams.get("colors")),
+    inStockOnly: searchParams.get("inStock") === "1",
+    saleOnly: searchParams.get("sale") === "1",
     sort,
     priceMin: priceMinValue ? Number(priceMinValue) : undefined,
     priceMax: priceMaxValue ? Number(priceMaxValue) : undefined

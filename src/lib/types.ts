@@ -114,6 +114,8 @@ export interface CatalogFilters {
   sizes: string[];
   brands: string[];
   colors: string[];
+  inStockOnly?: boolean;
+  saleOnly?: boolean;
   priceMin?: number;
   priceMax?: number;
   sort: "popular" | "price-asc" | "price-desc" | "new";

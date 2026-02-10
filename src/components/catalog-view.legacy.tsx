@@ -36,11 +36,9 @@ interface CatalogViewProps {
   activeCategorySlug?: string;
 }
 
-type MenuKey = "size" | "color" | "availability" | "price" | "sale" | "sort";
+type MenuKey = "size" | "color" | "availability" | "sort";
 type SortUi = "relevance" | "newest" | "best" | "price-desc" | "price-asc";
 type AvailabilityMode = "selected" | "specific" | "any";
-type PricePreset = "all" | "budget" | "middle" | "premium";
-type PriceRange = { min?: number; max?: number };
 
 const SORT_OPTIONS: Array<{ value: SortUi; label: string }> = [
   { value: "relevance", label: "Relevance" },
@@ -48,13 +46,6 @@ const SORT_OPTIONS: Array<{ value: SortUi; label: string }> = [
   { value: "best", label: "Best selling" },
   { value: "price-desc", label: "Price: High to Low" },
   { value: "price-asc", label: "Price: Low to High" }
-];
-
-const PRICE_PRESET_OPTIONS: Array<{ value: PricePreset; label: string }> = [
-  { value: "all", label: "All prices" },
-  { value: "budget", label: "Budget" },
-  { value: "middle", label: "Middle range" },
-  { value: "premium", label: "Premium" }
 ];
 
 const COLOR_PALETTE: Record<string, string> = {
@@ -105,9 +96,6 @@ export function CatalogView({
   const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
   const [selectedColors, setSelectedColors] = useState<string[]>([]);
   const [inStockOnly, setInStockOnly] = useState(false);
-  const [saleOnly, setSaleOnly] = useState(false);
-  const [pricePreset, setPricePreset] = useState<PricePreset>("all");
-  const [priceBounds, setPriceBounds] = useState<{ min: number; max: number }>({ min: 0, max: 0 });
   const [sortUi, setSortUi] = useState<SortUi>("relevance");
 
   const [availabilityMode, setAvailabilityMode] = useState<AvailabilityMode>("selected");
@@ -134,28 +122,6 @@ export function CatalogView({
       : availabilityMode === "specific"
         ? availabilityStoreId
         : selectedStoreId;
-
-  const selectedPriceRange = useMemo<PriceRange>(() => {
-    const { min, max } = priceBounds;
-
-    if (pricePreset === "all" || max <= min) {
-      return {};
-    }
-
-    const span = max - min;
-    const firstCut = Math.round(min + span / 3);
-    const secondCut = Math.round(min + (span * 2) / 3);
-
-    if (pricePreset === "budget") {
-      return { max: firstCut };
-    }
-
-    if (pricePreset === "middle") {
-      return { min: firstCut + 1, max: secondCut };
-    }
-
-    return { min: secondCut + 1 };
-  }, [pricePreset, priceBounds]);
 
   const queryString = useMemo(() => {
     const params = new URLSearchParams();
@@ -187,20 +153,8 @@ export function CatalogView({
       params.set("inStock", "1");
     }
 
-    if (saleOnly) {
-      params.set("sale", "1");
-    }
-
-    if (selectedPriceRange.min !== undefined) {
-      params.set("priceMin", String(selectedPriceRange.min));
-    }
-
-    if (selectedPriceRange.max !== undefined) {
-      params.set("priceMax", String(selectedPriceRange.max));
-    }
-
     return params.toString();
-  }, [page, sortUi, effectiveStoreId, gender, category, selectedSizes, selectedColors, inStockOnly, saleOnly, selectedPriceRange]);
+  }, [page, sortUi, effectiveStoreId, gender, category, selectedSizes, selectedColors, inStockOnly]);
 
   const loadCatalog = useCallback(
     async (mode: "replace" | "append") => {
@@ -217,7 +171,6 @@ export function CatalogView({
       setColors(data.colors);
       setTotal(data.total);
       setHasMore(data.hasMore);
-      setPriceBounds({ min: data.minPrice, max: data.maxPrice });
       setItems((current) => (mode === "replace" ? data.items : [...current, ...data.items]));
 
       setLoading(false);
@@ -232,7 +185,7 @@ export function CatalogView({
 
   useEffect(() => {
     setPage(1);
-  }, [selectedStoreId, availabilityMode, availabilityStoreId, gender, category, sortUi, selectedSizes, selectedColors, inStockOnly, saleOnly, pricePreset]);
+  }, [selectedStoreId, availabilityMode, availabilityStoreId, gender, category, sortUi, selectedSizes, selectedColors, inStockOnly]);
 
   useEffect(() => {
     if (!stores.some((store) => store.id === availabilityStoreId)) {
@@ -268,8 +221,6 @@ export function CatalogView({
   }, [availabilityMode, inStockOnly, stores, availabilityStoreId, selectedStore.name]);
 
   const sortLabel = SORT_OPTIONS.find((option) => option.value === sortUi)?.label ?? "Relevance";
-  const priceLabel = PRICE_PRESET_OPTIONS.find((option) => option.value === pricePreset)?.label ?? "Price";
-  const saleLabel = saleOnly ? "Sale only" : "Sale";
 
   function toggleValue(setter: Dispatch<SetStateAction<string[]>>, value: string) {
     setter((current) =>
@@ -418,69 +369,6 @@ export function CatalogView({
                       </select>
                     )}
                   </div>
-                </div>
-              </DropdownFilter>
-
-              <DropdownFilter
-                open={openMenu === "price"}
-                onToggle={() => setOpenMenu((current) => (current === "price" ? null : "price"))}
-                label={priceLabel}
-              >
-                <div className="space-y-1">
-                  {PRICE_PRESET_OPTIONS.map((option) => {
-                    const active = pricePreset === option.value;
-                    return (
-                      <button
-                        key={option.value}
-                        type="button"
-                        onClick={() => {
-                          setPricePreset(option.value);
-                          setOpenMenu(null);
-                        }}
-                        className={`flex w-full items-center justify-between px-2 py-2 text-left text-sm ${
-                          active ? "bg-bg-secondary" : "hover:bg-bg-secondary/60"
-                        }`}
-                      >
-                        {option.label}
-                        {active && <Check size={14} />}
-                      </button>
-                    );
-                  })}
-                </div>
-              </DropdownFilter>
-
-              <DropdownFilter
-                open={openMenu === "sale"}
-                onToggle={() => setOpenMenu((current) => (current === "sale" ? null : "sale"))}
-                label={saleLabel}
-              >
-                <div className="space-y-1">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setSaleOnly(false);
-                      setOpenMenu(null);
-                    }}
-                    className={`flex w-full items-center justify-between px-2 py-2 text-left text-sm ${
-                      !saleOnly ? "bg-bg-secondary" : "hover:bg-bg-secondary/60"
-                    }`}
-                  >
-                    All items
-                    {!saleOnly && <Check size={14} />}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setSaleOnly(true);
-                      setOpenMenu(null);
-                    }}
-                    className={`flex w-full items-center justify-between px-2 py-2 text-left text-sm ${
-                      saleOnly ? "bg-bg-secondary" : "hover:bg-bg-secondary/60"
-                    }`}
-                  >
-                    Sale only
-                    {saleOnly && <Check size={14} />}
-                  </button>
                 </div>
               </DropdownFilter>
             </div>

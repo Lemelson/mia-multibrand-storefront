@@ -39,6 +39,20 @@ export default async function HomePage() {
       <HomeHero />
 
       <Container className="mt-12">
+        <section className="mb-12 border-b border-border pb-8">
+          <p className="text-[11px] uppercase tracking-[0.1em] text-text-muted">MIA</p>
+          <h1 className="mt-2 font-logo text-4xl md:text-[52px]">Мультибрендовый бутик в Сочи</h1>
+          <p className="mt-3 max-w-2xl text-sm leading-6 text-text-secondary md:text-base">
+            Новая классика для города и путешествий. Женское, мужское и детское в одном пространстве.
+          </p>
+          <Link
+            href="/catalog"
+            className="mt-6 inline-block border border-text-primary px-5 py-3 text-xs uppercase tracking-[0.08em]"
+          >
+            Смотреть каталог
+          </Link>
+        </section>
+
         <section>
           <h2 className="mb-6 font-logo text-3xl md:text-[38px]">Категории</h2>
           <div className="grid gap-4 md:grid-cols-3">
