@@ -1,4 +1,5 @@
 const TWINSET_CDN_HOST = "twinset-cdn.thron.com";
+const LOCAL_PRODUCTS_PREFIX = "/media/products/";
 
 type TwinsetSize = "card" | "detail" | "thumb";
 
@@ -13,7 +14,31 @@ export function isTwinsetCdnUrl(url: string): boolean {
   return typeof url === "string" && url.includes(TWINSET_CDN_HOST);
 }
 
+export function isLocalProductImage(url: string): boolean {
+  return typeof url === "string" && url.startsWith(LOCAL_PRODUCTS_PREFIX);
+}
+
+function getLocalImageBySize(url: string, kind: TwinsetSize): string {
+  if (!isLocalProductImage(url)) {
+    return url;
+  }
+
+  if (kind === "detail") {
+    return url;
+  }
+
+  if (url.includes("/detail/")) {
+    return url.replace("/detail/", kind === "card" ? "/card/" : "/thumb/");
+  }
+
+  return url;
+}
+
 export function getTwinsetImageBySize(url: string, kind: TwinsetSize): string {
+  if (isLocalProductImage(url)) {
+    return getLocalImageBySize(url, kind);
+  }
+
   if (!isTwinsetCdnUrl(url)) {
     return url;
   }

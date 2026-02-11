@@ -9,7 +9,8 @@ import type { Product, Store } from "@/lib/types";
 import { ProductCard } from "@/components/product-card";
 import {
   getProductDetailImageUrl,
-  getProductThumbImageUrl
+  getProductThumbImageUrl,
+  isLocalProductImage
 } from "@/lib/image";
 
 interface ProductDetailProps {
@@ -57,7 +58,7 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
     for (const src of detailImages.slice(1, 5)) {
       const image = new window.Image();
       image.decoding = "async";
-      image.src = getNextImageProxyUrl(src, preloadWidth, 82);
+      image.src = isLocalProductImage(src) ? src : getNextImageProxyUrl(src, preloadWidth, 82);
     }
   }, [detailImages]);
 
@@ -109,6 +110,7 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
                   sizes="68px"
                   quality={65}
                   className="object-cover"
+                  unoptimized={isLocalProductImage(image)}
                 />
               </button>
             ))}
@@ -124,6 +126,7 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
                 quality={82}
                 sizes="(max-width: 768px) 100vw, 560px"
                 className="object-cover"
+                unoptimized={isLocalProductImage(activeImage)}
               />
             ) : (
               <div className="h-full w-full bg-bg-secondary" />

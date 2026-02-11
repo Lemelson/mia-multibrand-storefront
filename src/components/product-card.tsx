@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Product } from "@/lib/types";
 import { formatPrice } from "@/lib/format";
-import { getCatalogImageUrl } from "@/lib/image";
+import { getCatalogImageUrl, isLocalProductImage } from "@/lib/image";
 
 interface ProductCardProps {
   product: Product;
@@ -50,12 +50,12 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
     for (const src of cardImages.slice(1, 5)) {
       const image = new window.Image();
       image.decoding = "async";
-      image.src = getNextImageProxyUrl(src, 640, 72);
+      image.src = isLocalProductImage(src) ? src : getNextImageProxyUrl(src, 640, 72);
 
       if (retinaWidth) {
         const retinaImage = new window.Image();
         retinaImage.decoding = "async";
-        retinaImage.src = getNextImageProxyUrl(src, retinaWidth, 72);
+        retinaImage.src = isLocalProductImage(src) ? src : getNextImageProxyUrl(src, retinaWidth, 72);
       }
     }
   }, [cardImages]);
@@ -97,6 +97,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
             quality={72}
             sizes="(max-width: 768px) 46vw, (max-width: 1280px) 30vw, 320px"
             className="object-cover transition duration-500"
+            unoptimized={isLocalProductImage(currentImage)}
           />
 
           {hasSale ? (
