@@ -8,23 +8,23 @@
     "phone": "+7 938 873-18-38",
     "workingHours": "10:00 — 22:00",
     "coordinates": {
-      "lat": 43.40332,
-      "lng": 39.95566
+      "lat": 43.401274,
+      "lng": 39.960747
     },
     "whatsapp": "+79388731838",
     "telegram": "https://t.me/ModaMia_sochi"
   },
   {
     "id": "twinset-krasnaya-polyana",
-    "name": "Twinset Поляна",
+    "name": "Twinset Milano",
     "fullName": "Twinset Красная Поляна",
-    "city": "Сириус",
-    "address": "ТРЦ «Горки Молл», ул. Горная Карусель, 3, Сириус",
+    "city": "Красная Поляна",
+    "address": "ТРЦ «Горки Молл», ул. Горная Карусель, 3, Красная Поляна",
     "phone": "+7 988 188-38-38",
     "workingHours": "10:00 — 22:00",
     "coordinates": {
-      "lat": 43.68219,
-      "lng": 40.26479
+      "lat": 43.683543,
+      "lng": 40.263564
     },
     "whatsapp": "+79881883838",
     "telegram": "https://t.me/twinset_kp"

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MessageCircle, Navigation, Phone, Send } from "lucide-react";
 import { Container } from "@/components/container";
+import { YandexStoresMap } from "@/components/yandex-stores-map";
 import { getStores } from "@/lib/server-data";
 
 export default async function ContactsPage() {
@@ -55,10 +56,12 @@ export default async function ContactsPage() {
       <section className="mt-10 border border-border bg-bg-secondary p-6">
         <h2 className="font-logo text-2xl">Карта</h2>
         <p className="mt-3 text-sm text-text-secondary">
-          Временный режим: кнопки «На карте» открывают точки в Яндекс.Картах. Далее можно подключить
-          интерактивную карту Яндекс с метками всех магазинов.
+          Интерактивная карта Яндекс с метками магазинов. Нажмите на точку на карте или выберите
+          магазин в списке справа.
         </p>
-        <div className="mt-4 h-72 border border-dashed border-border bg-white/60" />
+        <div className="mt-4">
+          <YandexStoresMap stores={stores} />
+        </div>
       </section>
 
       <section className="mt-10 border border-border p-6">
