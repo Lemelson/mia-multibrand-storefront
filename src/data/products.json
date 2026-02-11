@@ -1,5 +1,592 @@
 [
   {
+    "id": "p-071",
+    "sku": "252AQ2051",
+    "slug": "twinset-252aq2051",
+    "name": "Брюки-палаццо MYFO в клетку с лампасами",
+    "brand": "Twinset Milano",
+    "description": "Элегантные брюки-палаццо в классическую клетку с модными лампасами и надписью \"Do what you love». Широкий силуэт и мягкая посадка на талии обеспечивают комфорт и свободу движений. Эластичный пояс со шнурком позволяет регулировать посадку, сохраняя стильный акцент. Брюки легко комбинируются как с рубашкой и жакетом для офиса, так и с кедами и худи для расслабленного повседневного образа. Универсальная модель, которая придаст вашему гардеробу современное звучание.",
+    "composition": "63% полиэстер, 27% вискоза, 8% шерсть, 2% эластан. Подкладка: 100% полиэстер.",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "pants",
+    "gender": "women",
+    "price": 19560,
+    "oldPrice": 32600,
+    "colors": [
+      {
+        "id": "p-071-c1",
+        "name": "Чёрно-белый",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252aq2051/p-071-c1/detail/01.jpg",
+          "/media/products/twinset-252aq2051/p-071-c1/detail/02.jpg",
+          "/media/products/twinset-252aq2051/p-071-c1/detail/03.jpg",
+          "/media/products/twinset-252aq2051/p-071-c1/detail/04.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": false
+          },
+          {
+            "size": "L",
+            "inStock": false
+          },
+          {
+            "size": "XL",
+            "inStock": false
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T19:34:26.288Z",
+    "updatedAt": "2026-02-11T19:34:26.288Z"
+  },
+  {
+    "id": "p-072",
+    "sku": "252AT2151",
+    "slug": "twinset-252at2151",
+    "name": "Футболка со стразами и кристаллами",
+    "brand": "Twinset Milano",
+    "description": "Футболка Капли кристаллов - это эффектное сочетание простоты и сияния. Чистый белый хлопок служит идеальным фоном для изящных страз, выложенных вертикальными линиями, напоминающими блеск дождевых капель. Свободный крой обеспечивает комфорт, а декоративные акценты превращают базовую модель в стильный элемент гардероба. Подходит как для повседневных образов, так и для выхода, когда хочется добавить нотку гламура.",
+    "composition": "100% хлопок",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 12480,
+    "oldPrice": 20800,
+    "colors": [
+      {
+        "id": "p-072-c1",
+        "name": "Белый \"Papers\"",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252at2151/p-072-c1/detail/01.jpg",
+          "/media/products/twinset-252at2151/p-072-c1/detail/02.jpg",
+          "/media/products/twinset-252at2151/p-072-c1/detail/03.jpg",
+          "/media/products/twinset-252at2151/p-072-c1/detail/04.jpg",
+          "/media/products/twinset-252at2151/p-072-c1/detail/05.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": false
+          },
+          {
+            "size": "L",
+            "inStock": false
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T19:34:33.514Z",
+    "updatedAt": "2026-02-11T19:34:33.514Z"
+  },
+  {
+    "id": "p-073",
+    "sku": "252AT3140",
+    "slug": "twinset-252at3140",
+    "name": "Свитер из смесовой шерсти",
+    "brand": "Twinset Milano",
+    "description": "Полушерстяной свитер свободного силуэта из коллекции Actitude, вязанная кукурузной резинкой, с высоким воротником-стойкой, длинными рукавами и металлической пластинкой-логотипом на спинке.",
+    "composition": "35% полиамид 35% вискоза 30% шерсть. Материал 31% полиамид 31% вискоза 27% шерсть 11% эластан",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 18600,
+    "oldPrice": 31000,
+    "colors": [
+      {
+        "id": "p-073-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252at3140/p-073-c1/detail/01.jpg",
+          "/media/products/twinset-252at3140/p-073-c1/detail/02.jpg",
+          "/media/products/twinset-252at3140/p-073-c1/detail/03.jpg",
+          "/media/products/twinset-252at3140/p-073-c1/detail/04.jpg",
+          "/media/products/twinset-252at3140/p-073-c1/detail/05.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": false
+          },
+          {
+            "size": "L",
+            "inStock": false
+          },
+          {
+            "size": "XL",
+            "inStock": false
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T19:34:41.731Z",
+    "updatedAt": "2026-02-11T19:34:41.731Z"
+  },
+  {
+    "id": "p-074",
+    "sku": "252LI2QBB",
+    "slug": "twinset-252li2qbb",
+    "name": "Комплект из свитшота на молнии и джоггеров",
+    "brand": "Twinset Milano",
+    "description": "Стильный костюм из эластичного джерси, состоящий из толстовки с объемными рукавами, спортивным воротником, золотой молнией и брюк прямого кроя. Сочетает комфорт спортивного стиля с элегантностью TWINSET Milano. Идеален для создания современного городского образа, подходит как для прогулок, так и для неформальных встреч.",
+    "composition": "51% полиэстер, 43% вискоза, 6% эластан",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "pants",
+    "gender": "women",
+    "price": 20500,
+    "oldPrice": 41000,
+    "colors": [
+      {
+        "id": "p-074-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252li2qbb/p-074-c1/detail/01.jpg",
+          "/media/products/twinset-252li2qbb/p-074-c1/detail/02.jpg",
+          "/media/products/twinset-252li2qbb/p-074-c1/detail/03.jpg",
+          "/media/products/twinset-252li2qbb/p-074-c1/detail/04.jpg",
+          "/media/products/twinset-252li2qbb/p-074-c1/detail/05.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": false
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": false
+          },
+          {
+            "size": "L",
+            "inStock": false
+          },
+          {
+            "size": "XL",
+            "inStock": false
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T19:34:48.918Z",
+    "updatedAt": "2026-02-11T19:34:48.918Z"
+  },
+  {
+    "id": "p-075",
+    "sku": "252TP2074",
+    "slug": "twinset-252tp2074",
+    "name": "Пальто из ткани с поясом",
+    "brand": "Twinset Milano",
+    "description": "Модель верхней одежды Twinset Milano с акцентом на комфорт, посадку и силуэт.",
+    "composition": "50%полиэстер 50%шерсть",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 29000,
+    "oldPrice": 58000,
+    "colors": [
+      {
+        "id": "p-075-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tp2074/p-075-c1/detail/01.jpg",
+          "/media/products/twinset-252tp2074/p-075-c1/detail/02.jpg",
+          "/media/products/twinset-252tp2074/p-075-c1/detail/03.jpg",
+          "/media/products/twinset-252tp2074/p-075-c1/detail/04.jpg",
+          "/media/products/twinset-252tp2074/p-075-c1/detail/05.jpg",
+          "/media/products/twinset-252tp2074/p-075-c1/detail/06.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": false
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T19:34:57.320Z",
+    "updatedAt": "2026-02-11T19:34:57.320Z"
+  },
+  {
+    "id": "p-076",
+    "sku": "252TP2490",
+    "slug": "twinset-252tp2490",
+    "name": "Блуза с пышными рукавами и стразами",
+    "brand": "Twinset Milano",
+    "description": "Блуза с пышными рукавами и стразами в актуальном силуэте сезона.",
+    "composition": "100%вискоза",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 22650,
+    "oldPrice": 45300,
+    "colors": [
+      {
+        "id": "p-076-c1",
+        "name": "Бежевый",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tp2490/p-076-c1/detail/01.jpg",
+          "/media/products/twinset-252tp2490/p-076-c1/detail/02.jpg",
+          "/media/products/twinset-252tp2490/p-076-c1/detail/03.jpg",
+          "/media/products/twinset-252tp2490/p-076-c1/detail/04.jpg",
+          "/media/products/twinset-252tp2490/p-076-c1/detail/05.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": false
+          },
+          {
+            "size": "42",
+            "inStock": false
+          },
+          {
+            "size": "44",
+            "inStock": false
+          },
+          {
+            "size": "46",
+            "inStock": false
+          },
+          {
+            "size": "48",
+            "inStock": false
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T19:35:04.883Z",
+    "updatedAt": "2026-02-11T19:35:04.883Z"
+  },
+  {
+    "id": "p-077",
+    "sku": "252TP3331",
+    "slug": "twinset-252tp3331",
+    "name": "Джемпер из пряжи Treeblend",
+    "brand": "Twinset Milano",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов.",
+    "composition": "35%полиамид 30%шерсть 22%вискоза",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 17800,
+    "oldPrice": 35600,
+    "colors": [
+      {
+        "id": "p-077-c1",
+        "name": "Бежевый",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tp3331/p-077-c1/detail/01.jpg",
+          "/media/products/twinset-252tp3331/p-077-c1/detail/02.jpg",
+          "/media/products/twinset-252tp3331/p-077-c1/detail/03.jpg",
+          "/media/products/twinset-252tp3331/p-077-c1/detail/04.jpg",
+          "/media/products/twinset-252tp3331/p-077-c1/detail/05.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": false
+          },
+          {
+            "size": "S",
+            "inStock": false
+          },
+          {
+            "size": "M",
+            "inStock": false
+          },
+          {
+            "size": "L",
+            "inStock": false
+          },
+          {
+            "size": "XL",
+            "inStock": false
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T19:35:12.514Z",
+    "updatedAt": "2026-02-11T19:35:12.514Z"
+  },
+  {
+    "id": "p-078",
+    "sku": "252TP3495",
+    "slug": "twinset-252tp3495",
+    "name": "Базовый свитер с округлым вырезом",
+    "brand": "Twinset Milano",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов.",
+    "composition": "Состав уточняется.",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 21850,
+    "oldPrice": 43700,
+    "colors": [
+      {
+        "id": "p-078-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tp3495/p-078-c1/detail/01.jpg",
+          "/media/products/twinset-252tp3495/p-078-c1/detail/02.jpg",
+          "/media/products/twinset-252tp3495/p-078-c1/detail/03.jpg",
+          "/media/products/twinset-252tp3495/p-078-c1/detail/04.jpg",
+          "/media/products/twinset-252tp3495/p-078-c1/detail/05.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": false
+          },
+          {
+            "size": "M",
+            "inStock": false
+          },
+          {
+            "size": "L",
+            "inStock": false
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T19:35:19.754Z",
+    "updatedAt": "2026-02-11T19:35:19.754Z"
+  },
+  {
+    "id": "p-079",
+    "sku": "252TT3142",
+    "slug": "twinset-252tt3142",
+    "name": "Юбка макси из трикотажа в рубчик",
+    "brand": "Twinset Milano",
+    "description": "Юбка-трапеция, выполненная из мягкого трикотажа в фактурный рубчик, станет универсальной основой для стильных образов. Сочетание вискозы, шерсти и полиамида обеспечивает комфорт, тепло и долговечность. Лаконичный крой визуально вытягивает силуэт, подчеркивая женственность и изящество. Легко комбинируется как с уютными свитерами, так и с элегантными блузками, позволяя создавать образы от повседневных до офисных.",
+    "composition": "43% вискоза 42% полиамид 15% шерсть",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "skirts",
+    "gender": "women",
+    "price": 14520,
+    "oldPrice": 24200,
+    "colors": [
+      {
+        "id": "p-079-c1",
+        "name": "Черный Шоколад",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tt3142/p-079-c1/detail/01.jpg",
+          "/media/products/twinset-252tt3142/p-079-c1/detail/02.jpg",
+          "/media/products/twinset-252tt3142/p-079-c1/detail/03.jpg",
+          "/media/products/twinset-252tt3142/p-079-c1/detail/04.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": false
+          },
+          {
+            "size": "S",
+            "inStock": false
+          },
+          {
+            "size": "M",
+            "inStock": false
+          },
+          {
+            "size": "L",
+            "inStock": false
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T19:35:25.099Z",
+    "updatedAt": "2026-02-11T19:35:25.099Z"
+  },
+  {
     "id": "p-023",
     "sku": "252TP3582",
     "slug": "twinset-252tp3582",
