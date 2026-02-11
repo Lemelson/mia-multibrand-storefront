@@ -61,7 +61,7 @@ function isAdmin(): boolean {
 function getStorageErrorMessage(error: unknown, fallback: string): string {
   if (error instanceof Error) {
     if (/EROFS|read-only|EACCES|EPERM/i.test(error.message)) {
-      return "Текущий деплой работает с read-only файловой системой. Подключите БД или внешнее хранилище для сохранения изменений.";
+      return "Текущий деплой работает с read-only файловой системой. Для Vercel включите БД-режим: DATA_SOURCE=db и корректные DATABASE_URL/DIRECT_URL.";
     }
     return error.message || fallback;
   }

@@ -19,8 +19,13 @@ export function isDatabaseConfigured(): boolean {
 }
 
 export function getDataSourceMode(): "json" | "db" {
-  const value = (process.env.DATA_SOURCE ?? "json").toLowerCase();
-  return value === "db" ? "db" : "json";
+  const value = (process.env.DATA_SOURCE ?? "").toLowerCase();
+
+  if (value === "db" || value === "json") {
+    return value;
+  }
+
+  return isDatabaseConfigured() ? "db" : "json";
 }
 
 export function isDualWriteEnabled(): boolean {
