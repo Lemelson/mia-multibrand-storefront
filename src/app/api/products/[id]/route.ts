@@ -9,6 +9,17 @@ function isAdmin(): boolean {
   return verifyAdminToken(token);
 }
 
+function getStorageErrorMessage(error: unknown, fallback: string): string {
+  if (error instanceof Error) {
+    if (/EROFS|read-only|EACCES|EPERM/i.test(error.message)) {
+      return "Текущий деплой работает с read-only файловой системой. Подключите БД или внешнее хранилище для сохранения изменений.";
+    }
+    return error.message || fallback;
+  }
+
+  return fallback;
+}
+
 export async function GET(
   _request: Request,
   { params }: { params: { id: string } }
@@ -30,14 +41,19 @@ export async function PATCH(
     return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
   }
 
-  const payload = (await request.json()) as Partial<Product>;
-  const product = await updateProduct(params.id, payload);
+  try {
+    const payload = (await request.json()) as Partial<Product>;
+    const product = await updateProduct(params.id, payload);
 
-  if (!product) {
-    return NextResponse.json({ message: "Not found" }, { status: 404 });
+    if (!product) {
+      return NextResponse.json({ message: "Not found" }, { status: 404 });
+    }
+
+    return NextResponse.json(product);
+  } catch (error) {
+    const message = getStorageErrorMessage(error, "Не удалось обновить товар");
+    return NextResponse.json({ message }, { status: 500 });
   }
-
-  return NextResponse.json(product);
 }
 
 export async function DELETE(
@@ -48,11 +64,16 @@ export async function DELETE(
     return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
   }
 
-  const ok = await deleteProduct(params.id);
+  try {
+    const ok = await deleteProduct(params.id);
 
-  if (!ok) {
-    return NextResponse.json({ message: "Not found" }, { status: 404 });
+    if (!ok) {
+      return NextResponse.json({ message: "Not found" }, { status: 404 });
+    }
+
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    const message = getStorageErrorMessage(error, "Не удалось удалить товар");
+    return NextResponse.json({ message }, { status: 500 });
   }
-
-  return NextResponse.json({ success: true });
 }

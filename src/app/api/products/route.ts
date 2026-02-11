@@ -42,6 +42,17 @@ function isAdmin(): boolean {
   return verifyAdminToken(token);
 }
 
+function getStorageErrorMessage(error: unknown, fallback: string): string {
+  if (error instanceof Error) {
+    if (/EROFS|read-only|EACCES|EPERM/i.test(error.message)) {
+      return "Текущий деплой работает с read-only файловой системой. Подключите БД или внешнее хранилище для сохранения изменений.";
+    }
+    return error.message || fallback;
+  }
+
+  return fallback;
+}
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const rawPage = Number(searchParams.get("page") ?? "1");
@@ -77,22 +88,27 @@ export async function POST(request: Request) {
     );
   }
 
-  const product = await createProduct({
-    slug: payload.slug,
-    name: payload.name,
-    brand: payload.brand,
-    description: payload.description ?? "",
-    composition: payload.composition ?? "",
-    care: payload.care ?? "",
-    category: payload.category,
-    gender: payload.gender,
-    price: Number(payload.price),
-    oldPrice: payload.oldPrice ? Number(payload.oldPrice) : undefined,
-    colors: payload.colors ?? [],
-    stores: payload.stores ?? [],
-    isNew: Boolean(payload.isNew),
-    isActive: payload.isActive ?? true
-  });
+  try {
+    const product = await createProduct({
+      slug: payload.slug,
+      name: payload.name,
+      brand: payload.brand,
+      description: payload.description ?? "",
+      composition: payload.composition ?? "",
+      care: payload.care ?? "",
+      category: payload.category,
+      gender: payload.gender,
+      price: Number(payload.price),
+      oldPrice: payload.oldPrice ? Number(payload.oldPrice) : undefined,
+      colors: payload.colors ?? [],
+      stores: payload.stores ?? [],
+      isNew: Boolean(payload.isNew),
+      isActive: payload.isActive ?? true
+    });
 
-  return NextResponse.json(product, { status: 201 });
+    return NextResponse.json(product, { status: 201 });
+  } catch (error) {
+    const message = getStorageErrorMessage(error, "Не удалось создать товар");
+    return NextResponse.json({ message }, { status: 500 });
+  }
 }

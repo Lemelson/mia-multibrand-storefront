@@ -23,6 +23,7 @@ interface AdminDashboardProps {
 }
 
 type Tab = "products" | "orders";
+type ProductFilterGender = Gender | "all";
 
 interface ProductFormState {
   name: string;
@@ -78,6 +79,9 @@ export function AdminDashboard({
   const [form, setForm] = useState<ProductFormState>(EMPTY_FORM);
   const [submitting, setSubmitting] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
+  const [productFilterGender, setProductFilterGender] = useState<ProductFilterGender>("all");
+  const [productFilterCategory, setProductFilterCategory] = useState<string>("all");
+  const [productSearch, setProductSearch] = useState("");
 
   const categoriesByGender = useMemo(() => {
     return {
@@ -88,6 +92,43 @@ export function AdminDashboard({
   }, [categories]);
 
   const genderCategories = categoriesByGender[form.gender];
+  const availableFilterCategories = useMemo(() => {
+    if (productFilterGender === "all") {
+      return categories;
+    }
+
+    return categoriesByGender[productFilterGender];
+  }, [categories, categoriesByGender, productFilterGender]);
+
+  const filteredProducts = useMemo(() => {
+    const query = productSearch.trim().toLowerCase();
+
+    return products.filter((product) => {
+      const byGender = productFilterGender === "all" || product.gender === productFilterGender;
+      const byCategory = productFilterCategory === "all" || product.category === productFilterCategory;
+      const bySearch =
+        !query ||
+        product.name.toLowerCase().includes(query) ||
+        product.brand.toLowerCase().includes(query) ||
+        product.slug.toLowerCase().includes(query) ||
+        (product.sku ?? "").toLowerCase().includes(query);
+
+      return byGender && byCategory && bySearch;
+    });
+  }, [products, productFilterGender, productFilterCategory, productSearch]);
+
+  async function getResponseMessage(response: Response, fallback: string): Promise<string> {
+    try {
+      const payload = (await response.json()) as { message?: string };
+      if (payload?.message) {
+        return payload.message;
+      }
+    } catch {
+      // ignore parse issues and use fallback
+    }
+
+    return fallback;
+  }
 
   function resetForm() {
     setEditingProductId(null);
@@ -202,7 +243,7 @@ export function AdminDashboard({
     );
 
     if (!response.ok) {
-      setMessage("Не удалось сохранить товар");
+      setMessage(await getResponseMessage(response, "Не удалось сохранить товар"));
       setSubmitting(false);
       return;
     }
@@ -232,7 +273,7 @@ export function AdminDashboard({
     });
 
     if (!response.ok) {
-      setMessage("Не удалось обновить статус товара");
+      setMessage(await getResponseMessage(response, "Не удалось обновить статус товара"));
       return;
     }
 
@@ -250,7 +291,7 @@ export function AdminDashboard({
     const response = await fetch(`/api/products/${id}`, { method: "DELETE" });
 
     if (!response.ok) {
-      setMessage("Не удалось удалить товар");
+      setMessage(await getResponseMessage(response, "Не удалось удалить товар"));
       return;
     }
 
@@ -267,7 +308,7 @@ export function AdminDashboard({
     });
 
     if (!response.ok) {
-      setMessage("Не удалось обновить статус заказа");
+      setMessage(await getResponseMessage(response, "Не удалось обновить статус заказа"));
       return;
     }
 
@@ -496,7 +537,50 @@ export function AdminDashboard({
           </form>
 
           <div className="space-y-3">
-            {products.map((product) => {
+            <div className="space-y-2 border border-border p-3">
+              <div className="grid gap-2 md:grid-cols-3">
+                <select
+                  value={productFilterGender}
+                  onChange={(event) => {
+                    const nextGender = event.target.value as ProductFilterGender;
+                    setProductFilterGender(nextGender);
+                    setProductFilterCategory("all");
+                  }}
+                  className="border border-border px-3 py-2 text-sm"
+                >
+                  <option value="all">Все: пол</option>
+                  <option value="women">Женское</option>
+                  <option value="men">Мужское</option>
+                  <option value="kids">Детское</option>
+                </select>
+
+                <select
+                  value={productFilterCategory}
+                  onChange={(event) => setProductFilterCategory(event.target.value)}
+                  className="border border-border px-3 py-2 text-sm"
+                >
+                  <option value="all">Все категории</option>
+                  {availableFilterCategories.map((category) => (
+                    <option key={category.id} value={category.slug}>
+                      {category.name}
+                    </option>
+                  ))}
+                </select>
+
+                <input
+                  value={productSearch}
+                  onChange={(event) => setProductSearch(event.target.value)}
+                  placeholder="Поиск: название / артикул / slug"
+                  className="border border-border px-3 py-2 text-sm"
+                />
+              </div>
+
+              <p className="text-xs text-text-secondary">
+                Показано: {filteredProducts.length} из {products.length}
+              </p>
+            </div>
+
+            {filteredProducts.map((product) => {
               const image = product.colors[0]?.images[0] ?? "https://picsum.photos/200/260";
 
               return (
