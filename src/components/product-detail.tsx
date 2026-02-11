@@ -105,6 +105,9 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
             {product.brand}
           </Link>
           <h1 className="mt-2 font-logo text-3xl md:text-[40px] md:leading-[1.08]">{product.name}</h1>
+          {product.sku ? (
+            <p className="mt-2 text-xs uppercase tracking-[0.08em] text-text-muted">Артикул: {product.sku}</p>
+          ) : null}
           <p className="mt-4 text-2xl font-medium">{formatPrice(product.price)}</p>
 
           <div className="mt-6">

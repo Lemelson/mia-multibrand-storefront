@@ -1,5 +1,3683 @@
 [
   {
+    "id": "p-023",
+    "sku": "252TP3582",
+    "slug": "twinset-252tp3582",
+    "name": "Cashmere blend Водолазка Джемпер with lurex",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Cashmere blend jumper with lurex yarn ribbed trims. High neck, long sleeves with rib knit patterns, logo at the back, loose fitting. Посадка: Свободный силуэт.",
+    "composition": "83% шерсть 14% кашемир 3% metallic полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 16200,
+    "colors": [
+      {
+        "id": "p-023-c1",
+        "name": "Chantilly/Snow Gold Lurex",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6478806b-2b49-4148-aaf6-4cd2e9a646ab/6ujb0j/std/1920x2347/252TP3582_12790_PC?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/30b71833-a7e6-4d6f-95aa-7acd09227029/6ujb0j/std/1920x2347/252TP3582_12790_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/dd5e6845-3272-4b77-87ff-ac3c36ec6e81/6ujb0j/std/1920x2347/252TP3582_12790_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/e7c85653-523c-4048-90f9-4380f1515b61/6ujb0j/std/1920x2347/252TP3582_12790_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/db964e6d-509d-4acc-8c37-2b9c95c068ed/6ujb0j/std/1920x2347/252TP3582_12790_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/86b304b5-12a5-4691-9028-b83e6c4fb4e6/6ujb0j/std/1920x2347/252TP3582_12790_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4ed87ee4-f042-42e3-8624-5a17a015bd37/6ujb0j/std/1920x2347/252TP3582_12790_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-024",
+    "sku": "252TP2580",
+    "slug": "twinset-252tp2580",
+    "name": "Animal print cotton bull Брюки",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Cotton bull animal print trousers . Belt loops, zip and logo stud button fastening, five pockets, straight fit.",
+    "composition": "100% хлопок. Материал 2: 100% хлопок",
+    "care": "Wash max 30°C - Mild process, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Химчистка запрещена, Сушить на веревке в тени",
+    "category": "pants",
+    "gender": "women",
+    "price": 15900,
+    "colors": [
+      {
+        "id": "p-024-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6c6e8df9-3f9f-4efc-a629-b8b01ca8a457/6ujb0j/std/1920x2347/252TP2580_12558_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/137204d0-04e4-49dc-9ecd-33dc5c17db02/6ujb0j/std/1920x2347/252TP2580_12558_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/8482cae4-0bcb-4334-b12a-0350986bbd38/6ujb0j/std/1920x2347/252TP2580_12558_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/19ef16f6-4cbe-41c4-a96e-97558d3daf65/6ujb0j/std/1920x2347/252TP2580_12558_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/22a43d53-7c71-40cf-93ed-87bfd06f1c64/6ujb0j/std/1920x2347/252TP2580_12558_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "24",
+            "inStock": true
+          },
+          {
+            "size": "25",
+            "inStock": true
+          },
+          {
+            "size": "26",
+            "inStock": true
+          },
+          {
+            "size": "27",
+            "inStock": true
+          },
+          {
+            "size": "28",
+            "inStock": true
+          },
+          {
+            "size": "29",
+            "inStock": true
+          },
+          {
+            "size": "30",
+            "inStock": true
+          },
+          {
+            "size": "31",
+            "inStock": true
+          },
+          {
+            "size": "32",
+            "inStock": true
+          },
+          {
+            "size": "33",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-025",
+    "sku": "252TP2474",
+    "slug": "twinset-252tp2474",
+    "name": "Animal print jacquard Брюки",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Jacquard viscose animal print trousers . Front pleats, slant pockets, concealed side zip, Oval T logo plate, wide fit. Посадка: Свободная посадка.",
+    "composition": "100% вискоза. Материал 2: 68% acetate 32% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "category": "pants",
+    "gender": "women",
+    "price": 15900,
+    "colors": [
+      {
+        "id": "p-025-c1",
+        "name": "Коричневый",
+        "hex": "#7A5A44",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/0e8e0e83-21ee-4e80-ac4f-60bd6641b85f/6ujb0j/std/1920x2347/252TP2474_12737_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/55eb8d35-418e-4d49-91a2-81f20535aff2/6ujb0j/std/1920x2347/252TP2474_12737_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/e70590ff-c4b1-4dd5-9731-be25dc8aa709/6ujb0j/std/1920x2347/252TP2474_12737_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/81d234ce-1ca0-4c14-ae6f-9974e4cfee14/6ujb0j/std/1920x2347/252TP2474_12737_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/a3d639cb-a5df-47ba-9e71-44bb24c497e7/6ujb0j/std/1920x2347/252TP2474_12737_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          },
+          {
+            "size": "50",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-026",
+    "sku": "252TF2011",
+    "slug": "twinset-252tf2011",
+    "name": "Palazzo Брюки with drawstring",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Technical fabric trousers with adjustable drawstring at the waist, gathered at the back, zip and hook fastening, ironed crease, palazzo fit. This item is part of the “Archive” range, inspired by the most iconic and most loved garments from the Twinset collections. Посадка: Palazzo fit.",
+    "composition": "100% полиэстер. Подкладка: 100% полиэстер. Материал 2: 100% полиэстер",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен), Сушить на веревке в тени",
+    "category": "pants",
+    "gender": "women",
+    "price": 12300,
+    "colors": [
+      {
+        "id": "p-026-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/ff6114b8-cf01-450c-8a57-5c6922dd10d4/6ujb0j/std/1920x2347/252TF2011_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/0a00501c-0ddf-47a3-97e2-a762fc0f55da/6ujb0j/std/1920x2347/252TF2011_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/930f21b3-5d4b-4360-bbaf-4078a522a3ab/6ujb0j/std/1920x2347/252TF2011_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/60476f87-c1cc-46ba-ba20-93fe6bb0b778/6ujb0j/std/1920x2347/252TF2011_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f6d2df54-34d7-4e78-a5a5-1da89e41dc58/6ujb0j/std/1920x2347/252TF2011_00006_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/32b5398d-209b-4f63-9b0a-021aefefe84c/6ujb0j/std/1920x2347/252TF2011_00006_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          },
+          {
+            "size": "50",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-027",
+    "sku": "252TT2161",
+    "slug": "twinset-252tt2161",
+    "name": "Wool blend flared Брюки with lurex",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Chevron pattern wool and cotton blend trousers with lurex. Mannish zip and hook fastening, slant pockets, Oval T logo plate on the back, slightly flared fit. Посадка: Flared fit.",
+    "composition": "38% хлопок 27% шерсть 18% полиэстер 12% полиамид 5% other fibres. Подкладка: 68% acetate 32% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "category": "pants",
+    "gender": "women",
+    "price": 14700,
+    "colors": [
+      {
+        "id": "p-027-c1",
+        "name": "Коричневый",
+        "hex": "#7A5A44",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f70e3818-c48e-4aaf-b239-9a5dd9c33dd4/6ujb0j/std/1920x2347/252TT2161_12864_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/7bcf19f9-629f-4ae5-949f-f641d7bdfbb8/6ujb0j/std/1920x2347/252TT2161_12864_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/60ba58b7-1242-463a-9474-572cefa4fe05/6ujb0j/std/1920x2347/252TT2161_12864_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/7aac4a06-ea70-47bc-8da4-93252063992a/6ujb0j/std/1920x2347/252TT2161_12864_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/bee57f8d-cc61-4c8f-a592-316b3e58aa7d/6ujb0j/std/1920x2347/252TT2161_12864_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f599b65b-d3fc-49d1-a489-13156ad3b2cb/6ujb0j/std/1920x2347/252TT2161_12864_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          },
+          {
+            "size": "50",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-028",
+    "sku": "252LI3NCC",
+    "slug": "twinset-252li3ncc",
+    "name": "Джемпер with contrast trims",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Viscose blend plain knit jumper with contrasting trims. Turtleneck, long loose sleeves, ribbed trims, metal logo plate at the back, loose fitting. Посадка: Свободный силуэт.",
+    "composition": "52% вискоза 26% полиэстер 22% полиамид. Материал 2: 52% вискоза 26% полиэстер 22% полиамид",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 9500,
+    "colors": [
+      {
+        "id": "p-028-c1",
+        "name": "Белый",
+        "hex": "#F6F7F8",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/bae72d6c-64be-48fe-94ca-b8213bfc911c/6ujb0j/std/1920x2347/252LI3NCC_12725_PD?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/59f5b17f-258d-4d74-b019-dddd65feef08/6ujb0j/std/1920x2347/252LI3NCC_12725_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/2f4585cf-e214-4510-84ad-60c1273d5169/6ujb0j/std/1920x2347/252LI3NCC_12725_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/15c3c5d2-064e-40d7-95b4-13679bba9bfc/6ujb0j/std/1920x2347/252LI3NCC_12725_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/52f78e3a-ee61-45ff-871b-c94e4ff0b353/6ujb0j/std/1920x2347/252LI3NCC_12725_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f872a9bf-8a7b-48f2-b9d0-b49f39f7fb0e/6ujb0j/std/1920x2347/252LI3NCC_12725_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-029",
+    "sku": "252TB7360",
+    "slug": "twinset-252tb7360",
+    "name": "'Dreamy' reversible leather shoulder Сумка",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Dreamy' reversible leather shoulder bag . One side is made from suede split leather treated to preserve the colour and appearance of the leather, with metal Oval T. The other side is soft, small natural grain calfskin with gold-tone printed lettering logo. Flap and magnet closure, chain strap for on-shoulder or cross-body wear, lining.",
+    "composition": "100% cow кожа. Подкладка: 100% sheepskin кожа. Материал 2: 100% sheepskin кожа. Sole: 100% rubber",
+    "care": "Wash by hand - ambient temperature, Не отбеливать, Не сушить в барабане, Ironing low temperature - without steam, Химчистка запрещена",
+    "category": "accessories",
+    "gender": "women",
+    "price": 24900,
+    "colors": [
+      {
+        "id": "p-029-c1",
+        "name": "“Wine tasting” Purple",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/571dd7f2-6d83-40e2-81a1-140fa8996341/6ujb0j/std/1920x2347/252TB7360_05609_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/169e8beb-04e4-429b-950d-594f24a9caf3/6ujb0j/std/1920x2347/252TB7360_05609_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6de61000-761c-4bf3-a3e0-a27552539fee/6ujb0j/std/1920x2347/252TB7360_05609_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/97499588-5253-44c7-8767-a17e42822c29/6ujb0j/std/1920x2347/252TB7360_05609_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/67e25ba5-f120-4693-acdd-9c9786747502/6ujb0j/std/1920x2347/252TB7360_05609_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "U",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-030",
+    "sku": "252TF3022",
+    "slug": "twinset-252tf3022",
+    "name": "Long wool blend Кардиган",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Long wool and cotton blend double knit cardigan, plain knit front and contrasting colour corn stitch on the back and half way down the sleeves. V neck, long sleeves, logoed button fastening, ribbed trim, loose fit. The cotton used for this garment (24% cotton) is organic, therefore it may contain natural impurities as it did not undergo any chemical treatments. This item is part of the “Archive” range, inspired by the most iconic and most loved garments from the Twinset collections. Посадка: Свободный силуэт.",
+    "composition": "55% шерсть 45% хлопок",
+    "care": "Wash max 30°C - Mild process, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 15800,
+    "colors": [
+      {
+        "id": "p-030-c1",
+        "name": "Белый",
+        "hex": "#F6F7F8",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f6fd260f-7237-4bbf-b2fe-2d79a74b0d4f/6ujb0j/std/1920x2347/252TF3022_12997_PC?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/5396f55c-5be5-4828-9057-0f97d7812b5a/6ujb0j/std/1920x2347/252TF3022_12997_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/2a8fe22a-85ea-4562-8aaf-e34084fc6dab/6ujb0j/std/1920x2347/252TF3022_12997_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/c8c15389-decb-4e60-8312-fb3d1365dc43/6ujb0j/std/1920x2347/252TF3022_12997_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/d1f8ccb3-9c36-44f6-9f5b-c37fcb0cfe75/6ujb0j/std/1920x2347/252TF3022_12997_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f485dbb8-c561-493f-aebb-7b4cf927ec7e/6ujb0j/std/1920x2347/252TF3022_12997_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-031",
+    "sku": "252TT3111",
+    "slug": "twinset-252tt3111",
+    "name": "Wool rib knit turtle neck Джемпер",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Pure wool turtle neck jumper with rib knit and open work stitch pattern, long sleeves, Oval T logo plate on the back, fitted. Посадка: Приталенный силуэт.",
+    "composition": "100% шерсть",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 8900,
+    "colors": [
+      {
+        "id": "p-031-c1",
+        "name": "Синий",
+        "hex": "#2F4D7A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/5addd780-842f-43f1-aa8f-c58a5a2e1bd4/6ujb0j/std/1920x2347/252TT3111_11956_PC?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f7826ffa-a2c1-4e5d-9024-884922113c1d/6ujb0j/std/1920x2347/252TT3111_11956_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4472caf2-04ad-4932-8a8f-81378bc35d01/6ujb0j/std/1920x2347/252TT3111_11956_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/9d70f270-cc10-40c7-9547-3040f011a067/6ujb0j/std/1920x2347/252TT3111_11956_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/bc52a400-4b29-440b-823e-fe72a230303d/6ujb0j/std/1920x2347/252TT3111_11956_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/cabd5143-c146-44fc-b135-691ad32ea33d/6ujb0j/std/1920x2347/252TT3111_11956_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-032",
+    "sku": "252TO5490",
+    "slug": "twinset-252to5490",
+    "name": "Chain Ожерелье with horn",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Metal chain necklace with pendant horn and hook closure.",
+    "composition": "100% iron. Материал 2: 100% zamak. Материал 3: 100% plastic",
+    "care": "",
+    "category": "accessories",
+    "gender": "women",
+    "price": 8100,
+    "colors": [
+      {
+        "id": "p-032-c1",
+        "name": "Бежевый",
+        "hex": "#D6C3A5",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/36ba29f9-4f1b-4059-99ab-385904c60034/6ujb0j/std/1920x2347/252TO5490_12129_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/27a9b035-364e-43f4-a3da-10775d6d8ccf/6ujb0j/std/1920x2347/252TO5490_12129_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/aaefb26f-5e96-4ecb-901c-34cb433130ba/6ujb0j/std/1920x2347/252TO5490_12129_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "U",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-033",
+    "sku": "252TP3040",
+    "slug": "twinset-252tp3040",
+    "name": "Knit midi Платье with scalloped trims",
+    "brand": "Twinset Milano",
+    "description": "Stretch viscose plain knit midi dress with punch work details. круглый вырез, long sleeves, scalloped trims, Oval T logo plate on the back, fitted. Посадка: Приталенный силуэт.",
+    "composition": "54% вискоза 44% полиамид 2% эластан",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
+    "category": "dresses",
+    "gender": "women",
+    "price": 14700,
+    "oldPrice": 18400,
+    "colors": [
+      {
+        "id": "p-033-c1",
+        "name": "Красный",
+        "hex": "#A21E2A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/87e5346b-0828-4518-b6be-5338502820b0/6ujb0j/std/1920x2347/252TP3040_00740_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f711b3c4-8d58-43fe-902d-5693ad1d46cf/6ujb0j/std/1920x2347/252TP3040_00740_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/cba1b35e-5b7c-41e0-b8a4-df129b81d2cb/6ujb0j/std/1920x2347/252TP3040_00740_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/5da94c32-b420-41b7-8da3-c650bf1a3e35/6ujb0j/std/1920x2347/252TP3040_00740_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4a5d202f-bd24-46bf-b8b5-20fcc0bf56d7/6ujb0j/std/1920x2347/252TP3040_00740_05?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/b80ac42a-259f-4b82-9add-ffe50f787b3b/6ujb0j/std/1920x2347/252TP3040_00740_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-034",
+    "sku": "252TP3203",
+    "slug": "twinset-252tp3203",
+    "name": "Twinset Scalloped sweater with Oval T buttons",
+    "brand": "Twinset Milano",
+    "description": "Crepe viscose sweater with Oval T logo buttons and scalloped details. круглый вырез, wide short sleeves, central mesh motif at the front, loose fitting. Посадка: Свободный силуэт.",
+    "composition": "65% вискоза 35% полиамид",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 10300,
+    "colors": [
+      {
+        "id": "p-034-c1",
+        "name": "Бежевый",
+        "hex": "#D6C3A5",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/0f4c511e-e572-4eb0-8499-85a125857d55/6ujb0j/std/1920x2347/252TP3203_07222_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/5e35ca48-d2e2-4627-9690-402da7486ea8/6ujb0j/std/1920x2347/252TP3203_07222_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/b4131a40-415f-4be4-971b-3e1e0dae2933/6ujb0j/std/1920x2347/252TP3203_07222_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/3edcd24f-3ebb-4e0e-8be6-4ff603b609ec/6ujb0j/std/1920x2347/252TP3203_07222_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f52d2ca4-8880-4e21-a5a8-192a20933e58/6ujb0j/std/1920x2347/252TP3203_07222_05?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/edadfd6b-6758-4d49-b428-c104e531e26d/6ujb0j/std/1920x2347/252TP3203_07222_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-035",
+    "sku": "252TT3141",
+    "slug": "twinset-252tt3141",
+    "name": "Fitted ribbed Джемпер",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Viscose blend fisherman’s rib jumper with V neck, long glove sleeves, flared hem, Oval T logo plate on the back. Посадка: Приталенный силуэт.",
+    "composition": "43% вискоза 42% полиамид 15% шерсть",
+    "care": "Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени, Не стирать",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 10300,
+    "colors": [
+      {
+        "id": "p-035-c1",
+        "name": "Снежно-белый",
+        "hex": "#F6F7F8",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/b1d32e8c-c878-4a41-9eef-86583d3fae51/6ujb0j/std/1920x2347/252TT3141_00282_PD?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/b714af71-b6b7-4fe5-a335-9fb1c2ab9873/6ujb0j/std/1920x2347/252TT3141_00282_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/3a8262da-d3a0-4768-a39d-3810d0d267e1/6ujb0j/std/1920x2347/252TT3141_00282_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/1c213e51-7cce-48c4-96cc-9913cc9c19bb/6ujb0j/std/1920x2347/252TT3141_00282_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/2b0adf5c-632f-45ee-924f-da4a5afd7a67/6ujb0j/std/1920x2347/252TT3141_00282_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/2a7f24fc-d3b3-4103-8793-6b5fdcf1c49a/6ujb0j/std/1920x2347/252TT3141_00282_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-036",
+    "sku": "252TT3152",
+    "slug": "twinset-252tt3152",
+    "name": "Long knit Платье with gathering",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Viscose blend gathered dress with turtle neck. High neck, long sleeves, Oval T logo plate on the back, fitted. Посадка: Приталенный силуэт.",
+    "composition": "43% вискоза 42% полиамид 15% шерсть",
+    "care": "Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени, Не стирать",
+    "category": "dresses",
+    "gender": "women",
+    "price": 15600,
+    "oldPrice": 19500,
+    "colors": [
+      {
+        "id": "p-036-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/53918132-6ee4-48dd-9cb0-4e168a18e77e/6ujb0j/std/1920x2347/252TT3152_11054_PD?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/9ab7bd28-1bde-495c-9d8a-9f246b0e2c76/6ujb0j/std/1920x2347/252TT3152_11054_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/e8014d98-932d-4df1-bebd-4c2db8809c78/6ujb0j/std/1920x2347/252TT3152_11054_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/9ac18eed-8241-4751-9bf2-00f55a389a15/6ujb0j/std/1920x2347/252TT3152_11054_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/78737aa4-16f5-46eb-9ac9-33c3a9e862f8/6ujb0j/std/1920x2347/252TT3152_11054_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/95d8ee67-2aed-4664-8d16-9246f55b1fa7/6ujb0j/std/1920x2347/252TT3152_11054_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-037",
+    "sku": "252TT3490",
+    "slug": "twinset-252tt3490",
+    "name": "Mohair blend Джемпер with print",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Wool and mohair blend jumper with lurex print all over. Turtle neck, long sleeves, Oval T logo plate on the back, fitted. Посадка: Приталенный силуэт.",
+    "composition": "36% metallic полиэстер 24% полиамид 20% mohair 20% шерсть",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 13500,
+    "colors": [
+      {
+        "id": "p-037-c1",
+        "name": "Коричневый",
+        "hex": "#7A5A44",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/24fff945-704c-4125-beb3-490c3a89f359/6ujb0j/std/1920x2347/252TT3490_13041_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/5c9b8930-d75d-4849-83b2-41d5efb5bbfc/6ujb0j/std/1920x2347/252TT3490_13041_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/b4911b1c-bc01-4571-b788-f70f04def32d/6ujb0j/std/1920x2347/252TT3490_13041_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/c47e086f-ea27-40cc-ba8c-bea244f53784/6ujb0j/std/1920x2347/252TT3490_13041_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/d0811ab3-5a09-4340-82fc-01ed24802919/6ujb0j/std/1920x2347/252TT3490_13041_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/81d79226-19e9-4ae4-b4f7-aea32683b2df/6ujb0j/std/1920x2347/252TT3490_13041_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-038",
+    "sku": "252AT3152",
+    "slug": "twinset-252at3152",
+    "name": "Twinset Knit gilet with sequins",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Actitude collection long knit gilet with sequins and ribbed pattern. V neck, metal logo plate at the back, loose fit. Посадка: Свободный силуэт.",
+    "composition": "50% полиэстер 30% полиамид 8% шерсть 7% metallic полиэстер 5% alpaca",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 9000,
+    "colors": [
+      {
+        "id": "p-038-c1",
+        "name": "Бежевый",
+        "hex": "#D6C3A5",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/ebc6e101-dd94-4d37-99b3-f05254d6aa96/6ujb0j/std/1920x2347/252AT3152_12970_PA?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/5e48d346-51ea-422f-9954-0f8a0e05bb61/6ujb0j/std/1920x2347/252AT3152_12970_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/97eae1f8-14db-4f30-a6ee-8e1f4e704d33/6ujb0j/std/1920x2347/252AT3152_12970_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/eca0455f-b2f6-470c-a64e-09e9024f3f0a/6ujb0j/std/1920x2347/252AT3152_12970_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6dc153ed-c901-4911-8fd7-b36d9745f2f7/6ujb0j/std/1920x2347/252AT3152_12970_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-039",
+    "sku": "252TT3492",
+    "slug": "twinset-252tt3492",
+    "name": "Mohair blend check print Джемпер",
+    "brand": "Twinset Milano",
+    "description": "Wool and mohair blend plain knit jumper with all-over lurex check print. круглый вырез, long wide sleeves gathered at the armhole, ribbed trims, Oval T logo plate on the back, fitted. Посадка: Приталенный силуэт.",
+    "composition": "36% metallic полиэстер 24% полиамид 20% mohair 20% шерсть",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 14400,
+    "colors": [
+      {
+        "id": "p-039-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/0ccd9440-6766-4596-a98c-45555c158df3/6ujb0j/std/1920x2347/252TT3492_13043_PC?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/18cdc50e-2c9a-432c-8290-3e264384f357/6ujb0j/std/1920x2347/252TT3492_13043_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/167880d0-fdb7-4dbb-b87b-9dda2cd217e9/6ujb0j/std/1920x2347/252TT3492_13043_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/cea95af9-176b-4ce5-8643-0ae2a48b0c4c/6ujb0j/std/1920x2347/252TT3492_13043_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6d785549-3aa0-4c61-b688-cd436114086b/6ujb0j/std/1920x2347/252TT3492_13043_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/e50b2d1b-4e89-4674-a3a6-ec5e2e4b7912/6ujb0j/std/1920x2347/252TT3492_13043_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/fe4e5dc9-bac4-42f9-812a-6ea12e365101/6ujb0j/std/1920x2347/252TT3492_13043_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-040",
+    "sku": "252TT2160",
+    "slug": "twinset-252tt2160",
+    "name": "Wool blend Блейзер with lurex",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Chevron pattern wool and cotton blend blazer with lurex. Lapels, single-breasted button fastening, long sleeves, welt pockets with flaps, slit and Oval T logo plate at the back, lining, straight fit.",
+    "composition": "38% хлопок 27% шерсть 18% полиэстер 12% полиамид 5% other fibres. Подкладка: 68% acetate 32% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 22900,
+    "colors": [
+      {
+        "id": "p-040-c1",
+        "name": "Коричневый",
+        "hex": "#7A5A44",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/44d54bf8-4b9d-4932-9f99-cb37d9865ed6/6ujb0j/std/1920x2347/252TT2160_12864_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/19e2f9b0-614c-4139-8092-5899b778815d/6ujb0j/std/1920x2347/252TT2160_12864_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/83b14190-fa2e-4be6-95b4-d73ee55df7c4/6ujb0j/std/1920x2347/252TT2160_12864_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/9c62cb56-5dc4-4f00-af49-6165a08ad6cd/6ujb0j/std/1920x2347/252TT2160_12864_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/075bf542-97bf-4899-bef3-3e601e4d0073/6ujb0j/std/1920x2347/252TT2160_12864_05?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/78b8d0d1-e8e8-4b0e-8c6b-0162931988da/6ujb0j/std/1920x2347/252TT2160_12864_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f2aef1c5-9307-449d-b10f-e14b7d02be4e/6ujb0j/std/1920x2347/252TT2160_12864_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          },
+          {
+            "size": "50",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-041",
+    "sku": "252TF2030",
+    "slug": "twinset-252tf2030",
+    "name": "Long Платье with gathering",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Long jersey dress with georgette bodice at the front, fitted with asymmetrical gathering. Boat neck at the front and deep V neckline at the back, side zip fastening, long sleeves, slit at the hem, fitted. This item is part of the “Archive” range, inspired by the most iconic and most loved garments from the Twinset collections. Посадка: Приталенный силуэт.",
+    "composition": "5% эластан 95% полиэстер. Материал 2: 100% полиэстер",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на веревке в тени",
+    "category": "dresses",
+    "gender": "women",
+    "price": 15800,
+    "oldPrice": 19800,
+    "colors": [
+      {
+        "id": "p-041-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/bfdb7e8e-2531-4981-90da-e908c5888023/6ujb0j/std/1920x2347/252TF2030_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/417f6366-fad3-4e85-98d3-9732574084d4/6ujb0j/std/1920x2347/252TF2030_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/400218fc-a8f4-49b1-a217-68dc75436f7d/6ujb0j/std/1920x2347/252TF2030_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/12aa6cfb-9ddb-448f-aeac-84eb89d39f37/6ujb0j/std/1920x2347/252TF2030_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4561fc8b-ad2b-4608-914e-e77438e8eff2/6ujb0j/std/1920x2347/252TF2030_00006_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          },
+          {
+            "size": "50",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-042",
+    "sku": "252TF2040",
+    "slug": "twinset-252tf2040",
+    "name": "Oversized Рубашка with side slits",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Viscose blend shirt with tonal buttons, long sleeves with slouched shoulders, buttoned cuffs, yoke and pleat at the back, side slits, oversized fit. This item is part of the “Archive” range, inspired by the most iconic and most loved garments from the Twinset collections. Посадка: Oversized fit.",
+    "composition": "63% полиэстер 33% вискоза 4% эластан",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 13300,
+    "colors": [
+      {
+        "id": "p-042-c1",
+        "name": "Графитовый меланж",
+        "hex": "#55585C",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/d63f312d-a4dc-4762-8332-e08f46bebde2/6ujb0j/std/1920x2347/252TF2040_12840_PD?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/54385545-9864-4151-a593-4cbd74762b7e/6ujb0j/std/1920x2347/252TF2040_12840_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/eef86b4d-7242-4b25-8759-66dbad3fe290/6ujb0j/std/1920x2347/252TF2040_12840_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/b9ded640-320e-4208-a561-fd68616612e0/6ujb0j/std/1920x2347/252TF2040_12840_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/63fc9930-74ce-4da3-963e-17fd25160d82/6ujb0j/std/1920x2347/252TF2040_12840_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/b3a22d8d-c7ff-4066-9300-b00511462f94/6ujb0j/std/1920x2347/252TF2040_12840_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-043",
+    "sku": "252TF2043",
+    "slug": "twinset-252tf2043",
+    "name": "Palazzo Брюки with pleats",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Viscose blend trousers with front pleats, zip and button fastening, centred ironed crease, palazzo fit. This item is part of the “Archive” range, inspired by the most iconic and most loved garments from the Twinset collections. Посадка: Palazzo fit.",
+    "composition": "63% полиэстер 33% вискоза 4% эластан",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "category": "pants",
+    "gender": "women",
+    "price": 12000,
+    "colors": [
+      {
+        "id": "p-043-c1",
+        "name": "Графитовый меланж",
+        "hex": "#55585C",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/2d4e08bb-a4d7-495e-b7cc-0f1fa210f7db/6ujb0j/std/1920x2347/252TF2043_12840_PC?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/ba366c18-3676-4dbd-ae68-6894c56f1164/6ujb0j/std/1920x2347/252TF2043_12840_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/e208a7df-a5e7-4118-befc-3b21a0f6619f/6ujb0j/std/1920x2347/252TF2043_12840_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/0de7d4c6-523a-4024-95f7-bba3da0aedb1/6ujb0j/std/1920x2347/252TF2043_12840_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/d97b65f5-31a7-49d9-aa7a-e895462061b6/6ujb0j/std/1920x2347/252TF2043_12840_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/bc8444a2-f9bb-4357-ac07-d8cfdac1c71b/6ujb0j/std/1920x2347/252TF2043_12840_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-044",
+    "sku": "252TD8260",
+    "slug": "twinset-252td8260",
+    "name": "Shopper Сумка with pocket and Oval T lock",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Soft and structured semi-polished faux calfskin leather shopper bag. Two internal compartments and a zip pocket on the front panel customized with an Oval T lock. Short tubular handle and removable and adjustable shoulder strap for cross-body wear. Perfect for everyday and for the office.",
+    "composition": "100% полиуретан. Подкладка: 100% полиэстер. Материал 2: 100% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
+    "category": "accessories",
+    "gender": "women",
+    "price": 13800,
+    "colors": [
+      {
+        "id": "p-044-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/82b889e6-120c-4407-9628-f0ca562dac14/6ujb0j/std/1920x2347/252TD8260_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/fc768ef2-f2e0-43d5-bd6d-fa7c41fb2ce6/6ujb0j/std/1920x2347/252TD8260_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/d254eac5-4c76-4d3e-82a9-dcaf57f270cb/6ujb0j/std/1920x2347/252TD8260_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f1ed3661-6c55-42df-8abc-4e1ad2cfa9e3/6ujb0j/std/1920x2347/252TD8260_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f7ffa574-5f6e-414d-975a-3f91ecedd314/6ujb0j/std/1920x2347/252TD8260_00006_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "U",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-045",
+    "sku": "252TT3064",
+    "slug": "twinset-252tt3064",
+    "name": "Wool blend turtle neck Джемпер with Oval T",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Wool blend turtle neck jumper with link stitch Oval T logo on the back. Ribbed patterns, long sleeves, side slits at the hem, wide fit. Посадка: Свободная посадка.",
+    "composition": "45% акрил 27% шерсть 19% alpaca 9% полиэстер",
+    "care": "Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени, Не стирать",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 13300,
+    "colors": [
+      {
+        "id": "p-045-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/dc6aa566-80ef-46c4-b9fd-d4a56f4b3663/6ujb0j/std/1920x2347/252TT3064_00006_PC?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/440ab448-f511-43ed-9074-f6fd49c4f755/6ujb0j/std/1920x2347/252TT3064_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/c94042d6-c492-4279-97fd-6517c1d7e1ad/6ujb0j/std/1920x2347/252TT3064_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/99b2de83-c66a-4b1a-bdf7-13a985774838/6ujb0j/std/1920x2347/252TT3064_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/06a6bdf4-9619-4638-8d47-8dc46dbdda30/6ujb0j/std/1920x2347/252TT3064_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f165f090-658b-441a-bc10-17529d020676/6ujb0j/std/1920x2347/252TT3064_00006_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/8c43daef-89ed-4952-bc64-87e453177aa5/6ujb0j/std/1920x2347/252TT3064_00006_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-046",
+    "sku": "252TP2073",
+    "slug": "twinset-252tp2073",
+    "name": "Twinset Doubled wool cape",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Doubled wool cape with faux leather details. High neck, strap and buckle fastening, short kimono sleeves, side slits, wide fit. Посадка: Свободная посадка.",
+    "composition": "50% полиэстер 50% шерсть. Материал 2: 100% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 27600,
+    "colors": [
+      {
+        "id": "p-046-c1",
+        "name": "Песочно-коричневый",
+        "hex": "#B48A64",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f2ea36bb-9ec7-4598-8fb6-96737741c5e6/6ujb0j/std/1920x2347/252TP2073_11754_PC?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/67c7f5de-ced5-4b8c-84e4-d06143e97717/6ujb0j/std/1920x2347/252TP2073_11754_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/39d1c3ac-701f-47d9-b325-1c3f77563b16/6ujb0j/std/1920x2347/252TP2073_11754_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/cb5e51e4-b280-401c-a686-031396e1f6c3/6ujb0j/std/1920x2347/252TP2073_11754_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/252abb26-a1d9-4328-bb9c-7764eadcfc13/6ujb0j/std/1920x2347/252TP2073_11754_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/40ef7ce6-1810-407e-847d-6db20d0d590f/6ujb0j/std/1920x2347/252TP2073_11754_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/d4f93bd9-c109-482f-84df-960023f4ba9d/6ujb0j/std/1920x2347/252TP2073_11754_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          },
+          {
+            "size": "50",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-047",
+    "sku": "252LL2JAA",
+    "slug": "twinset-252ll2jaa",
+    "name": "Twinset Lace sweatshirt with zip",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Bomber style lace sweatshirt with matching colour piping details. Metal zip fastening with branded zip puller, ribbed trim, long sleeves, stretch cotton lining, straight fit.",
+    "composition": "65% хлопок 35% полиамид. Подкладка: 100% полиэстер. Материал 2: 95% хлопок 5% эластан",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена, Сушить на веревке в тени",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 11200,
+    "colors": [
+      {
+        "id": "p-047-c1",
+        "name": "Молочный",
+        "hex": "#F2EFE8",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/dbc13401-8f8e-4335-ba62-9e7bac0652e1/6ujb0j/std/1920x2347/252LL2JAA_00526_PD?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/0f72dc73-17b0-43f7-a8fb-cca0121149a9/6ujb0j/std/1920x2347/252LL2JAA_00526_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/9fcfb87c-8bf9-450b-9f0b-47ecb896dff9/6ujb0j/std/1920x2347/252LL2JAA_00526_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/1631b5c9-736d-46a8-a4b3-f58313875892/6ujb0j/std/1920x2347/252LL2JAA_00526_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/2fda8732-6878-4109-8a7b-5bb9344a4ec6/6ujb0j/std/1920x2347/252LL2JAA_00526_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/ce7416f4-3588-47b8-a659-9e27f9228944/6ujb0j/std/1920x2347/252LL2JAA_00526_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-048",
+    "sku": "252TD8210",
+    "slug": "twinset-252td8210",
+    "name": "“Amie” shoulder Сумка with rhinestones",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. “Amie” satin shoulder bag with rhinestones of different colours and sizes creating a gradient effect. Flap and magnet closure, gold-tone metal Oval T logo with rhinestones. Handle that can also be worn over the shoulder and cross-body strap, both removable. Perfect for parties and formal occasions.",
+    "composition": "100% полиэстер. Подкладка: 100% полиэстер. Материал 2: 100% полиуретан",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
+    "category": "accessories",
+    "gender": "women",
+    "price": 16400,
+    "colors": [
+      {
+        "id": "p-048-c1",
+        "name": "Коричневый",
+        "hex": "#7A5A44",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/a86ccbe7-e93a-44b7-a921-efdfb6d0b7c6/6ujb0j/std/1920x2347/252TD8210_12538_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4055ec47-23a7-4aff-94a0-b4b756e313ce/6ujb0j/std/1920x2347/252TD8210_12538_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/b74b45fd-32a8-4166-afd1-8deddd17521a/6ujb0j/std/1920x2347/252TD8210_12538_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/84ba6304-fcc2-455e-9b7c-9660da9af3bc/6ujb0j/std/1920x2347/252TD8210_12538_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/88166afe-669e-40fa-bc52-7469dc01e207/6ujb0j/std/1920x2347/252TD8210_12538_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "U",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-049",
+    "sku": "252TD8160",
+    "slug": "twinset-252td8160",
+    "name": "Croissant Сумка with metal handle",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Croissant hobo bag made from smooth faux natural calf nappa leather. Metal handle with engraved logo and organic silhouette. Zip closure and removable and adjustable shoulder strap for cross-body wear.",
+    "composition": "100% полиуретан. Подкладка: 100% полиэстер. Материал 2: 100% полиуретан",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
+    "category": "accessories",
+    "gender": "women",
+    "price": 11800,
+    "colors": [
+      {
+        "id": "p-049-c1",
+        "name": "Серебристый",
+        "hex": "#C2C6CC",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/dc44929d-1ff8-4e3a-9333-291ae5347f80/6ujb0j/std/1920x2347/252TD8160_00995_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/30e67330-2955-42c1-8f84-ff7867d3b87d/6ujb0j/std/1920x2347/252TD8160_00995_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/090539b6-e964-480a-869d-ebff3a6b4c15/6ujb0j/std/1920x2347/252TD8160_00995_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/19637c27-ceba-4363-81d1-92417cc75fa0/6ujb0j/std/1920x2347/252TD8160_00995_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/17065ed8-4541-4c43-82b5-4da8e5b38bc6/6ujb0j/std/1920x2347/252TD8160_00995_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "U",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-050",
+    "sku": "252TD8090",
+    "slug": "twinset-252td8090",
+    "name": "“Lila” shopper Сумка with Oval T handle",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. “Lila” shopper bag made from semi-polished faux calfskin leather with a slightly textured natural looking surface. Magnet closure, removable chain strap, gold-tone metal Oval T handle. Inside the logo are two rings that can be folded inwards and used as additional handles. Can be worn also folded like a maxi clutch.",
+    "composition": "100% полиуретан. Подкладка: 100% полиэстер. Материал 2: 100% полиуретан",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
+    "category": "accessories",
+    "gender": "women",
+    "price": 12800,
+    "colors": [
+      {
+        "id": "p-050-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6a9723b8-2e50-4f21-88fb-4653de583646/6ujb0j/std/1920x2347/252TD8090_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/fde356ae-c98e-49b7-a565-05a3d1c3c95f/6ujb0j/std/1920x2347/252TD8090_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/b988ad52-451f-4aa0-88f4-8d0d2edd5575/6ujb0j/std/1920x2347/252TD8090_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/57b827de-00a1-4e97-a2a7-630af76832d8/6ujb0j/std/1920x2347/252TD8090_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/e4cde6d5-dcb7-4616-8412-bce0b0c37c8a/6ujb0j/std/1920x2347/252TD8090_00006_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "U",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-051",
+    "sku": "252TO5360",
+    "slug": "twinset-252to5360",
+    "name": "Chain Ремень with Oval T",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Metal chain belt with oval shapes and rhinestone decorations. Carabiner closure and customised Oval T logo pendant.",
+    "composition": "100% zinc. Материал 2: 100% brass. Материал 3: 100% glass",
+    "care": "",
+    "category": "accessories",
+    "gender": "women",
+    "price": 10100,
+    "colors": [
+      {
+        "id": "p-051-c1",
+        "name": "Old Gold",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6e4d2d58-6fbb-4c6b-8da2-974a58f647a0/6ujb0j/std/1920x2347/252TO5360_12616_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/d85cacd8-bfbc-43f9-af6b-d71f13fd339e/6ujb0j/std/1920x2347/252TO5360_12616_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/167c9849-468f-4212-b727-1c7b7beff1eb/6ujb0j/std/1920x2347/252TO5360_12616_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-052",
+    "sku": "252TO5330",
+    "slug": "twinset-252to5330",
+    "name": "Fessura Snake print choker Ожерелье",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Brass choker necklace with snake pattern and customized clip closure. Created in collaboration with Fessura, whose research and REFLEXSYSTEM technology enable a light and comfortable step.",
+    "composition": "100% brass. Материал 2: 100% stainless steel",
+    "care": "",
+    "category": "accessories",
+    "gender": "women",
+    "price": 9400,
+    "colors": [
+      {
+        "id": "p-052-c1",
+        "name": "New Gold",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6349595f-87e6-471c-840f-a852107fb717/6ujb0j/std/1920x2347/252TO5330_10630_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/16be49c4-b34a-4f3b-9781-9bf319d7390f/6ujb0j/std/1920x2347/252TO5330_10630_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f48f97a8-da51-4f91-ae30-47f29739aebc/6ujb0j/std/1920x2347/252TO5330_10630_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "U",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-053",
+    "sku": "252LL2JDD",
+    "slug": "twinset-252ll2jdd",
+    "name": "Fleece and lace straight Брюки",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Milano stitch trousers with matching colour scalloped lace at the waist. Elasticated waist, slant pockets at the sides, front seam, heart-shaped logo plate at the back, straight fit.",
+    "composition": "68% вискоза 27% полиамид 5% эластан. Материал 2: 65% хлопок 35% полиамид",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен), Сушить на горизонтальной поверхности в тени",
+    "category": "pants",
+    "gender": "women",
+    "price": 8600,
+    "colors": [
+      {
+        "id": "p-053-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/217be942-11bd-4f32-bae3-47f77385709d/6ujb0j/std/1920x2347/252LL2JDD_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/a7014f65-6f05-49fb-bac4-b887dfcbc428/6ujb0j/std/1920x2347/252LL2JDD_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/baf89368-44b8-427a-82a0-c998e4277306/6ujb0j/std/1920x2347/252LL2JDD_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/333920bc-97ad-4c15-819d-2d8542dd5c24/6ujb0j/std/1920x2347/252LL2JDD_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6f8b22f1-357b-46a3-a38f-c732df336703/6ujb0j/std/1920x2347/252LL2JDD_00006_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-054",
+    "sku": "252TT3550",
+    "slug": "twinset-252tt3550",
+    "name": "Fitted turtle neck Джемпер",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Stretch viscose compact corn stitch jumper with knit patterns. Turtle neck with slit, short sleeves, Oval T logo plate on the back, fitted. Посадка: Приталенный силуэт.",
+    "composition": "72% вискоза 28% полиэстер",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен), Сушить на горизонтальной поверхности в тени",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 7100,
+    "colors": [
+      {
+        "id": "p-054-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4967b0f0-599a-4e2a-9109-ed4db29f687d/6ujb0j/std/1920x2347/252TT3550_11054_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/1b8d2e00-0a8e-4736-9a78-dac5f71462c7/6ujb0j/std/1920x2347/252TT3550_11054_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/71ee135d-55fc-49ba-a89c-0d51d7dd2955/6ujb0j/std/1920x2347/252TT3550_11054_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/c3320176-3702-4dea-a8bd-39013a812268/6ujb0j/std/1920x2347/252TT3550_11054_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/ae459f08-77ed-4617-a347-5a7258b07664/6ujb0j/std/1920x2347/252TT3550_11054_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/a1c7a840-a85f-4887-b4b6-0e269981ad8f/6ujb0j/std/1920x2347/252TT3550_11054_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-055",
+    "sku": "252LL2FAA",
+    "slug": "twinset-252ll2faa",
+    "name": "Mannish pyjamas with Ремень",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Modal blend mannish pyjamas with contrasting piping. Double-breasted top with lapels, long sleeves, covered button fastening, counter-button on the inside, heart-shaped logo plate on the back. Wide trousers with elasticated waist. Посадка: La casacca è dritta, i pantaloni sono ampi..",
+    "composition": "61% modal 35% вискоза 4% эластан. Материал 2: 100% полиэстер. Материал 3: 100% полиэстер. Belt: 61% modal 35% вискоза 4% эластан",
+    "care": "Wash max 30°C - Mild process, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на веревке в тени, Wash max 30°C - Mild process, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на веревке в тени",
+    "category": "accessories",
+    "gender": "women",
+    "price": 11700,
+    "colors": [
+      {
+        "id": "p-055-c1",
+        "name": "Красный",
+        "hex": "#A21E2A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/1c2a8ef9-13c7-4320-b3c3-5cc410e17c86/6ujb0j/std/1920x2347/252LL2FAA_12861_PD?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/79e55acb-5f95-4ddf-b4a1-4d1052c5fd83/6ujb0j/std/1920x2347/252LL2FAA_12861_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/c2aa98d0-8f60-449d-9333-5ebc9e83578c/6ujb0j/std/1920x2347/252LL2FAA_12861_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/818316af-923f-4955-ad25-fd68b2f60910/6ujb0j/std/1920x2347/252LL2FAA_12861_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/cad33278-b550-48cc-b1fc-ff256e74bf84/6ujb0j/std/1920x2347/252LL2FAA_12861_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-056",
+    "sku": "252TT2031",
+    "slug": "twinset-252tt2031",
+    "name": "Wool blend pea Пальто with lurex",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Chevron pattern wool blend pea coat with lurex. Maxi lapels, double-breasted button fastening, long sleeves with wrist bands, slant pockets at the front, lining, Oval T logo plate at the back, straight fit.",
+    "composition": "50% полиэстер 50% шерсть. Подкладка: 100% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 22300,
+    "colors": [
+      {
+        "id": "p-056-c1",
+        "name": "Коричневый",
+        "hex": "#7A5A44",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4f4e6864-bf69-4787-87c8-f5e4b31d02b3/6ujb0j/std/1920x2347/252TT2031_12893_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/e0d11add-8231-4084-b0db-71c63ab5a917/6ujb0j/std/1920x2347/252TT2031_12893_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/79a2678f-af20-4fde-9bc9-e34e905e931a/6ujb0j/std/1920x2347/252TT2031_12893_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/fb99ed47-72c5-4d9d-81cb-5b74620d45d8/6ujb0j/std/1920x2347/252TT2031_12893_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/e834241c-57e4-4eb0-93a1-dfbf313bc421/6ujb0j/std/1920x2347/252TT2031_12893_05?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/c18b6066-2db8-4cdb-ba35-3cc75dd795b7/6ujb0j/std/1920x2347/252TT2031_12893_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          },
+          {
+            "size": "50",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-057",
+    "sku": "252TT2154",
+    "slug": "twinset-252tt2154",
+    "name": "Short faux fur Пальто",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Short faux fur coat with decorative inserts at the trims. Lapels, long sleeves, double-breasted matching colour button fastening, inset side pockets, lining, Oval T logo plate at the back, straight fit.",
+    "composition": "100% полиэстер. Подкладка: 100% полиэстер. Материал 2: 100% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Деликатная химчистка (перхлорэтилен)",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 21200,
+    "colors": [
+      {
+        "id": "p-057-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/51656044-ea60-4cd7-8f1a-06f609a81e45/6ujb0j/std/1920x2347/252TT2154_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/5503bb84-0f29-4a95-a1d6-9c436e98a13c/6ujb0j/std/1920x2347/252TT2154_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/55545f99-5998-412a-baef-e098e7401281/6ujb0j/std/1920x2347/252TT2154_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/c77ed702-8f66-411a-a425-e4fa92632a08/6ujb0j/std/1920x2347/252TT2154_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4ef37d80-e866-4ec1-b5dd-73ff20227fd1/6ujb0j/std/1920x2347/252TT2154_00006_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4488d175-ae32-4d95-b321-4019c93cae15/6ujb0j/std/1920x2347/252TT2154_00006_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-058",
+    "sku": "252TCP026",
+    "slug": "twinset-252tcp026",
+    "name": "Twinset Suede trainers",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Suede trainers with contrasting tab and heel, rubber sole.",
+    "composition": "100% cow кожа. Lining 1: 100% cow кожа, Lining 2: 100% хлопок. Материал 2: 100% cow кожа. Sole: 100% rubber",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
+    "category": "shoes",
+    "gender": "women",
+    "price": 12500,
+    "colors": [
+      {
+        "id": "p-058-c1",
+        "name": "Розовый",
+        "hex": "#D9A1B3",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/601ab21a-c46d-42bf-bd2f-2acecc44e9f5/6ujb0j/std/1920x2347/252TCP026_00178_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4e742664-91e4-4d77-999c-984751aab655/6ujb0j/std/1920x2347/252TCP026_00178_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/1dda2f18-890e-4b62-ac43-543aca3159f8/6ujb0j/std/1920x2347/252TCP026_00178_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/0cb11902-29a2-4574-a0db-3855b189830e/6ujb0j/std/1920x2347/252TCP026_00178_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/eaed2acd-367f-4cf4-86bb-99c533eb9913/6ujb0j/std/1920x2347/252TCP026_00178_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "35",
+            "inStock": true
+          },
+          {
+            "size": "36",
+            "inStock": true
+          },
+          {
+            "size": "37",
+            "inStock": true
+          },
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "39",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "41",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-059",
+    "sku": "252TA4530",
+    "slug": "twinset-252ta4530",
+    "name": "Animal print leather Ремень",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Low waist spotted animal print belt made from pony skin with leather loops, hammered effect light brass-tone buckle.",
+    "composition": "100% cow кожа. Материал 2: 50% полиэстер 50% полиуретан",
+    "care": "",
+    "category": "accessories",
+    "gender": "women",
+    "price": 6700,
+    "colors": [
+      {
+        "id": "p-059-c1",
+        "name": "Animal Print",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6801d65f-9a93-41b9-bc5f-3e5ccae53f85/6ujb0j/std/1920x2347/252TA4530_12618_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/d27a2038-9bbf-46a5-bce9-7736c9f50e60/6ujb0j/std/1920x2347/252TA4530_12618_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/5b74465e-57f4-4c7a-abe2-7e909e1ca3f9/6ujb0j/std/1920x2347/252TA4530_12618_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-060",
+    "sku": "252TCP016",
+    "slug": "twinset-252tcp016",
+    "name": "Twinset Fabric running trainers with Oval T",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Stretch fabric slip-on running trainers with faux leather inserts, iconic Oval T front detail, lettering logo on the back and rubber sole.",
+    "composition": "100% хлопок. Материал 2: 100% cow кожа. Материал 3: 100% полиэстер. Material 4: 100% полиуретан. Material 5: 100% эластан",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
+    "category": "shoes",
+    "gender": "women",
+    "price": 11500,
+    "colors": [
+      {
+        "id": "p-060-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6c22f094-3391-48c4-a27b-02beea6a3ab3/6ujb0j/std/1920x2347/252TCP016_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/c6929a1c-8166-4d84-a9ad-3025903728fd/6ujb0j/std/1920x2347/252TCP016_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/180fcf3e-4271-4751-b82c-035c23fc25fe/6ujb0j/std/1920x2347/252TCP016_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/e53cb355-1e37-4613-a5e8-324811bb36d6/6ujb0j/std/1920x2347/252TCP016_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/a67a6462-77b0-43f6-a45e-7c7d1b3459f2/6ujb0j/std/1920x2347/252TCP016_00006_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "35",
+            "inStock": true
+          },
+          {
+            "size": "36",
+            "inStock": true
+          },
+          {
+            "size": "37",
+            "inStock": true
+          },
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "39",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "41",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-061",
+    "sku": "252TCP210",
+    "slug": "twinset-252tcp210",
+    "name": "Twinset Mules with logo",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Faux suede mules with fur lining, tonal colour logo on the front, rubber sole.",
+    "composition": "100% полиуретан. Подкладка: 100% полиэстер. Материал 2: 100% полиуретан. Sole: 100% rubber",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
+    "category": "shoes",
+    "gender": "women",
+    "price": 13000,
+    "colors": [
+      {
+        "id": "p-061-c1",
+        "name": "Серый",
+        "hex": "#7C7F86",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/8afa44f8-d4ee-4edd-912c-782e99e758b4/6ujb0j/std/1920x2347/252TCP210_12609_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4825a5c6-745d-43cb-9fda-bd57cee4bc9f/6ujb0j/std/1920x2347/252TCP210_12609_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/7b412262-d1d9-43ff-abef-9702a3bf3ea0/6ujb0j/std/1920x2347/252TCP210_12609_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/b30f7ef1-9c3a-4c6a-bdec-16d633d062d1/6ujb0j/std/1920x2347/252TCP210_12609_04?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "inStock": true
+          },
+          {
+            "size": "39",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "41",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-062",
+    "sku": "252AT2220",
+    "slug": "twinset-252at2220",
+    "name": "Twinset Bomber-style puffer jacket with scarf",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Actitude collection matte technical fabric puffer jacket with wadding. High neck, zip fastening, inset pockets and removable matching padded scarf, bomber style loose fit. Посадка: Свободный силуэт.",
+    "composition": "100% полиэстер. Подкладка: 100% полиэстер. Padding: 100% полиэстер. Материал 2: 100% полиэстер",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена, Сушить на веревке в тени",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 16200,
+    "colors": [
+      {
+        "id": "p-062-c1",
+        "name": "Красный",
+        "hex": "#A21E2A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/365df017-aa5a-480c-aeed-11356204e05d/6ujb0j/std/1920x2347/252AT2220_00034_PA?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/67c9c12d-71b5-4406-bda1-b27d3e0751db/6ujb0j/std/1920x2347/252AT2220_00034_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/ee020d53-a0f4-4ece-b5e4-08ad61f88166/6ujb0j/std/1920x2347/252AT2220_00034_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/5660569d-db11-4b52-ae1e-9c2465bf59e9/6ujb0j/std/1920x2347/252AT2220_00034_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/302e969c-4113-4cf5-be9d-3fef1c05f4db/6ujb0j/std/1920x2347/252AT2220_00034_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/46df7093-4728-4e44-936f-a91fe6adee7b/6ujb0j/std/1920x2347/252AT2220_00034_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-063",
+    "sku": "252TT2264",
+    "slug": "twinset-252tt2264",
+    "name": "Twinset Lace blouse with ruffles",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Lace blouse with scalloped ruffles around the neck, long sleeves with gathering, teardrop opening with buttons on the back, matching slip top with thin straps, fitted. Посадка: Приталенный силуэт.",
+    "composition": "100% полиамид. Материал 2: 51% вискоза 49% полиамид. Материал 3: 100% полиамид",
+    "care": "Wash by hand - ambient temperature, Не отбеливать, Не сушить в барабане, Ironing low temperature - without steam, Деликатная химчистка (тетрахлорэтилен или углеводороды), Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на веревке в тени, Не стирать",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 13000,
+    "colors": [
+      {
+        "id": "p-063-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/90e9240d-0a9f-48ba-81b6-0bfa6d345616/6ujb0j/std/1920x2347/252TT2264_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/bb4a2f6a-99ac-4ea3-ab7b-5b0788e0aaa9/6ujb0j/std/1920x2347/252TT2264_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/25e5e092-9681-4684-9d70-a8eec29e553d/6ujb0j/std/1920x2347/252TT2264_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/48e8837a-b56f-48d1-8e3a-7971f66e1897/6ujb0j/std/1920x2347/252TT2264_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/a68513fd-81b5-44f8-93b5-3cae6dd1cc0e/6ujb0j/std/1920x2347/252TT2264_00006_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/2d143dee-1f6a-4afa-bac5-b0e75a3487c1/6ujb0j/std/1920x2347/252TT2264_00006_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-064",
+    "sku": "252TT2040",
+    "slug": "twinset-252tt2040",
+    "name": "Long wool cloth Пальто with faux fur",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Long patterned wool cloth coat with lurex thread and removable faux fur collar and cuffs. Lapels, double-breasted button fastening, long sleeves, inset side pockets, central slit at the back, matching belt, quilted lining, Oval T logo plate at the back, straight fit.",
+    "composition": "89% полиэстер 10% шерсть 1% metallic полиэстер. Подкладка: 100% полиэстер. Padding: 100% полиэстер. Neck: 100% полиэстер. Cuffs: 100% полиэстер. Belt: 89% полиэстер 10% шерсть 1% metallic полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 27600,
+    "colors": [
+      {
+        "id": "p-064-c1",
+        "name": "Серебристый",
+        "hex": "#C2C6CC",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/767c2eda-f47f-41c0-b206-c3226757fe02/6ujb0j/std/1920x2347/252TT2040_12968_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/93dac06b-c1c0-4a39-88e1-73b30b6ef1fc/6ujb0j/std/1920x2347/252TT2040_12968_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/7c4604d0-8e46-41f8-928f-6bf7c51d3c06/6ujb0j/std/1920x2347/252TT2040_12968_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/c4b1a5f3-51a6-4cec-bd1b-e31d17722a2c/6ujb0j/std/1920x2347/252TT2040_12968_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/2c3590b0-ba2f-4054-8835-3898bb892f71/6ujb0j/std/1920x2347/252TT2040_12968_05?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f1c35a5b-62df-473d-9497-2e15b36079a3/6ujb0j/std/1920x2347/252TT2040_12968_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "42",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-065",
+    "sku": "252AT2011",
+    "slug": "twinset-252at2011",
+    "name": "Palazzo Брюки with pleats",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Actitude collection fluid fabric trousers with pleats and knee seams. Mannish zip and hook fastening, slant pockets, logo plate, wide fit. Посадка: Palazzo fit.",
+    "composition": "64% полиэстер 34% вискоза 2% эластан. Материал 2: 100% полиэстер",
+    "care": "Wash by hand - ambient temperature, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды)",
+    "category": "pants",
+    "gender": "women",
+    "price": 10800,
+    "colors": [
+      {
+        "id": "p-065-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/52aab8dd-55b6-4854-bd9a-cdf761a634b9/6ujb0j/std/1920x2347/252AT2011_00006_PA?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4fff6c87-ba44-4f22-9147-493555184ae0/6ujb0j/std/1920x2347/252AT2011_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/3ec897ea-7b92-4f1c-9a9c-d93e8535efd7/6ujb0j/std/1920x2347/252AT2011_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/15d044b3-8813-473e-becd-5c2940cc74d4/6ujb0j/std/1920x2347/252AT2011_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/7d043a32-de14-42a6-a839-3ea806ab6b25/6ujb0j/std/1920x2347/252AT2011_00006_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-066",
+    "sku": "252AQ2040",
+    "slug": "twinset-252aq2040",
+    "name": "MYFO Блейзер with embroidery",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Blazer designed by artist Myfo for the Actitude collection, made from yarn-dyed check fabric with contrasting yarn embroidery. Single-breasted two button fastening, inner lining, straight fit.",
+    "composition": "63% полиэстер 27% вискоза 8% шерсть 2% эластан. Материал 2: 63% полиэстер 27% вискоза 8% шерсть 2% эластан. Материал 3: 63% полиэстер 27% вискоза 8% шерсть 2% эластан. Подкладка: 100% полиэстер. Material 4: 100% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 18600,
+    "colors": [
+      {
+        "id": "p-066-c1",
+        "name": "Yarn Dyed Mix",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/b90af545-b76f-404e-95db-f92373211b8f/6ujb0j/std/1920x2347/252AQ2040_12852_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/0286f280-6ccc-4677-a54e-4f277436ae2c/6ujb0j/std/1920x2347/252AQ2040_12852_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/67b4731d-c48d-449b-a12a-6b1b5323adf2/6ujb0j/std/1920x2347/252AQ2040_12852_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f37f1704-a7c6-48c4-a5fa-042f1a0345dc/6ujb0j/std/1920x2347/252AQ2040_12852_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/d9f48a45-6286-4788-856d-aeb1e31bd354/6ujb0j/std/1920x2347/252AQ2040_12852_05?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/7a45b1f4-a7eb-41a6-8145-1567300692ad/6ujb0j/std/1920x2347/252AQ2040_12852_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-067",
+    "sku": "252AT2010",
+    "slug": "twinset-252at2010",
+    "name": "Блейзер with hand embroidery",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Actitude collection fluid fabric blazer with hand-embroidered rhinestones. Long sleeves, single-breasted fastening, inner lining and straight fit.",
+    "composition": "64% полиэстер 34% вискоза 2% эластан. Подкладка: 100% полиэстер. Материал 2: 100% полиэстер",
+    "care": "Wash by hand - ambient temperature, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды)",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 17900,
+    "colors": [
+      {
+        "id": "p-067-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/ee67d9ee-6385-4413-8df4-8573025c6d0c/6ujb0j/std/1920x2347/252AT2010_00006_PA?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/18164601-ac47-460f-b2a8-1113efeddc6e/6ujb0j/std/1920x2347/252AT2010_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/26f2d4d3-b413-414e-81dc-5feaa8e82201/6ujb0j/std/1920x2347/252AT2010_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6e6a1e54-eed2-4ab4-b034-803a1145ae35/6ujb0j/std/1920x2347/252AT2010_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/b134c4f6-ce31-41ac-8e6f-c3829a3f2e63/6ujb0j/std/1920x2347/252AT2010_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/5afdf099-31f1-4e33-a5f0-7a8f303b99c3/6ujb0j/std/1920x2347/252AT2010_00006_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-068",
+    "sku": "252TT3101",
+    "slug": "twinset-252tt3101",
+    "name": "Wool blend cable knit maxi Джемпер",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Wool blend jumper with cable knit and open work stitch pattern. High neck, long wide sleeves, ribbed trims, wide fit. Посадка: Свободная посадка.",
+    "composition": "50% акрил 50% шерсть",
+    "care": "Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Химчистка запрещена, Сушить на горизонтальной поверхности в тени, Не стирать",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 14700,
+    "colors": [
+      {
+        "id": "p-068-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/442c18d3-fa0b-46b8-b4ae-f833483546a8/6ujb0j/std/1920x2347/252TT3101_00006_PD?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/aa05705b-72d7-4735-ae89-d70c73795c1f/6ujb0j/std/1920x2347/252TT3101_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/c61c619f-384d-4926-b0dd-da4520ba854b/6ujb0j/std/1920x2347/252TT3101_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/61767423-ed96-494a-99bc-20863357691e/6ujb0j/std/1920x2347/252TT3101_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/62692718-0d35-4500-8f7e-956a34079c75/6ujb0j/std/1920x2347/252TT3101_00006_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/41b79110-2bfc-48e6-8f42-24e49d2b769e/6ujb0j/std/1920x2347/252TT3101_00006_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS/S",
+            "inStock": true
+          },
+          {
+            "size": "M/L",
+            "inStock": true
+          },
+          {
+            "size": "X/2XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-069",
+    "sku": "252TD8062",
+    "slug": "twinset-252td8062",
+    "name": "Medium bowler Сумка with logo",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Medium bowler bag made from smooth faux natural calf nappa leather. Double zip closure with eyelets on pullers to attach charms, double tubular handle that can be worn over the shoulder, adjustable and removable shoulder strap for cross-body wear, metal lettering logo. Can be worn open on the sides, tote style. Lining and internal pockets.",
+    "composition": "100% полиуретан. Подкладка: 100% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
+    "category": "accessories",
+    "gender": "women",
+    "price": 9800,
+    "colors": [
+      {
+        "id": "p-069-c1",
+        "name": "Light Natural",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4079618e-3220-49ce-b3c2-090644bf275e/6ujb0j/std/1920x2347/252TD8062_12227_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/2fe580f2-8475-4e12-a0e9-4ad1527c8a06/6ujb0j/std/1920x2347/252TD8062_12227_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/62451e46-6303-4d30-a0c2-41981699b7ff/6ujb0j/std/1920x2347/252TD8062_12227_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/0eab60e0-5a76-4fb8-9960-81c0028a907f/6ujb0j/std/1920x2347/252TD8062_12227_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/d8f137ee-6212-4fc3-ab36-016b827d6ecd/6ujb0j/std/1920x2347/252TD8062_12227_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "U",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-070",
+    "sku": "252TT2180",
+    "slug": "twinset-252tt2180",
+    "name": "Wide corduroy Брюки",
+    "brand": "Twinset Milano",
+    "description": "Оригинальная модель Twinset Milano. Cotton blend stretch corduroy trousers with zip and branded button, side slant pockets and patch pockets at the back, Oval T logo plate on the back, wide fit. Посадка: Свободная посадка.",
+    "composition": "98% хлопок 2% эластан. Материал 2: 100% хлопок",
+    "care": "Wash max 30°C - Mild process, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Химчистка запрещена, Сушить на веревке в тени",
+    "category": "pants",
+    "gender": "women",
+    "price": 14700,
+    "colors": [
+      {
+        "id": "p-070-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/a65f4f36-0a3d-43d6-aa28-f420fabe43d6/6ujb0j/std/1920x2347/252TT2180_11054_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/08666300-9d9e-4715-a49d-b76d886c3747/6ujb0j/std/1920x2347/252TT2180_11054_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/fac9a999-9c27-4c1e-b96b-67cc74500d0d/6ujb0j/std/1920x2347/252TT2180_11054_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f363af46-583c-47f3-9d2e-00a112c74b3e/6ujb0j/std/1920x2347/252TT2180_11054_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/5bc2d5fd-ffdf-4a8c-8460-7f2dfa01daec/6ujb0j/std/1920x2347/252TT2180_11054_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/391e20df-dd43-4993-b63f-34acb1a12c9a/6ujb0j/std/1920x2347/252TT2180_11054_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:56:12.947Z",
+    "updatedAt": "2026-02-11T16:56:12.947Z"
+  },
+  {
+    "id": "p-013",
+    "sku": "252TP3243",
+    "slug": "twinset-252tp3243",
+    "name": "Водолазка в рубчик",
+    "brand": "Twinset Milano",
+    "description": "Эластичная водолазка из вискозного трикотажа в рубчик с аккуратной отделкой по низу и фирменной пластиной Oval T на спинке. Модель с приталенным силуэтом для базового и вечернего гардероба. Посадка: Приталенный силуэт.",
+    "composition": "72% вискоза 28% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 8900,
+    "colors": [
+      {
+        "id": "p-013-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/c54ed049-396a-4826-8afc-392bbc19e8af/6ujb0j/std/1920x2347/252TP3243_00006_PD?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/1b6e546e-b6d7-4859-aaf8-cae92721f879/6ujb0j/std/1920x2347/252TP3243_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4210afda-1744-43e0-9995-4e3eb229d686/6ujb0j/std/1920x2347/252TP3243_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6b29f53b-af5d-43b8-8b30-6590172bf881/6ujb0j/std/1920x2347/252TP3243_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/ad26edbb-8b05-4a82-8d26-1bf6d960b4a4/6ujb0j/std/1920x2347/252TP3243_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/3be189c9-b00c-4eac-af9a-c81cc9cd82c1/6ujb0j/std/1920x2347/252TP3243_00006_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:51:03.512Z",
+    "updatedAt": "2026-02-11T16:51:03.512Z"
+  },
+  {
+    "id": "p-014",
+    "sku": "252TP2611",
+    "slug": "twinset-252tp2611",
+    "name": "Широкие брюки из крепа на кулиске",
+    "brand": "Twinset Milano",
+    "description": "Широкие брюки из крепа с эластичным поясом и кулиской, дополнены боковыми карманами. Комфортная модель со свободной посадкой для повседневных и офисных образов. Посадка: Свободная посадка.",
+    "composition": "94% полиэстер 6% эластан. Подкладка: 100% полиэстер. Материал 2: 94% полиэстер 6% эластан",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на веревке в тени",
+    "category": "pants",
+    "gender": "women",
+    "price": 10000,
+    "colors": [
+      {
+        "id": "p-014-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/0f879f99-c6b1-41aa-a627-a960225e5855/6ujb0j/std/1920x2347/252TP2611_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/66d66e74-93fd-45b9-9bf8-f894da4201ef/6ujb0j/std/1920x2347/252TP2611_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/1fa6c829-5308-4cdb-9d5e-e1daa72d8d6f/6ujb0j/std/1920x2347/252TP2611_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/2c2f67dc-6588-4ab9-972e-d7157a549a21/6ujb0j/std/1920x2347/252TP2611_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/ea297e24-25f3-42a5-bfdd-c43d75490ac4/6ujb0j/std/1920x2347/252TP2611_00006_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f1c2ef1b-ef3b-466f-abe5-d5b9b8069944/6ujb0j/std/1920x2347/252TP2611_00006_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          },
+          {
+            "size": "50",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:51:03.512Z",
+    "updatedAt": "2026-02-11T16:51:03.512Z"
+  },
+  {
+    "id": "p-015",
+    "sku": "252TP2055",
+    "slug": "twinset-252tp2055",
+    "name": "Футболка с флокированным принтом Oval T",
+    "brand": "Twinset Milano",
+    "description": "Хлопковая футболка с флокированным принтом Oval T спереди и на рукавах. Круглый вырез, короткие рукава и прямой силуэт делают модель универсальной на каждый день. Посадка: Прямой силуэт.",
+    "composition": "100% хлопок",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на веревке в тени",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 7100,
+    "oldPrice": 8900,
+    "colors": [
+      {
+        "id": "p-015-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/214b949e-9808-4999-8e25-709b84f15a53/6ujb0j/std/1920x2347/252TP2055_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/9491a39c-4f0b-462a-af07-79323e4131c1/6ujb0j/std/1920x2347/252TP2055_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/26b13ea1-d2fc-42b0-9d36-60a4cef64bdd/6ujb0j/std/1920x2347/252TP2055_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/860fd1d1-eaab-4c9c-a329-005daf64c019/6ujb0j/std/1920x2347/252TP2055_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/1861ca36-bdd8-47fa-9f18-4528637c12e5/6ujb0j/std/1920x2347/252TP2055_00006_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/3590c14f-19c7-41a1-b257-02bf7e478c57/6ujb0j/std/1920x2347/252TP2055_00006_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:51:03.512Z",
+    "updatedAt": "2026-02-11T16:51:03.512Z"
+  },
+  {
+    "id": "p-016",
+    "sku": "252TP2072",
+    "slug": "twinset-252tp2072",
+    "name": "Шерстяной блейзер-пальто",
+    "brand": "Twinset Milano",
+    "description": "Укороченное пальто-блейзер из смесовой шерсти с лацканами и однобортной застежкой на пуговицы. Прямой силуэт, прорезные карманы с клапанами и акцент на чистой архитектуре линии.",
+    "composition": "50% полиэстер 50% шерсть. Материал 2: 100% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 22300,
+    "colors": [
+      {
+        "id": "p-016-c1",
+        "name": "Песочно-коричневый",
+        "hex": "#B48A64",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/8b4d9802-7820-4a7c-ae2f-900fd7af80a1/6ujb0j/std/1920x2347/252TP2072_11754_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4b6b8122-d4f6-4bbd-a75f-80d61d4d95dd/6ujb0j/std/1920x2347/252TP2072_11754_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/7ed1f36a-04f6-4615-af27-0b0ddeb424dd/6ujb0j/std/1920x2347/252TP2072_11754_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/6ae18790-6115-404e-b112-2dda582a371a/6ujb0j/std/1920x2347/252TP2072_11754_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/ea8519ab-5e5b-4cf1-a59e-1c530173aa41/6ujb0j/std/1920x2347/252TP2072_11754_05?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/31a1658d-f60e-4f83-a690-4cc0aaa54637/6ujb0j/std/1920x2347/252TP2072_11754_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/1ec08a89-cadd-4c9c-91db-e5a885c6d74a/6ujb0j/std/1920x2347/252TP2072_11754_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          },
+          {
+            "size": "50",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:51:03.512Z",
+    "updatedAt": "2026-02-11T16:51:03.512Z"
+  },
+  {
+    "id": "p-017",
+    "sku": "252TF2015",
+    "slug": "twinset-252tf2015",
+    "name": "Миди-платье с драпировкой",
+    "brand": "Twinset Milano",
+    "description": "Миди-платье из технологичной ткани с драпировкой по талии и выразительным силуэтом. Короткие рукава кимоно и застежка на молнию сзади подчеркивают современный минимализм. Посадка: Свободный силуэт.",
+    "composition": "100% полиэстер",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен), Сушить на веревке в тени",
+    "category": "dresses",
+    "gender": "women",
+    "price": 13300,
+    "oldPrice": 16900,
+    "colors": [
+      {
+        "id": "p-017-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/ef14d0d4-fbd3-48c5-892e-208babbb602f/6ujb0j/std/1920x2347/252TF2015_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/ee25e654-1c60-40ad-ab9d-789d1586de69/6ujb0j/std/1920x2347/252TF2015_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/4d6ba686-89f2-407c-9562-b1c2d835981c/6ujb0j/std/1920x2347/252TF2015_00006_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/8b09466a-a354-4d32-be1e-1fa47243295c/6ujb0j/std/1920x2347/252TF2015_00006_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/3fec7b48-308b-4afe-8c33-fc57b4acdb57/6ujb0j/std/1920x2347/252TF2015_00006_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:51:03.512Z",
+    "updatedAt": "2026-02-11T16:51:03.512Z"
+  },
+  {
+    "id": "p-018",
+    "sku": "252TF3031",
+    "slug": "twinset-252tf3031",
+    "name": "Трикотажный топ с рукавами-крылышками",
+    "brand": "Twinset Milano",
+    "description": "Трикотажный топ из смесовой вискозы с рукавами-крылышками и деликатной подплечной конструкцией. Свободный силуэт и чистые линии легко сочетаются с брюками и юбками. Посадка: Свободный силуэт.",
+    "composition": "72% вискоза 28% полиэстер",
+    "care": "Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени, Не стирать",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 9600,
+    "colors": [
+      {
+        "id": "p-018-c1",
+        "name": "Графитовый меланж",
+        "hex": "#55585C",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/713a5ada-92c0-4068-b956-749d1c87ab6c/6ujb0j/std/1920x2347/252TF3031_12840_PD?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/300cfeeb-2a91-4a2c-b6cb-fafb94374ebc/6ujb0j/std/1920x2347/252TF3031_12840_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/78e1b9e4-daf9-48df-ab58-02338f8924dd/6ujb0j/std/1920x2347/252TF3031_12840_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/5b9bb371-6dda-4953-a203-4c9ad99626b3/6ujb0j/std/1920x2347/252TF3031_12840_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/c2aef760-1d54-40b5-8b85-bc4b1d151219/6ujb0j/std/1920x2347/252TF3031_12840_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:51:03.512Z",
+    "updatedAt": "2026-02-11T16:51:03.512Z"
+  },
+  {
+    "id": "p-019",
+    "sku": "252LI3QAA",
+    "slug": "twinset-252li3qaa",
+    "name": "Миди-платье в рубчик",
+    "brand": "Twinset Milano",
+    "description": "Миди-платье из шерстяного трикотажа с контрастным рисунком в рубчик. Модель со свободным силуэтом, высоким воротом и прямой юбкой для уютных сезонных образов. Посадка: Свободный силуэт, прямая юбка.",
+    "composition": "38% полиамид 37% акрил 25% шерсть",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен), Сушить на горизонтальной поверхности в тени",
+    "category": "dresses",
+    "gender": "women",
+    "price": 15100,
+    "oldPrice": 18900,
+    "colors": [
+      {
+        "id": "p-019-c1",
+        "name": "Молочный",
+        "hex": "#F2EFE8",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/0060d5fe-9aeb-4a9e-9c3d-51c3dc70f770/6ujb0j/std/1920x2347/252LI3QAA_00526_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/61586500-50c4-45fc-b0a7-204cfd5c6aaf/6ujb0j/std/1920x2347/252LI3QAA_00526_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/8b055962-927f-454e-9c0b-aa9274298221/6ujb0j/std/1920x2347/252LI3QAA_00526_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/513338af-539b-4ef5-b1a0-211ddf90fe78/6ujb0j/std/1920x2347/252LI3QAA_00526_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/8161cfec-d5e9-442b-8e0d-7a18b31469ae/6ujb0j/std/1920x2347/252LI3QAA_00526_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:51:03.512Z",
+    "updatedAt": "2026-02-11T16:51:03.512Z"
+  },
+  {
+    "id": "p-020",
+    "sku": "252TB7054",
+    "slug": "twinset-252tb7054",
+    "name": "Маленькая стеганая сумка на плечо",
+    "brand": "Twinset Milano",
+    "description": "Компактная стеганая сумка с клапаном и магнитной застежкой, выполненная из мягкого материала с эффектом nappa. Регулируемый ремень позволяет носить модель на плече или кросс-боди.",
+    "composition": "100% полиуретан. Подкладка: 100% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
+    "category": "accessories",
+    "gender": "women",
+    "price": 10500,
+    "colors": [
+      {
+        "id": "p-020-c1",
+        "name": "Серебристый",
+        "hex": "#C2C6CC",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/a64b522c-c021-496d-bc6d-da3067836c67/6ujb0j/std/1920x2347/252TB7054_00995_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/3e3f8d92-1167-4ddf-933a-466c72cfca33/6ujb0j/std/1920x2347/252TB7054_00995_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/24b94237-ec40-466b-a40c-d8f1812a8c0e/6ujb0j/std/1920x2347/252TB7054_00995_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/67cd443b-c124-421a-983d-f5875dbc8e3d/6ujb0j/std/1920x2347/252TB7054_00995_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/fa6c87b2-3b08-4301-9648-a7a37267de8b/6ujb0j/std/1920x2347/252TB7054_00995_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "U",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:51:03.512Z",
+    "updatedAt": "2026-02-11T16:51:03.512Z"
+  },
+  {
+    "id": "p-021",
+    "sku": "252TA4510",
+    "slug": "twinset-252ta4510",
+    "name": "Ремень с декоративными шлевками",
+    "brand": "Twinset Milano",
+    "description": "Пояс на бедрах с квадратной пряжкой и декоративными металлическими шлевками в светлом латунном тоне. Стильный акцент для платьев, жакетов и брюк с высокой талией.",
+    "composition": "100% полиуретан. Подкладка: 100% полиуретан",
+    "care": "",
+    "category": "accessories",
+    "gender": "women",
+    "price": 6100,
+    "colors": [
+      {
+        "id": "p-021-c1",
+        "name": "Черный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/efd21044-2422-40a7-b48c-6f8ef454ab48/6ujb0j/std/1920x2347/252TA4510_00006_PC?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/5e421659-49f7-4367-a13d-2617ea7d7757/6ujb0j/std/1920x2347/252TA4510_00006_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/63b81b22-30d2-4607-9ffa-ee78dda1de64/6ujb0j/std/1920x2347/252TA4510_00006_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/33256ae6-3e4b-4f86-b8d0-0936c005f81c/6ujb0j/std/1920x2347/252TA4510_00006_T0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:51:03.512Z",
+    "updatedAt": "2026-02-11T16:51:03.512Z"
+  },
+  {
+    "id": "p-022",
+    "sku": "252TT3424",
+    "slug": "twinset-252tt3424",
+    "name": "Свитер с высоким горлом и фигурным краем",
+    "brand": "Twinset Milano",
+    "description": "Свитер из смесовой шерсти и вискозы с геометричным рисунком и фигурным краем по низу. Высокий ворот, широкие рукава и свободная посадка формируют выразительный силуэт. Посадка: Свободная посадка.",
+    "composition": "30% вискоза 40% шерсть 10% кашемир 20% полиамид",
+    "care": "Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени, Не стирать",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 15300,
+    "colors": [
+      {
+        "id": "p-022-c1",
+        "name": "Снежно-белый",
+        "hex": "#F6F7F8",
+        "images": [
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/756eaf7e-1fac-4a01-b6f2-087656e33888/6ujb0j/std/1920x2347/252TT3424_00282_PC?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/ded6c073-54b6-4051-a1a7-e0a3a3bb7b34/6ujb0j/std/1920x2347/252TT3424_00282_01?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/f939d0ae-931f-4e22-aab7-cc8338e211f5/6ujb0j/std/1920x2347/252TT3424_00282_02?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/93096f1b-600c-40fc-b200-185330707090/6ujb0j/std/1920x2347/252TT3424_00282_03?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/0edba671-70c5-4a70-8686-13ede2b024c7/6ujb0j/std/1920x2347/252TT3424_00282_04?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/c447650d-a20b-4c59-8bb7-13491b1ed1a4/6ujb0j/std/1920x2347/252TT3424_00282_T0?quality=high&format=auto",
+          "https://twinset-cdn.thron.com/delivery/public/image/twinset/fca141ca-0884-4a8b-b580-cdbf9f379878/6ujb0j/std/1920x2347/252TT3424_00282_S0?quality=high&format=auto"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          },
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "camellia-sochi",
+        "available": true
+      },
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "radisson-lazurnaya",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-11T16:51:03.512Z",
+    "updatedAt": "2026-02-11T16:51:03.512Z"
+  },
+  {
     "id": "p-001",
     "slug": "shelkovoe-plate-noa",
     "name": "Шелковое платье Noa",
