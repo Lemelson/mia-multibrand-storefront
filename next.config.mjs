@@ -8,6 +8,10 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'twinset-cdn.thron.com'
+      },
+      {
+        protocol: 'https',
         hostname: 'picsum.photos'
       }
     ]

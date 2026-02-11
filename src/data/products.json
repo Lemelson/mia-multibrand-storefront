@@ -3,10 +3,10 @@
     "id": "p-023",
     "sku": "252TP3582",
     "slug": "twinset-252tp3582",
-    "name": "Cashmere blend Водолазка Джемпер with lurex",
+    "name": "Кашемировый смесовый Водолазка Джемпер с люрексом",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Cashmere blend jumper with lurex yarn ribbed trims. High neck, long sleeves with rib knit patterns, logo at the back, loose fitting. Посадка: Свободный силуэт.",
-    "composition": "83% шерсть 14% кашемир 3% metallic полиэстер",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Свободный силуэт.",
+    "composition": "83% шерсть 14% кашемир 3% металлизированный полиэстер",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
     "category": "knitwear",
     "gender": "women",
@@ -62,17 +62,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-024",
     "sku": "252TP2580",
     "slug": "twinset-252tp2580",
-    "name": "Animal print cotton bull Брюки",
+    "name": "Анималистичный принт из хлопкового твила Брюки",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Cotton bull animal print trousers . Belt loops, zip and logo stud button fastening, five pockets, straight fit.",
+    "description": "Брюки Twinset Milano с выверенным кроем и комфортной посадкой на каждый день.",
     "composition": "100% хлопок. Материал 2: 100% хлопок",
-    "care": "Wash max 30°C - Mild process, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Химчистка запрещена, Сушить на веревке в тени",
+    "care": "Машинная стирка до 30°, деликатный режим, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Химчистка запрещена, Сушить на веревке в тени",
     "category": "pants",
     "gender": "women",
     "price": 15900,
@@ -149,17 +149,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-025",
     "sku": "252TP2474",
     "slug": "twinset-252tp2474",
-    "name": "Animal print jacquard Брюки",
+    "name": "Анималистичный принт жаккардовые Брюки",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Jacquard viscose animal print trousers . Front pleats, slant pockets, concealed side zip, Oval T logo plate, wide fit. Посадка: Свободная посадка.",
-    "composition": "100% вискоза. Материал 2: 68% acetate 32% полиэстер",
-    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "description": "Брюки Twinset Milano с выверенным кроем и комфортной посадкой на каждый день. Посадка: Свободная посадка.",
+    "composition": "100% вискоза. Материал 2: 68% ацетат 32% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен)",
     "category": "pants",
     "gender": "women",
     "price": 15900,
@@ -224,17 +224,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-026",
     "sku": "252TF2011",
     "slug": "twinset-252tf2011",
-    "name": "Palazzo Брюки with drawstring",
+    "name": "Палаццо Брюки на кулиске",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Technical fabric trousers with adjustable drawstring at the waist, gathered at the back, zip and hook fastening, ironed crease, palazzo fit. This item is part of the “Archive” range, inspired by the most iconic and most loved garments from the Twinset collections. Посадка: Palazzo fit.",
+    "description": "Брюки Twinset Milano с выверенным кроем и комфортной посадкой на каждый день. Посадка: Свободная посадка.",
     "composition": "100% полиэстер. Подкладка: 100% полиэстер. Материал 2: 100% полиэстер",
-    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен), Сушить на веревке в тени",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен), Сушить на веревке в тени",
     "category": "pants",
     "gender": "women",
     "price": 12300,
@@ -288,17 +288,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:45:00.000Z"
   },
   {
     "id": "p-027",
     "sku": "252TT2161",
     "slug": "twinset-252tt2161",
-    "name": "Wool blend flared Брюки with lurex",
+    "name": "Смесовой шерсти расклешенные Брюки с люрексом",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Chevron pattern wool and cotton blend trousers with lurex. Mannish zip and hook fastening, slant pockets, Oval T logo plate on the back, slightly flared fit. Посадка: Flared fit.",
-    "composition": "38% хлопок 27% шерсть 18% полиэстер 12% полиамид 5% other fibres. Подкладка: 68% acetate 32% полиэстер",
-    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "description": "Брюки Twinset Milano с выверенным кроем и комфортной посадкой на каждый день. Посадка: Расклешенный силуэт.",
+    "composition": "38% хлопок 27% шерсть 18% полиэстер 12% полиамид 5% прочие волокна. Подкладка: 68% ацетат 32% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен)",
     "category": "pants",
     "gender": "women",
     "price": 14700,
@@ -364,17 +364,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:45:00.000Z"
   },
   {
     "id": "p-028",
     "sku": "252LI3NCC",
     "slug": "twinset-252li3ncc",
-    "name": "Джемпер with contrast trims",
+    "name": "Джемпер с контрастной отделкой",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Viscose blend plain knit jumper with contrasting trims. Turtleneck, long loose sleeves, ribbed trims, metal logo plate at the back, loose fitting. Посадка: Свободный силуэт.",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Свободный силуэт.",
     "composition": "52% вискоза 26% полиэстер 22% полиамид. Материал 2: 52% вискоза 26% полиэстер 22% полиамид",
-    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
     "category": "knitwear",
     "gender": "women",
     "price": 9500,
@@ -420,17 +420,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-029",
     "sku": "252TB7360",
     "slug": "twinset-252tb7360",
-    "name": "'Dreamy' reversible leather shoulder Сумка",
+    "name": "Двусторонняя кожаная на плечо Сумка",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Dreamy' reversible leather shoulder bag . One side is made from suede split leather treated to preserve the colour and appearance of the leather, with metal Oval T. The other side is soft, small natural grain calfskin with gold-tone printed lettering logo. Flap and magnet closure, chain strap for on-shoulder or cross-body wear, lining.",
-    "composition": "100% cow кожа. Подкладка: 100% sheepskin кожа. Материал 2: 100% sheepskin кожа. Sole: 100% rubber",
-    "care": "Wash by hand - ambient temperature, Не отбеливать, Не сушить в барабане, Ironing low temperature - without steam, Химчистка запрещена",
+    "description": "Аксессуар Twinset Milano, который завершает образ и добавляет фирменный акцент.",
+    "composition": "100% коровья кожа. Подкладка: 100% овчина кожа. Материал 2: 100% овчина кожа. подошва: 100% резина",
+    "care": "Ручная стирка при комнатной температуре, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре без пара, Химчистка запрещена",
     "category": "accessories",
     "gender": "women",
     "price": 24900,
@@ -471,17 +471,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-030",
     "sku": "252TF3022",
     "slug": "twinset-252tf3022",
-    "name": "Long wool blend Кардиган",
+    "name": "Удлиненный смесовой шерсти Кардиган",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Long wool and cotton blend double knit cardigan, plain knit front and contrasting colour corn stitch on the back and half way down the sleeves. V neck, long sleeves, logoed button fastening, ribbed trim, loose fit. The cotton used for this garment (24% cotton) is organic, therefore it may contain natural impurities as it did not undergo any chemical treatments. This item is part of the “Archive” range, inspired by the most iconic and most loved garments from the Twinset collections. Посадка: Свободный силуэт.",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Свободный силуэт.",
     "composition": "55% шерсть 45% хлопок",
-    "care": "Wash max 30°C - Mild process, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени",
+    "care": "Машинная стирка до 30°, деликатный режим, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени",
     "category": "knitwear",
     "gender": "women",
     "price": 15800,
@@ -527,15 +527,15 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-031",
     "sku": "252TT3111",
     "slug": "twinset-252tt3111",
-    "name": "Wool rib knit turtle neck Джемпер",
+    "name": "Шерстяной в рубчик с высоким воротом Джемпер",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Pure wool turtle neck jumper with rib knit and open work stitch pattern, long sleeves, Oval T logo plate on the back, fitted. Посадка: Приталенный силуэт.",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Приталенный силуэт.",
     "composition": "100% шерсть",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени",
     "category": "knitwear",
@@ -587,17 +587,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-032",
     "sku": "252TO5490",
     "slug": "twinset-252to5490",
-    "name": "Chain Ожерелье with horn",
+    "name": "Цепочка Ожерелье с подвеской-рогом",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Metal chain necklace with pendant horn and hook closure.",
-    "composition": "100% iron. Материал 2: 100% zamak. Материал 3: 100% plastic",
-    "care": "",
+    "description": "Аксессуар Twinset Milano, который завершает образ и добавляет фирменный акцент.",
+    "composition": "100% железо. Материал 2: 100% замак. Материал 3: 100% пластик",
+    "care": "Деликатный уход согласно ярлыку изделия.",
     "category": "accessories",
     "gender": "women",
     "price": 8100,
@@ -636,17 +636,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-033",
     "sku": "252TP3040",
     "slug": "twinset-252tp3040",
-    "name": "Knit midi Платье with scalloped trims",
+    "name": "Трикотажное миди Платье с фигурной отделкой",
     "brand": "Twinset Milano",
-    "description": "Stretch viscose plain knit midi dress with punch work details. круглый вырез, long sleeves, scalloped trims, Oval T logo plate on the back, fitted. Посадка: Приталенный силуэт.",
+    "description": "Платье Twinset Milano из актуальной коллекции с аккуратной отделкой и комфортной посадкой. Посадка: Приталенный силуэт.",
     "composition": "54% вискоза 44% полиамид 2% эластан",
-    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
     "category": "dresses",
     "gender": "women",
     "price": 14700,
@@ -697,15 +697,15 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-034",
     "sku": "252TP3203",
     "slug": "twinset-252tp3203",
-    "name": "Twinset Scalloped sweater with Oval T buttons",
+    "name": "Свитер с фигурным краем с пуговицами Oval T",
     "brand": "Twinset Milano",
-    "description": "Crepe viscose sweater with Oval T logo buttons and scalloped details. круглый вырез, wide short sleeves, central mesh motif at the front, loose fitting. Посадка: Свободный силуэт.",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Свободный силуэт.",
     "composition": "65% вискоза 35% полиамид",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени",
     "category": "knitwear",
@@ -769,15 +769,15 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-035",
     "sku": "252TT3141",
     "slug": "twinset-252tt3141",
-    "name": "Fitted ribbed Джемпер",
+    "name": "Приталенный в рубчик Джемпер",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Viscose blend fisherman’s rib jumper with V neck, long glove sleeves, flared hem, Oval T logo plate on the back. Посадка: Приталенный силуэт.",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Приталенный силуэт.",
     "composition": "43% вискоза 42% полиамид 15% шерсть",
     "care": "Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени, Не стирать",
     "category": "knitwear",
@@ -841,15 +841,15 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-036",
     "sku": "252TT3152",
     "slug": "twinset-252tt3152",
-    "name": "Long knit Платье with gathering",
+    "name": "Длинное трикотажное Платье с драпировкой",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Viscose blend gathered dress with turtle neck. High neck, long sleeves, Oval T logo plate on the back, fitted. Посадка: Приталенный силуэт.",
+    "description": "Платье Twinset Milano из актуальной коллекции с аккуратной отделкой и комфортной посадкой. Посадка: Приталенный силуэт.",
     "composition": "43% вискоза 42% полиамид 15% шерсть",
     "care": "Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени, Не стирать",
     "category": "dresses",
@@ -902,17 +902,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-037",
     "sku": "252TT3490",
     "slug": "twinset-252tt3490",
-    "name": "Mohair blend Джемпер with print",
+    "name": "Из смесового мохера Джемпер с принтом",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Wool and mohair blend jumper with lurex print all over. Turtle neck, long sleeves, Oval T logo plate on the back, fitted. Посадка: Приталенный силуэт.",
-    "composition": "36% metallic полиэстер 24% полиамид 20% mohair 20% шерсть",
-    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Приталенный силуэт.",
+    "composition": "36% металлизированный полиэстер 24% полиамид 20% мохер 20% шерсть",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
     "category": "knitwear",
     "gender": "women",
     "price": 13500,
@@ -974,17 +974,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-038",
     "sku": "252AT3152",
     "slug": "twinset-252at3152",
-    "name": "Twinset Knit gilet with sequins",
+    "name": "Трикотажный жилет",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Actitude collection long knit gilet with sequins and ribbed pattern. V neck, metal logo plate at the back, loose fit. Посадка: Свободный силуэт.",
-    "composition": "50% полиэстер 30% полиамид 8% шерсть 7% metallic полиэстер 5% alpaca",
-    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Свободный силуэт.",
+    "composition": "50% полиэстер 30% полиамид 8% шерсть 7% металлизированный полиэстер 5% альпака",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
     "category": "knitwear",
     "gender": "women",
     "price": 9000,
@@ -1045,17 +1045,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:40:00.000Z"
   },
   {
     "id": "p-039",
     "sku": "252TT3492",
     "slug": "twinset-252tt3492",
-    "name": "Mohair blend check print Джемпер",
+    "name": "Из смесового мохера в клетку Джемпер",
     "brand": "Twinset Milano",
-    "description": "Wool and mohair blend plain knit jumper with all-over lurex check print. круглый вырез, long wide sleeves gathered at the armhole, ribbed trims, Oval T logo plate on the back, fitted. Посадка: Приталенный силуэт.",
-    "composition": "36% metallic полиэстер 24% полиамид 20% mohair 20% шерсть",
-    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Приталенный силуэт.",
+    "composition": "36% металлизированный полиэстер 24% полиамид 20% мохер 20% шерсть",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Химчистка запрещена, Сушить на горизонтальной поверхности в тени",
     "category": "knitwear",
     "gender": "women",
     "price": 14400,
@@ -1110,17 +1110,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-040",
     "sku": "252TT2160",
     "slug": "twinset-252tt2160",
-    "name": "Wool blend Блейзер with lurex",
+    "name": "Смесовой шерсти Блейзер с люрексом",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Chevron pattern wool and cotton blend blazer with lurex. Lapels, single-breasted button fastening, long sleeves, welt pockets with flaps, slit and Oval T logo plate at the back, lining, straight fit.",
-    "composition": "38% хлопок 27% шерсть 18% полиэстер 12% полиамид 5% other fibres. Подкладка: 68% acetate 32% полиэстер",
-    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "description": "Верхняя одежда Twinset Milano с архитектурным кроем и акцентом на детали.",
+    "composition": "38% хлопок 27% шерсть 18% полиэстер 12% полиамид 5% прочие волокна. Подкладка: 68% ацетат 32% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен)",
     "category": "outerwear",
     "gender": "women",
     "price": 22900,
@@ -1183,15 +1183,15 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-041",
     "sku": "252TF2030",
     "slug": "twinset-252tf2030",
-    "name": "Long Платье with gathering",
+    "name": "Удлиненный Платье с драпировкой",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Long jersey dress with georgette bodice at the front, fitted with asymmetrical gathering. Boat neck at the front and deep V neckline at the back, side zip fastening, long sleeves, slit at the hem, fitted. This item is part of the “Archive” range, inspired by the most iconic and most loved garments from the Twinset collections. Посадка: Приталенный силуэт.",
+    "description": "Платье Twinset Milano из актуальной коллекции с аккуратной отделкой и комфортной посадкой. Посадка: Приталенный силуэт.",
     "composition": "5% эластан 95% полиэстер. Материал 2: 100% полиэстер",
     "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на веревке в тени",
     "category": "dresses",
@@ -1251,17 +1251,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-042",
     "sku": "252TF2040",
     "slug": "twinset-252tf2040",
-    "name": "Oversized Рубашка with side slits",
+    "name": "Оверсайз Рубашка с боковыми разрезами",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Viscose blend shirt with tonal buttons, long sleeves with slouched shoulders, buttoned cuffs, yoke and pleat at the back, side slits, oversized fit. This item is part of the “Archive” range, inspired by the most iconic and most loved garments from the Twinset collections. Посадка: Oversized fit.",
+    "description": "Топ/блуза Twinset Milano с чистыми линиями и универсальной посадкой. Посадка: Оверсайз.",
     "composition": "63% полиэстер 33% вискоза 4% эластан",
-    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен)",
     "category": "shirts-blouses",
     "gender": "women",
     "price": 13300,
@@ -1315,17 +1315,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:45:00.000Z"
   },
   {
     "id": "p-043",
     "sku": "252TF2043",
     "slug": "twinset-252tf2043",
-    "name": "Palazzo Брюки with pleats",
+    "name": "Палаццо Брюки со складками",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Viscose blend trousers with front pleats, zip and button fastening, centred ironed crease, palazzo fit. This item is part of the “Archive” range, inspired by the most iconic and most loved garments from the Twinset collections. Посадка: Palazzo fit.",
+    "description": "Брюки Twinset Milano с выверенным кроем и комфортной посадкой на каждый день. Посадка: Свободная посадка.",
     "composition": "63% полиэстер 33% вискоза 4% эластан",
-    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен)",
     "category": "pants",
     "gender": "women",
     "price": 12000,
@@ -1379,15 +1379,15 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:45:00.000Z"
   },
   {
     "id": "p-044",
     "sku": "252TD8260",
     "slug": "twinset-252td8260",
-    "name": "Shopper Сумка with pocket and Oval T lock",
+    "name": "Шоппер Сумка с карманом и замком Oval T",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Soft and structured semi-polished faux calfskin leather shopper bag. Two internal compartments and a zip pocket on the front panel customized with an Oval T lock. Short tubular handle and removable and adjustable shoulder strap for cross-body wear. Perfect for everyday and for the office.",
+    "description": "Аксессуар Twinset Milano, который завершает образ и добавляет фирменный акцент.",
     "composition": "100% полиуретан. Подкладка: 100% полиэстер. Материал 2: 100% полиэстер",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
     "category": "accessories",
@@ -1430,16 +1430,16 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-045",
     "sku": "252TT3064",
     "slug": "twinset-252tt3064",
-    "name": "Wool blend turtle neck Джемпер with Oval T",
+    "name": "Смесовой шерсти Джемпер с Oval T",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Wool blend turtle neck jumper with link stitch Oval T logo on the back. Ribbed patterns, long sleeves, side slits at the hem, wide fit. Посадка: Свободная посадка.",
-    "composition": "45% акрил 27% шерсть 19% alpaca 9% полиэстер",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Свободная посадка.",
+    "composition": "45% акрил 27% шерсть 19% альпака 9% полиэстер",
     "care": "Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени, Не стирать",
     "category": "knitwear",
     "gender": "women",
@@ -1499,17 +1499,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-046",
     "sku": "252TP2073",
     "slug": "twinset-252tp2073",
-    "name": "Twinset Doubled wool cape",
+    "name": "Двойной шерстяной кейп",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Doubled wool cape with faux leather details. High neck, strap and buckle fastening, short kimono sleeves, side slits, wide fit. Посадка: Свободная посадка.",
+    "description": "Верхняя одежда Twinset Milano с архитектурным кроем и акцентом на детали. Посадка: Свободная посадка.",
     "composition": "50% полиэстер 50% шерсть. Материал 2: 100% полиэстер",
-    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен)",
     "category": "outerwear",
     "gender": "women",
     "price": 27600,
@@ -1576,15 +1576,15 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-047",
     "sku": "252LL2JAA",
     "slug": "twinset-252ll2jaa",
-    "name": "Twinset Lace sweatshirt with zip",
+    "name": "Свитшот с кружевом на молнии",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Bomber style lace sweatshirt with matching colour piping details. Metal zip fastening with branded zip puller, ribbed trim, long sleeves, stretch cotton lining, straight fit.",
+    "description": "Топ/блуза Twinset Milano с чистыми линиями и универсальной посадкой.",
     "composition": "65% хлопок 35% полиамид. Подкладка: 100% полиэстер. Материал 2: 95% хлопок 5% эластан",
     "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена, Сушить на веревке в тени",
     "category": "shirts-blouses",
@@ -1632,15 +1632,15 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-048",
     "sku": "252TD8210",
     "slug": "twinset-252td8210",
-    "name": "“Amie” shoulder Сумка with rhinestones",
+    "name": "На плечо Сумка со стразами",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. “Amie” satin shoulder bag with rhinestones of different colours and sizes creating a gradient effect. Flap and magnet closure, gold-tone metal Oval T logo with rhinestones. Handle that can also be worn over the shoulder and cross-body strap, both removable. Perfect for parties and formal occasions.",
+    "description": "Аксессуар Twinset Milano, который завершает образ и добавляет фирменный акцент.",
     "composition": "100% полиэстер. Подкладка: 100% полиэстер. Материал 2: 100% полиуретан",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
     "category": "accessories",
@@ -1683,15 +1683,15 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-049",
     "sku": "252TD8160",
     "slug": "twinset-252td8160",
-    "name": "Croissant Сумка with metal handle",
+    "name": "Круассан Сумка с металлической ручкой",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Croissant hobo bag made from smooth faux natural calf nappa leather. Metal handle with engraved logo and organic silhouette. Zip closure and removable and adjustable shoulder strap for cross-body wear.",
+    "description": "Аксессуар Twinset Milano, который завершает образ и добавляет фирменный акцент.",
     "composition": "100% полиуретан. Подкладка: 100% полиэстер. Материал 2: 100% полиуретан",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
     "category": "accessories",
@@ -1734,15 +1734,15 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-050",
     "sku": "252TD8090",
     "slug": "twinset-252td8090",
-    "name": "“Lila” shopper Сумка with Oval T handle",
+    "name": "Шоппер Сумка с ручкой Oval T",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. “Lila” shopper bag made from semi-polished faux calfskin leather with a slightly textured natural looking surface. Magnet closure, removable chain strap, gold-tone metal Oval T handle. Inside the logo are two rings that can be folded inwards and used as additional handles. Can be worn also folded like a maxi clutch.",
+    "description": "Аксессуар Twinset Milano, который завершает образ и добавляет фирменный акцент.",
     "composition": "100% полиуретан. Подкладка: 100% полиэстер. Материал 2: 100% полиуретан",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
     "category": "accessories",
@@ -1785,17 +1785,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-051",
     "sku": "252TO5360",
     "slug": "twinset-252to5360",
-    "name": "Chain Ремень with Oval T",
+    "name": "Цепочка Ремень с Oval T",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Metal chain belt with oval shapes and rhinestone decorations. Carabiner closure and customised Oval T logo pendant.",
-    "composition": "100% zinc. Материал 2: 100% brass. Материал 3: 100% glass",
-    "care": "",
+    "description": "Аксессуар Twinset Milano, который завершает образ и добавляет фирменный акцент.",
+    "composition": "100% цинк. Материал 2: 100% латунь. Материал 3: 100%",
+    "care": "Деликатный уход согласно ярлыку изделия.",
     "category": "accessories",
     "gender": "women",
     "price": 10100,
@@ -1842,17 +1842,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-052",
     "sku": "252TO5330",
     "slug": "twinset-252to5330",
-    "name": "Fessura Snake print choker Ожерелье",
+    "name": "Фессура чокер со змеиным принтом Ожерелье",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Brass choker necklace with snake pattern and customized clip closure. Created in collaboration with Fessura, whose research and REFLEXSYSTEM technology enable a light and comfortable step.",
-    "composition": "100% brass. Материал 2: 100% stainless steel",
-    "care": "",
+    "description": "Аксессуар Twinset Milano, который завершает образ и добавляет фирменный акцент.",
+    "composition": "100% латунь. Материал 2: 100% нержавеющая сталь",
+    "care": "Деликатный уход согласно ярлыку изделия.",
     "category": "accessories",
     "gender": "women",
     "price": 9400,
@@ -1891,17 +1891,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-053",
     "sku": "252LL2JDD",
     "slug": "twinset-252ll2jdd",
-    "name": "Fleece and lace straight Брюки",
+    "name": "Прямые из флиса и кружева Брюки",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Milano stitch trousers with matching colour scalloped lace at the waist. Elasticated waist, slant pockets at the sides, front seam, heart-shaped logo plate at the back, straight fit.",
+    "description": "Брюки Twinset Milano с выверенным кроем и комфортной посадкой на каждый день.",
     "composition": "68% вискоза 27% полиамид 5% эластан. Материал 2: 65% хлопок 35% полиамид",
-    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен), Сушить на горизонтальной поверхности в тени",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен), Сушить на горизонтальной поверхности в тени",
     "category": "pants",
     "gender": "women",
     "price": 8600,
@@ -1946,17 +1946,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-054",
     "sku": "252TT3550",
     "slug": "twinset-252tt3550",
-    "name": "Fitted turtle neck Джемпер",
+    "name": "Приталенная водолазка Джемпер",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Stretch viscose compact corn stitch jumper with knit patterns. Turtle neck with slit, short sleeves, Oval T logo plate on the back, fitted. Посадка: Приталенный силуэт.",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Приталенный силуэт.",
     "composition": "72% вискоза 28% полиэстер",
-    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен), Сушить на горизонтальной поверхности в тени",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен), Сушить на горизонтальной поверхности в тени",
     "category": "knitwear",
     "gender": "women",
     "price": 7100,
@@ -2018,18 +2018,18 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-055",
     "sku": "252LL2FAA",
     "slug": "twinset-252ll2faa",
-    "name": "Mannish pyjamas with Ремень",
+    "name": "Брюки в пижамном стиле с поясом",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Modal blend mannish pyjamas with contrasting piping. Double-breasted top with lapels, long sleeves, covered button fastening, counter-button on the inside, heart-shaped logo plate on the back. Wide trousers with elasticated waist. Посадка: La casacca è dritta, i pantaloni sono ampi..",
-    "composition": "61% modal 35% вискоза 4% эластан. Материал 2: 100% полиэстер. Материал 3: 100% полиэстер. Belt: 61% modal 35% вискоза 4% эластан",
-    "care": "Wash max 30°C - Mild process, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на веревке в тени, Wash max 30°C - Mild process, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на веревке в тени",
-    "category": "accessories",
+    "description": "Брюки Twinset Milano с выверенным кроем и комфортной посадкой на каждый день. Посадка: Свободная посадка.",
+    "composition": "61% модал 35% вискоза 4% эластан. Материал 2: 100% полиэстер. Материал 3: 100% полиэстер. пояс: 61% модал 35% вискоза 4% эластан",
+    "care": "Машинная стирка до 30°, деликатный режим, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Химчистка запрещена, Сушить на веревке в тени, Машинная стирка до 30°, деликатный режим, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Химчистка запрещена, Сушить на веревке в тени",
+    "category": "pants",
     "gender": "women",
     "price": 11700,
     "colors": [
@@ -2069,17 +2069,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:50:00.000Z"
   },
   {
     "id": "p-056",
     "sku": "252TT2031",
     "slug": "twinset-252tt2031",
-    "name": "Wool blend pea Пальто with lurex",
+    "name": "Смесовой шерсти Пальто с люрексом",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Chevron pattern wool blend pea coat with lurex. Maxi lapels, double-breasted button fastening, long sleeves with wrist bands, slant pockets at the front, lining, Oval T logo plate at the back, straight fit.",
+    "description": "Верхняя одежда Twinset Milano с архитектурным кроем и акцентом на детали.",
     "composition": "50% полиэстер 50% шерсть. Подкладка: 100% полиэстер",
-    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен)",
     "category": "outerwear",
     "gender": "women",
     "price": 22300,
@@ -2145,15 +2145,15 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-057",
     "sku": "252TT2154",
     "slug": "twinset-252tt2154",
-    "name": "Short faux fur Пальто",
+    "name": "Короткое эко-меховое Пальто",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Short faux fur coat with decorative inserts at the trims. Lapels, long sleeves, double-breasted matching colour button fastening, inset side pockets, lining, Oval T logo plate at the back, straight fit.",
+    "description": "Верхняя одежда Twinset Milano с архитектурным кроем и акцентом на детали.",
     "composition": "100% полиэстер. Подкладка: 100% полиэстер. Материал 2: 100% полиэстер",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Деликатная химчистка (перхлорэтилен)",
     "category": "outerwear",
@@ -2213,16 +2213,16 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-058",
     "sku": "252TCP026",
     "slug": "twinset-252tcp026",
-    "name": "Twinset Suede trainers",
+    "name": "Кроссовки из замши",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Suede trainers with contrasting tab and heel, rubber sole.",
-    "composition": "100% cow кожа. Lining 1: 100% cow кожа, Lining 2: 100% хлопок. Материал 2: 100% cow кожа. Sole: 100% rubber",
+    "description": "Обувь Twinset Milano с комфортной колодкой и актуальным силуэтом.",
+    "composition": "100% коровья кожа. подкладка 1: 100% коровья кожа, подкладка 2: 100% хлопок. Материал 2: 100% коровья кожа. подошва: 100% резина",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
     "category": "shoes",
     "gender": "women",
@@ -2288,17 +2288,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-059",
     "sku": "252TA4530",
     "slug": "twinset-252ta4530",
-    "name": "Animal print leather Ремень",
+    "name": "Анималистичный принт Ремень",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Low waist spotted animal print belt made from pony skin with leather loops, hammered effect light brass-tone buckle.",
-    "composition": "100% cow кожа. Материал 2: 50% полиэстер 50% полиуретан",
-    "care": "",
+    "description": "Аксессуар Twinset Milano, который завершает образ и добавляет фирменный акцент.",
+    "composition": "100% коровья кожа. Материал 2: 50% полиэстер 50% полиуретан",
+    "care": "Деликатный уход согласно ярлыку изделия.",
     "category": "accessories",
     "gender": "women",
     "price": 6700,
@@ -2345,16 +2345,16 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-060",
     "sku": "252TCP016",
     "slug": "twinset-252tcp016",
-    "name": "Twinset Fabric running trainers with Oval T",
+    "name": "Текстильные беговые кроссовки с Oval T",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Stretch fabric slip-on running trainers with faux leather inserts, iconic Oval T front detail, lettering logo on the back and rubber sole.",
-    "composition": "100% хлопок. Материал 2: 100% cow кожа. Материал 3: 100% полиэстер. Material 4: 100% полиуретан. Material 5: 100% эластан",
+    "description": "Обувь Twinset Milano с комфортной колодкой и актуальным силуэтом.",
+    "composition": "100% хлопок. Материал 2: 100% коровья кожа. Материал 3: 100% полиэстер. материал 4: 100% полиуретан. материал 5: 100% эластан",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
     "category": "shoes",
     "gender": "women",
@@ -2420,16 +2420,16 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-061",
     "sku": "252TCP210",
     "slug": "twinset-252tcp210",
-    "name": "Twinset Mules with logo",
+    "name": "Мюли с логотипом",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Faux suede mules with fur lining, tonal colour logo on the front, rubber sole.",
-    "composition": "100% полиуретан. Подкладка: 100% полиэстер. Материал 2: 100% полиуретан. Sole: 100% rubber",
+    "description": "Обувь Twinset Milano с комфортной колодкой и актуальным силуэтом.",
+    "composition": "100% полиуретан. Подкладка: 100% полиэстер. Материал 2: 100% полиуретан. подошва: 100% резина",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
     "category": "shoes",
     "gender": "women",
@@ -2482,16 +2482,16 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-062",
     "sku": "252AT2220",
     "slug": "twinset-252at2220",
-    "name": "Twinset Bomber-style puffer jacket with scarf",
+    "name": "Пуховик в стиле бомбер с шарфом",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Actitude collection matte technical fabric puffer jacket with wadding. High neck, zip fastening, inset pockets and removable matching padded scarf, bomber style loose fit. Посадка: Свободный силуэт.",
-    "composition": "100% полиэстер. Подкладка: 100% полиэстер. Padding: 100% полиэстер. Материал 2: 100% полиэстер",
+    "description": "Верхняя одежда Twinset Milano с архитектурным кроем и акцентом на детали. Посадка: Свободный силуэт.",
+    "composition": "100% полиэстер. Подкладка: 100% полиэстер. наполнитель: 100% полиэстер. Материал 2: 100% полиэстер",
     "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена, Сушить на веревке в тени",
     "category": "outerwear",
     "gender": "women",
@@ -2554,17 +2554,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-063",
     "sku": "252TT2264",
     "slug": "twinset-252tt2264",
-    "name": "Twinset Lace blouse with ruffles",
+    "name": "Блуза с кружевом с воланами",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Lace blouse with scalloped ruffles around the neck, long sleeves with gathering, teardrop opening with buttons on the back, matching slip top with thin straps, fitted. Посадка: Приталенный силуэт.",
+    "description": "Топ/блуза Twinset Milano с чистыми линиями и универсальной посадкой. Посадка: Приталенный силуэт.",
     "composition": "100% полиамид. Материал 2: 51% вискоза 49% полиамид. Материал 3: 100% полиамид",
-    "care": "Wash by hand - ambient temperature, Не отбеливать, Не сушить в барабане, Ironing low temperature - without steam, Деликатная химчистка (тетрахлорэтилен или углеводороды), Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на веревке в тени, Не стирать",
+    "care": "Ручная стирка при комнатной температуре, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре без пара, Деликатная химчистка (тетрахлорэтилен или углеводороды), Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на веревке в тени, Не стирать",
     "category": "shirts-blouses",
     "gender": "women",
     "price": 13000,
@@ -2610,17 +2610,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-064",
     "sku": "252TT2040",
     "slug": "twinset-252tt2040",
-    "name": "Long wool cloth Пальто with faux fur",
+    "name": "Длинное из шерстяной ткани Пальто с эко-мехом",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Long patterned wool cloth coat with lurex thread and removable faux fur collar and cuffs. Lapels, double-breasted button fastening, long sleeves, inset side pockets, central slit at the back, matching belt, quilted lining, Oval T logo plate at the back, straight fit.",
-    "composition": "89% полиэстер 10% шерсть 1% metallic полиэстер. Подкладка: 100% полиэстер. Padding: 100% полиэстер. Neck: 100% полиэстер. Cuffs: 100% полиэстер. Belt: 89% полиэстер 10% шерсть 1% metallic полиэстер",
-    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "description": "Верхняя одежда Twinset Milano с архитектурным кроем и акцентом на детали.",
+    "composition": "89% полиэстер 10% шерсть 1% металлизированный полиэстер. Подкладка: 100% полиэстер. наполнитель: 100% полиэстер. воротник: 100% полиэстер. манжеты: 100% полиэстер. пояс: 89% полиэстер 10% шерсть 1% металлизированный полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен)",
     "category": "outerwear",
     "gender": "women",
     "price": 27600,
@@ -2662,17 +2662,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-065",
     "sku": "252AT2011",
     "slug": "twinset-252at2011",
-    "name": "Palazzo Брюки with pleats",
+    "name": "Палаццо Брюки со складками",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Actitude collection fluid fabric trousers with pleats and knee seams. Mannish zip and hook fastening, slant pockets, logo plate, wide fit. Посадка: Palazzo fit.",
+    "description": "Брюки Twinset Milano с выверенным кроем и комфортной посадкой на каждый день. Посадка: Свободная посадка.",
     "composition": "64% полиэстер 34% вискоза 2% эластан. Материал 2: 100% полиэстер",
-    "care": "Wash by hand - ambient temperature, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды)",
+    "care": "Ручная стирка при комнатной температуре, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды)",
     "category": "pants",
     "gender": "women",
     "price": 10800,
@@ -2733,17 +2733,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-066",
     "sku": "252AQ2040",
     "slug": "twinset-252aq2040",
-    "name": "MYFO Блейзер with embroidery",
+    "name": "MYFO Блейзер с вышивкой",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Blazer designed by artist Myfo for the Actitude collection, made from yarn-dyed check fabric with contrasting yarn embroidery. Single-breasted two button fastening, inner lining, straight fit.",
-    "composition": "63% полиэстер 27% вискоза 8% шерсть 2% эластан. Материал 2: 63% полиэстер 27% вискоза 8% шерсть 2% эластан. Материал 3: 63% полиэстер 27% вискоза 8% шерсть 2% эластан. Подкладка: 100% полиэстер. Material 4: 100% полиэстер",
-    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "description": "Верхняя одежда Twinset Milano с архитектурным кроем и акцентом на детали.",
+    "composition": "63% полиэстер 27% вискоза 8% шерсть 2% эластан. Материал 2: 63% полиэстер 27% вискоза 8% шерсть 2% эластан. Материал 3: 63% полиэстер 27% вискоза 8% шерсть 2% эластан. Подкладка: 100% полиэстер. материал 4: 100% полиэстер",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен)",
     "category": "outerwear",
     "gender": "women",
     "price": 18600,
@@ -2793,17 +2793,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-067",
     "sku": "252AT2010",
     "slug": "twinset-252at2010",
-    "name": "Блейзер with hand embroidery",
+    "name": "Блейзер с вышивкой",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Actitude collection fluid fabric blazer with hand-embroidered rhinestones. Long sleeves, single-breasted fastening, inner lining and straight fit.",
+    "description": "Верхняя одежда Twinset Milano с архитектурным кроем и акцентом на детали.",
     "composition": "64% полиэстер 34% вискоза 2% эластан. Подкладка: 100% полиэстер. Материал 2: 100% полиэстер",
-    "care": "Wash by hand - ambient temperature, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды)",
+    "care": "Ручная стирка при комнатной температуре, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды)",
     "category": "outerwear",
     "gender": "women",
     "price": 17900,
@@ -2865,15 +2865,15 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:50:00.000Z"
   },
   {
     "id": "p-068",
     "sku": "252TT3101",
     "slug": "twinset-252tt3101",
-    "name": "Wool blend cable knit maxi Джемпер",
+    "name": "Смесовой шерсти макси крупной вязки Джемпер",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Wool blend jumper with cable knit and open work stitch pattern. High neck, long wide sleeves, ribbed trims, wide fit. Посадка: Свободная посадка.",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Свободная посадка.",
     "composition": "50% акрил 50% шерсть",
     "care": "Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Химчистка запрещена, Сушить на горизонтальной поверхности в тени, Не стирать",
     "category": "knitwear",
@@ -2925,15 +2925,15 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-069",
     "sku": "252TD8062",
     "slug": "twinset-252td8062",
-    "name": "Medium bowler Сумка with logo",
+    "name": "Сумка боулер среднего размера Сумка с логотипом",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Medium bowler bag made from smooth faux natural calf nappa leather. Double zip closure with eyelets on pullers to attach charms, double tubular handle that can be worn over the shoulder, adjustable and removable shoulder strap for cross-body wear, metal lettering logo. Can be worn open on the sides, tote style. Lining and internal pockets.",
+    "description": "Аксессуар Twinset Milano, который завершает образ и добавляет фирменный акцент.",
     "composition": "100% полиуретан. Подкладка: 100% полиэстер",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
     "category": "accessories",
@@ -2976,17 +2976,17 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-070",
     "sku": "252TT2180",
     "slug": "twinset-252tt2180",
-    "name": "Wide corduroy Брюки",
+    "name": "Широкие вельветовые Брюки",
     "brand": "Twinset Milano",
-    "description": "Оригинальная модель Twinset Milano. Cotton blend stretch corduroy trousers with zip and branded button, side slant pockets and patch pockets at the back, Oval T logo plate on the back, wide fit. Посадка: Свободная посадка.",
+    "description": "Брюки Twinset Milano с выверенным кроем и комфортной посадкой на каждый день. Посадка: Свободная посадка.",
     "composition": "98% хлопок 2% эластан. Материал 2: 100% хлопок",
-    "care": "Wash max 30°C - Mild process, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Химчистка запрещена, Сушить на веревке в тени",
+    "care": "Машинная стирка до 30°, деликатный режим, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Химчистка запрещена, Сушить на веревке в тени",
     "category": "pants",
     "gender": "women",
     "price": 14700,
@@ -3032,7 +3032,7 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:56:12.947Z",
-    "updatedAt": "2026-02-11T16:56:12.947Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-013",
@@ -3040,7 +3040,7 @@
     "slug": "twinset-252tp3243",
     "name": "Водолазка в рубчик",
     "brand": "Twinset Milano",
-    "description": "Эластичная водолазка из вискозного трикотажа в рубчик с аккуратной отделкой по низу и фирменной пластиной Oval T на спинке. Модель с приталенным силуэтом для базового и вечернего гардероба. Посадка: Приталенный силуэт.",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Приталенный силуэт.",
     "composition": "72% вискоза 28% полиэстер",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени",
     "category": "knitwear",
@@ -3096,7 +3096,7 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:51:03.512Z",
-    "updatedAt": "2026-02-11T16:51:03.512Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-014",
@@ -3104,7 +3104,7 @@
     "slug": "twinset-252tp2611",
     "name": "Широкие брюки из крепа на кулиске",
     "brand": "Twinset Milano",
-    "description": "Широкие брюки из крепа с эластичным поясом и кулиской, дополнены боковыми карманами. Комфортная модель со свободной посадкой для повседневных и офисных образов. Посадка: Свободная посадка.",
+    "description": "Брюки Twinset Milano с выверенным кроем и комфортной посадкой на каждый день. Посадка: Свободная посадка.",
     "composition": "94% полиэстер 6% эластан. Подкладка: 100% полиэстер. Материал 2: 94% полиэстер 6% эластан",
     "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на веревке в тени",
     "category": "pants",
@@ -3164,7 +3164,7 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:51:03.512Z",
-    "updatedAt": "2026-02-11T16:51:03.512Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-015",
@@ -3172,9 +3172,9 @@
     "slug": "twinset-252tp2055",
     "name": "Футболка с флокированным принтом Oval T",
     "brand": "Twinset Milano",
-    "description": "Хлопковая футболка с флокированным принтом Oval T спереди и на рукавах. Круглый вырез, короткие рукава и прямой силуэт делают модель универсальной на каждый день. Посадка: Прямой силуэт.",
+    "description": "Топ/блуза Twinset Milano с чистыми линиями и универсальной посадкой. Посадка: Прямой силуэт.",
     "composition": "100% хлопок",
-    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Химчистка запрещена, Сушить на веревке в тени",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Химчистка запрещена, Сушить на веревке в тени",
     "category": "shirts-blouses",
     "gender": "women",
     "price": 7100,
@@ -3237,7 +3237,7 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:51:03.512Z",
-    "updatedAt": "2026-02-11T16:51:03.512Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-016",
@@ -3245,9 +3245,9 @@
     "slug": "twinset-252tp2072",
     "name": "Шерстяной блейзер-пальто",
     "brand": "Twinset Milano",
-    "description": "Укороченное пальто-блейзер из смесовой шерсти с лацканами и однобортной застежкой на пуговицы. Прямой силуэт, прорезные карманы с клапанами и акцент на чистой архитектуре линии.",
+    "description": "Верхняя одежда Twinset Milano с архитектурным кроем и акцентом на детали.",
     "composition": "50% полиэстер 50% шерсть. Материал 2: 100% полиэстер",
-    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен)",
+    "care": "Не стирать, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен)",
     "category": "outerwear",
     "gender": "women",
     "price": 22300,
@@ -3314,7 +3314,7 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:51:03.512Z",
-    "updatedAt": "2026-02-11T16:51:03.512Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-017",
@@ -3322,9 +3322,9 @@
     "slug": "twinset-252tf2015",
     "name": "Миди-платье с драпировкой",
     "brand": "Twinset Milano",
-    "description": "Миди-платье из технологичной ткани с драпировкой по талии и выразительным силуэтом. Короткие рукава кимоно и застежка на молнию сзади подчеркивают современный минимализм. Посадка: Свободный силуэт.",
+    "description": "Платье Twinset Milano из актуальной коллекции с аккуратной отделкой и комфортной посадкой. Посадка: Свободный силуэт.",
     "composition": "100% полиэстер",
-    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен), Сушить на веревке в тени",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен), Сушить на веревке в тени",
     "category": "dresses",
     "gender": "women",
     "price": 13300,
@@ -3382,7 +3382,7 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:51:03.512Z",
-    "updatedAt": "2026-02-11T16:51:03.512Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-018",
@@ -3390,7 +3390,7 @@
     "slug": "twinset-252tf3031",
     "name": "Трикотажный топ с рукавами-крылышками",
     "brand": "Twinset Milano",
-    "description": "Трикотажный топ из смесовой вискозы с рукавами-крылышками и деликатной подплечной конструкцией. Свободный силуэт и чистые линии легко сочетаются с брюками и юбками. Посадка: Свободный силуэт.",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Свободный силуэт.",
     "composition": "72% вискоза 28% полиэстер",
     "care": "Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени, Не стирать",
     "category": "knitwear",
@@ -3453,7 +3453,7 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:51:03.512Z",
-    "updatedAt": "2026-02-11T16:51:03.512Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-019",
@@ -3461,9 +3461,9 @@
     "slug": "twinset-252li3qaa",
     "name": "Миди-платье в рубчик",
     "brand": "Twinset Milano",
-    "description": "Миди-платье из шерстяного трикотажа с контрастным рисунком в рубчик. Модель со свободным силуэтом, высоким воротом и прямой юбкой для уютных сезонных образов. Посадка: Свободный силуэт, прямая юбка.",
+    "description": "Платье Twinset Milano из актуальной коллекции с аккуратной отделкой и комфортной посадкой. Посадка: Свободный силуэт, прямая юбка.",
     "composition": "38% полиамид 37% акрил 25% шерсть",
-    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°C, Деликатная химчистка (перхлорэтилен), Сушить на горизонтальной поверхности в тени",
+    "care": "Ручная стирка, Не отбеливать, Не сушить в барабане, Гладить при температуре до 110°, Деликатная химчистка (перхлорэтилен), Сушить на горизонтальной поверхности в тени",
     "category": "dresses",
     "gender": "women",
     "price": 15100,
@@ -3509,7 +3509,7 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:51:03.512Z",
-    "updatedAt": "2026-02-11T16:51:03.512Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-020",
@@ -3517,7 +3517,7 @@
     "slug": "twinset-252tb7054",
     "name": "Маленькая стеганая сумка на плечо",
     "brand": "Twinset Milano",
-    "description": "Компактная стеганая сумка с клапаном и магнитной застежкой, выполненная из мягкого материала с эффектом nappa. Регулируемый ремень позволяет носить модель на плече или кросс-боди.",
+    "description": "Аксессуар Twinset Milano, который завершает образ и добавляет фирменный акцент.",
     "composition": "100% полиуретан. Подкладка: 100% полиэстер",
     "care": "Не стирать, Не отбеливать, Не сушить в барабане, Не гладить, Химчистка запрещена",
     "category": "accessories",
@@ -3560,7 +3560,7 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:51:03.512Z",
-    "updatedAt": "2026-02-11T16:51:03.512Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-021",
@@ -3568,9 +3568,9 @@
     "slug": "twinset-252ta4510",
     "name": "Ремень с декоративными шлевками",
     "brand": "Twinset Milano",
-    "description": "Пояс на бедрах с квадратной пряжкой и декоративными металлическими шлевками в светлом латунном тоне. Стильный акцент для платьев, жакетов и брюк с высокой талией.",
+    "description": "Аксессуар Twinset Milano, который завершает образ и добавляет фирменный акцент.",
     "composition": "100% полиуретан. Подкладка: 100% полиуретан",
-    "care": "",
+    "care": "Деликатный уход согласно ярлыку изделия.",
     "category": "accessories",
     "gender": "women",
     "price": 6100,
@@ -3614,7 +3614,7 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:51:03.512Z",
-    "updatedAt": "2026-02-11T16:51:03.512Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-022",
@@ -3622,7 +3622,7 @@
     "slug": "twinset-252tt3424",
     "name": "Свитер с высоким горлом и фигурным краем",
     "brand": "Twinset Milano",
-    "description": "Свитер из смесовой шерсти и вискозы с геометричным рисунком и фигурным краем по низу. Высокий ворот, широкие рукава и свободная посадка формируют выразительный силуэт. Посадка: Свободная посадка.",
+    "description": "Трикотажная модель Twinset Milano из мягкой смесовой пряжи для повседневных и вечерних образов. Посадка: Свободная посадка.",
     "composition": "30% вискоза 40% шерсть 10% кашемир 20% полиамид",
     "care": "Не отбеливать, Не сушить в барабане, Гладить при низкой температуре, Деликатная химчистка (тетрахлорэтилен или углеводороды), Сушить на горизонтальной поверхности в тени, Не стирать",
     "category": "knitwear",
@@ -3675,7 +3675,7 @@
     "isNew": true,
     "isActive": true,
     "createdAt": "2026-02-11T16:51:03.512Z",
-    "updatedAt": "2026-02-11T16:51:03.512Z"
+    "updatedAt": "2026-02-11T23:30:00.000Z"
   },
   {
     "id": "p-001",
