@@ -42,7 +42,7 @@ export function SiteFooter({ stores }: SiteFooterProps) {
             <div className="space-y-3 text-sm text-text-secondary">
               {stores.map((store) => (
                 <p key={store.id}>
-                  <strong className="text-text-primary">{store.name}</strong><br />
+                  <strong className="text-text-primary">{store.fullName ?? store.name}</strong><br />
                   {store.address}
                 </p>
               ))}

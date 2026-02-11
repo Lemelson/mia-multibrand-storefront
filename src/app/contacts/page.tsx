@@ -12,7 +12,7 @@ export default async function ContactsPage() {
       <div className="mt-8 grid gap-6 md:grid-cols-3">
         {stores.map((store) => (
           <article key={store.id} className="border border-border p-5">
-            <h2 className="font-logo text-2xl">{store.name}</h2>
+            <h2 className="font-logo text-2xl">{store.fullName ?? store.name}</h2>
             <p className="mt-2 text-sm text-text-secondary">{store.city}</p>
             <p className="mt-3 text-sm">{store.address}</p>
             <p className="mt-2 text-sm">{store.workingHours}</p>

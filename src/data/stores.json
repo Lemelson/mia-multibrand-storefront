@@ -1,7 +1,8 @@
 [
   {
     "id": "camellia-sochi",
-    "name": "Камелия",
+    "name": "Swissôtel Камелия",
+    "fullName": "Swissôtel Resort Сочи Камелия",
     "city": "Сочи",
     "address": "Курортный проспект, 89, Сочи",
     "phone": "+7 862 555-21-11",
@@ -12,9 +13,10 @@
   },
   {
     "id": "mantera-sirius",
-    "name": "Мантера",
+    "name": "Mantera Supreme",
+    "fullName": "Mantera Supreme Seaside",
     "city": "Сириус",
-    "address": "Олимпийский проспект, 3, Сириус",
+    "address": "Олимпийский проспект, 36/1, Сириус",
     "phone": "+7 862 555-21-22",
     "workingHours": "10:00 — 22:00",
     "coordinates": { "lat": 43.40332, "lng": 39.95566 },
@@ -23,7 +25,8 @@
   },
   {
     "id": "radisson-lazurnaya",
-    "name": "Рэдиссон Лазурная",
+    "name": "Лазурная Отель",
+    "fullName": "Лазурная Отель и СПА",
     "city": "Сочи",
     "address": "Курортный проспект, 103, Сочи",
     "phone": "+7 862 555-21-33",

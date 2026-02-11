@@ -43,6 +43,7 @@ export interface Product {
 export interface Store {
   id: string;
   name: string;
+  fullName?: string;
   city: string;
   address: string;
   phone: string;
