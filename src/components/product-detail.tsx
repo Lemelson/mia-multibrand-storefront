@@ -2,11 +2,16 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { useCart } from "@/components/providers/cart-provider";
 import { formatPrice } from "@/lib/format";
 import type { Product, Store } from "@/lib/types";
 import { ProductCard } from "@/components/product-card";
+import {
+  getProductDetailImageUrl,
+  getProductThumbImageUrl,
+  isTwinsetCdnUrl
+} from "@/lib/image";
 
 interface ProductDetailProps {
   product: Product;
@@ -27,7 +32,15 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
     product.colors.find((color) => color.id === selectedColorId) ?? product.colors[0];
 
   const availableSizes = selectedColor?.sizes ?? [];
-  const activeImage = selectedColor?.images[activeImageIndex] ?? selectedColor?.images[0];
+  const detailImages = useMemo(
+    () => (selectedColor?.images ?? []).map((image) => getProductDetailImageUrl(image)),
+    [selectedColor?.images]
+  );
+  const thumbImages = useMemo(
+    () => (selectedColor?.images ?? []).map((image) => getProductThumbImageUrl(image)),
+    [selectedColor?.images]
+  );
+  const activeImage = detailImages[activeImageIndex] ?? detailImages[0];
 
   const alternativeStores = useMemo(() => {
     return product.stores
@@ -35,6 +48,18 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
       .map((entry) => stores.find((store) => store.id === entry.storeId))
       .filter((store): store is Store => Boolean(store));
   }, [product.stores, stores]);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || detailImages.length < 2) {
+      return;
+    }
+
+    for (const src of detailImages.slice(1, 6)) {
+      const image = new window.Image();
+      image.decoding = "async";
+      image.src = src;
+    }
+  }, [detailImages]);
 
   function handleAddToCart() {
     if (!selectedSize) {
@@ -55,7 +80,7 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
       colorName: selectedColor.name,
       size: selectedSize,
       price: product.price,
-      imageUrl: selectedColor.images[0] ?? "https://picsum.photos/600/800"
+      imageUrl: getProductThumbImageUrl(selectedColor.images[0] ?? "https://picsum.photos/600/800")
     });
 
     setAdded(true);
@@ -68,7 +93,7 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
       <div className="grid gap-8 xl:grid-cols-[minmax(0,760px)_420px]">
         <div className="grid gap-3 md:grid-cols-[68px_1fr]">
           <div className="order-2 flex gap-2 overflow-auto md:order-1 md:flex-col">
-            {selectedColor?.images.map((image, index) => (
+            {thumbImages.map((image, index) => (
               <button
                 key={`${image}-${index}`}
                 type="button"
@@ -77,7 +102,14 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
                 }`}
                 onClick={() => setActiveImageIndex(index)}
               >
-                <Image src={image} alt={`${product.name} ${index + 1}`} fill sizes="68px" className="object-cover" />
+                <Image
+                  src={image}
+                  alt={`${product.name} ${index + 1}`}
+                  fill
+                  sizes="68px"
+                  className="object-cover"
+                  unoptimized={isTwinsetCdnUrl(image)}
+                />
               </button>
             ))}
           </div>
@@ -90,6 +122,7 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
                 fill
                 sizes="(max-width: 1280px) 100vw, 760px"
                 className="object-contain p-4"
+                unoptimized={isTwinsetCdnUrl(activeImage)}
               />
             ) : (
               <div className="h-full w-full bg-bg-secondary" />

@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import type { Product } from "@/lib/types";
 import { formatPrice } from "@/lib/format";
+import { getCatalogImageUrl, isTwinsetCdnUrl } from "@/lib/image";
 
 interface ProductCardProps {
   product: Product;
@@ -13,10 +14,12 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const [hovered, setHovered] = useState(false);
+  const preloadedRef = useRef(false);
 
   const activeColor = product.colors[0];
-  const images = activeColor?.images ?? [];
-  const currentImage = images[imageIndex] ?? images[0] ?? "https://picsum.photos/600/800";
+  const images = useMemo(() => activeColor?.images ?? [], [activeColor?.images]);
+  const cardImages = useMemo(() => images.map((image) => getCatalogImageUrl(image)), [images]);
+  const currentImage = cardImages[imageIndex] ?? cardImages[0] ?? "https://picsum.photos/600/800";
   const hasSale = typeof product.oldPrice === "number" && product.oldPrice > product.price;
   const discountPercent =
     hasSale && typeof product.oldPrice === "number"
@@ -30,15 +33,31 @@ export function ProductCard({ product }: ProductCardProps) {
 
     const rect = event.currentTarget.getBoundingClientRect();
     const relativeX = event.clientX - rect.left;
-    const zoneWidth = rect.width / images.length;
-    const nextIndex = Math.max(0, Math.min(images.length - 1, Math.floor(relativeX / zoneWidth)));
+    const zoneWidth = rect.width / cardImages.length;
+    const nextIndex = Math.max(0, Math.min(cardImages.length - 1, Math.floor(relativeX / zoneWidth)));
     setImageIndex(nextIndex);
+  }
+
+  function preloadHoverImages() {
+    if (preloadedRef.current || typeof window === "undefined" || cardImages.length < 2) {
+      return;
+    }
+
+    preloadedRef.current = true;
+    for (const src of cardImages.slice(1, 6)) {
+      const image = new window.Image();
+      image.decoding = "async";
+      image.src = src;
+    }
   }
 
   return (
     <article
       className="group"
-      onMouseEnter={() => setHovered(true)}
+      onMouseEnter={() => {
+        setHovered(true);
+        preloadHoverImages();
+      }}
       onMouseLeave={() => {
         setHovered(false);
         setImageIndex(0);
@@ -55,6 +74,7 @@ export function ProductCard({ product }: ProductCardProps) {
             fill
             sizes="(max-width: 768px) 50vw, (max-width: 1280px) 33vw, 25vw"
             className="object-cover transition duration-500"
+            unoptimized={isTwinsetCdnUrl(currentImage)}
           />
 
           {hasSale ? (
@@ -67,9 +87,9 @@ export function ProductCard({ product }: ProductCardProps) {
             </span>
           ) : null}
 
-          {hovered && images.length > 1 && (
+          {hovered && cardImages.length > 1 && (
             <div className="absolute inset-x-3 bottom-3 flex items-center gap-1.5">
-              {images.map((_, index) => (
+              {cardImages.map((_, index) => (
                 <span
                   key={index}
                   className={`h-[2px] flex-1 rounded-full transition ${
