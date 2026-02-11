@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useMemo, useRef, useState } from "react";
 import type { Product } from "@/lib/types";
 import { formatPrice } from "@/lib/format";
-import { getCatalogImageUrl, isTwinsetCdnUrl } from "@/lib/image";
+import { getCatalogImageUrl } from "@/lib/image";
 
 interface ProductCardProps {
   product: Product;
@@ -74,7 +74,6 @@ export function ProductCard({ product }: ProductCardProps) {
             fill
             sizes="(max-width: 768px) 50vw, (max-width: 1280px) 33vw, 25vw"
             className="object-cover transition duration-500"
-            unoptimized={isTwinsetCdnUrl(currentImage)}
           />
 
           {hasSale ? (

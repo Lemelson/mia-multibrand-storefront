@@ -9,8 +9,7 @@ import type { Product, Store } from "@/lib/types";
 import { ProductCard } from "@/components/product-card";
 import {
   getProductDetailImageUrl,
-  getProductThumbImageUrl,
-  isTwinsetCdnUrl
+  getProductThumbImageUrl
 } from "@/lib/image";
 
 interface ProductDetailProps {
@@ -108,7 +107,6 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
                   fill
                   sizes="68px"
                   className="object-cover"
-                  unoptimized={isTwinsetCdnUrl(image)}
                 />
               </button>
             ))}
@@ -122,7 +120,6 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
                 fill
                 sizes="(max-width: 1280px) 100vw, 760px"
                 className="object-contain p-4"
-                unoptimized={isTwinsetCdnUrl(activeImage)}
               />
             ) : (
               <div className="h-full w-full bg-bg-secondary" />
