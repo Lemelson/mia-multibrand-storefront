@@ -90,8 +90,8 @@ html[data-font-theme="sofia"] {
 }
 
 html[data-font-theme="gotham"] {
-  --font-logo-family: "Gotham", "Franklin Gothic Medium", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
-  --font-body-family: "Gotham", "Franklin Gothic Medium", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --font-logo-family: "Gotham", "Montserrat", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  --font-body-family: "Gotham", "Montserrat", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
 }
 
 input,

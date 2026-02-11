@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import { Check, ChevronDown, Heart, MapPin, Menu, Search, ShoppingBag, X } from "lucide-react";
+import { Check, ChevronDown, Heart, MapPin, Search, ShoppingBag, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Container } from "@/components/container";
@@ -18,12 +18,10 @@ interface SiteHeaderProps {
   categories: Category[];
 }
 
-const NAV_ITEMS = [
-  { href: "/catalog/women", label: "Женское" },
-  { href: "/catalog/men", label: "Мужское" },
-  { href: "/catalog/kids", label: "Детское" },
-  { href: "/catalog?sort=new", label: "Новинки" },
-  { href: "/catalog?brands=", label: "Бренды" }
+const GENDER_NAV_ITEMS = [
+  { href: "/catalog/women", label: "Женщинам", gender: "women" },
+  { href: "/catalog/men", label: "Мужчинам", gender: "men" },
+  { href: "/catalog/kids", label: "Детям", gender: "kids" }
 ];
 
 const FONT_BUTTON_LABELS: Record<FontTheme, string> = {
@@ -42,7 +40,6 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
-  const [compact, setCompact] = useState(false);
   const [storeMenuOpen, setStoreMenuOpen] = useState(false);
   const [fontMenuOpen, setFontMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -52,19 +49,6 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
 
   useEffect(() => {
     setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    let lastY = window.scrollY;
-
-    const onScroll = () => {
-      const currentY = window.scrollY;
-      setCompact(currentY > 80 && currentY > lastY);
-      lastY = currentY;
-    };
-
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   useEffect(() => {
@@ -118,6 +102,23 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
     };
   }, [categories]);
 
+  const activeGender = useMemo(() => {
+    if (!pathname.startsWith("/catalog")) {
+      return "";
+    }
+
+    const segment = pathname.split("/")[2];
+    if (!segment) {
+      return "";
+    }
+
+    if (segment === "women" || segment === "men" || segment === "kids") {
+      return segment;
+    }
+
+    return categories.find((category) => category.slug === segment)?.gender ?? "";
+  }, [pathname, categories]);
+
   const overlays = mounted
     ? createPortal(
         <>
@@ -148,6 +149,9 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
                   <div className="space-y-6 text-sm uppercase tracking-[0.08em]">
                     <Link href="/catalog?sort=new" onClick={() => setMenuOpen(false)} className="block">
                       Новинки
+                    </Link>
+                    <Link href="/catalog?brands=" onClick={() => setMenuOpen(false)} className="block">
+                      Бренды
                     </Link>
 
                     <div>
@@ -333,15 +337,49 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
         <div className="h-[env(safe-area-inset-top)] bg-white" />
         <Container>
           <div className="flex h-16 items-center justify-between">
-            <button
-              className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.08em]"
-              onClick={() => setMenuOpen(true)}
-              type="button"
-              aria-label="Открыть меню"
-            >
-              <Menu size={20} />
-              <span className="hidden md:inline">Магазин</span>
-            </button>
+            <div className="flex items-center gap-1 md:gap-4">
+              <button
+                className="relative inline-flex h-9 w-9 items-center justify-center text-text-primary"
+                onMouseEnter={() => {
+                  if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+                    setMenuOpen(true);
+                  }
+                }}
+                onClick={() => setMenuOpen((value) => !value)}
+                type="button"
+                aria-label="Открыть меню"
+              >
+                <span
+                  className={`absolute h-[1.5px] w-4 bg-current transition-transform duration-200 ${
+                    menuOpen ? "translate-y-0 rotate-45" : "-translate-y-[4px]"
+                  }`}
+                />
+                <span
+                  className={`absolute h-[1.5px] w-4 bg-current transition-transform duration-200 ${
+                    menuOpen ? "translate-y-0 -rotate-45" : "translate-y-[4px]"
+                  }`}
+                />
+              </button>
+
+              <nav className="hidden items-center gap-4 md:flex">
+                {GENDER_NAV_ITEMS.map((item) => {
+                  const active = activeGender === item.gender;
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className={`border-b pb-1 text-[13px] uppercase tracking-[0.08em] transition ${
+                        active
+                          ? "border-text-primary text-text-primary"
+                          : "border-transparent text-text-secondary hover:border-text-primary hover:text-text-primary"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                })}
+              </nav>
+            </div>
 
             <div className="absolute left-1/2 -translate-x-1/2">
               <Link href="/" className="font-logo text-[28px] font-medium tracking-[0.04em] md:text-[30px]">
@@ -466,27 +504,6 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
                 )}
               </button>
             </div>
-          </div>
-
-          <div className="border-t border-border py-2 text-sm">
-            <nav className={`hidden items-center justify-end gap-6 md:flex ${compact ? "opacity-0" : "opacity-100"}`}>
-              {NAV_ITEMS.map((item) => {
-                const active = pathname === item.href;
-                return (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={`border-b pb-1 text-[13px] uppercase tracking-[0.1em] transition ${
-                      active
-                        ? "border-text-primary text-text-primary"
-                        : "border-transparent text-text-secondary hover:border-text-primary hover:text-text-primary"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                );
-              })}
-            </nav>
           </div>
         </Container>
       </header>
