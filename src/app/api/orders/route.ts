@@ -36,7 +36,7 @@ export async function POST(request: Request) {
     totalAmount,
     delivery: payload.delivery ?? "pickup",
     paymentMethod: payload.paymentMethod ?? "cash",
-    storeId: payload.storeId ?? "camellia-sochi"
+    storeId: payload.storeId ?? "mantera-sirius"
   });
 
   return NextResponse.json(order, { status: 201 });

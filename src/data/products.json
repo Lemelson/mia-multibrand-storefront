@@ -47,15 +47,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -138,15 +130,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -217,15 +201,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -285,15 +261,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -365,15 +333,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -425,15 +385,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -480,15 +432,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -540,15 +484,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -604,15 +540,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -657,15 +585,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -722,15 +642,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -798,15 +710,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -874,15 +778,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -939,15 +835,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1015,15 +903,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1090,15 +970,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1159,15 +1031,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1236,15 +1100,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1308,15 +1164,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1376,15 +1224,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1444,15 +1284,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1499,15 +1331,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1572,15 +1396,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1653,15 +1469,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1713,15 +1521,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1768,15 +1568,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1823,15 +1615,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1878,15 +1662,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1939,15 +1715,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -1992,15 +1760,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2051,15 +1811,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2127,15 +1879,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2182,15 +1926,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2262,15 +1998,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2334,15 +2062,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2413,15 +2133,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2474,15 +2186,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2553,15 +2257,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2619,15 +2315,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2695,15 +2383,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2755,15 +2435,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2811,15 +2483,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2886,15 +2550,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -2950,15 +2606,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3026,15 +2674,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3090,15 +2730,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3145,15 +2777,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3205,15 +2829,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3273,15 +2889,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3345,15 +2953,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3422,15 +3022,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3503,15 +3095,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3575,15 +3159,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3650,15 +3226,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3710,15 +3278,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3765,15 +3325,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3823,15 +3375,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3888,15 +3432,7 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
-        "available": true
-      },
-      {
-        "storeId": "mantera-congress",
         "available": true
       },
       {
@@ -3980,16 +3516,12 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
         "available": true
       },
       {
-        "storeId": "mantera-congress",
-        "available": false
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
       }
     ],
     "isNew": true,
@@ -4035,15 +3567,11 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
         "available": false
       },
       {
-        "storeId": "mantera-congress",
+        "storeId": "twinset-krasnaya-polyana",
         "available": true
       }
     ],
@@ -4116,15 +3644,11 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
         "available": true
       },
       {
-        "storeId": "mantera-congress",
+        "storeId": "twinset-krasnaya-polyana",
         "available": true
       }
     ],
@@ -4204,15 +3728,11 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": false
-      },
-      {
         "storeId": "mantera-sirius",
         "available": true
       },
       {
-        "storeId": "mantera-congress",
+        "storeId": "twinset-krasnaya-polyana",
         "available": true
       }
     ],
@@ -4252,15 +3772,11 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
         "available": true
       },
       {
-        "storeId": "mantera-congress",
+        "storeId": "twinset-krasnaya-polyana",
         "available": true
       }
     ],
@@ -4340,16 +3856,12 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
         "available": true
       },
       {
-        "storeId": "mantera-congress",
-        "available": false
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
       }
     ],
     "isNew": false,
@@ -4428,15 +3940,11 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
         "available": false
       },
       {
-        "storeId": "mantera-congress",
+        "storeId": "twinset-krasnaya-polyana",
         "available": true
       }
     ],
@@ -4484,15 +3992,11 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
         "available": true
       },
       {
-        "storeId": "mantera-congress",
+        "storeId": "twinset-krasnaya-polyana",
         "available": true
       }
     ],
@@ -4539,16 +4043,12 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
         "available": true
       },
       {
-        "storeId": "mantera-congress",
-        "available": false
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
       }
     ],
     "isNew": true,
@@ -4593,15 +4093,11 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": false
-      },
-      {
         "storeId": "mantera-sirius",
         "available": true
       },
       {
-        "storeId": "mantera-congress",
+        "storeId": "twinset-krasnaya-polyana",
         "available": true
       }
     ],
@@ -4649,15 +4145,11 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
         "available": false
       },
       {
-        "storeId": "mantera-congress",
+        "storeId": "twinset-krasnaya-polyana",
         "available": true
       }
     ],
@@ -4738,15 +4230,11 @@
     ],
     "stores": [
       {
-        "storeId": "camellia-sochi",
-        "available": true
-      },
-      {
         "storeId": "mantera-sirius",
         "available": true
       },
       {
-        "storeId": "mantera-congress",
+        "storeId": "twinset-krasnaya-polyana",
         "available": true
       }
     ],

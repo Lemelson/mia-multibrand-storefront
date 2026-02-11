@@ -1,17 +1,5 @@
 [
   {
-    "id": "camellia-sochi",
-    "name": "Swissôtel Камелия",
-    "fullName": "Swissôtel Resort Сочи Камелия",
-    "city": "Сочи",
-    "address": "Курортный проспект, 89, Сочи",
-    "phone": "+7 938 873-18-38",
-    "workingHours": "10:00 — 22:00",
-    "coordinates": { "lat": 43.56071, "lng": 39.77056 },
-    "whatsapp": "+79388731838",
-    "telegram": "https://t.me/ModaMia_sochi"
-  },
-  {
     "id": "mantera-sirius",
     "name": "Mantera Supreme",
     "fullName": "Mantera Supreme Seaside",
@@ -19,19 +7,10 @@
     "address": "Олимпийский проспект, 36/1, Сириус",
     "phone": "+7 938 873-18-38",
     "workingHours": "10:00 — 22:00",
-    "coordinates": { "lat": 43.40332, "lng": 39.95566 },
-    "whatsapp": "+79388731838",
-    "telegram": "https://t.me/ModaMia_sochi"
-  },
-  {
-    "id": "mantera-congress",
-    "name": "Mantera Congress",
-    "fullName": "Mantera Congress",
-    "city": "Сириус",
-    "address": "ул. Голубая, 1А, Сириус",
-    "phone": "+7 938 873-18-38",
-    "workingHours": "10:00 — 22:00",
-    "coordinates": { "lat": 43.40306, "lng": 39.95778 },
+    "coordinates": {
+      "lat": 43.40332,
+      "lng": 39.95566
+    },
     "whatsapp": "+79388731838",
     "telegram": "https://t.me/ModaMia_sochi"
   },
@@ -43,7 +22,10 @@
     "address": "ТРЦ «Горки Молл», ул. Горная Карусель, 3, Сириус",
     "phone": "+7 988 188-38-38",
     "workingHours": "10:00 — 22:00",
-    "coordinates": { "lat": 43.68219, "lng": 40.26479 },
+    "coordinates": {
+      "lat": 43.68219,
+      "lng": 40.26479
+    },
     "whatsapp": "+79881883838",
     "telegram": "https://t.me/twinset_kp"
   }
