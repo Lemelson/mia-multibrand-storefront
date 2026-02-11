@@ -9,7 +9,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Container } from "@/components/container";
 import { useCart } from "@/components/providers/cart-provider";
-import { useFontTheme, type FontTheme } from "@/components/providers/font-theme-provider";
 import { useStore } from "@/components/providers/store-provider";
 import { formatPrice } from "@/lib/format";
 import type { Category } from "@/lib/types";
@@ -24,28 +23,17 @@ const GENDER_NAV_ITEMS = [
   { href: "/catalog/kids", label: "Детям", gender: "kids" }
 ];
 
-const FONT_BUTTON_LABELS: Record<FontTheme, string> = {
-  current: "Текущий",
-  proxima: "Proxima",
-  montserrat: "Montserrat",
-  sofia: "Sofia",
-  gotham: "Gotham"
-};
-
 export function SiteHeader({ categories }: SiteHeaderProps) {
   const pathname = usePathname();
   const { selectedStore, stores, setSelectedStoreId } = useStore();
-  const { theme, setTheme, options: fontOptions } = useFontTheme();
   const { items, totalItems, totalAmount, removeItem } = useCart();
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const [storeMenuOpen, setStoreMenuOpen] = useState(false);
-  const [fontMenuOpen, setFontMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   const storeMenuRef = useRef<HTMLDivElement>(null);
-  const fontMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -56,9 +44,6 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
       const target = event.target as Node;
       if (storeMenuRef.current && !storeMenuRef.current.contains(target)) {
         setStoreMenuOpen(false);
-      }
-      if (fontMenuRef.current && !fontMenuRef.current.contains(target)) {
-        setFontMenuOpen(false);
       }
     };
 
@@ -72,7 +57,6 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
         setMenuOpen(false);
         setCartOpen(false);
         setStoreMenuOpen(false);
-        setFontMenuOpen(false);
       }
     };
 
@@ -364,7 +348,6 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
                   type="button"
                   onClick={() => {
                     setStoreMenuOpen((value) => !value);
-                    setFontMenuOpen(false);
                   }}
                   className="inline-flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 text-[11px] uppercase tracking-[0.08em] text-text-secondary"
                   aria-label="Выбор магазина"
@@ -398,54 +381,6 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
                             }`}
                           >
                             <span>{store.name}</span>
-                            {active && <Check size={13} />}
-                          </button>
-                        );
-                      })}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-
-              <div ref={fontMenuRef} className="relative hidden md:block">
-                <button
-                  type="button"
-                  onClick={() => {
-                    setFontMenuOpen((value) => !value);
-                    setStoreMenuOpen(false);
-                  }}
-                  className="inline-flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 text-[11px] uppercase tracking-[0.08em] text-text-secondary"
-                  aria-label="Выбор шрифта"
-                >
-                  Шрифт
-                  <span className="hidden lg:inline text-text-muted">· {FONT_BUTTON_LABELS[theme]}</span>
-                  <ChevronDown size={13} className={fontMenuOpen ? "rotate-180 transition" : "transition"} />
-                </button>
-
-                <AnimatePresence>
-                  {fontMenuOpen && (
-                    <motion.div
-                      className="absolute right-0 top-[calc(100%+6px)] z-30 min-w-[260px] rounded-md border border-border bg-white p-1 shadow-lg"
-                      initial={{ opacity: 0, y: -4 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -4 }}
-                      transition={{ duration: 0.15 }}
-                    >
-                      {fontOptions.map((option) => {
-                        const active = theme === option.value;
-                        return (
-                          <button
-                            key={option.value}
-                            type="button"
-                            onClick={() => {
-                              setTheme(option.value as FontTheme);
-                              setFontMenuOpen(false);
-                            }}
-                            className={`flex w-full items-center justify-between rounded px-3 py-2 text-left text-xs uppercase tracking-[0.08em] ${
-                              active ? "bg-text-primary text-white" : "hover:bg-bg-secondary"
-                            }`}
-                          >
-                            <span>{option.label}</span>
                             {active && <Check size={13} />}
                           </button>
                         );

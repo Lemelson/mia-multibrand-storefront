@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Store } from "@/lib/types";
 import { Container } from "@/components/container";
+import { FooterFontSwitcher } from "@/components/footer-font-switcher";
 
 interface SiteFooterProps {
   stores: Store[];
@@ -49,13 +50,14 @@ export function SiteFooter({ stores }: SiteFooterProps) {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-border pt-6">
+        <div className="mt-10 flex items-center justify-between gap-4 border-t border-border pt-6">
           <Link
             href="/admin"
             className="text-xs uppercase tracking-[0.1em] text-text-secondary hover:text-text-primary"
           >
             Панель управления
           </Link>
+          <FooterFontSwitcher />
         </div>
       </Container>
     </footer>

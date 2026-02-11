@@ -17,7 +17,7 @@ interface FontThemeContextValue {
 
 const FONT_THEME_KEY = "mia-font-theme";
 
-const FONT_OPTIONS: FontThemeOption[] = [
+export const FONT_OPTIONS: FontThemeOption[] = [
   { value: "current", label: "Текущий (Cormorant + Manrope)" },
   { value: "proxima", label: "12S: Proxima Nova" },
   { value: "montserrat", label: "12S альтернатива: Montserrat" },
@@ -32,14 +32,17 @@ interface FontThemeProviderProps {
 }
 
 export function FontThemeProvider({ children }: FontThemeProviderProps) {
-  const [theme, setThemeState] = useState<FontTheme>("current");
+  const [theme, setThemeState] = useState<FontTheme>("montserrat");
 
   useEffect(() => {
     const saved = localStorage.getItem(FONT_THEME_KEY) as FontTheme | null;
 
     if (saved && FONT_OPTIONS.some((option) => option.value === saved)) {
       setThemeState(saved);
+      return;
     }
+
+    setThemeState("montserrat");
   }, []);
 
   useEffect(() => {

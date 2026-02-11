@@ -22,7 +22,7 @@ export default async function RootLayout({
   const initialStoreId = cookieStore.get("mia_store")?.value ?? stores[0]?.id ?? "";
 
   return (
-    <html lang="ru">
+    <html lang="ru" data-font-theme="montserrat">
       <body className="font-body">
         <AppProviders stores={stores} initialStoreId={initialStoreId}>
           <SiteHeader categories={categories} />
