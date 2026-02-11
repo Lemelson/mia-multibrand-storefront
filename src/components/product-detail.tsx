@@ -53,10 +53,11 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
       return;
     }
 
-    for (const src of detailImages.slice(1, 6)) {
+    const preloadWidth = window.devicePixelRatio > 1.5 ? 1200 : 1080;
+    for (const src of detailImages.slice(1, 5)) {
       const image = new window.Image();
       image.decoding = "async";
-      image.src = src;
+      image.src = getNextImageProxyUrl(src, preloadWidth, 82);
     }
   }, [detailImages]);
 
@@ -106,6 +107,7 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
                   alt={`${product.name} ${index + 1}`}
                   fill
                   sizes="68px"
+                  quality={65}
                   className="object-cover"
                 />
               </button>
@@ -118,8 +120,10 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
                 src={activeImage}
                 alt={product.name}
                 fill
-                sizes="(max-width: 1280px) 100vw, 760px"
-                className="object-contain p-4"
+                priority
+                quality={82}
+                sizes="(max-width: 768px) 100vw, 560px"
+                className="object-cover"
               />
             ) : (
               <div className="h-full w-full bg-bg-secondary" />
@@ -236,8 +240,8 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
         <section>
           <h2 className="mb-6 font-logo text-3xl">Вам может понравиться</h2>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-5">
-            {related.map((item) => (
-              <ProductCard key={item.id} product={item} />
+            {related.map((item, index) => (
+              <ProductCard key={item.id} product={item} priority={index < 2} />
             ))}
           </div>
         </section>
@@ -274,4 +278,8 @@ function Accordion({
       </div>
     </div>
   );
+}
+
+function getNextImageProxyUrl(sourceUrl: string, width: number, quality: number): string {
+  return `/_next/image?url=${encodeURIComponent(sourceUrl)}&w=${width}&q=${quality}`;
 }

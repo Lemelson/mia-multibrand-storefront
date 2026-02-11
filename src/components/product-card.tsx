@@ -2,16 +2,17 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Product } from "@/lib/types";
 import { formatPrice } from "@/lib/format";
 import { getCatalogImageUrl } from "@/lib/image";
 
 interface ProductCardProps {
   product: Product;
+  priority?: boolean;
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, priority = false }: ProductCardProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const [hovered, setHovered] = useState(false);
   const preloadedRef = useRef(false);
@@ -38,18 +39,38 @@ export function ProductCard({ product }: ProductCardProps) {
     setImageIndex(nextIndex);
   }
 
-  function preloadHoverImages() {
+  const preloadHoverImages = useCallback(() => {
     if (preloadedRef.current || typeof window === "undefined" || cardImages.length < 2) {
       return;
     }
 
     preloadedRef.current = true;
-    for (const src of cardImages.slice(1, 6)) {
+    const retinaWidth = window.devicePixelRatio > 1.5 ? 828 : 0;
+
+    for (const src of cardImages.slice(1, 5)) {
       const image = new window.Image();
       image.decoding = "async";
-      image.src = src;
+      image.src = getNextImageProxyUrl(src, 640, 72);
+
+      if (retinaWidth) {
+        const retinaImage = new window.Image();
+        retinaImage.decoding = "async";
+        retinaImage.src = getNextImageProxyUrl(src, retinaWidth, 72);
+      }
     }
-  }
+  }, [cardImages]);
+
+  useEffect(() => {
+    if (!priority || typeof window === "undefined") {
+      return;
+    }
+
+    const timer = window.setTimeout(() => {
+      preloadHoverImages();
+    }, 280);
+
+    return () => window.clearTimeout(timer);
+  }, [priority, preloadHoverImages]);
 
   return (
     <article
@@ -72,7 +93,9 @@ export function ProductCard({ product }: ProductCardProps) {
             src={currentImage}
             alt={product.name}
             fill
-            sizes="(max-width: 768px) 50vw, (max-width: 1280px) 33vw, 25vw"
+            priority={priority}
+            quality={72}
+            sizes="(max-width: 768px) 46vw, (max-width: 1280px) 30vw, 320px"
             className="object-cover transition duration-500"
           />
 
@@ -154,4 +177,8 @@ function getRoundedDiscountPercent(oldPrice: number, price: number): number {
   const raw = ((oldPrice - price) / oldPrice) * 100;
   const roundedToFive = Math.round(raw / 5) * 5;
   return Math.max(5, Math.min(95, roundedToFive));
+}
+
+function getNextImageProxyUrl(sourceUrl: string, width: number, quality: number): string {
+  return `/_next/image?url=${encodeURIComponent(sourceUrl)}&w=${width}&q=${quality}`;
 }

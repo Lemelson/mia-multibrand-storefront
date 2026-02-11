@@ -473,8 +473,8 @@ export function CatalogView({
           ) : (
             <>
               <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-3 xl:gap-4">
-                {items.map((product) => (
-                  <ProductCard key={product.id} product={product} />
+                {items.map((product, index) => (
+                  <ProductCard key={product.id} product={product} priority={page === 1 && index < 6} />
                 ))}
               </div>
 
