@@ -156,7 +156,7 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
 
                     <div>
                       <Link href="/catalog/women" onClick={() => setMenuOpen(false)} className="mb-2 block">
-                        Женское
+                        Женщинам
                       </Link>
                       <div className="space-y-2 pl-3 text-xs text-text-secondary">
                         {groupedCategories.women.slice(0, 8).map((item) => (
@@ -174,7 +174,7 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
 
                     <div>
                       <Link href="/catalog/men" onClick={() => setMenuOpen(false)} className="mb-2 block">
-                        Мужское
+                        Мужчинам
                       </Link>
                       <div className="space-y-2 pl-3 text-xs text-text-secondary">
                         {groupedCategories.men.slice(0, 8).map((item) => (
@@ -192,7 +192,7 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
 
                     <div>
                       <Link href="/catalog/kids" onClick={() => setMenuOpen(false)} className="mb-2 block">
-                        Детское
+                        Детям
                       </Link>
                       <div className="space-y-2 pl-3 text-xs text-text-secondary">
                         {groupedCategories.kids.map((item) => (
@@ -216,35 +216,6 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
                     <Link href="/delivery" onClick={() => setMenuOpen(false)} className="mb-3 block">
                       Доставка и возврат
                     </Link>
-                    <Link href="/admin" onClick={() => setMenuOpen(false)} className="block">
-                      Админка
-                    </Link>
-                  </div>
-
-                  <div className="border-t border-border pt-6">
-                    <p className="mb-4 text-xs uppercase tracking-[0.08em] text-text-muted">Выбор магазина</p>
-                    <div className="space-y-3 text-sm">
-                      {stores.map((store) => (
-                        <button
-                          key={store.id}
-                          type="button"
-                          onClick={() => {
-                            setSelectedStoreId(store.id);
-                            setMenuOpen(false);
-                          }}
-                          className={`flex w-full items-center justify-between border px-3 py-2 text-left ${
-                            selectedStore.id === store.id
-                              ? "border-text-primary bg-text-primary text-white"
-                              : "border-border"
-                          }`}
-                        >
-                          <span>
-                            {store.name}, {store.city}
-                          </span>
-                          {selectedStore.id === store.id && <Check size={14} />}
-                        </button>
-                      ))}
-                    </div>
                   </div>
                 </motion.aside>
               </>

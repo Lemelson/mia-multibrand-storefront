@@ -19,9 +19,9 @@ export function SiteFooter({ stores }: SiteFooterProps) {
           <div>
             <p className="mb-3 text-xs uppercase tracking-[0.1em] text-text-muted">Каталог</p>
             <div className="space-y-2 text-sm">
-              <Link href="/catalog/women" className="block">Женское</Link>
-              <Link href="/catalog/men" className="block">Мужское</Link>
-              <Link href="/catalog/kids" className="block">Детское</Link>
+              <Link href="/catalog/women" className="block">Женщинам</Link>
+              <Link href="/catalog/men" className="block">Мужчинам</Link>
+              <Link href="/catalog/kids" className="block">Детям</Link>
             </div>
           </div>
 
@@ -33,7 +33,6 @@ export function SiteFooter({ stores }: SiteFooterProps) {
               <Link href="/privacy" className="block">Политика ПДн</Link>
               <Link href="/offer" className="block">Оферта</Link>
               <Link href="/consent" className="block">Согласие ПДн</Link>
-              <Link href="/admin" className="block">Админка</Link>
             </div>
           </div>
 
@@ -48,6 +47,15 @@ export function SiteFooter({ stores }: SiteFooterProps) {
               ))}
             </div>
           </div>
+        </div>
+
+        <div className="mt-10 border-t border-border pt-6">
+          <Link
+            href="/admin"
+            className="text-xs uppercase tracking-[0.1em] text-text-secondary hover:text-text-primary"
+          >
+            Панель управления
+          </Link>
         </div>
       </Container>
     </footer>

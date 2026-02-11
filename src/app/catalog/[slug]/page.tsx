@@ -5,9 +5,9 @@ import { CatalogView } from "@/components/catalog-view";
 import { getCategories } from "@/lib/server-data";
 
 const GENDER_TITLES: Record<string, string> = {
-  women: "Женское",
-  men: "Мужское",
-  kids: "Детское"
+  women: "Женщинам",
+  men: "Мужчинам",
+  kids: "Детям"
 };
 
 export default async function CatalogSegmentPage({

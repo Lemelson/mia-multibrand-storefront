@@ -36,11 +36,8 @@ interface CatalogViewProps {
   activeCategorySlug?: string;
 }
 
-type MenuKey = "size" | "color" | "availability" | "price" | "sale" | "sort";
+type MenuKey = "size" | "color" | "price" | "sale" | "sort";
 type SortUi = "relevance" | "newest" | "best" | "price-desc" | "price-asc";
-type AvailabilityMode = "selected" | "specific" | "any";
-type PricePreset = "all" | "budget" | "middle" | "premium";
-type PriceRange = { min?: number; max?: number };
 
 const SORT_OPTIONS: Array<{ value: SortUi; label: string }> = [
   { value: "relevance", label: "По релевантности" },
@@ -50,12 +47,19 @@ const SORT_OPTIONS: Array<{ value: SortUi; label: string }> = [
   { value: "price-asc", label: "Сначала недорогие" }
 ];
 
-const PRICE_PRESET_OPTIONS: Array<{ value: PricePreset; label: string }> = [
-  { value: "all", label: "Любая цена" },
-  { value: "budget", label: "До средней" },
-  { value: "middle", label: "Средний диапазон" },
-  { value: "premium", label: "Выше средней" }
-];
+const SIZE_RANK: Record<string, number> = {
+  "ONE SIZE": 0,
+  ONE: 0,
+  OS: 0,
+  XXS: 1,
+  XS: 2,
+  S: 3,
+  M: 4,
+  L: 5,
+  XL: 6,
+  XXL: 7,
+  XXXL: 8
+};
 
 const COLOR_PALETTE: Record<string, string> = {
   "черный": "#1f1f1f",
@@ -90,28 +94,27 @@ export function CatalogView({
   sidebarCategories,
   activeCategorySlug
 }: CatalogViewProps) {
-  const { selectedStoreId, selectedStore, stores } = useStore();
+  const { selectedStoreId } = useStore();
 
   const [items, setItems] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [loadingMore, setLoadingMore] = useState(false);
   const [hasMore, setHasMore] = useState(false);
   const [page, setPage] = useState(1);
-  const [total, setTotal] = useState(0);
 
   const [sizes, setSizes] = useState<string[]>([]);
   const [colors, setColors] = useState<string[]>([]);
+  const [priceBounds, setPriceBounds] = useState<{ min: number; max: number }>({ min: 0, max: 0 });
 
   const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
   const [selectedColors, setSelectedColors] = useState<string[]>([]);
-  const [inStockOnly, setInStockOnly] = useState(false);
   const [saleOnly, setSaleOnly] = useState(false);
-  const [pricePreset, setPricePreset] = useState<PricePreset>("all");
-  const [priceBounds, setPriceBounds] = useState<{ min: number; max: number }>({ min: 0, max: 0 });
   const [sortUi, setSortUi] = useState<SortUi>("relevance");
 
-  const [availabilityMode, setAvailabilityMode] = useState<AvailabilityMode>("selected");
-  const [availabilityStoreId, setAvailabilityStoreId] = useState<string>(selectedStoreId);
+  const [priceMinApplied, setPriceMinApplied] = useState<number | undefined>();
+  const [priceMaxApplied, setPriceMaxApplied] = useState<number | undefined>();
+  const [priceFromInput, setPriceFromInput] = useState("");
+  const [priceToInput, setPriceToInput] = useState("");
 
   const [openMenu, setOpenMenu] = useState<MenuKey | null>(null);
   const filterBarRef = useRef<HTMLDivElement>(null);
@@ -128,44 +131,12 @@ export function CatalogView({
     return () => document.removeEventListener("mousedown", onClick);
   }, []);
 
-  const effectiveStoreId =
-    availabilityMode === "any"
-      ? undefined
-      : availabilityMode === "specific"
-        ? availabilityStoreId
-        : selectedStoreId;
-
-  const selectedPriceRange = useMemo<PriceRange>(() => {
-    const { min, max } = priceBounds;
-
-    if (pricePreset === "all" || max <= min) {
-      return {};
-    }
-
-    const span = max - min;
-    const firstCut = Math.round(min + span / 3);
-    const secondCut = Math.round(min + (span * 2) / 3);
-
-    if (pricePreset === "budget") {
-      return { max: firstCut };
-    }
-
-    if (pricePreset === "middle") {
-      return { min: firstCut + 1, max: secondCut };
-    }
-
-    return { min: secondCut + 1 };
-  }, [pricePreset, priceBounds]);
-
   const queryString = useMemo(() => {
     const params = new URLSearchParams();
     params.set("page", String(page));
     params.set("pageSize", "20");
     params.set("sort", toCatalogSort(sortUi));
-
-    if (effectiveStoreId) {
-      params.set("storeId", effectiveStoreId);
-    }
+    params.set("storeId", selectedStoreId);
 
     if (gender) {
       params.set("gender", gender);
@@ -183,24 +154,20 @@ export function CatalogView({
       params.set("colors", selectedColors.join(","));
     }
 
-    if (inStockOnly) {
-      params.set("inStock", "1");
-    }
-
     if (saleOnly) {
       params.set("sale", "1");
     }
 
-    if (selectedPriceRange.min !== undefined) {
-      params.set("priceMin", String(selectedPriceRange.min));
+    if (priceMinApplied !== undefined) {
+      params.set("priceMin", String(priceMinApplied));
     }
 
-    if (selectedPriceRange.max !== undefined) {
-      params.set("priceMax", String(selectedPriceRange.max));
+    if (priceMaxApplied !== undefined) {
+      params.set("priceMax", String(priceMaxApplied));
     }
 
     return params.toString();
-  }, [page, sortUi, effectiveStoreId, gender, category, selectedSizes, selectedColors, inStockOnly, saleOnly, selectedPriceRange]);
+  }, [page, sortUi, selectedStoreId, gender, category, selectedSizes, selectedColors, saleOnly, priceMinApplied, priceMaxApplied]);
 
   const loadCatalog = useCallback(
     async (mode: "replace" | "append") => {
@@ -215,7 +182,6 @@ export function CatalogView({
 
       setSizes(data.sizes);
       setColors(data.colors);
-      setTotal(data.total);
       setHasMore(data.hasMore);
       setPriceBounds({ min: data.minPrice, max: data.maxPrice });
       setItems((current) => (mode === "replace" ? data.items : [...current, ...data.items]));
@@ -232,13 +198,17 @@ export function CatalogView({
 
   useEffect(() => {
     setPage(1);
-  }, [selectedStoreId, availabilityMode, availabilityStoreId, gender, category, sortUi, selectedSizes, selectedColors, inStockOnly, saleOnly, pricePreset]);
+  }, [selectedStoreId, gender, category, sortUi, selectedSizes, selectedColors, saleOnly, priceMinApplied, priceMaxApplied]);
 
-  useEffect(() => {
-    if (!stores.some((store) => store.id === availabilityStoreId)) {
-      setAvailabilityStoreId(stores[0]?.id ?? selectedStoreId);
-    }
-  }, [stores, availabilityStoreId, selectedStoreId]);
+  const parsedPriceFrom = priceFromInput ? Number(priceFromInput) : undefined;
+  const parsedPriceTo = priceToInput ? Number(priceToInput) : undefined;
+  const isPriceRangeInvalid =
+    parsedPriceFrom !== undefined && parsedPriceTo !== undefined && parsedPriceFrom > parsedPriceTo;
+
+  const sortedSizes = useMemo(() => {
+    const unique = Array.from(new Set(sizes));
+    return unique.sort((a, b) => compareSizes(a, b));
+  }, [sizes]);
 
   const colorOptions = useMemo(() => {
     const base = [...colors];
@@ -250,26 +220,23 @@ export function CatalogView({
     return base;
   }, [colors]);
 
-  const availabilityLabel = useMemo(() => {
-    if (availabilityMode === "any") {
-      return inStockOnly ? "В наличии · Любой магазин" : "Любой магазин";
-    }
-
-    const storeName =
-      availabilityMode === "specific"
-        ? stores.find((store) => store.id === availabilityStoreId)?.name
-        : selectedStore.name;
-
-    if (!storeName) {
-      return inStockOnly ? "В наличии" : "Наличие";
-    }
-
-    return inStockOnly ? `В наличии · ${storeName}` : storeName;
-  }, [availabilityMode, inStockOnly, stores, availabilityStoreId, selectedStore.name]);
-
   const sortLabel = SORT_OPTIONS.find((option) => option.value === sortUi)?.label ?? "Сортировка";
-  const priceLabel = PRICE_PRESET_OPTIONS.find((option) => option.value === pricePreset)?.label ?? "Цена";
   const saleLabel = saleOnly ? "Только со скидкой" : "Скидка";
+  const priceLabel = useMemo(() => {
+    if (priceMinApplied !== undefined && priceMaxApplied !== undefined) {
+      return `Цена: ${formatNumber(priceMinApplied)} — ${formatNumber(priceMaxApplied)}`;
+    }
+
+    if (priceMinApplied !== undefined) {
+      return `Цена от ${formatNumber(priceMinApplied)}`;
+    }
+
+    if (priceMaxApplied !== undefined) {
+      return `Цена до ${formatNumber(priceMaxApplied)}`;
+    }
+
+    return "Цена";
+  }, [priceMinApplied, priceMaxApplied]);
 
   function toggleValue(setter: Dispatch<SetStateAction<string[]>>, value: string) {
     setter((current) =>
@@ -283,12 +250,10 @@ export function CatalogView({
     <section>
       <div className="mb-6">
         <h1 className="font-logo text-3xl md:text-[42px]">{title}</h1>
-        <p className="mt-1 text-sm text-text-secondary">{total} товаров</p>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[260px_1fr] xl:gap-8">
         <aside className="h-fit pr-4 lg:sticky lg:top-28">
-          <p className="mb-4 text-sm text-text-secondary">{title}</p>
           <nav className="space-y-1 border-l border-border pl-3 text-[15px]">
             {gender && (
               <Link
@@ -327,7 +292,7 @@ export function CatalogView({
                 label={selectedSizes.length > 0 ? `Размер (${selectedSizes.length})` : "Размер"}
               >
                 <FilterCheckList
-                  options={sizes}
+                  options={sortedSizes}
                   selected={selectedSizes}
                   onToggle={(value) => toggleValue(setSelectedSizes, value)}
                 />
@@ -362,92 +327,65 @@ export function CatalogView({
               </DropdownFilter>
 
               <DropdownFilter
-                open={openMenu === "availability"}
-                onToggle={() => setOpenMenu((current) => (current === "availability" ? null : "availability"))}
-                label={availabilityLabel}
-              >
-                <div className="space-y-2 px-2 py-1">
-                  <label className="flex items-center gap-2 text-sm">
-                    <input
-                      type="checkbox"
-                      checked={inStockOnly}
-                      onChange={(event) => setInStockOnly(event.target.checked)}
-                    />
-                    Только в наличии
-                  </label>
-
-                  <div className="border-t border-border pt-2 text-sm">
-                    <p className="mb-2 text-xs uppercase tracking-[0.08em] text-text-muted">Магазин</p>
-                    <label className="mb-1 flex items-center gap-2">
-                      <input
-                        type="radio"
-                        name="availability-store"
-                        checked={availabilityMode === "selected"}
-                        onChange={() => setAvailabilityMode("selected")}
-                      />
-                      Выбранный ({selectedStore.name})
-                    </label>
-                    <label className="mb-1 flex items-center gap-2">
-                      <input
-                        type="radio"
-                        name="availability-store"
-                        checked={availabilityMode === "any"}
-                        onChange={() => setAvailabilityMode("any")}
-                      />
-                      Любой магазин
-                    </label>
-                    <label className="mb-2 flex items-center gap-2">
-                      <input
-                        type="radio"
-                        name="availability-store"
-                        checked={availabilityMode === "specific"}
-                        onChange={() => setAvailabilityMode("specific")}
-                      />
-                      Выбрать магазин
-                    </label>
-
-                    {availabilityMode === "specific" && (
-                      <select
-                        value={availabilityStoreId}
-                        onChange={(event) => setAvailabilityStoreId(event.target.value)}
-                        className="w-full border border-border px-2 py-2 text-sm"
-                      >
-                        {stores.map((store) => (
-                          <option key={store.id} value={store.id}>
-                            {store.name}, {store.city}
-                          </option>
-                        ))}
-                      </select>
-                    )}
-                  </div>
-                </div>
-              </DropdownFilter>
-
-              <DropdownFilter
                 open={openMenu === "price"}
                 onToggle={() => setOpenMenu((current) => (current === "price" ? null : "price"))}
                 label={priceLabel}
               >
-                <div className="space-y-1">
-                  {PRICE_PRESET_OPTIONS.map((option) => {
-                    const active = pricePreset === option.value;
-                    return (
-                      <button
-                        key={option.value}
-                        type="button"
-                        onClick={() => {
-                          setPricePreset(option.value);
-                          setOpenMenu(null);
-                        }}
-                        className={`flex w-full items-center justify-between px-2 py-2 text-left text-sm ${
-                          active ? "bg-bg-secondary" : "hover:bg-bg-secondary/60"
-                        }`}
-                      >
-                        {option.label}
-                        {active && <Check size={14} />}
-                      </button>
-                    );
-                  })}
+                <div className="w-[320px] space-y-3 px-1 py-1">
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="text"
+                      inputMode="numeric"
+                      value={priceFromInput}
+                      onChange={(event) => setPriceFromInput(onlyDigits(event.target.value))}
+                      placeholder={priceBounds.min ? `от ${formatNumber(priceBounds.min)}` : "от"}
+                      className="h-11 w-full border border-border px-3 text-sm"
+                    />
+                    <span className="text-text-muted">—</span>
+                    <input
+                      type="text"
+                      inputMode="numeric"
+                      value={priceToInput}
+                      onChange={(event) => setPriceToInput(onlyDigits(event.target.value))}
+                      placeholder={priceBounds.max ? `до ${formatNumber(priceBounds.max)}` : "до"}
+                      className="h-11 w-full border border-border px-3 text-sm"
+                    />
+                  </div>
+
+                  {isPriceRangeInvalid && (
+                    <p className="text-xs text-error">Введите корректный диапазон цены.</p>
+                  )}
+
+                  <div className="flex gap-2">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (isPriceRangeInvalid) {
+                          return;
+                        }
+                        setPriceMinApplied(parsedPriceFrom);
+                        setPriceMaxApplied(parsedPriceTo);
+                        setOpenMenu(null);
+                      }}
+                      disabled={isPriceRangeInvalid}
+                      className="h-10 flex-1 border border-text-primary bg-text-primary px-3 text-xs uppercase tracking-[0.08em] text-white disabled:cursor-not-allowed disabled:opacity-40"
+                    >
+                      Применить
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setPriceFromInput("");
+                        setPriceToInput("");
+                        setPriceMinApplied(undefined);
+                        setPriceMaxApplied(undefined);
+                        setOpenMenu(null);
+                      }}
+                      className="h-10 border border-border px-3 text-xs uppercase tracking-[0.08em]"
+                    >
+                      Сбросить
+                    </button>
+                  </div>
                 </div>
               </DropdownFilter>
 
@@ -558,6 +496,27 @@ export function CatalogView({
       </div>
     </section>
   );
+}
+
+function compareSizes(a: string, b: string): number {
+  const normalizedA = a.trim().toUpperCase();
+  const normalizedB = b.trim().toUpperCase();
+  const rankA = SIZE_RANK[normalizedA] ?? Number.MAX_SAFE_INTEGER;
+  const rankB = SIZE_RANK[normalizedB] ?? Number.MAX_SAFE_INTEGER;
+
+  if (rankA !== rankB) {
+    return rankA - rankB;
+  }
+
+  return normalizedA.localeCompare(normalizedB, "ru");
+}
+
+function formatNumber(value: number): string {
+  return new Intl.NumberFormat("ru-RU").format(value);
+}
+
+function onlyDigits(value: string): string {
+  return value.replace(/\D/g, "");
 }
 
 function getColorHex(name: string): string {

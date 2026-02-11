@@ -91,17 +91,17 @@ export function ProductCard({ product }: ProductCardProps) {
           {hasSale && product.oldPrice ? (
             <div className="space-y-0.5">
               <div className="flex items-baseline gap-2">
-                <span className="text-[11px] tracking-[0.05em] tabular-nums text-text-muted line-through">
+                <span className="text-[11px] tracking-[0.03em] tabular-nums text-text-muted line-through">
                   {formatPrice(product.oldPrice)}
                 </span>
-                <span className="text-[13px] tracking-[0.06em] tabular-nums text-sale">
+                <span className="text-[13px] tracking-[0.035em] tabular-nums text-sale">
                   {formatPrice(product.price)}
                 </span>
               </div>
               <p className="text-[11px] text-sale">-{discountPercent}%</p>
             </div>
           ) : (
-            <span className="text-[13px] tracking-[0.06em] tabular-nums text-text-primary">
+            <span className="text-[13px] tracking-[0.035em] tabular-nums text-text-primary">
               {formatPrice(product.price)}
             </span>
           )}
