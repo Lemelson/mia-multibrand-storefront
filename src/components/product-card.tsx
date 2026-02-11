@@ -87,36 +87,45 @@ export function ProductCard({ product }: ProductCardProps) {
         <Link href={`/product/${product.slug}`} className="line-clamp-2 text-[13px] text-text-primary">
           {product.name}
         </Link>
-        <div className="flex items-end gap-2">
-          {hasSale && product.oldPrice ? (
-            <div className="space-y-0.5">
-              <div className="flex items-baseline gap-2">
-                <span className="text-[11px] tracking-[0.03em] tabular-nums text-text-muted line-through">
-                  {formatPrice(product.oldPrice)}
-                </span>
-                <span className="text-[13px] font-medium tracking-[0.035em] tabular-nums text-sale">
-                  {formatPrice(product.price)}
-                </span>
+        {hasSale && product.oldPrice ? (
+          <div className="space-y-0.5">
+            <div className="flex items-center gap-2">
+              <span className="text-[11px] tracking-[0.03em] tabular-nums text-text-muted line-through">
+                {formatPrice(product.oldPrice)}
+              </span>
+              <span className="text-[13px] font-medium tracking-[0.035em] tabular-nums text-sale">
+                {formatPrice(product.price)}
+              </span>
+              <div className="flex items-center gap-1">
+                {product.colors.slice(0, 4).map((color) => (
+                  <span
+                    key={color.id}
+                    title={color.name}
+                    className="inline-block h-2.5 w-2.5 rounded-full"
+                    style={{ backgroundColor: color.hex }}
+                  />
+                ))}
               </div>
-              <p className="text-[11px] text-sale">-{discountPercent}%</p>
             </div>
-          ) : (
+            <p className="text-[11px] text-sale">-{discountPercent}%</p>
+          </div>
+        ) : (
+          <div className="flex items-center gap-2">
             <span className="text-[13px] font-medium tracking-[0.035em] tabular-nums text-text-primary">
               {formatPrice(product.price)}
             </span>
-          )}
-
-          <div className="mb-[2px] flex gap-1">
-            {product.colors.slice(0, 4).map((color) => (
-              <span
-                key={color.id}
-                title={color.name}
-                className="inline-block h-2.5 w-2.5 rounded-full border border-border"
-                style={{ backgroundColor: color.hex }}
-              />
-            ))}
+            <div className="flex items-center gap-1">
+              {product.colors.slice(0, 4).map((color) => (
+                <span
+                  key={color.id}
+                  title={color.name}
+                  className="inline-block h-2.5 w-2.5 rounded-full"
+                  style={{ backgroundColor: color.hex }}
+                />
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </article>
   );
