@@ -2,11 +2,15 @@ import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import { ADMIN_COOKIE, verifyAdminToken } from "@/lib/auth";
 import { deleteProduct, getProductById, updateProduct } from "@/lib/server-data";
-import type { Product } from "@/lib/types";
+import { formatZodError, patchProductInputSchema } from "@/lib/validation";
 
 function isAdmin(): boolean {
   const token = cookies().get(ADMIN_COOKIE)?.value;
-  return verifyAdminToken(token);
+  try {
+    return verifyAdminToken(token);
+  } catch {
+    return false;
+  }
 }
 
 function getStorageErrorMessage(error: unknown, fallback: string): string {
@@ -42,8 +46,14 @@ export async function PATCH(
   }
 
   try {
-    const payload = (await request.json()) as Partial<Product>;
-    const product = await updateProduct(params.id, payload);
+    const payload = (await request.json()) as unknown;
+    const parsed = patchProductInputSchema.safeParse(payload);
+
+    if (!parsed.success) {
+      return NextResponse.json(formatZodError(parsed.error), { status: 400 });
+    }
+
+    const product = await updateProduct(params.id, parsed.data);
 
     if (!product) {
       return NextResponse.json({ message: "Not found" }, { status: 404 });

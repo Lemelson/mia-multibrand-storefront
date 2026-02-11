@@ -8,6 +8,8 @@ export function AdminLoginForm() {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const showDevPasswordHint = process.env.NODE_ENV !== "production";
+  const devPasswordHint = process.env.NEXT_PUBLIC_DEV_ADMIN_PASSWORD || "см. .env.local";
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -58,9 +60,11 @@ export function AdminLoginForm() {
         {loading ? "Вход..." : "Войти"}
       </button>
 
-      <p className="mt-4 text-xs text-text-muted">
-        Пароль по умолчанию: `mia-admin`. Для продакшена задайте `ADMIN_PASSWORD` в `.env.local`.
-      </p>
+      {showDevPasswordHint && (
+        <p className="mt-4 text-xs text-text-muted">
+          DEV-подсказка пароля: `{devPasswordHint}`. Для продакшена используйте безопасные `ADMIN_PASSWORD` и `ADMIN_SECRET`.
+        </p>
+      )}
     </form>
   );
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Check } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useCart } from "@/components/providers/cart-provider";
 import { useStore } from "@/components/providers/store-provider";
 import { formatPrice } from "@/lib/format";
@@ -14,6 +14,24 @@ interface AvailabilityIssue {
   key: string;
   name: string;
   reason: string;
+}
+
+interface CreateOrderPayload {
+  customer: {
+    name: string;
+    phone: string;
+    email?: string;
+    comment?: string;
+  };
+  delivery: DeliveryType;
+  paymentMethod: PaymentMethod;
+  storeId: string;
+  items: Array<{
+    productId: string;
+    colorId: string;
+    size: string;
+    quantity: number;
+  }>;
 }
 
 function formatPhone(raw: string): string {
@@ -65,6 +83,7 @@ export function CheckoutPageClient() {
   const [error, setError] = useState<string | null>(null);
   const [availabilityLoading, setAvailabilityLoading] = useState(false);
   const [availabilityIssues, setAvailabilityIssues] = useState<AvailabilityIssue[]>([]);
+  const idempotencyKeyRef = useRef(createIdempotencyKey());
 
   const messengerText = useMemo(() => {
     const lines = items
@@ -202,7 +221,7 @@ export function CheckoutPageClient() {
 
     setLoading(true);
 
-    const payload: Partial<Order> = {
+    const payload: CreateOrderPayload = {
       customer: {
         name: name.trim(),
         phone,
@@ -214,26 +233,30 @@ export function CheckoutPageClient() {
       storeId: selectedStore.id,
       items: items.map((item) => ({
         productId: item.productId,
-        name: item.name,
-        brand: item.brand,
-        color: item.colorName,
+        colorId: item.colorId,
         size: item.size,
-        price: item.price,
-        quantity: item.quantity,
-        imageUrl: item.imageUrl
+        quantity: item.quantity
       }))
     };
 
     const response = await fetch("/api/orders", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Idempotency-Key": idempotencyKeyRef.current
       },
       body: JSON.stringify(payload)
     });
 
     if (!response.ok) {
-      setError("Не удалось оформить заказ. Попробуйте снова.");
+      const payload = (await response.json().catch(() => null)) as
+        | { message?: string; issues?: string[] }
+        | null;
+      const fallback = "Не удалось оформить заказ. Попробуйте снова.";
+      const message = payload?.issues?.length
+        ? `${payload.message ?? "Ошибка валидации"}: ${payload.issues.join("; ")}`
+        : payload?.message ?? fallback;
+      setError(message);
       setLoading(false);
       return;
     }
@@ -442,6 +465,14 @@ export function CheckoutPageClient() {
       </div>
     </section>
   );
+}
+
+function createIdempotencyKey(): string {
+  if (typeof globalThis.crypto !== "undefined" && "randomUUID" in globalThis.crypto) {
+    return `checkout-${globalThis.crypto.randomUUID()}`;
+  }
+
+  return `checkout-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
 }
 
 interface ChoiceCardProps {

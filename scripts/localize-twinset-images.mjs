@@ -2,6 +2,7 @@
 
 import { promises as fs } from "fs";
 import path from "path";
+import { PrismaClient } from "@prisma/client";
 
 const ROOT = process.cwd();
 const PRODUCTS_PATH = path.join(ROOT, "src/data/products.json");
@@ -18,6 +19,9 @@ const PROFILE = {
 const args = new Set(process.argv.slice(2));
 const refresh = args.has("--refresh");
 const concurrency = Number.parseInt(process.env.IMG_CONCURRENCY ?? "8", 10);
+const dataSource = (process.env.DATA_SOURCE || "json").toLowerCase();
+const useDb = dataSource === "db" && Boolean(process.env.DATABASE_URL);
+const prisma = useDb ? new PrismaClient() : null;
 
 function isTwinsetUrl(value) {
   try {
@@ -102,8 +106,24 @@ async function runPool(items, limit, worker) {
 }
 
 async function main() {
-  const raw = await fs.readFile(PRODUCTS_PATH, "utf8");
-  const products = JSON.parse(raw);
+  let products;
+  if (useDb) {
+    const rows = await prisma.product.findMany({
+      select: {
+        id: true,
+        slug: true,
+        colorsJson: true
+      }
+    });
+    products = rows.map((row) => ({
+      id: row.id,
+      slug: row.slug,
+      colors: Array.isArray(row.colorsJson) ? row.colorsJson : []
+    }));
+  } else {
+    const raw = await fs.readFile(PRODUCTS_PATH, "utf8");
+    products = JSON.parse(raw);
+  }
 
   const tasks = [];
 
@@ -202,7 +222,19 @@ async function main() {
     }
   });
 
-  await fs.writeFile(PRODUCTS_PATH, `${JSON.stringify(products, null, 2)}\n`, "utf8");
+  if (useDb) {
+    for (const product of products) {
+      await prisma.product.update({
+        where: { id: product.id },
+        data: {
+          colorsJson: product.colors,
+          updatedAt: new Date()
+        }
+      });
+    }
+  } else {
+    await fs.writeFile(PRODUCTS_PATH, `${JSON.stringify(products, null, 2)}\n`, "utf8");
+  }
 
   const summary = {
     total: tasks.length,
@@ -229,4 +261,8 @@ async function main() {
 main().catch((error) => {
   console.error(error);
   process.exit(1);
+}).finally(async () => {
+  if (prisma) {
+    await prisma.$disconnect();
+  }
 });

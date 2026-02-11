@@ -3,7 +3,12 @@ import { NextResponse } from "next/server";
 import { getCatalog } from "@/lib/catalog";
 import { ADMIN_COOKIE, verifyAdminToken } from "@/lib/auth";
 import { createProduct, getProducts } from "@/lib/server-data";
-import type { CatalogFilters, Product } from "@/lib/types";
+import {
+  createProductInputSchema,
+  formatZodError,
+  type CreateProductInput
+} from "@/lib/validation";
+import type { CatalogFilters } from "@/lib/types";
 
 function parseList(value: string | null): string[] {
   if (!value) {
@@ -16,14 +21,21 @@ function parseList(value: string | null): string[] {
     .filter(Boolean);
 }
 
+function parseFiniteNumber(value: string | null): number | undefined {
+  if (!value) {
+    return undefined;
+  }
+
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : undefined;
+}
+
 function parseFilters(searchParams: URLSearchParams): CatalogFilters {
   const sortParam = searchParams.get("sort");
   const sort: CatalogFilters["sort"] =
     sortParam === "popular" || sortParam === "price-asc" || sortParam === "price-desc" || sortParam === "new"
       ? sortParam
       : "new";
-  const priceMinValue = searchParams.get("priceMin");
-  const priceMaxValue = searchParams.get("priceMax");
 
   return {
     sizes: parseList(searchParams.get("sizes")),
@@ -32,14 +44,18 @@ function parseFilters(searchParams: URLSearchParams): CatalogFilters {
     inStockOnly: searchParams.get("inStock") === "1",
     saleOnly: searchParams.get("sale") === "1",
     sort,
-    priceMin: priceMinValue ? Number(priceMinValue) : undefined,
-    priceMax: priceMaxValue ? Number(priceMaxValue) : undefined
+    priceMin: parseFiniteNumber(searchParams.get("priceMin")),
+    priceMax: parseFiniteNumber(searchParams.get("priceMax"))
   };
 }
 
 function isAdmin(): boolean {
   const token = cookies().get(ADMIN_COOKIE)?.value;
-  return verifyAdminToken(token);
+  try {
+    return verifyAdminToken(token);
+  } catch {
+    return false;
+  }
 }
 
 function getStorageErrorMessage(error: unknown, fallback: string): string {
@@ -79,31 +95,32 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
   }
 
-  const payload = (await request.json()) as Partial<Product>;
+  const payload = (await request.json()) as unknown;
+  const parsed = createProductInputSchema.safeParse(payload);
 
-  if (!payload.name || !payload.brand || !payload.gender || !payload.category || !payload.price) {
-    return NextResponse.json(
-      { message: "Missing required fields" },
-      { status: 400 }
-    );
+  if (!parsed.success) {
+    return NextResponse.json(formatZodError(parsed.error), { status: 400 });
   }
+
+  const data: CreateProductInput = parsed.data;
 
   try {
     const product = await createProduct({
-      slug: payload.slug,
-      name: payload.name,
-      brand: payload.brand,
-      description: payload.description ?? "",
-      composition: payload.composition ?? "",
-      care: payload.care ?? "",
-      category: payload.category,
-      gender: payload.gender,
-      price: Number(payload.price),
-      oldPrice: payload.oldPrice ? Number(payload.oldPrice) : undefined,
-      colors: payload.colors ?? [],
-      stores: payload.stores ?? [],
-      isNew: Boolean(payload.isNew),
-      isActive: payload.isActive ?? true
+      sku: data.sku,
+      slug: data.slug,
+      name: data.name,
+      brand: data.brand,
+      description: data.description,
+      composition: data.composition,
+      care: data.care,
+      category: data.category,
+      gender: data.gender,
+      price: data.price,
+      oldPrice: data.oldPrice,
+      colors: data.colors,
+      stores: data.stores,
+      isNew: data.isNew,
+      isActive: data.isActive
     });
 
     return NextResponse.json(product, { status: 201 });

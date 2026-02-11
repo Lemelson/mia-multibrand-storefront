@@ -1,0 +1,115 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum Gender {
+  women
+  men
+  kids
+}
+
+enum DeliveryType {
+  pickup
+  delivery
+}
+
+enum PaymentMethod {
+  card
+  messenger
+  cash
+}
+
+enum OrderStatus {
+  new
+  processing
+  completed
+  cancelled
+}
+
+model Product {
+  id          String   @id @db.Text
+  sku         String?  @unique @db.Text
+  slug        String   @unique @db.Text
+  name        String   @db.Text
+  brand       String   @db.Text
+  description String   @db.Text
+  composition String   @db.Text
+  care        String   @db.Text
+  category    String   @db.Text
+  gender      Gender
+  price       Int
+  oldPrice    Int?     @map("old_price")
+  colorsJson  Json     @map("colors_json")
+  storesJson  Json     @map("stores_json")
+  isNew       Boolean  @map("is_new")
+  isActive    Boolean  @map("is_active")
+  createdAt   DateTime @map("created_at")
+  updatedAt   DateTime @map("updated_at")
+
+  @@index([isActive, createdAt(sort: Desc)])
+  @@index([gender, category, isActive])
+  @@map("products")
+}
+
+model Store {
+  id              String @id @db.Text
+  name            String @db.Text
+  fullName        String? @map("full_name") @db.Text
+  city            String @db.Text
+  address         String @db.Text
+  phone           String @db.Text
+  workingHours    String @map("working_hours") @db.Text
+  coordinatesJson Json   @map("coordinates_json")
+  whatsapp        String @db.Text
+  telegram        String @db.Text
+
+  @@map("stores")
+}
+
+model Category {
+  id       String  @id @db.Text
+  slug     String  @unique @db.Text
+  name     String  @db.Text
+  gender   Gender
+  parentId String? @map("parent_id") @db.Text
+
+  @@map("categories")
+}
+
+model Order {
+  id            String       @id @db.Text
+  orderNumber   String       @unique @map("order_number") @db.Text
+  itemsJson     Json         @map("items_json")
+  totalAmount   Int          @map("total_amount")
+  customerJson  Json         @map("customer_json")
+  delivery      DeliveryType
+  storeId       String       @map("store_id") @db.Text
+  paymentMethod PaymentMethod @map("payment_method")
+  status        OrderStatus
+  createdAt     DateTime     @map("created_at")
+  updatedAt     DateTime     @map("updated_at")
+
+  idempotencyRecords OrderIdempotency[]
+
+  @@index([createdAt(sort: Desc)])
+  @@map("orders")
+}
+
+model OrderIdempotency {
+  id          String   @id @default(cuid()) @db.Text
+  key         String   @unique @db.Text
+  requestHash String   @map("request_hash") @db.Text
+  orderId     String   @map("order_id") @db.Text
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  order Order @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@index([createdAt(sort: Desc)])
+  @@map("order_idempotency")
+}
