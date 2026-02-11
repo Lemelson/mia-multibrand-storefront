@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MessageCircle, Navigation, Phone, Send } from "lucide-react";
 import { Container } from "@/components/container";
 import { getStores } from "@/lib/server-data";
 
@@ -17,6 +18,36 @@ export default async function ContactsPage() {
             <p className="mt-3 text-sm">{store.address}</p>
             <p className="mt-2 text-sm">{store.workingHours}</p>
             <p className="mt-2 text-sm">{store.phone}</p>
+
+            <div className="mt-4 flex flex-wrap gap-2">
+              <Link
+                href={getTelegramUrl(store.telegram)}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 border border-border px-2.5 py-1.5 text-xs uppercase tracking-[0.08em]"
+              >
+                <Send size={13} />
+                Telegram
+              </Link>
+              <Link
+                href={getWhatsAppUrl(store.whatsapp)}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 border border-border px-2.5 py-1.5 text-xs uppercase tracking-[0.08em]"
+              >
+                <MessageCircle size={13} />
+                WhatsApp
+              </Link>
+              <Link
+                href={getYandexMapsUrl(store.coordinates.lat, store.coordinates.lng)}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 border border-border px-2.5 py-1.5 text-xs uppercase tracking-[0.08em]"
+              >
+                <Navigation size={13} />
+                На карте
+              </Link>
+            </div>
           </article>
         ))}
       </div>
@@ -24,7 +55,8 @@ export default async function ContactsPage() {
       <section className="mt-10 border border-border bg-bg-secondary p-6">
         <h2 className="font-logo text-2xl">Карта</h2>
         <p className="mt-3 text-sm text-text-secondary">
-          Плейсхолдер карты для MVP. Позже подключим Яндекс.Карты или 2GIS с тремя точками магазинов.
+          Временный режим: кнопки «На карте» открывают точки в Яндекс.Картах. Далее можно подключить
+          интерактивную карту Яндекс с метками всех магазинов.
         </p>
         <div className="mt-4 h-72 border border-dashed border-border bg-white/60" />
       </section>
@@ -43,8 +75,30 @@ export default async function ContactsPage() {
 
       <div className="mt-8 flex flex-wrap gap-4 text-sm text-text-secondary">
         <Link href="https://instagram.com" target="_blank">Instagram</Link>
-        <Link href="https://t.me" target="_blank">Telegram</Link>
+        <Link href="https://t.me/ModaMia_sochi" target="_blank">Telegram MIA</Link>
+        <Link href="https://t.me/twinset_kp" target="_blank">Telegram Twinset Поляна</Link>
+        <Link href="https://wa.me/79388731838" target="_blank" className="inline-flex items-center gap-1.5">
+          <Phone size={14} />
+          WhatsApp
+        </Link>
       </div>
     </Container>
   );
+}
+
+function getTelegramUrl(value: string): string {
+  if (/^https?:\/\//i.test(value)) {
+    return value;
+  }
+
+  return `https://t.me/${value.replace(/^@/, "")}`;
+}
+
+function getWhatsAppUrl(value: string): string {
+  const digits = value.replace(/\D/g, "");
+  return `https://wa.me/${digits}`;
+}
+
+function getYandexMapsUrl(lat: number, lng: number): string {
+  return `https://yandex.ru/maps/?pt=${lng},${lat}&z=16&l=map`;
 }
