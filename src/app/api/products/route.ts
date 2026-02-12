@@ -1,7 +1,6 @@
-import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import { getCatalog } from "@/lib/catalog";
-import { ADMIN_COOKIE, verifyAdminToken } from "@/lib/auth";
+import { isAdminSession } from "@/lib/admin-session";
 import { createProduct, getProducts } from "@/lib/server-data";
 import {
   createProductInputSchema,
@@ -50,15 +49,6 @@ function parseFilters(searchParams: URLSearchParams): CatalogFilters {
   };
 }
 
-function isAdmin(): boolean {
-  const token = cookies().get(ADMIN_COOKIE)?.value;
-  try {
-    return verifyAdminToken(token);
-  } catch {
-    return false;
-  }
-}
-
 function getStorageErrorMessage(error: unknown, fallback: string): string {
   if (error instanceof Error) {
     if (/EROFS|read-only|EACCES|EPERM/i.test(error.message)) {
@@ -92,7 +82,7 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
-  if (!isAdmin()) {
+  if (!isAdminSession()) {
     return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
   }
 

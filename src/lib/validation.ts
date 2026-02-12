@@ -3,7 +3,14 @@ import { ADMIN_BRAND_OPTIONS, ADMIN_COLOR_OPTIONS } from "@/lib/admin-options";
 
 const genderSchema = z.enum(["women", "men", "kids"]);
 const deliverySchema = z.enum(["pickup", "delivery"]);
+/**
+ * All known payment methods in the system.
+ * "card" is defined but currently disabled (not yet integrated).
+ */
 const paymentMethodSchema = z.enum(["card", "messenger", "cash"]);
+
+/** Payment methods that are currently enabled for new orders. */
+const activePaymentMethodSchema = z.enum(["messenger", "cash"]);
 const orderStatusSchema = z.enum(["new", "processing", "completed", "cancelled"]);
 const brandSchema = z.enum(ADMIN_BRAND_OPTIONS);
 
@@ -110,7 +117,7 @@ export const createOrderInputSchema = z.object({
     comment: z.string().max(1000).optional()
   }),
   delivery: deliverySchema.default("pickup"),
-  paymentMethod: paymentMethodSchema.default("cash"),
+  paymentMethod: activePaymentMethodSchema.default("cash"),
   storeId: z.string().min(1).max(120),
   items: z.array(createOrderItemInputSchema).min(1).max(80)
 });

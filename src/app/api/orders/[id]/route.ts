@@ -1,23 +1,13 @@
-import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
-import { ADMIN_COOKIE, verifyAdminToken } from "@/lib/auth";
+import { isAdminSession } from "@/lib/admin-session";
 import { updateOrderStatus } from "@/lib/server-data";
 import { formatZodError, patchOrderStatusInputSchema } from "@/lib/validation";
-
-function isAdmin(): boolean {
-  const token = cookies().get(ADMIN_COOKIE)?.value;
-  try {
-    return verifyAdminToken(token);
-  } catch {
-    return false;
-  }
-}
 
 export async function PATCH(
   request: Request,
   { params }: { params: { id: string } }
 ) {
-  if (!isAdmin()) {
+  if (!isAdminSession()) {
     return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
   }
 

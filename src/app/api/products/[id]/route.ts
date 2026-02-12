@@ -1,17 +1,7 @@
-import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
-import { ADMIN_COOKIE, verifyAdminToken } from "@/lib/auth";
+import { isAdminSession } from "@/lib/admin-session";
 import { deleteProduct, getProductById, updateProduct } from "@/lib/server-data";
 import { formatZodError, patchProductInputSchema } from "@/lib/validation";
-
-function isAdmin(): boolean {
-  const token = cookies().get(ADMIN_COOKIE)?.value;
-  try {
-    return verifyAdminToken(token);
-  } catch {
-    return false;
-  }
-}
 
 function getStorageErrorMessage(error: unknown, fallback: string): string {
   if (error instanceof Error) {
@@ -41,7 +31,7 @@ export async function PATCH(
   request: Request,
   { params }: { params: { id: string } }
 ) {
-  if (!isAdmin()) {
+  if (!isAdminSession()) {
     return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
   }
 
@@ -70,7 +60,7 @@ export async function DELETE(
   _request: Request,
   { params }: { params: { id: string } }
 ) {
-  if (!isAdmin()) {
+  if (!isAdminSession()) {
     return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
   }
 

@@ -404,6 +404,10 @@ export function CheckoutPageClient() {
               />
             </div>
 
+            {/* TODO: WhatsApp URL needs store phone number (e.g. https://wa.me/79001234567?text=...)
+                Currently opens WhatsApp without a recipient — user has to pick a contact manually.
+                When WhatsApp integration is ready, use selectedStore.whatsapp here.
+                Same for Telegram — use selectedStore.telegram as the bot/chat link. */}
             {paymentMethod === "messenger" && (
               <div className="mt-4 grid gap-2 sm:grid-cols-2">
                 <a

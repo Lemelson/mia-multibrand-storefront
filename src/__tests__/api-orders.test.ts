@@ -3,6 +3,7 @@ import { describe, expect, it, vi, beforeEach } from "vitest";
 vi.mock("@/lib/server-data", () => ({
   createOrderWithIdempotency: vi.fn(),
   getProductById: vi.fn(),
+  getStoreById: vi.fn(),
 }));
 
 import { POST } from "@/app/api/orders/route";
@@ -55,8 +56,22 @@ const mockProduct = {
   updatedAt: new Date().toISOString()
 };
 
+const mockStore = {
+  id: "mantera-sirius",
+  name: "Mantera Sirius",
+  city: "Сочи",
+  address: "ул. Тестовая 1",
+  phone: "+79001234567",
+  workingHours: "10:00-20:00",
+  coordinates: { lat: 0, lng: 0 },
+  whatsapp: "",
+  telegram: ""
+};
+
 beforeEach(() => {
   vi.clearAllMocks();
+  // Default: store exists for all order tests.
+  mockedServerData.getStoreById.mockResolvedValue(mockStore);
 });
 
 describe("POST /api/orders", () => {

@@ -1,12 +1,13 @@
 import crypto from "crypto";
-import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
-import { ADMIN_COOKIE, verifyAdminToken } from "@/lib/auth";
+import { isAdminSession } from "@/lib/admin-session";
 import {
   createOrderWithIdempotency,
   getOrders,
   getProductById,
+  getStoreById,
 } from "@/lib/server-data";
+import { createRateLimiter, getClientIp } from "@/lib/rate-limit";
 import {
   createOrderInputSchema,
   formatZodError,
@@ -15,14 +16,10 @@ import {
 } from "@/lib/validation";
 import type { OrderItem } from "@/lib/types";
 
-function isAdmin(): boolean {
-  const token = cookies().get(ADMIN_COOKIE)?.value;
-  try {
-    return verifyAdminToken(token);
-  } catch {
-    return false;
-  }
-}
+const orderLimiter = createRateLimiter("create-order", {
+  limit: 10,
+  windowMs: 60 * 1000 // 10 orders per minute per IP
+});
 
 function createRequestHash(payload: CreateOrderInput): string {
   return crypto.createHash("sha256").update(JSON.stringify(payload)).digest("hex");
@@ -104,16 +101,50 @@ async function buildOrderItems(payload: CreateOrderInput): Promise<{
   };
 }
 
-export async function GET() {
-  if (!isAdmin()) {
+export async function GET(request: Request) {
+  if (!isAdminSession()) {
     return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
   }
 
-  const orders = await getOrders();
-  return NextResponse.json(orders);
+  const { searchParams } = new URL(request.url);
+  const rawPage = Number(searchParams.get("page") ?? "1");
+  const rawPageSize = Number(searchParams.get("pageSize") ?? "50");
+
+  const page = Number.isFinite(rawPage) && rawPage > 0 ? rawPage : 1;
+  const pageSize = Math.min(
+    Number.isFinite(rawPageSize) && rawPageSize > 0 ? rawPageSize : 50,
+    200 // hard cap
+  );
+
+  const allOrders = await getOrders();
+  const total = allOrders.length;
+  const start = (page - 1) * pageSize;
+  const items = allOrders.slice(start, start + pageSize);
+
+  return NextResponse.json({
+    items,
+    total,
+    page,
+    pageSize,
+    hasMore: start + pageSize < total
+  });
 }
 
 export async function POST(request: Request) {
+  const ip = getClientIp(request);
+  const rateCheck = orderLimiter.check(ip);
+
+  if (!rateCheck.allowed) {
+    const retryAfterSec = Math.ceil(rateCheck.retryAfterMs / 1000);
+    return NextResponse.json(
+      { message: "Слишком много запросов. Попробуйте позже." },
+      {
+        status: 429,
+        headers: { "Retry-After": String(retryAfterSec) }
+      }
+    );
+  }
+
   const idempotencyHeader = request.headers.get("Idempotency-Key");
   const idempotencyResult = idempotencyKeySchema.safeParse(idempotencyHeader ?? "");
 
@@ -136,6 +167,15 @@ export async function POST(request: Request) {
   const payload = parsed.data;
   const requestHash = createRequestHash(payload);
   const idempotencyKey = idempotencyResult.data;
+
+  // Validate that the specified store exists.
+  const store = await getStoreById(payload.storeId);
+  if (!store) {
+    return NextResponse.json(
+      { message: "Указанный магазин не найден", issues: [`Магазин ${payload.storeId} не существует`] },
+      { status: 400 }
+    );
+  }
 
   const { items, totalAmount, issues } = await buildOrderItems(payload);
 

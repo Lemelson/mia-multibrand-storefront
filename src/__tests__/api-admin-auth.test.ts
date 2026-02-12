@@ -6,6 +6,10 @@ vi.mock("next/headers", () => ({
   })
 }));
 
+vi.mock("@/lib/admin-session", () => ({
+  isAdminSession: vi.fn(() => false)
+}));
+
 vi.mock("@/lib/auth", () => ({
   ADMIN_COOKIE: "mia_admin_session",
   verifyAdminToken: vi.fn(() => false)
@@ -16,18 +20,19 @@ vi.mock("@/lib/server-data", () => ({
 }));
 
 import { GET } from "@/app/api/orders/route";
-import { verifyAdminToken } from "@/lib/auth";
+import { isAdminSession } from "@/lib/admin-session";
 
-const mockedVerify = vi.mocked(verifyAdminToken);
+const mockedIsAdmin = vi.mocked(isAdminSession);
 
 beforeEach(() => {
   vi.clearAllMocks();
-  mockedVerify.mockReturnValue(false);
+  mockedIsAdmin.mockReturnValue(false);
 });
 
 describe("Admin guard", () => {
   it("returns 401 for GET /api/orders without admin session", async () => {
-    const response = await GET();
+    const request = new Request("http://localhost:3000/api/orders");
+    const response = await GET(request);
     expect(response.status).toBe(401);
   });
 });

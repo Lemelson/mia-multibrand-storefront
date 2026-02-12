@@ -1,7 +1,27 @@
 import { NextResponse } from "next/server";
 import { ADMIN_COOKIE, createAdminToken, getAdminPassword } from "@/lib/auth";
+import { createRateLimiter, getClientIp } from "@/lib/rate-limit";
+
+const loginLimiter = createRateLimiter("admin-login", {
+  limit: 5,
+  windowMs: 60 * 1000 // 5 attempts per minute
+});
 
 export async function POST(request: Request) {
+  const ip = getClientIp(request);
+  const rateCheck = loginLimiter.check(ip);
+
+  if (!rateCheck.allowed) {
+    const retryAfterSec = Math.ceil(rateCheck.retryAfterMs / 1000);
+    return NextResponse.json(
+      { message: "Слишком много попыток входа. Попробуйте позже." },
+      {
+        status: 429,
+        headers: { "Retry-After": String(retryAfterSec) }
+      }
+    );
+  }
+
   try {
     const payload = (await request.json()) as { password?: string };
 
