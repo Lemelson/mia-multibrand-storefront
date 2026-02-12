@@ -9,6 +9,7 @@ import type { Product, Store } from "@/lib/types";
 import { ProductCard } from "@/components/product-card";
 import {
   getProductDetailImageUrl,
+  getProductOriginalImageUrl,
   getProductThumbImageUrl,
   isLocalProductImage
 } from "@/lib/image";
@@ -23,6 +24,7 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
   const [selectedColorId, setSelectedColorId] = useState(product.colors[0]?.id ?? "");
   const [selectedSize, setSelectedSize] = useState("");
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [failedOriginalIndexes, setFailedOriginalIndexes] = useState<number[]>([]);
   const [sizeError, setSizeError] = useState(false);
   const [added, setAdded] = useState(false);
 
@@ -36,11 +38,22 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
     () => (selectedColor?.images ?? []).map((image) => getProductDetailImageUrl(image)),
     [selectedColor?.images]
   );
+  const originalImages = useMemo(
+    () => (selectedColor?.images ?? []).map((image) => getProductOriginalImageUrl(image)),
+    [selectedColor?.images]
+  );
   const thumbImages = useMemo(
     () => (selectedColor?.images ?? []).map((image) => getProductThumbImageUrl(image)),
     [selectedColor?.images]
   );
-  const activeImage = detailImages[activeImageIndex] ?? detailImages[0];
+  const activeImageOriginal = originalImages[activeImageIndex] ?? originalImages[0];
+  const activeImageDetail = detailImages[activeImageIndex] ?? detailImages[0];
+  const activeImage =
+    failedOriginalIndexes.includes(activeImageIndex) ||
+    !activeImageOriginal ||
+    activeImageOriginal === activeImageDetail
+      ? activeImageDetail
+      : activeImageOriginal;
 
   const alternativeStores = useMemo(() => {
     return product.stores
@@ -61,6 +74,10 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
       image.src = isLocalProductImage(src) ? src : getNextImageProxyUrl(src, preloadWidth, 82);
     }
   }, [detailImages]);
+
+  useEffect(() => {
+    setFailedOriginalIndexes([]);
+  }, [selectedColorId]);
 
   function handleAddToCart() {
     if (!selectedSize) {
@@ -127,6 +144,21 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
                 sizes="(max-width: 768px) 100vw, 560px"
                 className="object-cover"
                 unoptimized={isLocalProductImage(activeImage)}
+                onError={() => {
+                  const originalAtIndex = originalImages[activeImageIndex];
+                  const detailAtIndex = detailImages[activeImageIndex];
+
+                  if (!originalAtIndex || !detailAtIndex || originalAtIndex === detailAtIndex) {
+                    return;
+                  }
+
+                  setFailedOriginalIndexes((current) => {
+                    if (current.includes(activeImageIndex)) {
+                      return current;
+                    }
+                    return [...current, activeImageIndex];
+                  });
+                }}
               />
             ) : (
               <div className="h-full w-full bg-bg-secondary" />

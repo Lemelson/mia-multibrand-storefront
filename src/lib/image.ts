@@ -67,3 +67,15 @@ export function getProductDetailImageUrl(url: string): string {
 export function getProductThumbImageUrl(url: string): string {
   return getTwinsetImageBySize(url, "thumb");
 }
+
+export function getProductOriginalImageUrl(url: string): string {
+  if (!isLocalProductImage(url)) {
+    return url;
+  }
+
+  if (url.includes("/detail/")) {
+    return url.replace("/detail/", "/original/");
+  }
+
+  return url;
+}
