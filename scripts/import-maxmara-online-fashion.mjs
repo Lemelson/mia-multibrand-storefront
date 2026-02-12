@@ -27,7 +27,7 @@ function getArg(name, fallback = undefined) {
 
 const cardsJsonPath = path.resolve(
   ROOT,
-  getArg("--cards-json", "outputs/maxmara/article_cards_full.json")
+  getArg("--cards-json", "outputs/maxmara/article_cards_full.combined.json")
 );
 const productsJsonPath = path.resolve(ROOT, getArg("--products-json", "src/data/products.json"));
 const downloadedImagesRoot = path.resolve(ROOT, getArg("--downloaded-images", "outputs/maxmara/images/online-fashion"));
@@ -352,19 +352,26 @@ function buildDescription(row, siteBest) {
 }
 
 function buildName(row, siteBest) {
+  // Prefer a short, brand-less name similar to Twinset style.
+  // Avoid embedding "Max Mara" in the product name; brand is already stored separately.
   const ogTitle = normalizeSpace(siteBest?.og_title || "");
   if (ogTitle) {
     // Clean common suffixes
     return ogTitle
+      .replace(/\bmax\s*mara\b/gi, "")
+      .replace(/\bmaxmara\b/gi, "")
       .replace(/\s*-\s*купить.*$/i, "")
-      .replace(/\s*\(.*?\)\s*$/i, (m) => m) // keep (id) if present
+      .replace(/\s*\(\s*\d+\s*\)\s*$/i, "") // drop trailing (19024)
+      .replace(/\s*цвет\s+[^()]+$/i, "") // drop trailing "цвет ..."
       .trim();
   }
 
   const item = normalizeSpace((row.item_descriptions || [])[0] || "");
   const ruType = translateItemTypeEnToRu(item);
   const model = normalizeSpace(row.name || "");
-  return ruType ? `${ruType} Max Mara ${model}` : `Max Mara ${model}`;
+  if (ruType && model) return `${ruType} ${model}`;
+  if (ruType) return ruType;
+  return model || "Изделие";
 }
 
 function buildCategory(row, siteBest) {
@@ -549,4 +556,3 @@ main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
-
