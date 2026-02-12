@@ -2,19 +2,19 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Heart } from "lucide-react";
 import { useFavorites } from "@/components/providers/favorites-provider";
 import type { Product } from "@/lib/types";
 import { formatPrice } from "@/lib/format";
-import { getCatalogImageUrl, isLocalProductImage } from "@/lib/image";
+import { getCatalogImageUrl, getNextImageProxyUrl, isLocalProductImage } from "@/lib/image";
 
 interface ProductCardProps {
   product: Product;
   priority?: boolean;
 }
 
-export function ProductCard({ product, priority = false }: ProductCardProps) {
+export const ProductCard = memo(function ProductCard({ product, priority = false }: ProductCardProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const [hovered, setHovered] = useState(false);
   const preloadedRef = useRef(false);
@@ -207,14 +207,10 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
       </div>
     </article>
   );
-}
+}, (prev, next) => prev.product.id === next.product.id && prev.priority === next.priority);
 
 function getRoundedDiscountPercent(oldPrice: number, price: number): number {
   const raw = ((oldPrice - price) / oldPrice) * 100;
   const roundedToFive = Math.round(raw / 5) * 5;
   return Math.max(5, Math.min(95, roundedToFive));
-}
-
-function getNextImageProxyUrl(sourceUrl: string, width: number, quality: number): string {
-  return `/_next/image?url=${encodeURIComponent(sourceUrl)}&w=${width}&q=${quality}`;
 }

@@ -11,6 +11,7 @@ import { Container } from "@/components/container";
 import { useCart } from "@/components/providers/cart-provider";
 import { useFavorites } from "@/components/providers/favorites-provider";
 import { useStore } from "@/components/providers/store-provider";
+import { SidePanel } from "@/components/side-panel";
 import { formatPrice } from "@/lib/format";
 import type { Category } from "@/lib/types";
 
@@ -49,10 +50,29 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
   const storeMenuRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
 
+  function closeAll() {
+    setMenuOpen(false);
+    setCartOpen(false);
+    setFavoritesOpen(false);
+    setSearchOpen(false);
+    setStoreMenuOpen(false);
+  }
+
+  /* Mount detection + escape key handler */
   useEffect(() => {
     setMounted(true);
+
+    const onEsc = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        closeAll();
+      }
+    };
+
+    document.addEventListener("keydown", onEsc);
+    return () => document.removeEventListener("keydown", onEsc);
   }, []);
 
+  /* Focus search input when modal opens */
   useEffect(() => {
     if (!searchOpen) {
       return;
@@ -65,12 +85,14 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
     return () => window.clearTimeout(timer);
   }, [searchOpen]);
 
+  /* Sync search value with URL query when search modal is closed */
   useEffect(() => {
     if (!searchOpen) {
       setSearchValue(currentQuery);
     }
   }, [currentQuery, searchOpen]);
 
+  /* Close store dropdown on outside click */
   useEffect(() => {
     const onPointerDown = (event: MouseEvent) => {
       const target = event.target as Node;
@@ -83,26 +105,9 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
     return () => document.removeEventListener("mousedown", onPointerDown);
   }, []);
 
+  /* Body scroll lock for search modal (side panels handle their own) */
   useEffect(() => {
-    const onEsc = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        setMenuOpen(false);
-        setCartOpen(false);
-        setFavoritesOpen(false);
-        setSearchOpen(false);
-        setStoreMenuOpen(false);
-      }
-    };
-
-    document.addEventListener("keydown", onEsc);
-    return () => document.removeEventListener("keydown", onEsc);
-  }, []);
-
-  useEffect(() => {
-    if (!menuOpen && !cartOpen && !favoritesOpen && !searchOpen) {
-      document.body.style.overflow = "";
-      return;
-    }
+    if (!searchOpen) return;
 
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -110,7 +115,7 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
     return () => {
       document.body.style.overflow = prev;
     };
-  }, [menuOpen, cartOpen, favoritesOpen, searchOpen]);
+  }, [searchOpen]);
 
   const groupedCategories = useMemo(() => {
     return {
@@ -151,300 +156,52 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
     setSearchOpen(false);
   }
 
-  const overlays = mounted
+  const searchOverlay = mounted
     ? createPortal(
-        <>
-          <AnimatePresence>
-            {menuOpen && (
-              <>
-                <motion.div
-                  className="fixed inset-0 z-[390] bg-black/45"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  onClick={() => setMenuOpen(false)}
-                />
-                <motion.aside
-                  className="fixed inset-y-0 left-0 z-[400] h-screen w-full max-w-sm overflow-auto bg-white px-6 py-6"
-                  initial={{ x: "-100%" }}
-                  animate={{ x: 0 }}
-                  exit={{ x: "-100%" }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                >
-                  <div className="mb-8 flex items-center justify-between">
-                    <span className="font-logo text-3xl">MIA</span>
-                    <button onClick={() => setMenuOpen(false)} type="button" aria-label="Закрыть меню">
-                      <X size={20} />
-                    </button>
-                  </div>
-
-                  <div className="space-y-6 text-sm uppercase tracking-[0.08em]">
-                    <Link href="/catalog?sort=new" onClick={() => setMenuOpen(false)} className="block">
-                      Новинки
-                    </Link>
-                    <Link href="/catalog?brands=" onClick={() => setMenuOpen(false)} className="block">
-                      Бренды
-                    </Link>
-
-                    <div>
-                      <Link href="/catalog/women" onClick={() => setMenuOpen(false)} className="mb-2 block">
-                        Женщинам
-                      </Link>
-                      <div className="space-y-2 pl-3 text-xs text-text-secondary">
-                        {groupedCategories.women.slice(0, 8).map((item) => (
-                          <Link
-                            key={item.id}
-                            href={`/catalog/${item.slug}`}
-                            onClick={() => setMenuOpen(false)}
-                            className="block"
-                          >
-                            {item.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div>
-                      <Link href="/catalog/men" onClick={() => setMenuOpen(false)} className="mb-2 block">
-                        Мужчинам
-                      </Link>
-                      <div className="space-y-2 pl-3 text-xs text-text-secondary">
-                        {groupedCategories.men.slice(0, 8).map((item) => (
-                          <Link
-                            key={item.id}
-                            href={`/catalog/${item.slug}`}
-                            onClick={() => setMenuOpen(false)}
-                            className="block"
-                          >
-                            {item.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div>
-                      <Link href="/catalog/kids" onClick={() => setMenuOpen(false)} className="mb-2 block">
-                        Детям
-                      </Link>
-                      <div className="space-y-2 pl-3 text-xs text-text-secondary">
-                        {groupedCategories.kids.map((item) => (
-                          <Link
-                            key={item.id}
-                            href={`/catalog/${item.slug}`}
-                            onClick={() => setMenuOpen(false)}
-                            className="block"
-                          >
-                            {item.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="my-8 border-t border-border pt-6 text-sm text-text-secondary">
-                    <Link href="/contacts" onClick={() => setMenuOpen(false)} className="mb-3 block">
-                      Контакты
-                    </Link>
-                    <Link href="/delivery" onClick={() => setMenuOpen(false)} className="mb-3 block">
-                      Доставка и возврат
-                    </Link>
-                  </div>
-                </motion.aside>
-              </>
-            )}
-          </AnimatePresence>
-
-          <AnimatePresence>
-            {searchOpen && (
-              <>
-                <motion.div
-                  className="fixed inset-0 z-[410] bg-black/45"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  onClick={() => setSearchOpen(false)}
-                />
-                <motion.div
-                  className="fixed left-1/2 top-20 z-[420] w-[calc(100%-24px)] max-w-2xl -translate-x-1/2 border border-border bg-white p-4 shadow-2xl md:p-6"
-                  initial={{ opacity: 0, y: -12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -12 }}
-                >
-                  <div className="mb-3 flex items-center justify-between">
-                    <h2 className="text-lg">Поиск по каталогу</h2>
-                    <button type="button" onClick={() => setSearchOpen(false)} aria-label="Закрыть поиск">
-                      <X size={20} />
-                    </button>
-                  </div>
-                  <p className="mb-4 text-sm text-text-secondary">
-                    Введите название, бренд или артикул. Нажмите Enter или кнопку поиска.
-                  </p>
-                  <form onSubmit={submitSearch} className="flex gap-2">
-                    <input
-                      ref={searchInputRef}
-                      value={searchValue}
-                      onChange={(event) => setSearchValue(event.target.value)}
-                      placeholder="Например: пальто Twinset"
-                      className="w-full border border-border px-3 py-2"
-                    />
-                    <button
-                      type="submit"
-                      className="border border-text-primary bg-text-primary px-4 py-2 text-xs uppercase tracking-[0.08em] text-white"
-                    >
-                      Поиск
-                    </button>
-                  </form>
-                </motion.div>
-              </>
-            )}
-          </AnimatePresence>
-
-          <AnimatePresence>
-            {favoritesOpen && (
-              <>
-                <motion.div
-                  className="fixed inset-0 z-[390] bg-black/45"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  onClick={() => setFavoritesOpen(false)}
-                />
-                <motion.aside
-                  className="fixed inset-y-0 right-0 z-[400] h-screen w-full max-w-md overflow-auto bg-white px-6 py-6"
-                  initial={{ x: "100%" }}
-                  animate={{ x: 0 }}
-                  exit={{ x: "100%" }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                >
-                  <div className="mb-6 flex items-center justify-between">
-                    <h2 className="text-xl font-medium">Избранное ({favoriteTotal})</h2>
-                    <button onClick={() => setFavoritesOpen(false)} type="button" aria-label="Закрыть избранное">
-                      <X size={20} />
-                    </button>
-                  </div>
-
-                  {favoriteItems.length === 0 && <p className="text-sm text-text-secondary">Пока ничего не добавлено</p>}
-
-                  <div className="space-y-4">
-                    {favoriteItems.map((item) => (
-                      <div key={item.productId} className="flex gap-3 border-b border-border pb-4">
-                        <Link href={`/product/${item.slug}`} onClick={() => setFavoritesOpen(false)} className="relative h-20 w-16 shrink-0 overflow-hidden bg-bg-secondary">
-                          <Image alt={item.name} src={item.imageUrl} fill sizes="64px" className="object-cover" />
-                        </Link>
-                        <div className="min-w-0 flex-1">
-                          <p className="text-[11px] uppercase tracking-[0.08em] text-text-muted">{item.brand}</p>
-                          <Link
-                            href={`/product/${item.slug}`}
-                            onClick={() => setFavoritesOpen(false)}
-                            className="line-clamp-2 text-sm"
-                          >
-                            {item.name}
-                          </Link>
-                          <p className="mt-1 text-sm">{formatPrice(item.price)}</p>
-                        </div>
-                        <button
-                          type="button"
-                          className="text-xs text-text-secondary"
-                          onClick={() => removeFavorite(item.productId)}
-                        >
-                          Удалить
-                        </button>
-                      </div>
-                    ))}
-                  </div>
-
-                  {favoriteItems.length > 0 && (
-                    <button
-                      type="button"
-                      className="mt-6 w-full border border-border px-4 py-3 text-xs uppercase tracking-[0.08em]"
-                      onClick={clearFavorites}
-                    >
-                      Очистить избранное
-                    </button>
-                  )}
-                </motion.aside>
-              </>
-            )}
-          </AnimatePresence>
-
-          <AnimatePresence>
-            {cartOpen && (
-              <>
-                <motion.div
-                  className="fixed inset-0 z-[390] bg-black/45"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  onClick={() => setCartOpen(false)}
-                />
-                <motion.aside
-                  className="fixed inset-y-0 right-0 z-[400] h-screen w-full max-w-md overflow-auto bg-white px-6 py-6"
-                  initial={{ x: "100%" }}
-                  animate={{ x: 0 }}
-                  exit={{ x: "100%" }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                >
-                  <div className="mb-6 flex items-center justify-between">
-                    <h2 className="text-xl font-medium">Корзина ({totalItems})</h2>
-                    <button onClick={() => setCartOpen(false)} type="button" aria-label="Закрыть корзину">
-                      <X size={20} />
-                    </button>
-                  </div>
-
-                  {items.length === 0 && <p className="text-sm text-text-secondary">Корзина пуста</p>}
-
-                  <div className="space-y-4">
-                    {items.map((item) => (
-                      <div key={item.key} className="flex gap-3 border-b border-border pb-4">
-                        <div className="relative h-20 w-16 shrink-0 overflow-hidden bg-bg-secondary">
-                          <Image alt={item.name} src={item.imageUrl} fill sizes="64px" className="object-cover" />
-                        </div>
-                        <div className="min-w-0 flex-1">
-                          <p className="text-[11px] uppercase tracking-[0.08em] text-text-muted">{item.brand}</p>
-                          <p className="line-clamp-1 text-sm">{item.name}</p>
-                          <p className="text-xs text-text-secondary">
-                            {item.colorName} · {item.size}
-                          </p>
-                          <p className="mt-1 text-sm">
-                            {formatPrice(item.price)} × {item.quantity}
-                          </p>
-                        </div>
-                        <button
-                          type="button"
-                          className="text-xs text-text-secondary"
-                          onClick={() => removeItem(item.key)}
-                        >
-                          Удалить
-                        </button>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="mt-6 border-t border-border pt-4">
-                    <div className="mb-4 flex items-center justify-between text-sm">
-                      <span>Итого</span>
-                      <strong>{formatPrice(totalAmount)}</strong>
-                    </div>
-                    <Link
-                      href="/checkout"
-                      className="block bg-text-primary px-4 py-3 text-center text-xs uppercase tracking-[0.08em] text-white"
-                      onClick={() => setCartOpen(false)}
-                    >
-                      Оформить заказ
-                    </Link>
-                    <Link
-                      href="/cart"
-                      className="mt-2 block border border-border px-4 py-3 text-center text-xs uppercase tracking-[0.08em]"
-                      onClick={() => setCartOpen(false)}
-                    >
-                      Открыть корзину
-                    </Link>
-                  </div>
-                </motion.aside>
-              </>
-            )}
-          </AnimatePresence>
-        </>,
+        <AnimatePresence>
+          {searchOpen && (
+            <>
+              <motion.div
+                className="fixed inset-0 z-[410] bg-black/45"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setSearchOpen(false)}
+              />
+              <motion.div
+                className="fixed left-1/2 top-20 z-[420] w-[calc(100%-24px)] max-w-2xl -translate-x-1/2 border border-border bg-white p-4 shadow-2xl md:p-6"
+                initial={{ opacity: 0, y: -12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+              >
+                <div className="mb-3 flex items-center justify-between">
+                  <h2 className="text-lg">Поиск по каталогу</h2>
+                  <button type="button" onClick={() => setSearchOpen(false)} aria-label="Закрыть поиск">
+                    <X size={20} />
+                  </button>
+                </div>
+                <p className="mb-4 text-sm text-text-secondary">
+                  Введите название, бренд или артикул. Нажмите Enter или кнопку поиска.
+                </p>
+                <form onSubmit={submitSearch} className="flex gap-2">
+                  <input
+                    ref={searchInputRef}
+                    value={searchValue}
+                    onChange={(event) => setSearchValue(event.target.value)}
+                    placeholder="Например: пальто Twinset"
+                    className="w-full border border-border px-3 py-2"
+                  />
+                  <button
+                    type="submit"
+                    className="border border-text-primary bg-text-primary px-4 py-2 text-xs uppercase tracking-[0.08em] text-white"
+                  >
+                    Поиск
+                  </button>
+                </form>
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>,
         document.body
       )
     : null;
@@ -609,7 +366,200 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
           </div>
         </Container>
       </header>
-      {overlays}
+
+      {/* --- Side panels --- */}
+
+      <SidePanel open={menuOpen} onClose={() => setMenuOpen(false)} side="left" maxWidth="max-w-sm" ariaLabel="Меню навигации">
+        <div className="mb-8 flex items-center justify-between">
+          <span className="font-logo text-3xl">MIA</span>
+          <button onClick={() => setMenuOpen(false)} type="button" aria-label="Закрыть меню">
+            <X size={20} />
+          </button>
+        </div>
+
+        <div className="space-y-6 text-sm uppercase tracking-[0.08em]">
+          <Link href="/catalog?sort=new" onClick={() => setMenuOpen(false)} className="block">
+            Новинки
+          </Link>
+          <Link href="/catalog?brands=" onClick={() => setMenuOpen(false)} className="block">
+            Бренды
+          </Link>
+
+          <div>
+            <Link href="/catalog/women" onClick={() => setMenuOpen(false)} className="mb-2 block">
+              Женщинам
+            </Link>
+            <div className="space-y-2 pl-3 text-xs text-text-secondary">
+              {groupedCategories.women.slice(0, 8).map((item) => (
+                <Link
+                  key={item.id}
+                  href={`/catalog/${item.slug}`}
+                  onClick={() => setMenuOpen(false)}
+                  className="block"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <Link href="/catalog/men" onClick={() => setMenuOpen(false)} className="mb-2 block">
+              Мужчинам
+            </Link>
+            <div className="space-y-2 pl-3 text-xs text-text-secondary">
+              {groupedCategories.men.slice(0, 8).map((item) => (
+                <Link
+                  key={item.id}
+                  href={`/catalog/${item.slug}`}
+                  onClick={() => setMenuOpen(false)}
+                  className="block"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <Link href="/catalog/kids" onClick={() => setMenuOpen(false)} className="mb-2 block">
+              Детям
+            </Link>
+            <div className="space-y-2 pl-3 text-xs text-text-secondary">
+              {groupedCategories.kids.map((item) => (
+                <Link
+                  key={item.id}
+                  href={`/catalog/${item.slug}`}
+                  onClick={() => setMenuOpen(false)}
+                  className="block"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="my-8 border-t border-border pt-6 text-sm text-text-secondary">
+          <Link href="/contacts" onClick={() => setMenuOpen(false)} className="mb-3 block">
+            Контакты
+          </Link>
+          <Link href="/delivery" onClick={() => setMenuOpen(false)} className="mb-3 block">
+            Доставка и возврат
+          </Link>
+        </div>
+      </SidePanel>
+
+      <SidePanel open={favoritesOpen} onClose={() => setFavoritesOpen(false)} side="right" ariaLabel="Избранное">
+        <div className="mb-6 flex items-center justify-between">
+          <h2 className="text-xl font-medium">Избранное ({favoriteTotal})</h2>
+          <button onClick={() => setFavoritesOpen(false)} type="button" aria-label="Закрыть избранное">
+            <X size={20} />
+          </button>
+        </div>
+
+        {favoriteItems.length === 0 && <p className="text-sm text-text-secondary">Пока ничего не добавлено</p>}
+
+        <div className="space-y-4">
+          {favoriteItems.map((item) => (
+            <div key={item.productId} className="flex gap-3 border-b border-border pb-4">
+              <Link href={`/product/${item.slug}`} onClick={() => setFavoritesOpen(false)} className="relative h-20 w-16 shrink-0 overflow-hidden bg-bg-secondary">
+                <Image alt={item.name} src={item.imageUrl} fill sizes="64px" className="object-cover" />
+              </Link>
+              <div className="min-w-0 flex-1">
+                <p className="text-[11px] uppercase tracking-[0.08em] text-text-muted">{item.brand}</p>
+                <Link
+                  href={`/product/${item.slug}`}
+                  onClick={() => setFavoritesOpen(false)}
+                  className="line-clamp-2 text-sm"
+                >
+                  {item.name}
+                </Link>
+                <p className="mt-1 text-sm">{formatPrice(item.price)}</p>
+              </div>
+              <button
+                type="button"
+                className="text-xs text-text-secondary"
+                onClick={() => removeFavorite(item.productId)}
+              >
+                Удалить
+              </button>
+            </div>
+          ))}
+        </div>
+
+        {favoriteItems.length > 0 && (
+          <button
+            type="button"
+            className="mt-6 w-full border border-border px-4 py-3 text-xs uppercase tracking-[0.08em]"
+            onClick={clearFavorites}
+          >
+            Очистить избранное
+          </button>
+        )}
+      </SidePanel>
+
+      <SidePanel open={cartOpen} onClose={() => setCartOpen(false)} side="right" ariaLabel="Корзина">
+        <div className="mb-6 flex items-center justify-between">
+          <h2 className="text-xl font-medium">Корзина ({totalItems})</h2>
+          <button onClick={() => setCartOpen(false)} type="button" aria-label="Закрыть корзину">
+            <X size={20} />
+          </button>
+        </div>
+
+        {items.length === 0 && <p className="text-sm text-text-secondary">Корзина пуста</p>}
+
+        <div className="space-y-4">
+          {items.map((item) => (
+            <div key={item.key} className="flex gap-3 border-b border-border pb-4">
+              <div className="relative h-20 w-16 shrink-0 overflow-hidden bg-bg-secondary">
+                <Image alt={item.name} src={item.imageUrl} fill sizes="64px" className="object-cover" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="text-[11px] uppercase tracking-[0.08em] text-text-muted">{item.brand}</p>
+                <p className="line-clamp-1 text-sm">{item.name}</p>
+                <p className="text-xs text-text-secondary">
+                  {item.colorName} · {item.size}
+                </p>
+                <p className="mt-1 text-sm">
+                  {formatPrice(item.price)} × {item.quantity}
+                </p>
+              </div>
+              <button
+                type="button"
+                className="text-xs text-text-secondary"
+                onClick={() => removeItem(item.key)}
+              >
+                Удалить
+              </button>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-6 border-t border-border pt-4">
+          <div className="mb-4 flex items-center justify-between text-sm">
+            <span>Итого</span>
+            <strong>{formatPrice(totalAmount)}</strong>
+          </div>
+          <Link
+            href="/checkout"
+            className="block bg-text-primary px-4 py-3 text-center text-xs uppercase tracking-[0.08em] text-white"
+            onClick={() => setCartOpen(false)}
+          >
+            Оформить заказ
+          </Link>
+          <Link
+            href="/cart"
+            className="mt-2 block border border-border px-4 py-3 text-center text-xs uppercase tracking-[0.08em]"
+            onClick={() => setCartOpen(false)}
+          >
+            Открыть корзину
+          </Link>
+        </div>
+      </SidePanel>
+
+      {/* --- Search modal (unique centered layout, stays as createPortal) --- */}
+      {searchOverlay}
     </>
   );
 }

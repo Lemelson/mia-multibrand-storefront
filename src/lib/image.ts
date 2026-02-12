@@ -68,6 +68,10 @@ export function getProductThumbImageUrl(url: string): string {
   return getTwinsetImageBySize(url, "thumb");
 }
 
+export function getNextImageProxyUrl(sourceUrl: string, width: number, quality: number): string {
+  return `/_next/image?url=${encodeURIComponent(sourceUrl)}&w=${width}&q=${quality}`;
+}
+
 export function getProductOriginalImageUrl(url: string): string {
   if (!isLocalProductImage(url)) {
     return url;
