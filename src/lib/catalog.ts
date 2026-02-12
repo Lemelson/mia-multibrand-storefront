@@ -61,6 +61,24 @@ export function getCatalog(products: Product[], query: CatalogQuery): CatalogRes
   const maxPrice = prices.length ? Math.max(...prices) : 0;
 
   if (filters) {
+    const query = filters.query?.trim().toLowerCase();
+    if (query) {
+      filtered = filtered.filter((product) => {
+        const haystack = [
+          product.name,
+          product.brand,
+          product.slug,
+          product.sku ?? "",
+          product.description,
+          product.category
+        ]
+          .join(" ")
+          .toLowerCase();
+
+        return haystack.includes(query);
+      });
+    }
+
     if (filters.saleOnly) {
       filtered = filtered.filter(
         (product) => typeof product.oldPrice === "number" && product.oldPrice > product.price

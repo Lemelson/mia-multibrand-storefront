@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import {
   useCallback,
   useEffect,
@@ -95,6 +96,8 @@ export function CatalogView({
   activeCategorySlug
 }: CatalogViewProps) {
   const { selectedStoreId } = useStore();
+  const searchParams = useSearchParams();
+  const searchQuery = (searchParams.get("q") ?? "").trim();
 
   const [items, setItems] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
@@ -166,8 +169,12 @@ export function CatalogView({
       params.set("priceMax", String(priceMaxApplied));
     }
 
+    if (searchQuery) {
+      params.set("q", searchQuery);
+    }
+
     return params.toString();
-  }, [page, sortUi, selectedStoreId, gender, category, selectedSizes, selectedColors, saleOnly, priceMinApplied, priceMaxApplied]);
+  }, [page, sortUi, selectedStoreId, gender, category, selectedSizes, selectedColors, saleOnly, priceMinApplied, priceMaxApplied, searchQuery]);
 
   const loadCatalog = useCallback(
     async (mode: "replace" | "append") => {
@@ -198,7 +205,7 @@ export function CatalogView({
 
   useEffect(() => {
     setPage(1);
-  }, [selectedStoreId, gender, category, sortUi, selectedSizes, selectedColors, saleOnly, priceMinApplied, priceMaxApplied]);
+  }, [selectedStoreId, gender, category, sortUi, selectedSizes, selectedColors, saleOnly, priceMinApplied, priceMaxApplied, searchQuery]);
 
   const parsedPriceFrom = priceFromInput ? Number(priceFromInput) : undefined;
   const parsedPriceTo = priceToInput ? Number(priceToInput) : undefined;
@@ -250,6 +257,11 @@ export function CatalogView({
     <section>
       <div className="mb-6">
         <h1 className="font-logo text-3xl md:text-[42px]">{title}</h1>
+        {searchQuery && (
+          <p className="mt-1 text-sm text-text-secondary">
+            Поиск: <span className="text-text-primary">«{searchQuery}»</span>
+          </p>
+        )}
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[260px_1fr] xl:gap-8">

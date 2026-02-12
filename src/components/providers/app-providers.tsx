@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import type { Store } from "@/lib/types";
 import { CartProvider, useCart } from "@/components/providers/cart-provider";
+import { FavoritesProvider } from "@/components/providers/favorites-provider";
 import { FontThemeProvider } from "@/components/providers/font-theme-provider";
 import { StoreProvider } from "@/components/providers/store-provider";
 
@@ -30,10 +31,12 @@ export function AppProviders({ stores, initialStoreId, children }: AppProvidersP
   return (
     <FontThemeProvider>
       <StoreProvider stores={stores} initialStoreId={initialStoreId}>
-        <CartProvider>
-          {children}
-          <CartToast />
-        </CartProvider>
+        <FavoritesProvider>
+          <CartProvider>
+            {children}
+            <CartToast />
+          </CartProvider>
+        </FavoritesProvider>
       </StoreProvider>
     </FontThemeProvider>
   );

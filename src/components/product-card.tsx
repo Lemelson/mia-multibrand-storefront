@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Heart } from "lucide-react";
+import { useFavorites } from "@/components/providers/favorites-provider";
 import type { Product } from "@/lib/types";
 import { formatPrice } from "@/lib/format";
 import { getCatalogImageUrl, isLocalProductImage } from "@/lib/image";
@@ -16,16 +18,20 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const [hovered, setHovered] = useState(false);
   const preloadedRef = useRef(false);
+  const { isFavorite, toggleItem } = useFavorites();
 
   const activeColor = product.colors[0];
   const images = useMemo(() => activeColor?.images ?? [], [activeColor?.images]);
   const cardImages = useMemo(() => images.map((image) => getCatalogImageUrl(image)), [images]);
-  const currentImage = cardImages[imageIndex] ?? cardImages[0] ?? "https://picsum.photos/600/800";
+  const fallbackImage = cardImages[0] ?? "https://picsum.photos/600/800";
+  const currentImage = cardImages[imageIndex] ?? fallbackImage;
+  const favoriteImage = fallbackImage;
   const hasSale = typeof product.oldPrice === "number" && product.oldPrice > product.price;
   const discountPercent =
     hasSale && typeof product.oldPrice === "number"
       ? getRoundedDiscountPercent(product.oldPrice, product.price)
       : null;
+  const favorite = isFavorite(product.id);
 
   function handleMouseMove(event: React.MouseEvent<HTMLDivElement>) {
     if (!images.length) {
@@ -84,46 +90,75 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
         setImageIndex(0);
       }}
     >
-      <Link href={`/product/${product.slug}`}>
-        <div
-          className="relative aspect-[3/4] overflow-hidden bg-bg-secondary"
-          onMouseMove={handleMouseMove}
+      <div className="relative">
+        <Link href={`/product/${product.slug}`}>
+          <div
+            className="relative aspect-[3/4] overflow-hidden bg-bg-secondary"
+            onMouseMove={handleMouseMove}
+          >
+            <Image
+              src={currentImage}
+              alt={product.name}
+              fill
+              priority={priority}
+              quality={72}
+              sizes="(max-width: 768px) 46vw, (max-width: 1280px) 30vw, 320px"
+              className="object-cover transition duration-500"
+              unoptimized={isLocalProductImage(currentImage)}
+            />
+
+            {hasSale ? (
+              <span className="absolute left-2 top-2 bg-sale px-2 py-1 text-[10px] uppercase tracking-[0.08em] text-white">
+                Скидка
+              </span>
+            ) : product.isNew ? (
+              <span className="absolute left-2 top-2 bg-accent px-2 py-1 text-[10px] uppercase tracking-[0.08em] text-white">
+                Новинка
+              </span>
+            ) : null}
+
+            {hovered && cardImages.length > 1 && (
+              <div className="absolute inset-x-3 bottom-3 flex items-center gap-1.5">
+                {cardImages.map((_, index) => (
+                  <span
+                    key={index}
+                    className={`h-[2px] flex-1 rounded-full transition ${
+                      index === imageIndex ? "bg-white" : "bg-white/45"
+                    }`}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+        </Link>
+
+        <button
+          type="button"
+          aria-label={favorite ? "Убрать из избранного" : "Добавить в избранное"}
+          onClick={() =>
+            toggleItem({
+              productId: product.id,
+              slug: product.slug,
+              name: product.name,
+              brand: product.brand,
+              price: product.price,
+              imageUrl: favoriteImage
+            })
+          }
+          className={`absolute right-2 top-2 z-20 rounded-full border border-white/70 p-1.5 transition ${
+            favorite
+              ? "bg-white/20 opacity-100"
+              : "bg-black/10 opacity-100 md:opacity-0 md:group-hover:opacity-100"
+          }`}
         >
-          <Image
-            src={currentImage}
-            alt={product.name}
-            fill
-            priority={priority}
-            quality={72}
-            sizes="(max-width: 768px) 46vw, (max-width: 1280px) 30vw, 320px"
-            className="object-cover transition duration-500"
-            unoptimized={isLocalProductImage(currentImage)}
+          <Heart
+            size={16}
+            className="text-white"
+            strokeWidth={1.9}
+            fill={favorite ? "white" : "transparent"}
           />
-
-          {hasSale ? (
-            <span className="absolute left-2 top-2 bg-sale px-2 py-1 text-[10px] uppercase tracking-[0.08em] text-white">
-              Скидка
-            </span>
-          ) : product.isNew ? (
-            <span className="absolute left-2 top-2 bg-accent px-2 py-1 text-[10px] uppercase tracking-[0.08em] text-white">
-              Новинка
-            </span>
-          ) : null}
-
-          {hovered && cardImages.length > 1 && (
-            <div className="absolute inset-x-3 bottom-3 flex items-center gap-1.5">
-              {cardImages.map((_, index) => (
-                <span
-                  key={index}
-                  className={`h-[2px] flex-1 rounded-full transition ${
-                    index === imageIndex ? "bg-white" : "bg-white/45"
-                  }`}
-                />
-              ))}
-            </div>
-          )}
-        </div>
-      </Link>
+        </button>
+      </div>
 
       <div className="mt-2.5 space-y-1">
         <p className="text-[11px] uppercase tracking-[0.08em] text-text-muted">{product.brand}</p>

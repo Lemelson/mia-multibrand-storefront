@@ -26,7 +26,17 @@ export type CreateOrderWithIdempotencyResult =
   | { kind: "conflict"; message: string };
 
 function shouldReadFromDb(): boolean {
-  return getDataSourceMode() === "db" && isDatabaseConfigured();
+  if (!isDatabaseConfigured()) {
+    return false;
+  }
+
+  // Vercel production runtime is read-only for local files.
+  // If DB is configured, force DB reads/writes regardless of DATA_SOURCE flag.
+  if (process.env.NODE_ENV === "production") {
+    return true;
+  }
+
+  return getDataSourceMode() === "db";
 }
 
 function shouldWriteToDb(): boolean {
@@ -38,12 +48,12 @@ function shouldWriteToDb(): boolean {
 }
 
 function shouldWriteToJson(): boolean {
-  if (getDataSourceMode() === "db") {
-    // Vercel production filesystem is read-only; avoid shadow JSON writes there.
-    if (process.env.NODE_ENV === "production") {
-      return false;
-    }
+  // Never write JSON files in production (read-only filesystem on Vercel).
+  if (process.env.NODE_ENV === "production") {
+    return false;
+  }
 
+  if (getDataSourceMode() === "db") {
     return isDualWriteEnabled();
   }
 

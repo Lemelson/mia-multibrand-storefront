@@ -70,8 +70,23 @@ export const createProductInputSchema = z.object({
   isActive: z.boolean().default(true)
 });
 
-export const patchProductInputSchema = createProductInputSchema
-  .partial()
+export const patchProductInputSchema = z.object({
+  sku: z.string().min(1).max(120).optional(),
+  slug: z.string().min(1).max(180).optional(),
+  name: z.string().min(1).max(260).optional(),
+  brand: brandSchema.optional(),
+  description: z.string().max(5000).optional(),
+  composition: z.string().max(2000).optional(),
+  care: z.string().max(2000).optional(),
+  category: z.string().min(1).max(160).optional(),
+  gender: genderSchema.optional(),
+  price: z.number().int().positive().optional(),
+  oldPrice: z.number().int().positive().optional(),
+  colors: z.array(productColorSchema).max(40).optional(),
+  stores: z.array(storeAvailabilitySchema).max(200).optional(),
+  isNew: z.boolean().optional(),
+  isActive: z.boolean().optional()
+})
   .refine((payload) => Object.keys(payload).length > 0, {
     message: "Payload is empty"
   });

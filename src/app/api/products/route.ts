@@ -38,6 +38,7 @@ function parseFilters(searchParams: URLSearchParams): CatalogFilters {
       : "new";
 
   return {
+    query: searchParams.get("q")?.trim() || undefined,
     sizes: parseList(searchParams.get("sizes")),
     brands: parseList(searchParams.get("brands")),
     colors: parseList(searchParams.get("colors")),

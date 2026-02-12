@@ -2,13 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { Check, ChevronDown, Heart, MapPin, Search, ShoppingBag, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Container } from "@/components/container";
 import { useCart } from "@/components/providers/cart-provider";
+import { useFavorites } from "@/components/providers/favorites-provider";
 import { useStore } from "@/components/providers/store-provider";
 import { formatPrice } from "@/lib/format";
 import type { Category } from "@/lib/types";
@@ -25,19 +26,50 @@ const GENDER_NAV_ITEMS = [
 
 export function SiteHeader({ categories }: SiteHeaderProps) {
   const pathname = usePathname();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const currentQuery = (searchParams.get("q") ?? "").trim();
   const { selectedStore, stores, setSelectedStoreId } = useStore();
   const { items, totalItems, totalAmount, removeItem } = useCart();
+  const {
+    items: favoriteItems,
+    totalItems: favoriteTotal,
+    removeItem: removeFavorite,
+    clear: clearFavorites
+  } = useFavorites();
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
+  const [favoritesOpen, setFavoritesOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
   const [storeMenuOpen, setStoreMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   const storeMenuRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (!searchOpen) {
+      return;
+    }
+
+    const timer = window.setTimeout(() => {
+      searchInputRef.current?.focus();
+    }, 40);
+
+    return () => window.clearTimeout(timer);
+  }, [searchOpen]);
+
+  useEffect(() => {
+    if (!searchOpen) {
+      setSearchValue(currentQuery);
+    }
+  }, [currentQuery, searchOpen]);
 
   useEffect(() => {
     const onPointerDown = (event: MouseEvent) => {
@@ -56,6 +88,8 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
       if (event.key === "Escape") {
         setMenuOpen(false);
         setCartOpen(false);
+        setFavoritesOpen(false);
+        setSearchOpen(false);
         setStoreMenuOpen(false);
       }
     };
@@ -65,7 +99,7 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
   }, []);
 
   useEffect(() => {
-    if (!menuOpen && !cartOpen) {
+    if (!menuOpen && !cartOpen && !favoritesOpen && !searchOpen) {
       document.body.style.overflow = "";
       return;
     }
@@ -76,7 +110,7 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
     return () => {
       document.body.style.overflow = prev;
     };
-  }, [menuOpen, cartOpen]);
+  }, [menuOpen, cartOpen, favoritesOpen, searchOpen]);
 
   const groupedCategories = useMemo(() => {
     return {
@@ -102,6 +136,20 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
 
     return categories.find((category) => category.slug === segment)?.gender ?? "";
   }, [pathname, categories]);
+
+  function submitSearch(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const query = searchValue.trim();
+
+    if (!query) {
+      router.push("/catalog");
+    } else {
+      router.push(`/catalog?q=${encodeURIComponent(query)}`);
+    }
+
+    setSearchOpen(false);
+  }
 
   const overlays = mounted
     ? createPortal(
@@ -207,6 +255,119 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
           </AnimatePresence>
 
           <AnimatePresence>
+            {searchOpen && (
+              <>
+                <motion.div
+                  className="fixed inset-0 z-[410] bg-black/45"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  onClick={() => setSearchOpen(false)}
+                />
+                <motion.div
+                  className="fixed left-1/2 top-20 z-[420] w-[calc(100%-24px)] max-w-2xl -translate-x-1/2 border border-border bg-white p-4 shadow-2xl md:p-6"
+                  initial={{ opacity: 0, y: -12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -12 }}
+                >
+                  <div className="mb-3 flex items-center justify-between">
+                    <h2 className="text-lg">Поиск по каталогу</h2>
+                    <button type="button" onClick={() => setSearchOpen(false)} aria-label="Закрыть поиск">
+                      <X size={20} />
+                    </button>
+                  </div>
+                  <p className="mb-4 text-sm text-text-secondary">
+                    Введите название, бренд или артикул. Нажмите Enter или кнопку поиска.
+                  </p>
+                  <form onSubmit={submitSearch} className="flex gap-2">
+                    <input
+                      ref={searchInputRef}
+                      value={searchValue}
+                      onChange={(event) => setSearchValue(event.target.value)}
+                      placeholder="Например: пальто Twinset"
+                      className="w-full border border-border px-3 py-2"
+                    />
+                    <button
+                      type="submit"
+                      className="border border-text-primary bg-text-primary px-4 py-2 text-xs uppercase tracking-[0.08em] text-white"
+                    >
+                      Поиск
+                    </button>
+                  </form>
+                </motion.div>
+              </>
+            )}
+          </AnimatePresence>
+
+          <AnimatePresence>
+            {favoritesOpen && (
+              <>
+                <motion.div
+                  className="fixed inset-0 z-[390] bg-black/45"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  onClick={() => setFavoritesOpen(false)}
+                />
+                <motion.aside
+                  className="fixed inset-y-0 right-0 z-[400] h-screen w-full max-w-md overflow-auto bg-white px-6 py-6"
+                  initial={{ x: "100%" }}
+                  animate={{ x: 0 }}
+                  exit={{ x: "100%" }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                >
+                  <div className="mb-6 flex items-center justify-between">
+                    <h2 className="text-xl font-medium">Избранное ({favoriteTotal})</h2>
+                    <button onClick={() => setFavoritesOpen(false)} type="button" aria-label="Закрыть избранное">
+                      <X size={20} />
+                    </button>
+                  </div>
+
+                  {favoriteItems.length === 0 && <p className="text-sm text-text-secondary">Пока ничего не добавлено</p>}
+
+                  <div className="space-y-4">
+                    {favoriteItems.map((item) => (
+                      <div key={item.productId} className="flex gap-3 border-b border-border pb-4">
+                        <Link href={`/product/${item.slug}`} onClick={() => setFavoritesOpen(false)} className="relative h-20 w-16 shrink-0 overflow-hidden bg-bg-secondary">
+                          <Image alt={item.name} src={item.imageUrl} fill sizes="64px" className="object-cover" />
+                        </Link>
+                        <div className="min-w-0 flex-1">
+                          <p className="text-[11px] uppercase tracking-[0.08em] text-text-muted">{item.brand}</p>
+                          <Link
+                            href={`/product/${item.slug}`}
+                            onClick={() => setFavoritesOpen(false)}
+                            className="line-clamp-2 text-sm"
+                          >
+                            {item.name}
+                          </Link>
+                          <p className="mt-1 text-sm">{formatPrice(item.price)}</p>
+                        </div>
+                        <button
+                          type="button"
+                          className="text-xs text-text-secondary"
+                          onClick={() => removeFavorite(item.productId)}
+                        >
+                          Удалить
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+
+                  {favoriteItems.length > 0 && (
+                    <button
+                      type="button"
+                      className="mt-6 w-full border border-border px-4 py-3 text-xs uppercase tracking-[0.08em]"
+                      onClick={clearFavorites}
+                    >
+                      Очистить избранное
+                    </button>
+                  )}
+                </motion.aside>
+              </>
+            )}
+          </AnimatePresence>
+
+          <AnimatePresence>
             {cartOpen && (
               <>
                 <motion.div
@@ -244,7 +405,9 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
                           <p className="text-xs text-text-secondary">
                             {item.colorName} · {item.size}
                           </p>
-                          <p className="mt-1 text-sm">{formatPrice(item.price)} × {item.quantity}</p>
+                          <p className="mt-1 text-sm">
+                            {formatPrice(item.price)} × {item.quantity}
+                          </p>
                         </div>
                         <button
                           type="button"
@@ -390,17 +553,50 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
                 </AnimatePresence>
               </div>
 
-              <button className="text-text-primary" type="button" aria-label="Поиск">
+              <button
+                className="text-text-primary"
+                type="button"
+                aria-label="Поиск"
+                onClick={() => {
+                  setSearchValue(currentQuery);
+                  setSearchOpen(true);
+                  setMenuOpen(false);
+                  setCartOpen(false);
+                  setFavoritesOpen(false);
+                }}
+              >
                 <Search size={20} />
               </button>
-              <button className="hidden text-text-primary md:inline" type="button" aria-label="Избранное">
+
+              <button
+                className="relative text-text-primary"
+                type="button"
+                aria-label="Избранное"
+                onClick={() => {
+                  setFavoritesOpen(true);
+                  setMenuOpen(false);
+                  setCartOpen(false);
+                  setSearchOpen(false);
+                }}
+              >
                 <Heart size={20} />
+                {favoriteTotal > 0 && (
+                  <span className="absolute -right-2 -top-2 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-text-primary px-1 text-[10px] text-white">
+                    {favoriteTotal}
+                  </span>
+                )}
               </button>
+
               <button
                 className="relative text-text-primary"
                 type="button"
                 aria-label="Корзина"
-                onClick={() => setCartOpen(true)}
+                onClick={() => {
+                  setCartOpen(true);
+                  setMenuOpen(false);
+                  setFavoritesOpen(false);
+                  setSearchOpen(false);
+                }}
               >
                 <ShoppingBag size={20} />
                 {totalItems > 0 && (

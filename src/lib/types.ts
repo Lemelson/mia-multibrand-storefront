@@ -113,6 +113,7 @@ export interface CartItem {
 }
 
 export interface CatalogFilters {
+  query?: string;
   sizes: string[];
   brands: string[];
   colors: string[];
