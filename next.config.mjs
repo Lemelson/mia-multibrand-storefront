@@ -15,6 +15,24 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'picsum.photos'
+      },
+      // Max Mara sources
+      {
+        protocol: 'https',
+        hostname: 'www.online-fashion.ru'
+      },
+      {
+        protocol: 'https',
+        hostname: 'online-fashion.ru'
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.ls.net.ru'
+      },
+      // Optional: Bosco CDN (if we ever ingest from there)
+      {
+        protocol: 'https',
+        hostname: 'staticv2.bosco.ru'
       }
     ]
   }
