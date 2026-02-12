@@ -23,6 +23,7 @@ interface CatalogApiResponse {
   page: number;
   pageSize: number;
   brands: string[];
+  brandCounts: Record<string, number>;
   sizes: string[];
   colors: string[];
   minPrice: number;
@@ -106,11 +107,12 @@ export function CatalogView({
   const [page, setPage] = useState(1);
 
   const [brands, setBrands] = useState<string[]>([]);
+  const [brandCounts, setBrandCounts] = useState<Record<string, number>>({});
   const [sizes, setSizes] = useState<string[]>([]);
   const [colors, setColors] = useState<string[]>([]);
   const [priceBounds, setPriceBounds] = useState<{ min: number; max: number }>({ min: 0, max: 0 });
 
-  const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
+  const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
   const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
   const [selectedColors, setSelectedColors] = useState<string[]>([]);
   const [saleOnly, setSaleOnly] = useState(false);
@@ -155,8 +157,8 @@ export function CatalogView({
       params.set("sizes", selectedSizes.join(","));
     }
 
-    if (selectedBrands.length) {
-      params.set("brands", selectedBrands.join(","));
+    if (selectedBrand) {
+      params.set("brands", selectedBrand);
     }
 
     if (selectedColors.length) {
@@ -187,7 +189,7 @@ export function CatalogView({
     gender,
     category,
     selectedSizes,
-    selectedBrands,
+    selectedBrand,
     selectedColors,
     saleOnly,
     priceMinApplied,
@@ -208,7 +210,8 @@ export function CatalogView({
 
       setSizes(data.sizes);
       setBrands(data.brands);
-      setSelectedBrands((current) => current.filter((brand) => data.brands.includes(brand)));
+      setBrandCounts(data.brandCounts ?? {});
+      setSelectedBrand((current) => (current && data.brands.includes(current) ? current : null));
       setColors(data.colors);
       setHasMore(data.hasMore);
       setPriceBounds({ min: data.minPrice, max: data.maxPrice });
@@ -232,7 +235,7 @@ export function CatalogView({
     category,
     sortUi,
     selectedSizes,
-    selectedBrands,
+    selectedBrand,
     selectedColors,
     saleOnly,
     priceMinApplied,
@@ -251,9 +254,49 @@ export function CatalogView({
   }, [sizes]);
 
   const sortedBrands = useMemo(() => {
-    const unique = Array.from(new Set(brands)).filter(Boolean);
-    return unique.sort((a, b) => a.localeCompare(b, "ru"));
+    const uniqueBrands = Array.from(new Set(brands)).filter(Boolean);
+    return uniqueBrands.sort((a, b) => a.localeCompare(b, "ru"));
   }, [brands]);
+
+  const brandOptions = useMemo(() => {
+    const maxMaraFamily = sortedBrands.filter((brand) => brand.trim().toLowerCase().includes("max mara"));
+    const others = sortedBrands.filter((brand) => !brand.trim().toLowerCase().includes("max mara"));
+
+    const out: Array<
+      | { kind: "group"; label: string }
+      | { kind: "brand"; label: string; value: string; indent?: boolean; count: number }
+    > = [];
+
+    if (maxMaraFamily.length > 0) {
+      out.push({ kind: "group", label: "Max Mara" });
+      const ordered = [...maxMaraFamily].sort((a, b) => {
+        const aKey = a.trim().toLowerCase() === "max mara" ? 0 : 1;
+        const bKey = b.trim().toLowerCase() === "max mara" ? 0 : 1;
+        if (aKey !== bKey) return aKey - bKey;
+        return a.localeCompare(b, "ru");
+      });
+      for (const brand of ordered) {
+        out.push({
+          kind: "brand",
+          label: brand,
+          value: brand,
+          indent: brand.trim().toLowerCase() !== "max mara",
+          count: brandCounts[brand] ?? 0
+        });
+      }
+    }
+
+    for (const brand of others) {
+      out.push({
+        kind: "brand",
+        label: brand,
+        value: brand,
+        count: brandCounts[brand] ?? 0
+      });
+    }
+
+    return out;
+  }, [sortedBrands, brandCounts]);
 
   const colorOptions = useMemo(() => {
     const base = [...colors];
@@ -339,28 +382,61 @@ export function CatalogView({
               <DropdownFilter
                 open={openMenu === "brand"}
                 onToggle={() => setOpenMenu((current) => (current === "brand" ? null : "brand"))}
-                label={selectedBrands.length > 0 ? `Бренд (${selectedBrands.length})` : "Бренд"}
+                label="Бренд"
               >
                 <div className="space-y-1">
                   <button
                     type="button"
                     onClick={() => {
-                      setSelectedBrands([]);
+                      setSelectedBrand(null);
                       setOpenMenu(null);
                     }}
                     className={`flex w-full items-center justify-between px-2 py-2 text-left text-sm ${
-                      selectedBrands.length === 0 ? "bg-bg-secondary" : "hover:bg-bg-secondary/60"
+                      !selectedBrand ? "bg-bg-secondary" : "hover:bg-bg-secondary/60"
                     }`}
                   >
                     Все бренды
-                    {selectedBrands.length === 0 && <Check size={14} />}
+                    {!selectedBrand && <Check size={14} />}
                   </button>
 
-                  <FilterCheckList
-                    options={sortedBrands}
-                    selected={selectedBrands}
-                    onToggle={(value) => toggleValue(setSelectedBrands, value)}
-                  />
+                  <div className="max-h-72 overflow-auto">
+                    {brandOptions.length === 0 ? (
+                      <p className="px-2 py-1 text-sm text-text-muted">Нет опций</p>
+                    ) : (
+                      brandOptions.map((option) => {
+                        if (option.kind === "group") {
+                          return (
+                            <p
+                              key={`group:${option.label}`}
+                              className="px-2 pt-3 text-[11px] font-medium uppercase tracking-[0.08em] text-text-muted"
+                            >
+                              {option.label}
+                            </p>
+                          );
+                        }
+
+                        const active = selectedBrand === option.value;
+                        return (
+                          <button
+                            key={option.value}
+                            type="button"
+                            onClick={() => {
+                              setSelectedBrand(option.value);
+                              setOpenMenu(null);
+                            }}
+                            className={`flex w-full items-center justify-between px-2 py-2 text-left text-sm ${
+                              active ? "bg-bg-secondary" : "hover:bg-bg-secondary/60"
+                            } ${option.indent ? "pl-6" : ""}`}
+                          >
+                            <span>
+                              {option.label} ({option.count})
+                            </span>
+                            {active && <Check size={14} />}
+                          </button>
+                        );
+                      })
+                    )}
+                  </div>
                 </div>
               </DropdownFilter>
 

@@ -16,6 +16,7 @@ export interface CatalogResponse {
   page: number;
   pageSize: number;
   brands: string[];
+  brandCounts: Record<string, number>;
   sizes: string[];
   colors: string[];
   minPrice: number;
@@ -48,17 +49,21 @@ export function getCatalog(products: Product[], query: CatalogQuery): CatalogRes
     filtered = filtered.filter((product) => product.category === category);
   }
 
-  const allBrands = unique(filtered.map((product) => product.brand));
+  const baseFiltered = filtered;
+
   const allSizes = unique(
-    filtered.flatMap((product) =>
+    baseFiltered.flatMap((product) =>
       product.colors.flatMap((color) => color.sizes.map((size) => size.size))
     )
   );
-  const allColors = unique(filtered.flatMap((product) => product.colors.map((color) => color.name)));
-  const prices = filtered.map((product) => product.price);
+  const allColors = unique(baseFiltered.flatMap((product) => product.colors.map((color) => color.name)));
+  const prices = baseFiltered.map((product) => product.price);
 
   const minPrice = prices.length ? Math.min(...prices) : 0;
   const maxPrice = prices.length ? Math.max(...prices) : 0;
+
+  const brandCounts: Record<string, number> = {};
+  let allBrands: string[] = [];
 
   if (filters) {
     const query = filters.query?.trim().toLowerCase();
@@ -99,10 +104,6 @@ export function getCatalog(products: Product[], query: CatalogQuery): CatalogRes
       );
     }
 
-    if (filters.brands.length > 0) {
-      filtered = filtered.filter((product) => filters.brands.includes(product.brand));
-    }
-
     if (filters.colors.length > 0) {
       const includesMulticolor = filters.colors.includes("__MULTICOLOR__");
       filtered = filtered.filter((product) =>
@@ -117,6 +118,15 @@ export function getCatalog(products: Product[], query: CatalogQuery): CatalogRes
 
     if (filters.priceMax !== undefined) {
       filtered = filtered.filter((product) => product.price <= filters.priceMax!);
+    }
+
+    allBrands = unique(filtered.map((product) => product.brand));
+    for (const product of filtered) {
+      brandCounts[product.brand] = (brandCounts[product.brand] ?? 0) + 1;
+    }
+
+    if (filters.brands.length > 0) {
+      filtered = filtered.filter((product) => filters.brands.includes(product.brand));
     }
 
     switch (filters.sort) {
@@ -134,6 +144,10 @@ export function getCatalog(products: Product[], query: CatalogQuery): CatalogRes
     }
   } else {
     filtered.sort((a, b) => +new Date(b.createdAt) - +new Date(a.createdAt));
+    allBrands = unique(filtered.map((product) => product.brand));
+    for (const product of filtered) {
+      brandCounts[product.brand] = (brandCounts[product.brand] ?? 0) + 1;
+    }
   }
 
   const total = filtered.length;
@@ -148,6 +162,7 @@ export function getCatalog(products: Product[], query: CatalogQuery): CatalogRes
     page,
     pageSize,
     brands: allBrands,
+    brandCounts,
     sizes: allSizes,
     colors: allColors,
     minPrice,
