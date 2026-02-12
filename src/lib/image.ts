@@ -77,6 +77,12 @@ export function getProductOriginalImageUrl(url: string): string {
     return url;
   }
 
+  // Max Mara images are localized as detail/card/thumb only.
+  // Treat detail as "original" to avoid broken /original/ requests.
+  if (url.startsWith("/media/products/maxmara-")) {
+    return url;
+  }
+
   if (url.includes("/detail/")) {
     return url.replace("/detail/", "/original/");
   }
