@@ -1,7 +1,7 @@
 import { promises as fs } from "fs";
 import path from "path";
-import { randomUUID } from "crypto";
-import type { Prisma } from "@prisma/client";
+import { randomBytes, randomUUID } from "crypto";
+import { Prisma } from "@prisma/client";
 import { db, getDataSourceMode, isDatabaseConfigured, isDualWriteEnabled } from "@/lib/db";
 import type { Category, Order, OrderStatus, Product, Store } from "@/lib/types";
 import { slugify } from "@/lib/format";
@@ -19,6 +19,11 @@ export interface OrderIdempotencyRecord {
   orderId: string;
   createdAt: string;
 }
+
+export type CreateOrderWithIdempotencyResult =
+  | { kind: "created"; order: Order }
+  | { kind: "existing"; order: Order }
+  | { kind: "conflict"; message: string };
 
 function shouldReadFromDb(): boolean {
   return getDataSourceMode() === "db" && isDatabaseConfigured();
@@ -438,39 +443,63 @@ async function createOrderInJson(
   return order;
 }
 
-async function getNextOrderSerialFromDb(): Promise<number> {
-  const latest = await db.order.findFirst({
-    orderBy: { createdAt: "desc" },
-    select: { orderNumber: true }
-  });
+function createOrderNumberCandidate(): string {
+  const now = new Date();
+  const year = now.getUTCFullYear();
+  const timePart = Date.now().toString(36).toUpperCase();
+  const randomPart = randomBytes(2).toString("hex").toUpperCase();
+  return `MIA-${year}-${timePart}-${randomPart}`;
+}
 
-  const match = latest?.orderNumber
-    ? /^MIA-\d{4}-(\d+)$/.exec(latest.orderNumber)
-    : null;
-
-  if (match) {
-    return Number(match[1]) + 1;
+function isPrismaUniqueError(error: unknown, fieldName: string): boolean {
+  if (!(error instanceof Prisma.PrismaClientKnownRequestError)) {
+    return false;
   }
 
-  const count = await db.order.count();
-  return count + 1;
+  if (error.code !== "P2002") {
+    return false;
+  }
+
+  const rawTarget = error.meta?.target;
+  const targets = Array.isArray(rawTarget) ? rawTarget : rawTarget ? [String(rawTarget)] : [];
+  return targets.some((target) => String(target).includes(fieldName));
+}
+
+async function createOrderInDbWithClient(
+  client: Prisma.TransactionClient | typeof db,
+  input: Omit<Order, "id" | "orderNumber" | "status" | "createdAt" | "updatedAt">
+): Promise<Order> {
+  const timestamp = new Date().toISOString();
+
+  for (let attempt = 0; attempt < 5; attempt += 1) {
+    const order: Order = {
+      ...input,
+      id: randomUUID(),
+      orderNumber: createOrderNumberCandidate(),
+      status: "new",
+      createdAt: timestamp,
+      updatedAt: timestamp
+    };
+
+    try {
+      await client.order.create({ data: toOrderRecord(order) });
+      return order;
+    } catch (error) {
+      if (isPrismaUniqueError(error, "order_number")) {
+        continue;
+      }
+
+      throw error;
+    }
+  }
+
+  throw new Error("Failed to generate unique order number");
 }
 
 async function createOrderInDb(
   input: Omit<Order, "id" | "orderNumber" | "status" | "createdAt" | "updatedAt">
 ): Promise<Order> {
-  const timestamp = new Date().toISOString();
-  const order: Order = {
-    ...input,
-    id: randomUUID(),
-    orderNumber: createOrderNumber(await getNextOrderSerialFromDb()),
-    status: "new",
-    createdAt: timestamp,
-    updatedAt: timestamp
-  };
-
-  await db.order.create({ data: toOrderRecord(order) });
-  return order;
+  return createOrderInDbWithClient(db, input);
 }
 
 async function updateOrderStatusInJson(id: string, status: OrderStatus): Promise<Order | null> {
@@ -713,6 +742,164 @@ export async function createOrder(
   return order;
 }
 
+export async function createOrderWithIdempotency(input: {
+  key: string;
+  requestHash: string;
+  order: Omit<Order, "id" | "orderNumber" | "status" | "createdAt" | "updatedAt">;
+}): Promise<CreateOrderWithIdempotencyResult> {
+  if (shouldReadFromDb()) {
+    const createInTransaction = async (): Promise<CreateOrderWithIdempotencyResult> => {
+      return db.$transaction(
+        async (tx) => {
+          const existing = await tx.orderIdempotency.findUnique({
+            where: { key: input.key }
+          });
+
+          if (existing) {
+            if (existing.requestHash !== input.requestHash) {
+              return {
+                kind: "conflict",
+                message: "Idempotency conflict: payload differs for this key"
+              };
+            }
+
+            const existingOrder = await tx.order.findUnique({
+              where: { id: existing.orderId }
+            });
+
+            if (!existingOrder) {
+              return {
+                kind: "conflict",
+                message: "Idempotency record found, but order is missing"
+              };
+            }
+
+            return {
+              kind: "existing",
+              order: fromOrderRecord(existingOrder)
+            };
+          }
+
+          const order = await createOrderInDbWithClient(tx, input.order);
+
+          await tx.orderIdempotency.create({
+            data: {
+              key: input.key,
+              requestHash: input.requestHash,
+              orderId: order.id
+            }
+          });
+
+          return {
+            kind: "created",
+            order
+          };
+        },
+        { isolationLevel: Prisma.TransactionIsolationLevel.Serializable }
+      );
+    };
+
+    try {
+      const result = await createInTransaction();
+
+      if ((result.kind === "created" || result.kind === "existing") && shouldWriteToJson()) {
+        await upsertOrderInJson(result.order);
+
+        await saveOrderIdempotencyToJson({
+          key: input.key,
+          requestHash: input.requestHash,
+          orderId: result.order.id,
+          createdAt: new Date().toISOString()
+        });
+      }
+
+      return result;
+    } catch (error) {
+      if (isPrismaUniqueError(error, "key")) {
+        const existing = await db.orderIdempotency.findUnique({
+          where: { key: input.key }
+        });
+
+        if (existing) {
+          if (existing.requestHash !== input.requestHash) {
+            return {
+              kind: "conflict",
+              message: "Idempotency conflict: payload differs for this key"
+            };
+          }
+
+          const existingOrder = await db.order.findUnique({
+            where: { id: existing.orderId }
+          });
+
+          if (!existingOrder) {
+            return {
+              kind: "conflict",
+              message: "Idempotency record found, but order is missing"
+            };
+          }
+
+          return {
+            kind: "existing",
+            order: fromOrderRecord(existingOrder)
+          };
+        }
+      }
+
+      throw error;
+    }
+  }
+
+  const existing = await getOrderIdempotencyFromJson(input.key);
+
+  if (existing) {
+    if (existing.requestHash !== input.requestHash) {
+      return {
+        kind: "conflict",
+        message: "Idempotency conflict: payload differs for this key"
+      };
+    }
+
+    const orders = await getOrdersFromJson();
+    const existingOrder = orders.find((order) => order.id === existing.orderId);
+
+    if (!existingOrder) {
+      return {
+        kind: "conflict",
+        message: "Idempotency record found, but order is missing"
+      };
+    }
+
+    return {
+      kind: "existing",
+      order: existingOrder
+    };
+  }
+
+  const order = await createOrderInJson(input.order);
+  await saveOrderIdempotencyToJson({
+    key: input.key,
+    requestHash: input.requestHash,
+    orderId: order.id,
+    createdAt: new Date().toISOString()
+  });
+
+  if (shouldWriteToDb()) {
+    await upsertOrderInDb(order);
+    await saveOrderIdempotencyToDb({
+      key: input.key,
+      requestHash: input.requestHash,
+      orderId: order.id,
+      createdAt: new Date().toISOString()
+    });
+  }
+
+  return {
+    kind: "created",
+    order
+  };
+}
+
 export async function updateOrderStatus(id: string, status: OrderStatus): Promise<Order | null> {
   if (shouldReadFromDb()) {
     const updated = await updateOrderStatusInDb(id, status);
@@ -772,7 +959,7 @@ export async function upsertCategories(categories: Category[]): Promise<void> {
 }
 
 export async function getOrderIdempotencyByKey(key: string): Promise<OrderIdempotencyRecord | null> {
-  if (isDatabaseConfigured()) {
+  if (shouldReadFromDb()) {
     return getOrderIdempotencyFromDb(key);
   }
 

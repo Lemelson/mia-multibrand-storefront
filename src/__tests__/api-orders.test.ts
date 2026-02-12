@@ -1,11 +1,8 @@
 import { describe, expect, it, vi, beforeEach } from "vitest";
 
 vi.mock("@/lib/server-data", () => ({
-  createOrder: vi.fn(),
-  getOrderIdempotencyByKey: vi.fn(),
-  getOrders: vi.fn(),
+  createOrderWithIdempotency: vi.fn(),
   getProductById: vi.fn(),
-  saveOrderIdempotency: vi.fn()
 }));
 
 import { POST } from "@/app/api/orders/route";
@@ -75,21 +72,23 @@ describe("POST /api/orders", () => {
   });
 
   it("creates order using server-side price calculation", async () => {
-    mockedServerData.getOrderIdempotencyByKey.mockResolvedValue(null);
     mockedServerData.getProductById.mockResolvedValue(mockProduct);
-    mockedServerData.createOrder.mockImplementation(async (input: any) => ({
+    mockedServerData.createOrderWithIdempotency.mockImplementation(async (input: any) => ({
+      kind: "created",
       id: "order-1",
       orderNumber: "MIA-2026-0001",
-      items: input.items,
-      totalAmount: input.totalAmount,
-      customer: input.customer,
-      delivery: input.delivery,
-      storeId: input.storeId,
-      paymentMethod: input.paymentMethod,
-      status: "new",
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString()
-    }));
+      order: {
+        items: input.order.items,
+        totalAmount: input.order.totalAmount,
+        customer: input.order.customer,
+        delivery: input.order.delivery,
+        storeId: input.order.storeId,
+        paymentMethod: input.order.paymentMethod,
+        status: "new",
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString()
+      }
+    } as any));
 
     const request = new Request("http://localhost/api/orders", {
       method: "POST",
@@ -103,19 +102,18 @@ describe("POST /api/orders", () => {
     const response = await POST(request);
     expect(response.status).toBe(201);
 
-    expect(mockedServerData.createOrder).toHaveBeenCalledTimes(1);
-    const createOrderArgs = mockedServerData.createOrder.mock.calls[0]?.[0] as any;
-    expect(createOrderArgs.totalAmount).toBe(200);
-    expect(createOrderArgs.items[0].price).toBe(100);
+    expect(mockedServerData.createOrderWithIdempotency).toHaveBeenCalledTimes(1);
+    const createOrderArgs = mockedServerData.createOrderWithIdempotency.mock.calls[0]?.[0] as any;
+    expect(createOrderArgs.order.totalAmount).toBe(200);
+    expect(createOrderArgs.order.items[0].price).toBe(100);
   });
 
   it("returns 409 for idempotency key reuse with different payload hash", async () => {
-    mockedServerData.getOrderIdempotencyByKey.mockResolvedValue({
-      key: "idem-key-123456",
-      requestHash: "another-hash",
-      orderId: "order-1",
-      createdAt: new Date().toISOString()
-    });
+    mockedServerData.getProductById.mockResolvedValue(mockProduct);
+    mockedServerData.createOrderWithIdempotency.mockResolvedValue({
+      kind: "conflict",
+      message: "Idempotency conflict: payload differs for this key"
+    } as any);
 
     const request = new Request("http://localhost/api/orders", {
       method: "POST",
@@ -145,21 +143,11 @@ describe("POST /api/orders", () => {
       updatedAt: new Date().toISOString()
     };
 
-    mockedServerData.getOrderIdempotencyByKey.mockImplementation(async () => {
-      const crypto = await import("crypto");
-      const hash = crypto
-        .createHash("sha256")
-        .update(JSON.stringify(validPayload))
-        .digest("hex");
-
-      return {
-        key: "idem-key-123456",
-        requestHash: hash,
-        orderId: "order-1",
-        createdAt: new Date().toISOString()
-      };
-    });
-    mockedServerData.getOrders.mockResolvedValue([existingOrder as any]);
+    mockedServerData.getProductById.mockResolvedValue(mockProduct);
+    mockedServerData.createOrderWithIdempotency.mockResolvedValue({
+      kind: "existing",
+      order: existingOrder
+    } as any);
 
     const request = new Request("http://localhost/api/orders", {
       method: "POST",
@@ -174,11 +162,10 @@ describe("POST /api/orders", () => {
     expect(response.status).toBe(200);
     const payload = await response.json();
     expect(payload.orderNumber).toBe("MIA-2026-0001");
-    expect(mockedServerData.createOrder).not.toHaveBeenCalled();
+    expect(mockedServerData.createOrderWithIdempotency).toHaveBeenCalledTimes(1);
   });
 
   it("returns 400 when product data is invalid for order", async () => {
-    mockedServerData.getOrderIdempotencyByKey.mockResolvedValue(null);
     mockedServerData.getProductById.mockResolvedValue({
       ...mockProduct,
       stores: [{ storeId: "another-store", available: true }]
@@ -197,5 +184,31 @@ describe("POST /api/orders", () => {
     expect(response.status).toBe(400);
     const payload = await response.json();
     expect(payload.issues.length).toBeGreaterThan(0);
+  });
+
+  it("returns 400 when requested quantity exceeds available quantity", async () => {
+    mockedServerData.getProductById.mockResolvedValue({
+      ...mockProduct,
+      colors: [
+        {
+          ...mockProduct.colors[0],
+          sizes: [{ size: "M", inStock: true, quantity: 1 }]
+        }
+      ]
+    } as any);
+
+    const request = new Request("http://localhost/api/orders", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Idempotency-Key": "idem-key-123456"
+      },
+      body: JSON.stringify(validPayload)
+    });
+
+    const response = await POST(request);
+    expect(response.status).toBe(400);
+    const payload = await response.json();
+    expect(payload.message).toBe("Order validation failed");
   });
 });

@@ -61,7 +61,7 @@ describe("POST /api/products", () => {
       sku: "SKU",
       slug: "product",
       name: "Product",
-      brand: "Brand",
+      brand: "Twinset Milano",
       description: "",
       composition: "",
       care: "",
@@ -81,7 +81,7 @@ describe("POST /api/products", () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         name: "Product",
-        brand: "Brand",
+        brand: "Twinset Milano",
         gender: "women",
         category: "dresses",
         price: 100,

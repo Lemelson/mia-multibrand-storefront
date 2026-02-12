@@ -3,11 +3,9 @@ import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import { ADMIN_COOKIE, verifyAdminToken } from "@/lib/auth";
 import {
-  createOrder,
-  getOrderIdempotencyByKey,
+  createOrderWithIdempotency,
   getOrders,
   getProductById,
-  saveOrderIdempotency
 } from "@/lib/server-data";
 import {
   createOrderInputSchema,
@@ -76,6 +74,15 @@ async function buildOrderItems(payload: CreateOrderInput): Promise<{
       continue;
     }
 
+    if (typeof size.quantity === "number" && Number.isFinite(size.quantity)) {
+      if (requestItem.quantity > size.quantity) {
+        issues.push(
+          `Недостаточно остатка для ${product.name} (${requestItem.size}): доступно ${size.quantity}, запрошено ${requestItem.quantity}`
+        );
+        continue;
+      }
+    }
+
     items.push({
       productId: product.id,
       name: product.name,
@@ -130,29 +137,6 @@ export async function POST(request: Request) {
   const requestHash = createRequestHash(payload);
   const idempotencyKey = idempotencyResult.data;
 
-  const existing = await getOrderIdempotencyByKey(idempotencyKey);
-
-  if (existing) {
-    if (existing.requestHash !== requestHash) {
-      return NextResponse.json(
-        { message: "Idempotency conflict: payload differs for this key" },
-        { status: 409 }
-      );
-    }
-
-    const orders = await getOrders();
-    const existingOrder = orders.find((order) => order.id === existing.orderId);
-
-    if (!existingOrder) {
-      return NextResponse.json(
-        { message: "Idempotency record found, but order is missing" },
-        { status: 409 }
-      );
-    }
-
-    return NextResponse.json(existingOrder);
-  }
-
   const { items, totalAmount, issues } = await buildOrderItems(payload);
 
   if (issues.length > 0 || items.length === 0) {
@@ -165,26 +149,31 @@ export async function POST(request: Request) {
     );
   }
 
-  const order = await createOrder({
-    customer: {
-      name: payload.customer.name.trim(),
-      phone: payload.customer.phone.trim(),
-      email: payload.customer.email?.trim() || undefined,
-      comment: payload.customer.comment?.trim() || undefined
-    },
-    items,
-    totalAmount,
-    delivery: payload.delivery,
-    paymentMethod: payload.paymentMethod,
-    storeId: payload.storeId
-  });
-
-  await saveOrderIdempotency({
+  const result = await createOrderWithIdempotency({
     key: idempotencyKey,
     requestHash,
-    orderId: order.id,
-    createdAt: new Date().toISOString()
+    order: {
+      customer: {
+        name: payload.customer.name.trim(),
+        phone: payload.customer.phone.trim(),
+        email: payload.customer.email?.trim() || undefined,
+        comment: payload.customer.comment?.trim() || undefined
+      },
+      items,
+      totalAmount,
+      delivery: payload.delivery,
+      paymentMethod: payload.paymentMethod,
+      storeId: payload.storeId
+    }
   });
 
-  return NextResponse.json(order, { status: 201 });
+  if (result.kind === "conflict") {
+    return NextResponse.json({ message: result.message }, { status: 409 });
+  }
+
+  if (result.kind === "existing") {
+    return NextResponse.json(result.order);
+  }
+
+  return NextResponse.json(result.order, { status: 201 });
 }

@@ -1,9 +1,15 @@
 import { z } from "zod";
+import { ADMIN_BRAND_OPTIONS, ADMIN_COLOR_OPTIONS } from "@/lib/admin-options";
 
 const genderSchema = z.enum(["women", "men", "kids"]);
 const deliverySchema = z.enum(["pickup", "delivery"]);
 const paymentMethodSchema = z.enum(["card", "messenger", "cash"]);
 const orderStatusSchema = z.enum(["new", "processing", "completed", "cancelled"]);
+const brandSchema = z.enum(ADMIN_BRAND_OPTIONS);
+
+const colorPalette = new Map(
+  ADMIN_COLOR_OPTIONS.map((item) => [item.name.trim().toLowerCase(), item.hex.trim().toLowerCase()])
+);
 
 const productSizeSchema = z.object({
   size: z.string().min(1).max(32),
@@ -14,9 +20,31 @@ const productSizeSchema = z.object({
 const productColorSchema = z.object({
   id: z.string().min(1).max(120),
   name: z.string().min(1).max(120),
-  hex: z.string().min(1).max(32),
+  hex: z
+    .string()
+    .regex(/^#[0-9A-Fa-f]{6}$/),
   images: z.array(z.string().min(1)).max(30),
   sizes: z.array(productSizeSchema).max(80)
+}).superRefine((value, context) => {
+  const key = value.name.trim().toLowerCase();
+  const expectedHex = colorPalette.get(key);
+
+  if (!expectedHex) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["name"],
+      message: "Unknown color name"
+    });
+    return;
+  }
+
+  if (value.hex.trim().toLowerCase() !== expectedHex) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["hex"],
+      message: "Color hex does not match allowed palette"
+    });
+  }
 });
 
 const storeAvailabilitySchema = z.object({
@@ -28,7 +56,7 @@ export const createProductInputSchema = z.object({
   sku: z.string().min(1).max(120).optional(),
   slug: z.string().min(1).max(180).optional(),
   name: z.string().min(1).max(260),
-  brand: z.string().min(1).max(180),
+  brand: brandSchema,
   description: z.string().max(5000).default(""),
   composition: z.string().max(2000).default(""),
   care: z.string().max(2000).default(""),
