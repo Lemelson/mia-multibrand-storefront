@@ -5,6 +5,9 @@ const DEFAULT_ADMIN_PASSWORD = "mia-admin";
 const DEFAULT_ADMIN_SECRET = "mia-local-secret";
 const LEGACY_DEFAULT_ADMIN_SECRET = "change-this-secret";
 
+/** Maximum token age: 12 hours in milliseconds. */
+const MAX_TOKEN_AGE_MS = 12 * 60 * 60 * 1000;
+
 function isProduction(): boolean {
   return process.env.NODE_ENV === "production";
 }
@@ -62,6 +65,11 @@ export function verifyAdminToken(token?: string | null): boolean {
     const [role, timestamp, signature] = decoded.split(":");
 
     if (role !== "admin" || !timestamp || !signature) {
+      return false;
+    }
+
+    const tokenAge = Date.now() - Number(timestamp);
+    if (!Number.isFinite(tokenAge) || tokenAge < 0 || tokenAge > MAX_TOKEN_AGE_MS) {
       return false;
     }
 
