@@ -9,6 +9,8 @@ import { SiteFooter } from "@/components/site-footer";
 import { AppProviders } from "@/components/providers/app-providers";
 import { getCategories, getStores } from "@/lib/server-data";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "MIA — мультибрендовый бутик",
   description: "Интернет-магазин Mia: женская, мужская и детская одежда"

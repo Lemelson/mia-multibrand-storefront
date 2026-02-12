@@ -3,6 +3,8 @@ import { Container } from "@/components/container";
 import { AdminLoginForm } from "@/components/admin-login-form";
 import { isAdminSession } from "@/lib/admin-session";
 
+export const dynamic = "force-dynamic";
+
 export default function AdminPage() {
   if (isAdminSession()) {
     redirect("/admin/dashboard");

@@ -9,20 +9,17 @@ const CATEGORY_CARDS = [
   {
     label: "Женское",
     href: "/catalog/women",
-    image:
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&q=80&auto=format&fit=crop"
+    image: "/media/categories/category-women.png"
   },
   {
     label: "Мужское",
     href: "/catalog/men",
-    image:
-      "https://images.unsplash.com/photo-1516826957135-700dedea698c?w=900&q=80&auto=format&fit=crop"
+    image: "/media/categories/category-men.png"
   },
   {
     label: "Детское",
     href: "/catalog/kids",
-    image:
-      "https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?w=900&q=80&auto=format&fit=crop"
+    image: "/media/categories/category-kids.png"
   }
 ];
 
@@ -44,7 +41,7 @@ export default async function HomePage() {
           <div className="grid gap-4 md:grid-cols-3">
             {CATEGORY_CARDS.map((item) => (
               <Link key={item.label} href={item.href} className="group block overflow-hidden">
-                <div className="relative aspect-[4/5] overflow-hidden bg-bg-secondary">
+                <div className="relative aspect-[2/3] overflow-hidden bg-bg-secondary">
                   <Image
                     src={item.image}
                     alt={item.label}

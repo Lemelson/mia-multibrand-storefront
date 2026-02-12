@@ -4,6 +4,8 @@ import { AdminDashboard } from "@/components/admin-dashboard";
 import { isAdminSession } from "@/lib/admin-session";
 import { getCategories, getOrders, getProducts, getStores } from "@/lib/server-data";
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminDashboardPage() {
   if (!isAdminSession()) {
     redirect("/admin");
