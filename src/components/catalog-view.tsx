@@ -37,7 +37,7 @@ interface CatalogViewProps {
   activeCategorySlug?: string;
 }
 
-type MenuKey = "size" | "color" | "price" | "sale" | "sort";
+type MenuKey = "brand" | "size" | "color" | "price" | "sale" | "sort";
 type SortUi = "relevance" | "newest" | "best" | "price-desc" | "price-asc";
 
 const SORT_OPTIONS: Array<{ value: SortUi; label: string }> = [
@@ -105,10 +105,12 @@ export function CatalogView({
   const [hasMore, setHasMore] = useState(false);
   const [page, setPage] = useState(1);
 
+  const [brands, setBrands] = useState<string[]>([]);
   const [sizes, setSizes] = useState<string[]>([]);
   const [colors, setColors] = useState<string[]>([]);
   const [priceBounds, setPriceBounds] = useState<{ min: number; max: number }>({ min: 0, max: 0 });
 
+  const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
   const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
   const [selectedColors, setSelectedColors] = useState<string[]>([]);
   const [saleOnly, setSaleOnly] = useState(false);
@@ -153,6 +155,10 @@ export function CatalogView({
       params.set("sizes", selectedSizes.join(","));
     }
 
+    if (selectedBrands.length) {
+      params.set("brands", selectedBrands.join(","));
+    }
+
     if (selectedColors.length) {
       params.set("colors", selectedColors.join(","));
     }
@@ -174,7 +180,20 @@ export function CatalogView({
     }
 
     return params.toString();
-  }, [page, sortUi, selectedStoreId, gender, category, selectedSizes, selectedColors, saleOnly, priceMinApplied, priceMaxApplied, searchQuery]);
+  }, [
+    page,
+    sortUi,
+    selectedStoreId,
+    gender,
+    category,
+    selectedSizes,
+    selectedBrands,
+    selectedColors,
+    saleOnly,
+    priceMinApplied,
+    priceMaxApplied,
+    searchQuery
+  ]);
 
   const loadCatalog = useCallback(
     async (mode: "replace" | "append") => {
@@ -188,6 +207,8 @@ export function CatalogView({
       const data = (await response.json()) as CatalogApiResponse;
 
       setSizes(data.sizes);
+      setBrands(data.brands);
+      setSelectedBrands((current) => current.filter((brand) => data.brands.includes(brand)));
       setColors(data.colors);
       setHasMore(data.hasMore);
       setPriceBounds({ min: data.minPrice, max: data.maxPrice });
@@ -205,7 +226,19 @@ export function CatalogView({
 
   useEffect(() => {
     setPage(1);
-  }, [selectedStoreId, gender, category, sortUi, selectedSizes, selectedColors, saleOnly, priceMinApplied, priceMaxApplied, searchQuery]);
+  }, [
+    selectedStoreId,
+    gender,
+    category,
+    sortUi,
+    selectedSizes,
+    selectedBrands,
+    selectedColors,
+    saleOnly,
+    priceMinApplied,
+    priceMaxApplied,
+    searchQuery
+  ]);
 
   const parsedPriceFrom = priceFromInput ? Number(priceFromInput) : undefined;
   const parsedPriceTo = priceToInput ? Number(priceToInput) : undefined;
@@ -216,6 +249,11 @@ export function CatalogView({
     const unique = Array.from(new Set(sizes));
     return unique.sort((a, b) => compareSizes(a, b));
   }, [sizes]);
+
+  const sortedBrands = useMemo(() => {
+    const unique = Array.from(new Set(brands)).filter(Boolean);
+    return unique.sort((a, b) => a.localeCompare(b, "ru"));
+  }, [brands]);
 
   const colorOptions = useMemo(() => {
     const base = [...colors];
@@ -298,6 +336,34 @@ export function CatalogView({
         <div>
           <div ref={filterBarRef} className="mb-5 flex flex-wrap items-center justify-between gap-3 pb-3">
             <div className="flex flex-wrap items-center gap-3">
+              <DropdownFilter
+                open={openMenu === "brand"}
+                onToggle={() => setOpenMenu((current) => (current === "brand" ? null : "brand"))}
+                label={selectedBrands.length > 0 ? `Бренд (${selectedBrands.length})` : "Бренд"}
+              >
+                <div className="space-y-1">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSelectedBrands([]);
+                      setOpenMenu(null);
+                    }}
+                    className={`flex w-full items-center justify-between px-2 py-2 text-left text-sm ${
+                      selectedBrands.length === 0 ? "bg-bg-secondary" : "hover:bg-bg-secondary/60"
+                    }`}
+                  >
+                    Все бренды
+                    {selectedBrands.length === 0 && <Check size={14} />}
+                  </button>
+
+                  <FilterCheckList
+                    options={sortedBrands}
+                    selected={selectedBrands}
+                    onToggle={(value) => toggleValue(setSelectedBrands, value)}
+                  />
+                </div>
+              </DropdownFilter>
+
               <DropdownFilter
                 open={openMenu === "size"}
                 onToggle={() => setOpenMenu((current) => (current === "size" ? null : "size"))}
