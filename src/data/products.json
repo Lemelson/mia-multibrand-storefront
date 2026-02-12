@@ -4829,5 +4829,1698 @@
     "isActive": true,
     "createdAt": "2026-01-02T12:00:00.000Z",
     "updatedAt": "2026-01-08T12:00:00.000Z"
+  },
+  {
+    "id": "p-080",
+    "sku": "2526106018670",
+    "slug": "maxmara-2526106018670",
+    "name": "Юбка Max Mara ALESSIO цвет бордовый (19024)",
+    "brand": "Max Mara",
+    "description": "Юбка из 100% ацетата от Max Mara, выполненная в насыщенном бордовом цвете, обладает гладкой и блестящей текстурой. Её свободный крой и элегантный силуэт подчеркивают женственность и современный стиль. Простая, но изысканная модель идеально подходит для создания образов в духе минимализма и классической элегантности. Состав: 100% ацетат Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 100% ацетат",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 18020,
+    "colors": [
+      {
+        "id": "p-080-c1",
+        "name": "бордовый",
+        "hex": "#5A0F1B",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ALESSIO_015_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ALESSIO_015_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ALESSIO_015_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ALESSIO_015_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ALESSIO_015_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ALESSIO_015_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ALESSIO_015_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ALESSIO_015_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ALESSIO_015_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ALESSIO_015_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ALESSIO_015_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ALESSIO_015_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ALESSIO_015_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ALESSIO_015_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ALESSIO_015_5.webp"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.185Z",
+    "updatedAt": "2026-02-12T09:14:35.185Z"
+  },
+  {
+    "id": "p-081",
+    "sku": "2526136027670",
+    "slug": "maxmara-2526136027670",
+    "name": "Блузка Max Mara MSTETERE цвет черный,белый (19343)",
+    "brand": "Max Mara",
+    "description": "Блузка Max Mara выполнена из смеси шелка и ацетата, что придает ей легкость и элегантность. Черный цвет с белым горохом создает классический и в то же время современный образ. Крой с завязками на шее и длинными рукавами подчеркивает женственность и изысканность. Тонкая ткань с блестящей текстурой идеально подходит для создания стильных образов в деловом или вечернем стиле. Новая коллекция: SS 26 Состав: 100% шелк, топ: 85% ацетат, 10% шелк, 5% полиамид Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 100% шелк, топ: 85% ацетат, 10% шелк, 5% полиамид",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 60620,
+    "colors": [
+      {
+        "id": "p-081-c1",
+        "name": "черный,белый",
+        "hex": "#111111",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/1200_1600_1/MSTETERE_002_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/1200_1600_1/MSTETERE_002_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/1200_1600_1/MSTETERE_002_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/1200_1600_1/MSTETERE_002_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/MSTETERE_002_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/MSTETERE_002_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/MSTETERE_002_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/MSTETERE_002_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/MSTETERE_002_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/MSTETERE_002_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/MSTETERE_002_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/MSTETERE_002_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/MSTETERE_002_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/MSTETERE_002_5.webp",
+          "https://www.online-fashion.ru/upload/product/261/max_mara/MSTETERE_002_1.webp"
+        ],
+        "sizes": [
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.187Z",
+    "updatedAt": "2026-02-12T09:14:35.187Z"
+  },
+  {
+    "id": "p-082",
+    "sku": "2526296018670",
+    "slug": "maxmara-2526296018670",
+    "name": "Ожерелье Max Mara Weekend LODOLA цвет черный (15314)",
+    "brand": "Max Mara Weekend",
+    "description": "Ожерелье Max Mara Weekend в черном цвете, выполненное из металла и стекла, сочетает в себе элегантность и современность. Крупные граненые элементы создают игру света, подчеркивая минималистичный стиль и актуальный тренд. Простая, но выразительная форма ожерелья с акцентом на текстуру идеально дополняет образ, добавляя нотку роскоши и изысканности. Состав: 50% металл, 50% стекло",
+    "composition": "Состав: 50% металл, 50% стекло",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 11910,
+    "colors": [
+      {
+        "id": "p-082-c1",
+        "name": "черный",
+        "hex": "#111111",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/242/max_mara_weekend/600_800_1/LODOLA_004_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/242/max_mara_weekend/600_800_1/LODOLA_004_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/242/max_mara_weekend/600_800_1/LODOLA_004_3.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/242/max_mara_weekend/450_600_1/LODOLA_004_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/242/max_mara_weekend/450_600_1/LODOLA_004_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/242/max_mara_weekend/450_600_1/LODOLA_004_3.jpg",
+          "https://www.online-fashion.ru/upload/product/242/max_mara_weekend/LODOLA_004_1.jpg",
+          "https://www.online-fashion.ru/upload/product/242/max_mara_weekend/LODOLA_004_2.jpg",
+          "https://www.online-fashion.ru/upload/product/242/max_mara_weekend/LODOLA_004_3.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "U",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.187Z",
+    "updatedAt": "2026-02-12T09:14:35.187Z"
+  },
+  {
+    "id": "p-083",
+    "sku": "2526336018670",
+    "slug": "maxmara-2526336018670",
+    "name": "Брюки трикотажные Max Mara HAMBURG цвет белый (19032)",
+    "brand": "Max Mara",
+    "description": "Брюки трикотажные Max Mara выполнены из 100% шерсти и отличаются элегантным кроем с широкими штанинами. Изделие подчеркивает женственность и комфорт, сочетая в себе мягкую текстуру и классический белый цвет. Прямой силуэт и минималистичный дизайн делают их идеальным выбором для создания современных и изысканных образов. Состав: 100% шерсть Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 100% шерсть",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 19750,
+    "colors": [
+      {
+        "id": "p-083-c1",
+        "name": "белый",
+        "hex": "#F5F5F5",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/HAMBURG_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/HAMBURG_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/HAMBURG_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/HAMBURG_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/HAMBURG_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/HAMBURG_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/HAMBURG_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/HAMBURG_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/HAMBURG_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/HAMBURG_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/HAMBURG_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/HAMBURG_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/HAMBURG_001_5.webp",
+          "https://www.online-fashion.ru/upload/product/252/max_mara/HAMBURG_001_5.webp"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "XS",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.188Z",
+    "updatedAt": "2026-02-12T09:14:35.188Z"
+  },
+  {
+    "id": "p-084",
+    "sku": "2526366018670",
+    "slug": "maxmara-2526366018670",
+    "name": "Шорты Max Mara ADRIA цвет розовый (14213)",
+    "brand": "Max Mara",
+    "description": "Шорты Max Mara в ярко-розовом цвете, выполненные из 95% хлопка и 5% эластана, сочетают в себе мягкость и эластичность. Структурированная текстура ткани подчеркивает классический крой с вертикальными складками, создающими эффект легкости и объема. Подкладка из 70% ацетата и 30% полиэстера обеспечивает комфорт и гладкость. Элегантный и современный дизайн идеально подходит для создания стильных образов в духе минимализма. Состав: 95% хлопок, 5% эластан, подклад: 70% ацетат, 30% полиэстер Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 95% хлопок, 5% эластан, подклад: 70% ацетат, 30% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 11880,
+    "colors": [
+      {
+        "id": "p-084-c1",
+        "name": "розовый",
+        "hex": "#D88AA6",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/ADRIA_016_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/ADRIA_016_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/ADRIA_016_3.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/ADRIA_016_4.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/ADRIA_016_5.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/ADRIA_016_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/ADRIA_016_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/ADRIA_016_3.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/ADRIA_016_4.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/ADRIA_016_5.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/ADRIA_016_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/ADRIA_016_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/ADRIA_016_3.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/ADRIA_016_4.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/ADRIA_016_5.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.188Z",
+    "updatedAt": "2026-02-12T09:14:35.188Z"
+  },
+  {
+    "id": "p-085",
+    "sku": "2526366027670",
+    "slug": "maxmara-2526366027670",
+    "name": "Блузка Max Mara GAIA цвет светло-серый (16668)",
+    "brand": "Max Mara",
+    "description": "Блузка Max Mara выполнена из 100% шелка и отличается элегантным светло-серым оттенком. Классический крой с высоким воротником и сборками на груди подчеркивает женственность и изысканность. Мягкая текстура ткани придает изделию нежный блеск, делая его идеальным выбором для создания стильных образов в духе вечной классики. Состав: 100% шелк Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 100% шелк",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 56110,
+    "colors": [
+      {
+        "id": "p-085-c1",
+        "name": "светло-серый",
+        "hex": "#8A8A8A",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/GAIA_088_1.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/GAIA_088_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/GAIA_088_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/GAIA_088_4.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/GAIA_088_5.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/GAIA_088_6.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/GAIA_088_1.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/GAIA_088_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/GAIA_088_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/GAIA_088_4.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/GAIA_088_5.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/GAIA_088_6.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/GAIA_088_1.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/GAIA_088_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/GAIA_088_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/GAIA_088_4.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/GAIA_088_5.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/GAIA_088_6.jpeg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          },
+          {
+            "size": "50",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.188Z",
+    "updatedAt": "2026-02-12T09:14:35.188Z"
+  },
+  {
+    "id": "p-086",
+    "sku": "2526366047600",
+    "slug": "maxmara-2526366047600",
+    "name": "Джемпер Max Mara Weekend FABIAN цвет мультиколор (16598)",
+    "brand": "Max Mara Weekend",
+    "description": "Джемпер Max Mara Weekend в мультиколоре — воплощение современного стиля и утонченной элегантности. Сочетание 60% хлопка и 40% акрила придает изделию мягкую, приятную на ощупь текстуру. Яркий принт с абстрактными формами и надписью \"WEEKEND\" подчеркивает трендовую индивидуальность. Классический крой с круглым вырезом гармонично дополняется декоративными элементами, создавая образ, который сочетает в себе комфорт и изысканность. Состав: 60% хлопок, 40% акрил Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 60% хлопок, 40% акрил",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 23620,
+    "colors": [
+      {
+        "id": "p-086-c1",
+        "name": "мультиколор",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara_weekend/1200_1600_1/FABIAN_003_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara_weekend/1200_1600_1/FABIAN_003_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara_weekend/1200_1600_1/FABIAN_003_3.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara_weekend/1200_1600_1/FABIAN_003_4.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara_weekend/600_800_1/FABIAN_003_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara_weekend/600_800_1/FABIAN_003_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara_weekend/600_800_1/FABIAN_003_3.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara_weekend/600_800_1/FABIAN_003_4.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara_weekend/450_600_1/FABIAN_003_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara_weekend/450_600_1/FABIAN_003_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara_weekend/450_600_1/FABIAN_003_3.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara_weekend/450_600_1/FABIAN_003_4.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XXL",
+            "inStock": true
+          }
+        ]
+      },
+      {
+        "id": "p-086-c2",
+        "name": "черный",
+        "hex": "#111111",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/FABIANA_003_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/FABIANA_003_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/FABIANA_003_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/FABIANA_003_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/FABIANA_003_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/FABIANA_003_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/FABIANA_003_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/FABIANA_003_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/FABIANA_003_3.webp"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "XS",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.188Z",
+    "updatedAt": "2026-02-12T09:14:35.188Z"
+  },
+  {
+    "id": "p-087",
+    "sku": "2526366058670",
+    "slug": "maxmara-2526366058670",
+    "name": "Джемпер Max Mara MOXA цвет темно-синий (17057)",
+    "brand": "Max Mara",
+    "description": "Джемпер Max Mara в темно-синем цвете, выполненный из 100% шерсти, сочетает классический морской стиль с элегантной отделкой — красным бантом на плече. Полосатый узор и облегающий крой подчеркивают женственность и современность, создавая образ, который идеально подходит для повседневного стиля и особых случаев. Состав: 100% шерсть Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 100% шерсть",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 30720,
+    "colors": [
+      {
+        "id": "p-087-c1",
+        "name": "темно-синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/MOXA_011_1.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/MOXA_011_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/MOXA_011_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/MOXA_011_4.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/MOXA_011_5.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/MOXA_011_1.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/MOXA_011_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/MOXA_011_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/MOXA_011_4.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/MOXA_011_5.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/MOXA_011_1.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/MOXA_011_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/MOXA_011_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/MOXA_011_4.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/MOXA_011_5.jpeg"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.188Z",
+    "updatedAt": "2026-02-12T09:14:35.188Z"
+  },
+  {
+    "id": "p-088",
+    "sku": "2526366078670",
+    "slug": "maxmara-2526366078670",
+    "name": "Джемпер Max Mara BEATRICE цвет серый (19027)",
+    "brand": "Max Mara",
+    "description": "Джемпер Max Mara в сером цвете, выполненный из 100% шерсти, сочетает в себе элегантность и современность. Текстура изделия подчеркнута объемным черным декором в виде стилизованного растения, добавляющим образу изысканности и индивидуальности. Классический крой с длинными рукавами и круглым вырезом создает универсальный силуэт, идеально подходящий для создания модных образов в духе минимализма. Состав: 100% шерсть Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 100% шерсть",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 28700,
+    "colors": [
+      {
+        "id": "p-088-c1",
+        "name": "серый",
+        "hex": "#8A8A8A",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/BEATRICE_005_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/BEATRICE_005_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/BEATRICE_005_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/BEATRICE_005_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/BEATRICE_005_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/BEATRICE_005_6.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/BEATRICE_005_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/BEATRICE_005_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/BEATRICE_005_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/BEATRICE_005_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/BEATRICE_005_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/BEATRICE_005_6.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/BEATRICE_005_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/BEATRICE_005_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/BEATRICE_005_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/BEATRICE_005_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/BEATRICE_005_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/BEATRICE_005_6.webp"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "XS",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.188Z",
+    "updatedAt": "2026-02-12T09:14:35.188Z"
+  },
+  {
+    "id": "p-089",
+    "sku": "2526366128600",
+    "slug": "maxmara-2526366128600",
+    "name": "Свитер Max Mara MINO цвет бежевый (18349)",
+    "brand": "Max Mara",
+    "description": "Свитер Max Mara в нежном бежевом цвете, выполненный из 100% шерсти, отличается элегантным креп-вязаным узором и свободным силуэтом. Модель с высоким воротником-стойкой подчеркивает женственность и комфорт, идеально сочетая классический стиль с современной текстурой. Состав: 100% шерсть Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 100% шерсть",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 25500,
+    "colors": [
+      {
+        "id": "p-089-c1",
+        "name": "бежевый",
+        "hex": "#D8C3A5",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/MINO_002_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/MINO_002_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/MINO_002_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/MINO_002_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/MINO_002_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/MINO_002_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/MINO_002_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/MINO_002_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/MINO_002_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/MINO_002_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/MINO_002_4.webp",
+          "https://www.online-fashion.ru/upload/product/252/max_mara/MINO_002_1.webp"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.188Z",
+    "updatedAt": "2026-02-12T09:14:35.188Z"
+  },
+  {
+    "id": "p-090",
+    "sku": "2526366148600",
+    "slug": "maxmara-2526366148600",
+    "name": "Джемпер Max Mara EBANO цвет серый (18348)",
+    "brand": "Max Mara",
+    "description": "Джемпер Max Mara, серый цвет, 100% шерсть. Элегантная фактура тонкого трикотажа придает модели лаконичный и современный стиль. Круглый вырез и свободный крой создают комфорт и универсальность в сочетании с классическими элементами отделки. Состав: 100% шерсть Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 100% шерсть",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 24440,
+    "colors": [
+      {
+        "id": "p-090-c1",
+        "name": "серый",
+        "hex": "#8A8A8A",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/EBANO_005_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/EBANO_005_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/EBANO_005_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/EBANO_005_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/EBANO_005_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/EBANO_005_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/EBANO_005_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/EBANO_005_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/EBANO_005_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/EBANO_005_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/EBANO_005_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/EBANO_005_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/EBANO_005_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/EBANO_005_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/EBANO_005_5.webp"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.189Z",
+    "updatedAt": "2026-02-12T09:14:35.189Z"
+  },
+  {
+    "id": "p-091",
+    "sku": "2526486037670",
+    "slug": "maxmara-2526486037670",
+    "name": "Брюки кожаные Max Mara ZANTE цвет черный (15871)",
+    "brand": "Max Mara",
+    "description": "Брюки кожаные Max Mara выполнены из 100% натуральной кожи с гладкой, лаконичной текстурой. Изделие в свободном крое подчеркивает современный минималистичный стиль, дополненное классическими боковыми карманами и аккуратной строчкой по швам. Элегантная модель идеально сочетает в себе универсальность и роскошь. Состав: 100% кожа Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 100% кожа",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 55660,
+    "colors": [
+      {
+        "id": "p-091-c1",
+        "name": "черный",
+        "hex": "#111111",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/242/max_mara/600_800_1/ZANTE_001_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/242/max_mara/600_800_1/ZANTE_001_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/242/max_mara/450_600_1/ZANTE_001_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/242/max_mara/450_600_1/ZANTE_001_2.jpg",
+          "https://www.online-fashion.ru/upload/product/242/max_mara/ZANTE_001_1.jpg",
+          "https://www.online-fashion.ru/upload/product/242/max_mara/ZANTE_001_2.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "46",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.189Z",
+    "updatedAt": "2026-02-12T09:14:35.189Z"
+  },
+  {
+    "id": "p-092",
+    "sku": "2526626067670",
+    "slug": "maxmara-2526626067670",
+    "name": "Платье Max Mara ALBIO цвет черный (18255)",
+    "brand": "Max Mara",
+    "description": "Платье Max Mara, черное, выполнено из комбинации хлопка и полиэстера (63% хлопок, 37% полиэстер), обладает элегантной фактурой. Лаконичный силуэт с круглым вырезом горловины подчеркивает линии фигуры, создавая неповторимый образ в стиле минимализма. Состав: 63% хлопок, 37% полиэстер Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 63% хлопок, 37% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 33410,
+    "colors": [
+      {
+        "id": "p-092-c1",
+        "name": "черный",
+        "hex": "#111111",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ALBIO_004_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ALBIO_004_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ALBIO_004_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ALBIO_004_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ALBIO_004_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ALBIO_004_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ALBIO_004_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ALBIO_004_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ALBIO_004_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ALBIO_004_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ALBIO_004_4.webp",
+          "https://www.online-fashion.ru/upload/product/252/max_mara/ALBIO_004_1.webp"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.189Z",
+    "updatedAt": "2026-02-12T09:14:35.189Z"
+  },
+  {
+    "id": "p-093",
+    "sku": "2526786018670",
+    "slug": "maxmara-2526786018670",
+    "name": "Брюки вельветовые Max Mara GOCCE цвет кэмэл (19034)",
+    "brand": "Max Mara",
+    "description": "Брюки вельветовые Max Mara насыщенного кэмэл-цвета, выполненные из смеси 75% хлопка и 25% полиэстера, обладают нежной текстурой с характерным бархатистым блеском. Изделие отличается свободным кроем и элегантным силуэтом, подчеркивающим женственность и современный стиль. Прямой крой и классический пояс с внутренней резинкой обеспечивают комфорт и универсальность. Идеальный выбор для создания образов в духе минимализма и утонченной элегантности. Состав: 75% хлопок, 25% полиэстер Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 75% хлопок, 25% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 16690,
+    "colors": [
+      {
+        "id": "p-093-c1",
+        "name": "кэмэл",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/GOCCE_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/GOCCE_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/GOCCE_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/GOCCE_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/GOCCE_001_6.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/GOCCE_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/GOCCE_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/GOCCE_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/GOCCE_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/GOCCE_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/GOCCE_001_6.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/GOCCE_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/GOCCE_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/GOCCE_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/GOCCE_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/GOCCE_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/GOCCE_001_6.webp",
+          "https://www.online-fashion.ru/upload/product/252/max_mara/GOCCE_001_1.webp"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.189Z",
+    "updatedAt": "2026-02-12T09:14:35.189Z"
+  },
+  {
+    "id": "p-094",
+    "sku": "2526786088670",
+    "slug": "maxmara-2526786088670",
+    "name": "Брюки спортивные Max Mara LEVICO цвет синий (18676)",
+    "brand": "Max Mara",
+    "description": "Брюки спортивные Max Mara выполнены из смеси хлопка, полиэстера и эластана, что обеспечивает комфорт и эластичность. Гладкая текстура ткани подчеркивает минималистичный крой с поясом на шнурке, создавая современный и элегантный силуэт. Идеальный выбор для повседневного стиля, сочетающего практичность и изысканность. Состав: 54% хлопок, 44% полиэстер, 2% эластан Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 54% хлопок, 44% полиэстер, 2% эластан",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 26710,
+    "colors": [
+      {
+        "id": "p-094-c1",
+        "name": "синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/LEVICO_003_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/LEVICO_003_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/LEVICO_003_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/LEVICO_003_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/LEVICO_003_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/LEVICO_003_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/LEVICO_003_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/LEVICO_003_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/LEVICO_003_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/LEVICO_003_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/LEVICO_003_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/LEVICO_003_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/LEVICO_003_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/LEVICO_003_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/LEVICO_003_5.webp"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.189Z",
+    "updatedAt": "2026-02-12T09:14:35.189Z"
+  },
+  {
+    "id": "p-095",
+    "sku": "2526786097670",
+    "slug": "maxmara-2526786097670",
+    "name": "Брюки Max Mara PULVINO цвет белый (18261)",
+    "brand": "Max Mara",
+    "description": "Брюки Max Mara, цвет белый, 63% хлопок, 37% полиэстер. Лаконичная классика с элегантной фактурой ткани, подчеркивающей роскошь и комфорт. Прямой крой создает стильный силуэт, дополненный небольшими пуговицами на карманах. Состав: 63% хлопок, 37% полиэстер Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 63% хлопок, 37% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 28220,
+    "colors": [
+      {
+        "id": "p-095-c1",
+        "name": "белый",
+        "hex": "#F5F5F5",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/PULVINO_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/PULVINO_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/PULVINO_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/PULVINO_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/PULVINO_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/PULVINO_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/PULVINO_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/PULVINO_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/PULVINO_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/PULVINO_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/PULVINO_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/PULVINO_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/PULVINO_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/PULVINO_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/PULVINO_001_5.webp"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "XS",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.189Z",
+    "updatedAt": "2026-02-12T09:14:35.189Z"
+  },
+  {
+    "id": "p-096",
+    "sku": "2526786108670",
+    "slug": "maxmara-2526786108670",
+    "name": "Брюки Max Mara BILL цвет бежевый (19031)",
+    "brand": "Max Mara",
+    "description": "Брюки Max Mara в нежном бежевом цвете, выполненные из смесовой ткани 63% хлопок и 37% полиэстер, отличаются элегантным кроем с вертикальными складками и классическими карманами. Изделие подчеркивает современный минималистичный стиль благодаря гладкой текстуре и безупречной посадке. Состав: 63% хлопок, 37% полиэстер Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 63% хлопок, 37% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 16340,
+    "colors": [
+      {
+        "id": "p-096-c1",
+        "name": "бежевый",
+        "hex": "#D8C3A5",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/BILL_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/BILL_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/BILL_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/BILL_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/BILL_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/BILL_001_6.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/BILL_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/BILL_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/BILL_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/BILL_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/BILL_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/BILL_001_6.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/BILL_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/BILL_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/BILL_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/BILL_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/BILL_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/BILL_001_6.webp"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.189Z",
+    "updatedAt": "2026-02-12T09:14:35.189Z"
+  },
+  {
+    "id": "p-097",
+    "sku": "2526916077670",
+    "slug": "maxmara-2526916077670",
+    "name": "Жакет Max Mara EMBLEMA цвет молочный (18248)",
+    "brand": "Max Mara",
+    "description": "Жакет Max Mara, молочного цвета, выполнен из комбинации хлопка, полиэстера и эластана. Лаконичный крой с отложным воротником и карманами придает модели элегантность и универсальность. Ткань имеет легкую структуру, подчеркивающую классический стиль бренда. Золотистые пуговицы добавляют детализированной отделки, создавая гармоничное сочетание простоты и роскоши. Состав: 80% хлопок, 14% полиэстер, 6% эластан Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 80% хлопок, 14% полиэстер, 6% эластан",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 27580,
+    "colors": [
+      {
+        "id": "p-097-c1",
+        "name": "молочный",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/EMBLEMA_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/EMBLEMA_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/EMBLEMA_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/EMBLEMA_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/EMBLEMA_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/EMBLEMA_001_6.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/EMBLEMA_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/EMBLEMA_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/EMBLEMA_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/EMBLEMA_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/EMBLEMA_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/EMBLEMA_001_6.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/EMBLEMA_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/EMBLEMA_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/EMBLEMA_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/EMBLEMA_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/EMBLEMA_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/EMBLEMA_001_6.webp"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.189Z",
+    "updatedAt": "2026-02-12T09:14:35.189Z"
+  },
+  {
+    "id": "p-098",
+    "sku": "2526926028670",
+    "slug": "maxmara-2526926028670",
+    "name": "Брюки Max Mara ERA цвет розовый (13742)",
+    "brand": "Max Mara",
+    "description": "Брюки Max Mara в нежно-розовом цвете выполнены из смесовой ткани на основе триацетата и полиэстера, что придает им легкую текстуру и элегантный блеск. Свободный крой с классическими складками подчеркивает женственность и современный стиль, идеально подходящий для деловых встреч и торжественных мероприятий. Простая, но изысканная отделка пояса завершает образ, добавляя шарма и уверенности. Состав: 71% триацетат, 29% полиэстер Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 71% триацетат, 29% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 16350,
+    "colors": [
+      {
+        "id": "p-098-c1",
+        "name": "розовый",
+        "hex": "#D88AA6",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/ERA_017_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/ERA_017_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/ERA_017_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/ERA_017_4.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/ERA_017_5.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/ERA_017_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/ERA_017_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/ERA_017_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/ERA_017_4.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/ERA_017_5.jpeg",
+          "https://www.online-fashion.ru/upload/product/241/max_mara/ERA_017_1.webp",
+          "https://www.online-fashion.ru/upload/product/241/max_mara/ERA_017_2.jpeg",
+          "https://www.online-fashion.ru/upload/product/241/max_mara/ERA_017_3.jpeg",
+          "https://www.online-fashion.ru/upload/product/241/max_mara/ERA_017_4.jpeg",
+          "https://www.online-fashion.ru/upload/product/241/max_mara/ERA_017_5.jpeg"
+        ],
+        "sizes": [
+          {
+            "size": "40",
+            "inStock": true
+          }
+        ]
+      },
+      {
+        "id": "p-098-c2",
+        "name": "черный",
+        "hex": "#111111",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/BONITO_ERA_001_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/BONITO_ERA_001_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/BONITO_ERA_001_4.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/BONITO_ERA_001_5.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/BONITO_ERA_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/BONITO_ERA_001_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/BONITO_ERA_001_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/BONITO_ERA_001_4.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/BONITO_ERA_001_5.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/BONITO_ERA_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/BONITO_ERA_001_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/BONITO_ERA_001_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/BONITO_ERA_001_4.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/BONITO_ERA_001_5.jpeg",
+          "https://www.online-fashion.ru/upload/product/241/max_mara/BONITO_ERA_001_1.webp"
+        ],
+        "sizes": [
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          }
+        ]
+      },
+      {
+        "id": "p-098-c3",
+        "name": "бежевый",
+        "hex": "#D8C3A5",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/ERA_002_1.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/ERA_002_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/ERA_002_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/ERA_002_4.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/ERA_002_1.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/ERA_002_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/ERA_002_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/ERA_002_4.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/ERA_002_1.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/ERA_002_2.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/ERA_002_3.jpeg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/ERA_002_4.jpeg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          }
+        ]
+      },
+      {
+        "id": "p-098-c4",
+        "name": "бежевый",
+        "hex": "#D8C3A5",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ERA_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ERA_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ERA_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ERA_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ERA_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ERA_001_6.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/ERA_001_7.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ERA_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ERA_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ERA_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ERA_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ERA_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ERA_001_6.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/ERA_001_7.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ERA_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ERA_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ERA_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ERA_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ERA_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ERA_001_6.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/ERA_001_7.webp"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.189Z",
+    "updatedAt": "2026-02-12T09:14:35.189Z"
+  },
+  {
+    "id": "p-099",
+    "sku": "2526926047670",
+    "slug": "maxmara-2526926047670",
+    "name": "Толстовка спортивная Max Mara YALE цвет темно-синий (18259)",
+    "brand": "Max Mara",
+    "description": "Толстовка спортивная Max Mara, темно-синего цвета, выполнена из комбинации хлопка, полиэстера и эластана. Ткань мягкая и дышащая, придающая изделию легкость и комфорт. Стиль лаконичный, подчеркивающий современный тренд минимализма. Декорирована вышивкой в виде змеи на груди, добавляющей уникальности модели. Крой свободный, с капюшоном и карманами по бокам, создает идеальную форму для активного отдыха или повседневной носки. Состав: 54% хлопок, 44% полиэстер, 2% эластан Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 54% хлопок, 44% полиэстер, 2% эластан",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 34920,
+    "colors": [
+      {
+        "id": "p-099-c1",
+        "name": "темно-синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/YALE_003_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/YALE_003_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/YALE_003_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/YALE_003_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/YALE_003_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/YALE_003_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/YALE_003_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/YALE_003_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/YALE_003_3.webp"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.189Z",
+    "updatedAt": "2026-02-12T09:14:35.189Z"
+  },
+  {
+    "id": "p-100",
+    "sku": "2526946058670",
+    "slug": "maxmara-2526946058670",
+    "name": "Юбка Max Mara GATTONI цвет темно-синий (14321)",
+    "brand": "Max Mara",
+    "description": "Юбка Max Mara выполнена из 100% шерсти и представлена в темно-синем цвете. Ее элегантный прямой крой подчеркивает женственность и строгость, а гладкая текстура придает изделию роскошный вид. Идеально подходит для создания классических образов в деловом стиле. Состав: 100% шерсть Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 100% шерсть",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 26120,
+    "colors": [
+      {
+        "id": "p-100-c1",
+        "name": "темно-синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/GATTONI_002_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/GATTONI_002_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/GATTONI_002_3.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/GATTONI_002_4.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/1200_1600_1/GATTONI_002_5.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/GATTONI_002_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/GATTONI_002_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/GATTONI_002_3.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/GATTONI_002_4.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/600_800_1/GATTONI_002_5.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/GATTONI_002_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/GATTONI_002_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/GATTONI_002_3.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/GATTONI_002_4.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/241/max_mara/450_600_1/GATTONI_002_5.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.189Z",
+    "updatedAt": "2026-02-12T09:14:35.189Z"
+  },
+  {
+    "id": "p-101",
+    "sku": "2526946068670",
+    "slug": "maxmara-2526946068670",
+    "name": "Джинсы Max Mara SORRISO цвет бежевый (16501)",
+    "brand": "Max Mara",
+    "description": "Джинсы Max Mara, бежевого цвета, создают элегантный контраст с нейтральной палитрой. Изготовлены из смеси 81% хлопка и 19% полиэстера, обеспечивая мягкость и комфорт. Ткань обладает легкой фактурой, придающей джинсам текстуру, которая подчеркивает их роскошный стиль. Стильные широкие штанины актуальны в тренде осени-зимы, создавая лаконичный силуэт. Золотистые пуговицы на поясе добавляют детализированной отделки, завершая образ в духе Max Mara. Состав: 81% хлопок, 19% полиэстер Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 81% хлопок, 19% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 32450,
+    "colors": [
+      {
+        "id": "p-101-c1",
+        "name": "бежевый",
+        "hex": "#D8C3A5",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/SORRISO_001_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/SORRISO_001_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/SORRISO_001_3.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/SORRISO_001_4.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/1200_1600_1/SORRISO_001_5.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/SORRISO_001_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/SORRISO_001_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/SORRISO_001_3.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/SORRISO_001_4.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/600_800_1/SORRISO_001_5.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/SORRISO_001_1.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/SORRISO_001_2.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/SORRISO_001_3.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/SORRISO_001_4.jpg",
+          "https://www.online-fashion.ru/upload/resize_cache/product/251/max_mara/450_600_1/SORRISO_001_5.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          }
+        ]
+      },
+      {
+        "id": "p-101-c2",
+        "name": "белый",
+        "hex": "#F5F5F5",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/SORRISO_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/SORRISO_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/SORRISO_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/SORRISO_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/SORRISO_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/1200_1600_1/SORRISO_001_6.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/SORRISO_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/SORRISO_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/SORRISO_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/SORRISO_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/SORRISO_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/600_800_1/SORRISO_001_6.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/SORRISO_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/SORRISO_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/SORRISO_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/SORRISO_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/SORRISO_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/252/max_mara/450_600_1/SORRISO_001_6.webp"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      },
+      {
+        "id": "p-101-c3",
+        "name": "коричневый",
+        "hex": "#6B4F3B",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/1200_1600_1/SMMSORRISO_003_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/1200_1600_1/SMMSORRISO_003_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/1200_1600_1/SMMSORRISO_003_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/SMMSORRISO_003_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/SMMSORRISO_003_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/SMMSORRISO_003_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/SMMSORRISO_003_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/SMMSORRISO_003_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/SMMSORRISO_003_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/SMMSORRISO_003_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/SMMSORRISO_003_4.webp",
+          "https://www.online-fashion.ru/upload/product/261/max_mara/SMMSORRISO_003_1.webp"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.190Z",
+    "updatedAt": "2026-02-12T09:14:35.190Z"
+  },
+  {
+    "id": "p-102",
+    "sku": "2526956018670",
+    "slug": "maxmara-2526956018670",
+    "name": "Юбка кожаная Max Mara SPXCOMMA цвет бордовый (19319)",
+    "brand": "Max Mara",
+    "description": "Юбка кожаная Max Mara насыщенного бордового цвета, выполненная из 100% натуральной кожи с гладкой, блестящей текстурой. Классический прямой крой подчеркивает элегантность и женственность, дополненный тонкой строчкой по шву, создающей акцент на линии фигуры. Подклад из 97% полиэстера и 3% эластана обеспечивает комфорт и мягкость при носке. Идеальный выбор для создания современного и роскошного образа. Новая коллекция: SS 26 Состав: 100% кожа, подклад: 97% полиэстер, 3% эластан Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 100% кожа, подклад: 97% полиэстер, 3% эластан",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 78190,
+    "colors": [
+      {
+        "id": "p-102-c1",
+        "name": "бордовый",
+        "hex": "#5A0F1B",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/1200_1600_1/SPXCOMMA_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/1200_1600_1/SPXCOMMA_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/1200_1600_1/SPXCOMMA_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/1200_1600_1/SPXCOMMA_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/1200_1600_1/SPXCOMMA_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/SPXCOMMA_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/SPXCOMMA_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/SPXCOMMA_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/SPXCOMMA_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/600_800_1/SPXCOMMA_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/SPXCOMMA_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/SPXCOMMA_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/SPXCOMMA_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/SPXCOMMA_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara/450_600_1/SPXCOMMA_001_5.webp"
+        ],
+        "sizes": [
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.190Z",
+    "updatedAt": "2026-02-12T09:14:35.190Z"
+  },
+  {
+    "id": "p-103",
+    "sku": "2526976017670",
+    "slug": "maxmara-2526976017670",
+    "name": "Рубашка Max Mara Weekend WKDMULINO цвет темно-синий (19296)",
+    "brand": "Max Mara Weekend",
+    "description": "Рубашка Max Mara Weekend выполнена из 100% шерсти насыщенного темно-синего цвета. Классический крой с отложным воротником и двумя накладными карманами подчеркивает элегантность и универсальность. Мягкая текстура ткани придает изделию комфорт и изысканность, делая его идеальным выбором для создания стильных образов в повседневном и деловом стиле. Новая коллекция: SS 26 Состав: 100% шерсть Параметры фотомодели: Рост 175 см, грудь 88 см, талия 60 см, бедра 88 см, размер S.",
+    "composition": "Состав: 100% шерсть",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 43020,
+    "colors": [
+      {
+        "id": "p-103-c1",
+        "name": "темно-синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/1200_1600_1/WKDMULINO_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/1200_1600_1/WKDMULINO_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/1200_1600_1/WKDMULINO_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/1200_1600_1/WKDMULINO_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/600_800_1/WKDMULINO_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/600_800_1/WKDMULINO_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/600_800_1/WKDMULINO_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/600_800_1/WKDMULINO_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/600_800_1/WKDMULINO_001_5.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/450_600_1/WKDMULINO_001_1.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/450_600_1/WKDMULINO_001_2.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/450_600_1/WKDMULINO_001_3.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/450_600_1/WKDMULINO_001_4.webp",
+          "https://www.online-fashion.ru/upload/resize_cache/product/261/max_mara_weekend/450_600_1/WKDMULINO_001_5.webp",
+          "https://www.online-fashion.ru/upload/product/261/max_mara_weekend/WKDMULINO_001_1.webp"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T09:14:35.190Z",
+    "updatedAt": "2026-02-12T09:14:35.190Z"
   }
 ]
