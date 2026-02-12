@@ -13,6 +13,40 @@ export function formatDate(value: string): string {
   }).format(date);
 }
 
+export function formatPhone(raw: string): string {
+  const digits = raw.replace(/\D/g, "").slice(0, 11);
+  const normalized = digits.startsWith("8") ? `7${digits.slice(1)}` : digits;
+
+  const part1 = normalized.slice(1, 4);
+  const part2 = normalized.slice(4, 7);
+  const part3 = normalized.slice(7, 9);
+  const part4 = normalized.slice(9, 11);
+
+  let value = "+7";
+
+  if (part1) {
+    value += ` (${part1}`;
+  }
+
+  if (part1.length === 3) {
+    value += ")";
+  }
+
+  if (part2) {
+    value += ` ${part2}`;
+  }
+
+  if (part3) {
+    value += `-${part3}`;
+  }
+
+  if (part4) {
+    value += `-${part4}`;
+  }
+
+  return value;
+}
+
 export function slugify(input: string): string {
   const translitMap: Record<string, string> = {
     а: "a", б: "b", в: "v", г: "g", д: "d", е: "e", ё: "e", ж: "zh", з: "z",

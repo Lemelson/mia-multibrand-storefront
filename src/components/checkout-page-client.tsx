@@ -4,17 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Check } from "lucide-react";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { useCart } from "@/components/providers/cart-provider";
 import { useStore } from "@/components/providers/store-provider";
-import { formatPrice } from "@/lib/format";
-import type { DeliveryType, Order, PaymentMethod, Product } from "@/lib/types";
-
-interface AvailabilityIssue {
-  key: string;
-  name: string;
-  reason: string;
-}
+import { formatPhone, formatPrice } from "@/lib/format";
+import { useAvailabilityValidation } from "@/hooks/use-availability-validation";
+import type { DeliveryType, Order, PaymentMethod } from "@/lib/types";
 
 interface CreateOrderPayload {
   customer: {
@@ -34,40 +29,6 @@ interface CreateOrderPayload {
   }>;
 }
 
-function formatPhone(raw: string): string {
-  const digits = raw.replace(/\D/g, "").slice(0, 11);
-  const normalized = digits.startsWith("8") ? `7${digits.slice(1)}` : digits;
-
-  const part1 = normalized.slice(1, 4);
-  const part2 = normalized.slice(4, 7);
-  const part3 = normalized.slice(7, 9);
-  const part4 = normalized.slice(9, 11);
-
-  let value = "+7";
-
-  if (part1) {
-    value += ` (${part1}`;
-  }
-
-  if (part1.length === 3) {
-    value += ")";
-  }
-
-  if (part2) {
-    value += ` ${part2}`;
-  }
-
-  if (part3) {
-    value += `-${part3}`;
-  }
-
-  if (part4) {
-    value += `-${part4}`;
-  }
-
-  return value;
-}
-
 export function CheckoutPageClient() {
   const router = useRouter();
   const { items, totalAmount, clearCart } = useCart();
@@ -81,9 +42,9 @@ export function CheckoutPageClient() {
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("messenger");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [availabilityLoading, setAvailabilityLoading] = useState(false);
-  const [availabilityIssues, setAvailabilityIssues] = useState<AvailabilityIssue[]>([]);
   const idempotencyKeyRef = useRef(createIdempotencyKey());
+
+  const { availabilityIssues, availabilityLoading } = useAvailabilityValidation(items, selectedStore);
 
   const messengerText = useMemo(() => {
     const lines = items
@@ -98,95 +59,6 @@ export function CheckoutPageClient() {
       lines
     ].join("\n");
   }, [items, selectedStore.name, selectedStore.city, totalAmount]);
-
-  useEffect(() => {
-    let cancelled = false;
-
-    async function validateAvailability() {
-      if (items.length === 0) {
-        setAvailabilityIssues([]);
-        return;
-      }
-
-      setAvailabilityLoading(true);
-
-      const uniqueProductIds = Array.from(new Set(items.map((item) => item.productId)));
-      const results = await Promise.all(
-        uniqueProductIds.map(async (id) => {
-          const response = await fetch(`/api/products/${id}`, { cache: "no-store" });
-          if (!response.ok) {
-            return { id, product: null as Product | null };
-          }
-
-          const product = (await response.json()) as Product;
-          return { id, product };
-        })
-      );
-
-      const productMap = new Map(results.map((entry) => [entry.id, entry.product]));
-      const nextIssues: AvailabilityIssue[] = [];
-
-      for (const item of items) {
-        const product = productMap.get(item.productId);
-
-        if (!product) {
-          nextIssues.push({
-            key: item.key,
-            name: item.name,
-            reason: "товар не найден"
-          });
-          continue;
-        }
-
-        const inStore = product.stores.some(
-          (store) => store.storeId === selectedStore.id && store.available
-        );
-
-        if (!inStore) {
-          nextIssues.push({
-            key: item.key,
-            name: item.name,
-            reason: `нет в магазине ${selectedStore.name}`
-          });
-          continue;
-        }
-
-        const color =
-          product.colors.find((value) => value.id === item.colorId) ??
-          product.colors.find((value) => value.name === item.colorName);
-
-        if (!color) {
-          nextIssues.push({
-            key: item.key,
-            name: item.name,
-            reason: `цвет ${item.colorName} недоступен`
-          });
-          continue;
-        }
-
-        const size = color.sizes.find((value) => value.size === item.size);
-
-        if (!size || !size.inStock) {
-          nextIssues.push({
-            key: item.key,
-            name: item.name,
-            reason: `размер ${item.size} недоступен`
-          });
-        }
-      }
-
-      if (!cancelled) {
-        setAvailabilityIssues(nextIssues);
-        setAvailabilityLoading(false);
-      }
-    }
-
-    validateAvailability();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [items, selectedStore.id, selectedStore.name]);
 
   const canSubmit = !loading && !availabilityLoading && availabilityIssues.length === 0;
 

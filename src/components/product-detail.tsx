@@ -8,6 +8,7 @@ import { formatPrice } from "@/lib/format";
 import type { Product, Store } from "@/lib/types";
 import { ProductCard } from "@/components/product-card";
 import {
+  getNextImageProxyUrl,
   getProductDetailImageUrl,
   getProductOriginalImageUrl,
   getProductThumbImageUrl,
@@ -315,6 +316,3 @@ function Accordion({
   );
 }
 
-function getNextImageProxyUrl(sourceUrl: string, width: number, quality: number): string {
-  return `/_next/image?url=${encodeURIComponent(sourceUrl)}&w=${width}&q=${quality}`;
-}
