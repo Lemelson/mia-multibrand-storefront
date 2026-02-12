@@ -6,3 +6,13 @@ outputs/
 parsers/
 *.xlsx
 *TWINSET Milano.html
+
+# Local working folders / large assets (keep out of git to avoid repo bloat)
+.claude/
+NewFilesCardsMaxMaraETC/
+Gotham-font-family/
+sofia-pro-cufonfonts/
+font/
+
+# Localized originals can be huge; keep derived sizes in git if needed, but not originals.
+public/media/products/**/original/

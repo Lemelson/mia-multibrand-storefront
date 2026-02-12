@@ -6522,5 +6522,1191 @@
     "isActive": true,
     "createdAt": "2026-02-12T09:14:35.190Z",
     "updatedAt": "2026-02-12T09:14:35.190Z"
+  },
+  {
+    "id": "p-104",
+    "sku": "2526116017670",
+    "slug": "maxmara-2526116017670",
+    "name": "Футболка MaxMara",
+    "brand": "Max Mara",
+    "description": "Футболка Max Mara является частью сезонной коллекции Estate ’25. Для производства повседневной модели чёрного цвета используется тончайший хлопковый трикотаж. Изделие с круглым вырезом горловины на резинке является воплощением современной элегантности. Футболка оснащена крупным контрастным принтом с логотипом, расположенным так, чтобы визуально напоминать химические элементы периодической таблицы, а также былыми надписями с лого и названием коллекции сверху и под рисунком соответственно.",
+    "composition": "Состав: 93% шелк, 07% эластан",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 19250,
+    "colors": [
+      {
+        "id": "p-104-c1",
+        "name": "Черный",
+        "hex": "#111111",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109804_model_photo_6859183743e0c.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109804_model_photo_685918394fe7b.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109804_model_photo_6859183b1b9f2.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109804_model_photo_6859183db4c78.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109804_model_photo_6859184064376.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109804_model_photo_6859184252fe7.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.584Z",
+    "updatedAt": "2026-02-12T10:24:14.841Z"
+  },
+  {
+    "id": "p-105",
+    "sku": "2526116028670",
+    "slug": "maxmara-2526116028670",
+    "name": "Худи Max Mara",
+    "brand": "Max Mara",
+    "description": "Трикотажное худи оверсайз от Max Mara с заниженной линией плечевого шва. Для производства модели синего цвета выбрано мягкое джерси на основе хлопка и полиэстера. Роли знакового для бренда декора передана крупной тональной надписи-логотипу на груди. В практичных прорезных карманах по бокам можно хранить мелкие предметы.",
+    "composition": "Состав: 100% хлопок",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 25500,
+    "colors": [
+      {
+        "id": "p-105-c1",
+        "name": "Синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123720_model_photo_692ee78cd0391.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123720_model_photo_692ee79146781.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123720_model_photo_692ee79542059.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123720_model_photo_692ee7999d3d4.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123720_model_photo_692ee79f568d7.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123720_model_photo_692ee7a2c55e3.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123720_model_photo_692ee7a683650.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.586Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-106",
+    "sku": "2526116057670",
+    "slug": "maxmara-2526116057670",
+    "name": "Юбка Max Mara",
+    "brand": "Max Mara",
+    "description": "Джинсовая юбка-мини от Max Mara. Для изготовления модели прямого кроя используется мягкой хлопковый деним цвета индиго. Атрибутами бренда стали брендированная накладка с дизайнерской литерой «M» на поясе сзади и двойная строчка-узор в виде первой буквы из названия бренда на задних карманах.",
+    "composition": "Состав: 100% шелк",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 21000,
+    "colors": [
+      {
+        "id": "p-106-c1",
+        "name": "Синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9241ba7.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9431fe8.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae964ca60.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae98cedad.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9aac075.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.586Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-107",
+    "sku": "2526136017670",
+    "slug": "maxmara-2526136017670",
+    "name": "Толстовка Max Mara",
+    "brand": "Max Mara",
+    "description": "Толстовка Max Mara со спущенной линией плечевого шва. Модель сшита из эластичного трикотажа на основе хлопка и прочного нейлона. Конструкция изделия предполагает прямой силуэт и наличие глубокого капюшона. Изделие на серебристой молнии оснащено двумя крупными накладными карманами по бокам. Толстовка сочетается с лонгсливом с традиционным круглым вырезом горловины на резинке и парными брюками в спортивном стиле из той же коллекции.",
+    "composition": "Состав: 96% хлопок, 04% эластан",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "pants",
+    "gender": "women",
+    "price": 29250,
+    "colors": [
+      {
+        "id": "p-107-c1",
+        "name": "Зеленый",
+        "hex": "#2F6B3F",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3125002_model_photo_697ca8d1424f5.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3125002_model_photo_697ca8d32ec67.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3125002_model_photo_697ca8d49d3b8.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3125002_model_photo_697ca8d5f167a.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3125002_model_photo_697ca8d7d2a50.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3125002_model_photo_697ca8da58757.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3125002_model_photo_697ca8dbb1fd4.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3125002_model_photo_697ca8ddbacee.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.586Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-108",
+    "sku": "2526136037670",
+    "slug": "maxmara-2526136037670",
+    "name": "Юбка Max Mara",
+    "brand": "Max Mara",
+    "description": "Джинсовая юбка-мини от Max Mara. Для изготовления модели прямого кроя используется мягкой хлопковый деним цвета индиго. Атрибутами бренда стали брендированная накладка с дизайнерской литерой «M» на поясе сзади и двойная строчка-узор в виде первой буквы из названия бренда на задних карманах.",
+    "composition": "Состав: 100% шелк",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "pants",
+    "gender": "women",
+    "price": 21000,
+    "colors": [
+      {
+        "id": "p-108-c1",
+        "name": "Синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9241ba7.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9431fe8.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae964ca60.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae98cedad.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9aac075.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.586Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-109",
+    "sku": "2526226018670",
+    "slug": "maxmara-2526226018670",
+    "name": "Футболка Max Mara",
+    "brand": "Max Mara",
+    "description": "Повседневная футболка Max Mara с принтом Sequoia. Свободная классическая посадка, короткие рукава и круглый вырез делают модель универсальной и удобной, сохраняя при этом изящный силуэт. Белоснежная основа служит идеальным фоном для крупного ботанического рисунка, который наполняет образ спокойствием и поэтичностью. Базовая вещь премиального качества, которая легко впишется в современный гардероб.",
+    "composition": "Состав: 100% ацетат",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "dresses",
+    "gender": "women",
+    "price": 31500,
+    "colors": [
+      {
+        "id": "p-109-c1",
+        "name": "Белый",
+        "hex": "#F5F5F5",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123583_model_photo_69303d346f601.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123583_model_photo_69303d37ee308.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123583_model_photo_69303d3a667d0.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123583_model_photo_69303d3d61de8.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123583_model_photo_69303d40edd52.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123583_model_photo_69303d434a68d.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.587Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-110",
+    "sku": "2526336028670",
+    "slug": "maxmara-2526336028670",
+    "name": "Брюки Max Mara",
+    "brand": "Max Mara",
+    "description": "Брюки прямого силуэта от Max Mara. Модель изготовлена из мягкой вирджинской шерсти чулочной вязкой. Тёплый материал чрезвычайно прочный, упругий, приятный к телу и устойчивый к грязи и запахам. Конструкция изделия без броского декора характеризуется наличием широкого эластичного пояса и манжет-резинок для оптимальной посадки по фигуре.",
+    "composition": "Состав: fabric 100% шерсть virgin Ovis aries aries",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "pants",
+    "gender": "women",
+    "price": 34500,
+    "colors": [
+      {
+        "id": "p-110-c1",
+        "name": "Кремовый",
+        "hex": "#1A1A1A",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124961_model_photo_6953ee4f9acbf.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124961_model_photo_6953ee5123742.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124961_model_photo_6953ee527c078.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124961_model_photo_6953ee54c7acf.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124961_model_photo_6953ee5bd442a.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124961_model_photo_6953ee5d78357.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.587Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-111",
+    "sku": "2526346017670",
+    "slug": "maxmara-2526346017670",
+    "name": "Юбка Max Mara",
+    "brand": "Max Mara",
+    "description": "Джинсовая юбка-мини от Max Mara. Для изготовления модели прямого кроя используется мягкой хлопковый деним цвета индиго. Атрибутами бренда стали брендированная накладка с дизайнерской литерой «M» на поясе сзади и двойная строчка-узор в виде первой буквы из названия бренда на задних карманах.",
+    "composition": "Состав: fabric 92% хлопок, 08% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 21000,
+    "colors": [
+      {
+        "id": "p-111-c1",
+        "name": "Синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9241ba7.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9431fe8.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae964ca60.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae98cedad.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9aac075.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.587Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-112",
+    "sku": "2526366077670",
+    "slug": "maxmara-2526366077670",
+    "name": "Босоножки MaxMara",
+    "brand": "Max Mara",
+    "description": "Босоножки Max Mara являются частью капсулы «A Weekend with Ashley Park». Капсула была создана в коллаборации с актрисой Эшли Пак, известной по сериалу «Эмили в Париже», и вдохновлена атмосферой лёгкости и свободы летнего отпуска на средиземноморском побережье. Модель изготовлена из комбинации прочной нейлоновой сетки с кожаным кантом сверху и гладкой кожи на стельках и подошве. Декором выступает россыпь крупных бусин из смолы на поверхности союзки.",
+    "composition": "Состав: fabric 70% шелк, 30% хлопок",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 26750,
+    "colors": [
+      {
+        "id": "p-112-c1",
+        "name": "Черный",
+        "hex": "#111111",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109726_model_photo_68668276e1e07.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109726_model_photo_6866827875b19.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109726_model_photo_6866827a316b9.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109726_model_photo_6866827bc7f04.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109726_model_photo_6866827d7b984.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109726_model_photo_6866828037c19.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109726_model_photo_6866828249625.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109726_model_photo_68668283e6379.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "37",
+            "inStock": true
+          },
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "39",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.587Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-113",
+    "sku": "2526486018670",
+    "slug": "maxmara-2526486018670",
+    "name": "Куртка Max Mara",
+    "brand": "Max Mara",
+    "description": "Куртка Max Mara с минималистичной знаковой для бренда символикой. Для пошива изделия с геометрической стёжкой выбран прочный водоотталкивающий нейлон. Фасон повседневной модели чёрного цвета предполагает прямой крой и застёжку на потайную молнию и клёпки с планкой. Внутри - подкладка из материала основы в тон и высококачественный наполнитель LuxePad. Регенерированные, восстановленные клочки верблюжьей шерсти и шелковых волокон, смешанные с переработанным полиэстером, создают инновационный утеплитель с экологичным подходом.",
+    "composition": "Состав: 100% полиамид , Exclusive of coating",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 45375,
+    "colors": [
+      {
+        "id": "p-113-c1",
+        "name": "Черный",
+        "hex": "#111111",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124975_model_photo_693acca5df848.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124975_model_photo_693acca7e3fac.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124975_model_photo_693accaaa15dd.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124975_model_photo_693accac5f0cf.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124975_model_photo_693accaeb40a8.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124975_model_photo_693accb0c368d.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.587Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-114",
+    "sku": "2526486027670",
+    "slug": "maxmara-2526486027670",
+    "name": "Брюки MaxMara",
+    "brand": "Max Mara",
+    "description": "Чёрные брюки прямого силуэта от Max Mara. Модель изготовлена из чистого хлопкового поплина, который почти ничего не весит и хорошо пропускает воздух, в стиле джоггеров. Характерной особенностью изделия является наличие плотного пояса с затягивающимся шнурком для регулировки объёма.",
+    "composition": "Состав: 100% полиамид",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 17000,
+    "colors": [
+      {
+        "id": "p-114-c1",
+        "name": "Черный",
+        "hex": "#111111",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109763_model_photo_685e98e07b7ed.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109763_model_photo_685e98e10028c.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109763_model_photo_685e98e1cf1ad.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109763_model_photo_685e98e233128.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109763_model_photo_685e98e2a716a.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109763_model_photo_685e98e2ee1fa.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3109763_model_photo_685e98e3ac62a.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "42",
+            "inStock": true
+          },
+          {
+            "size": "44",
+            "inStock": true
+          },
+          {
+            "size": "48",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.587Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-115",
+    "sku": "2526486028670",
+    "slug": "maxmara-2526486028670",
+    "name": "Сникеры Max Mara",
+    "brand": "Max Mara",
+    "description": "Функциональные сникеры Max Mara с минималистичными линиями. Для производства изделия светло-бежевого оттенка выбрана бархатистая замша. Модель с открытой шнуровкой декорирована ворсистым кантом на несколько тонов светлее основы и утеплена мягкой вирджинской шерстью, гладким шёлком и пряжей альпаки. Городская пара установлена на лёгкую резиновую подошву белого цвета с приподнятым дизайном, который создаёт разницу в высоте между пяткой и носком.",
+    "composition": "Состав: 100% полиэстер , Exclusive of coating",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 54375,
+    "colors": [
+      {
+        "id": "p-115-c1",
+        "name": "Бежевый",
+        "hex": "#D8C3A5",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124886_model_photo_6953f295e90fd.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124886_model_photo_6953f2983bb8e.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124886_model_photo_6953f299d2926.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124886_model_photo_6953f29c87049.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124886_model_photo_6953f29e10283.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124886_model_photo_6953f2a083d80.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124886_model_photo_6953f2a1db970.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "37",
+            "inStock": true
+          },
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "39",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.588Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-116",
+    "sku": "2526516028670",
+    "slug": "maxmara-2526516028670",
+    "name": "Футболка Max Mara",
+    "brand": "Max Mara",
+    "description": "Хлопковая футболка из линейки Max Mara Sportmax. Лёгкая модель отличается прямым силуэтом и наличием традиционных коротких рукавов. Серебристая металлическая цепочка с S-образной деталью на круглом вырезе добавляет изделию ноту, отражающую фирменную эстетику.",
+    "composition": "Состав: in полиэстер With polyurethane coating",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 20750,
+    "colors": [
+      {
+        "id": "p-116-c1",
+        "name": "Бежевый",
+        "hex": "#D8C3A5",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121466_model_photo_68f757e566704.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121466_model_photo_68f757e74d591.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121466_model_photo_68f757e930c63.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121466_model_photo_68f757ead76b0.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121466_model_photo_68f757ed1a5e4.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121466_model_photo_68f757f17d13f.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121466_model_photo_68f757f263f8d.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121466_model_photo_68f757f31e6f7.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121466_model_photo_68f757f56b4bd.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.588Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-117",
+    "sku": "2526546017670",
+    "slug": "maxmara-2526546017670",
+    "name": "Брюки Max Mara",
+    "brand": "Max Mara",
+    "description": "Брюки Max Mara на потайной молнии и небольшом крючке с планкой. Изделие сшито из мягкого хлопкового вельвета орехового оттенка с бархатистой текстурой. Конструкция длинной модели предполагает широкий крой и наличие классических стрелок. Брюки без броского декора сочетаются с парным блейзером двубортного фасона из той же линейки.",
+    "composition": "Состав: 100% шелк",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 26625,
+    "colors": [
+      {
+        "id": "p-117-c1",
+        "name": "Коричневый",
+        "hex": "#6B4F3B",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124895_model_photo_69527ce94d57e.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124895_model_photo_69527ceadb2b5.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124895_model_photo_69527ced578b3.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124895_model_photo_69527cef6ef5c.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124895_model_photo_69527cf116fd3.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124895_model_photo_69527cf30ae85.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124895_model_photo_69527cf5f1a9e.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3124895_model_photo_69527cf6c35d9.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "46",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.588Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-118",
+    "sku": "2526546037600",
+    "slug": "maxmara-2526546037600",
+    "name": "Юбка Max Mara",
+    "brand": "Max Mara",
+    "description": "Джинсовая юбка-мини от Max Mara. Для изготовления модели прямого кроя используется мягкой хлопковый деним цвета индиго. Атрибутами бренда стали брендированная накладка с дизайнерской литерой «M» на поясе сзади и двойная строчка-узор в виде первой буквы из названия бренда на задних карманах.",
+    "composition": "Состав: 100% шерсть virgin Ovis aries aries",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 21000,
+    "colors": [
+      {
+        "id": "p-118-c1",
+        "name": "Синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9241ba7.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9431fe8.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae964ca60.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae98cedad.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9aac075.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.588Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-119",
+    "sku": "2526766017670",
+    "slug": "maxmara-2526766017670",
+    "name": "Юбка Max Mara",
+    "brand": "Max Mara",
+    "description": "Джинсовая юбка-мини от Max Mara. Для изготовления модели прямого кроя используется мягкой хлопковый деним цвета индиго. Атрибутами бренда стали брендированная накладка с дизайнерской литерой «M» на поясе сзади и двойная строчка-узор в виде первой буквы из названия бренда на задних карманах.",
+    "composition": "Состав: in полиэстер With polyurethane coating , кожа of Cattle Bos taurus China",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shoes",
+    "gender": "women",
+    "price": 21000,
+    "colors": [
+      {
+        "id": "p-119-c1",
+        "name": "Синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9241ba7.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9431fe8.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae964ca60.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae98cedad.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9aac075.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.588Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-120",
+    "sku": "2526786027670",
+    "slug": "maxmara-2526786027670",
+    "name": "Юбка Max Mara",
+    "brand": "Max Mara",
+    "description": "Джинсовая юбка-мини от Max Mara. Для изготовления модели прямого кроя используется мягкой хлопковый деним цвета индиго. Атрибутами бренда стали брендированная накладка с дизайнерской литерой «M» на поясе сзади и двойная строчка-узор в виде первой буквы из названия бренда на задних карманах.",
+    "composition": "Состав: fabric 57% хлопок, 32% полиэстер, 11% эластан",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "pants",
+    "gender": "women",
+    "price": 21000,
+    "colors": [
+      {
+        "id": "p-120-c1",
+        "name": "Синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9241ba7.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9431fe8.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae964ca60.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae98cedad.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9aac075.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.588Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-121",
+    "sku": "2526786037670",
+    "slug": "maxmara-2526786037670",
+    "name": "Брюки Max Mara",
+    "brand": "Max Mara",
+    "description": "Пудрово-розовые брюки-палаццо от Max Mara. Изделие с четырьмя традиционными карманами изготовлено из мягкой вирджинской шерсти. Конструкция широкой модели предполагает наличие заутюженных складок и застёжки на потайную молнию и крючок с планкой. Сочетайте брюки с кардиганом с изящным V-образным вырезом горловины и однобортным блейзером из той же линейки.",
+    "composition": "Состав: fabric 68% вискоза, 27% полиэстер, 05% эластан",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "pants",
+    "gender": "women",
+    "price": 17000,
+    "colors": [
+      {
+        "id": "p-121-c1",
+        "name": "Розовый",
+        "hex": "#D88AA6",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121488_model_photo_68d50d21505ac.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121488_model_photo_68d50d233613c.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121488_model_photo_68d50d24b761b.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121488_model_photo_68d50d266c7f7.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "46",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.588Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-122",
+    "sku": "2526916027670",
+    "slug": "maxmara-2526916027670",
+    "name": "Брюки Max Mara",
+    "brand": "Max Mara",
+    "description": "Пудрово-розовые брюки-палаццо от Max Mara. Изделие с четырьмя традиционными карманами изготовлено из мягкой вирджинской шерсти. Конструкция широкой модели предполагает наличие заутюженных складок и застёжки на потайную молнию и крючок с планкой. Сочетайте брюки с кардиганом с изящным V-образным вырезом горловины и однобортным блейзером из той же линейки.",
+    "composition": "Состав: fabric 68% вискоза, 27% полиэстер, 05% эластан",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 17000,
+    "colors": [
+      {
+        "id": "p-122-c1",
+        "name": "Розовый",
+        "hex": "#D88AA6",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121488_model_photo_68d50d21505ac.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121488_model_photo_68d50d233613c.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121488_model_photo_68d50d24b761b.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121488_model_photo_68d50d266c7f7.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "46",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.588Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-123",
+    "sku": "2526926027670",
+    "slug": "maxmara-2526926027670",
+    "name": "Куртка Max Mara",
+    "brand": "Max Mara",
+    "description": "Чёрная куртка от бренда Max Mara. Мягкая смесовая ткань дарит ощущение уюта и комфорта, а лаконичный силуэт с безупречным кроем подчёркивает строгую элегантность образа. Застёжка на молнию с двумя бегунками, крупные накладные карманы и отсутствие ярких деталей делает куртку идеальным атрибутом образа в деловом стиле.",
+    "composition": "Состав: fabric 63% хлопок, 37% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 19500,
+    "colors": [
+      {
+        "id": "p-123-c1",
+        "name": "Черный",
+        "hex": "#111111",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121567_model_photo_68f5f47653eb4.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121567_model_photo_68f5f47865dd3.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121567_model_photo_68f5f47a0c925.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121567_model_photo_68f5f47bbeb11.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121567_model_photo_68f8c8ff40605.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121567_model_photo_68f8c9102902f.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121567_model_photo_68f8c915bc8eb.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3121567_model_photo_68f8c91d3fc1b.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.589Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-124",
+    "sku": "2526946017670",
+    "slug": "maxmara-2526946017670",
+    "name": "Юбка Max Mara",
+    "brand": "Max Mara",
+    "description": "Джинсовая юбка-мини от Max Mara. Для изготовления модели прямого кроя используется мягкой хлопковый деним цвета индиго. Атрибутами бренда стали брендированная накладка с дизайнерской литерой «M» на поясе сзади и двойная строчка-узор в виде первой буквы из названия бренда на задних карманах.",
+    "composition": "Состав: fabric 92% хлопок, 08% эластан",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 21000,
+    "colors": [
+      {
+        "id": "p-124-c1",
+        "name": "Синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9241ba7.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9431fe8.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae964ca60.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae98cedad.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/310/3102433_model_photo_65f9ae9aac075.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "42",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.589Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-125",
+    "sku": "2526946027670",
+    "slug": "maxmara-2526946027670",
+    "name": "Футболка Max Mara",
+    "brand": "Max Mara",
+    "description": "Трикотажная футболка Max Mara — эталон элегантности в вашем гардеробе на каждый день. Для пошива изделия выбраны мягкий хлопок и модал синего оттенка. Роль тонального декора передана вышитым изображению цветка спереди слева и культовой аббревиатуре «MM» на спинке под воротником.",
+    "composition": "Состав: fabric 51% Modal, 49% хлопок",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 13875,
+    "colors": [
+      {
+        "id": "p-125-c1",
+        "name": "Синий",
+        "hex": "#234A8A",
+        "images": [
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123671_model_photo_692d4f2466d0a.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123671_model_photo_692d4f267d5f2.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123671_model_photo_692d4f288e6da.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123671_model_photo_692d4f2aa99f3.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123671_model_photo_692d4f2c52c72.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123671_model_photo_692d4f2e4b5ee.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123671_model_photo_692d4f307a766.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123671_model_photo_692d4f384e75b.jpg",
+          "https://cdn.ls.net.ru/reimg/files/products/870x/312/3123671_model_photo_692d4f3931e53.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": false
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-12T10:22:42.589Z",
+    "updatedAt": "2026-02-12T10:24:14.842Z"
   }
 ]
