@@ -38,7 +38,16 @@ function shouldWriteToDb(): boolean {
 }
 
 function shouldWriteToJson(): boolean {
-  return getDataSourceMode() === "json" || isDualWriteEnabled();
+  if (getDataSourceMode() === "db") {
+    // Vercel production filesystem is read-only; avoid shadow JSON writes there.
+    if (process.env.NODE_ENV === "production") {
+      return false;
+    }
+
+    return isDualWriteEnabled();
+  }
+
+  return true;
 }
 
 async function readJson<T>(filePath: string, fallback?: T): Promise<T> {

@@ -4,6 +4,35 @@ const globalForPrisma = globalThis as unknown as {
   prisma?: PrismaClient;
 };
 
+function resolveRuntimeDatabaseUrl(): string | undefined {
+  return (
+    process.env.DATABASE_URL ??
+    process.env.POSTGRES_PRISMA_URL ??
+    process.env.POSTGRES_URL ??
+    undefined
+  );
+}
+
+function resolveRuntimeDirectUrl(): string | undefined {
+  return (
+    process.env.DIRECT_URL ??
+    process.env.POSTGRES_URL_NON_POOLING ??
+    process.env.POSTGRES_URL ??
+    undefined
+  );
+}
+
+const runtimeDatabaseUrl = resolveRuntimeDatabaseUrl();
+const runtimeDirectUrl = resolveRuntimeDirectUrl();
+
+if (!process.env.DATABASE_URL && runtimeDatabaseUrl) {
+  process.env.DATABASE_URL = runtimeDatabaseUrl;
+}
+
+if (!process.env.DIRECT_URL && runtimeDirectUrl) {
+  process.env.DIRECT_URL = runtimeDirectUrl;
+}
+
 export const db =
   globalForPrisma.prisma ??
   new PrismaClient({
@@ -15,7 +44,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 export function isDatabaseConfigured(): boolean {
-  return Boolean(process.env.DATABASE_URL);
+  return Boolean(resolveRuntimeDatabaseUrl());
 }
 
 export function getDataSourceMode(): "json" | "db" {
