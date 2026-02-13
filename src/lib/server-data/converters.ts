@@ -4,6 +4,7 @@
 
 import { Prisma } from "@prisma/client";
 import type { Category, Order, Product, ProductColor, Store, StoreAvailability, OrderItem } from "@/lib/types";
+import { normalizeProductForDisplay } from "@/lib/normalize-product";
 
 // ---------------------------------------------------------------------------
 // Runtime validators for JSON fields read from DB.
@@ -128,7 +129,7 @@ export function fromProductRecord(record: {
   createdAt: Date;
   updatedAt: Date;
 }): Product {
-  return {
+  const product: Product = {
     id: record.id,
     sku: record.sku ?? undefined,
     slug: record.slug,
@@ -148,6 +149,9 @@ export function fromProductRecord(record: {
     createdAt: record.createdAt.toISOString(),
     updatedAt: record.updatedAt.toISOString()
   };
+
+  // Ensure DB-loaded products don't leak redundant brand tokens or malformed compositions.
+  return normalizeProductForDisplay(product);
 }
 
 // ---------------------------------------------------------------------------

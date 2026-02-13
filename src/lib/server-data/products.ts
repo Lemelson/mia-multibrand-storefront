@@ -7,6 +7,7 @@ import { db } from "@/lib/db";
 import { slugify } from "@/lib/format";
 import type { Product } from "@/lib/types";
 import { toProductRecord, fromProductRecord } from "./converters";
+import { normalizeProductForDisplay } from "@/lib/normalize-product";
 import {
   PRODUCTS_FILE,
   readJson,
@@ -23,7 +24,8 @@ const MAX_SLUG_ATTEMPTS = 100;
 // ---------------------------------------------------------------------------
 
 async function getProductsFromJson(): Promise<Product[]> {
-  return readJson<Product[]>(PRODUCTS_FILE, []);
+  const products = await readJson<Product[]>(PRODUCTS_FILE, []);
+  return products.map(normalizeProductForDisplay);
 }
 
 async function getProductsFromDb(): Promise<Product[]> {

@@ -85,17 +85,47 @@ function normalizePercents(text) {
   return String(text || "").replace(/\b0+(\d+)\s*%/g, "$1%");
 }
 
+function normalizeCompositionText(value) {
+  let s = normalizeSpace(value);
+  if (!s) return s;
+
+  s = normalizePercents(s);
+
+  // Translate/clean common English fiber names and labels that leak in.
+  s = s
+    .replace(/\bmodal\b/gi, "модал")
+    .replace(/\bcotton\b/gi, "хлопок")
+    .replace(/\bwool\b/gi, "шерсть")
+    .replace(/\bsilk\b/gi, "шелк")
+    .replace(/\bviscose\b/gi, "вискоза")
+    .replace(/\bpolyester\b/gi, "полиэстер")
+    .replace(/\bpolyamide\b/gi, "полиамид")
+    .replace(/\belastane\b/gi, "эластан")
+    .replace(/\bacetate\b/gi, "ацетат")
+    .replace(/\bvirgin\s+wool\b/gi, "шерсть virgin");
+
+  // Remove bare "fabric"/"lining" tokens (with or without colon).
+  s = s
+    .replace(/(^|\bсостав:\s*)fabric\b[:\s]*/i, "$1")
+    .replace(/(^|\bсостав:\s*)lining\b[:\s]*/i, "$1")
+    .replace(/\bfabric\b[:\s]*/gi, "")
+    .replace(/\blining\b[:\s]*/gi, "");
+
+  s = s.replace(/\s*,\s*/g, ", ").replace(/\s*:\s*/g, ": ").replace(/\s+/g, " ").trim();
+  return s;
+}
+
 function buildCompositionFromSiteOrExisting({ sitePage, existingComposition, description }) {
   const siteLine = normalizeSpace(sitePage?.composition_line || "");
-  if (siteLine) return normalizePercents(siteLine);
+  if (siteLine) return normalizeCompositionText(siteLine);
 
   const existing = normalizeSpace(existingComposition);
-  if (existing) return normalizePercents(existing);
+  if (existing) return normalizeCompositionText(existing);
 
   // Some descriptions embed "Состав: ..."
   const d = normalizeSpace(description);
   const m = /(?:^|\s)Состав:\s*([^.\n]+)(?:[.\n]|$)/i.exec(d);
-  if (m) return normalizePercents(`Состав: ${normalizeSpace(m[1])}`);
+  if (m) return normalizeCompositionText(`Состав: ${normalizeSpace(m[1])}`);
 
   return "Состав: см. ярлык изделия.";
 }
@@ -209,6 +239,14 @@ function buildShortName({ type, description, composition }) {
   let outType = type;
   if (outType === "Брюки" && qualifiers.includes("палаццо")) {
     outType = "Брюки-палаццо";
+  }
+
+  // Denim skirts: make the title user-friendly.
+  if (outType === "Юбка" && qualifiers.includes("из денима")) {
+    if (qualifiers.includes("мини")) return "Джинсовая мини-юбка";
+    if (qualifiers.includes("миди")) return "Джинсовая юбка-миди";
+    if (qualifiers.includes("макси")) return "Джинсовая юбка-макси";
+    return "Джинсовая юбка";
   }
 
   const fiber = primaryFiberFromComposition(composition);
