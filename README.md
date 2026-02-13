@@ -31,6 +31,7 @@
 
 - Индекс: [`docs/README.md`](docs/README.md)
 - Короткая "карта" проекта для ИИ: [`docs/AI_GUIDE.md`](docs/AI_GUIDE.md)
+- Инструкции для ИИ-агентов: [`AGENTS.md`](AGENTS.md)
 
 ## Структура проекта
 
