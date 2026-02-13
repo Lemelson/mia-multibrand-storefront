@@ -9,17 +9,18 @@ const CATEGORY_CARDS = [
   {
     label: "Женское",
     href: "/catalog/women",
-    image: "/media/categories/category-women.png"
+    // Use versioned filenames to avoid aggressive immutable caching in production.
+    image: "/media/categories/category-women-v2.png"
   },
   {
     label: "Мужское",
     href: "/catalog/men",
-    image: "/media/categories/category-men.png"
+    image: "/media/categories/category-men-v2.png"
   },
   {
     label: "Детское",
     href: "/catalog/kids",
-    image: "/media/categories/category-kids.png"
+    image: "/media/categories/category-kids-v2.png"
   }
 ];
 
