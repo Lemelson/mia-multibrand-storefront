@@ -27,6 +27,14 @@ export async function readJson<T>(filePath: string, fallback?: T): Promise<T> {
 }
 
 export async function writeJson<T>(filePath: string, value: T): Promise<void> {
+  if (!shouldWriteToJson()) {
+    // Make the failure mode explicit and actionable. Many runtimes (e.g. Vercel)
+    // have a read-only filesystem in production, so JSON persistence is not viable.
+    throw new Error(
+      "JSON storage is read-only in this runtime. Configure DB mode: DATA_SOURCE=db and valid DATABASE_URL/DIRECT_URL."
+    );
+  }
+
   await fs.writeFile(filePath, JSON.stringify(value, null, 2), "utf8");
 }
 
@@ -56,6 +64,12 @@ export function shouldWriteToJson(): boolean {
   // Never write JSON files in production (read-only filesystem on Vercel).
   if (process.env.NODE_ENV === "production") {
     return false;
+  }
+
+  // If DB is not configured, JSON is the only available persistence layer,
+  // regardless of what DATA_SOURCE is set to (e.g. a dev env copied from template).
+  if (!isDatabaseConfigured()) {
+    return true;
   }
 
   if (getDataSourceMode() === "db") {

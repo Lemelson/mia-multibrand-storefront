@@ -4,6 +4,9 @@ node_modules
 .DS_Store
 outputs/
 parsers/
+docs-local/
+*.tsbuildinfo
+tsconfig.tsbuildinfo
 *.xlsx
 *TWINSET Milano.html
 

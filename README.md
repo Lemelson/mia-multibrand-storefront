@@ -25,6 +25,12 @@
 - `Tailwind CSS`
 - `Framer Motion`
 - `Lucide React`
+- `Prisma` + `PostgreSQL` (опционально; рекомендуется для production)
+
+## Документация
+
+- Индекс: [`docs/README.md`](docs/README.md)
+- Короткая "карта" проекта для ИИ: [`docs/AI_GUIDE.md`](docs/AI_GUIDE.md)
 
 ## Структура проекта
 
@@ -45,14 +51,22 @@ src/
 
 ## Данные и хранилище
 
-На текущем этапе проект использует JSON-файлы как хранилище.
+Проект поддерживает два режима данных: JSON и Postgres (Prisma).
 
-- `src/data/products.json` — товары
-- `src/data/orders.json` — заказы
-- `src/data/stores.json` — точки выдачи/магазины
-- `src/data/categories.json` — категории
+JSON (подходит для быстрого MVP/локально):
 
-Это удобно для MVP и локальной разработки. При необходимости можно заменить слой хранения на PostgreSQL/Supabase, сохранив UI и API-контракты.
+- `src/data/products.json` - товары
+- `src/data/orders.json` - заказы
+- `src/data/stores.json` - точки выдачи/магазины
+- `src/data/categories.json` - категории
+
+DB (рекомендуется для production/Vercel):
+
+- `prisma/schema.prisma` - схема БД
+- `npm run db:migrate` - миграции
+- `npm run db:seed` - сидинг из `src/data/*.json`
+
+Подробнее: [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md).
 
 ## Быстрый старт (локально)
 
@@ -96,6 +110,12 @@ npm run dev
 ADMIN_PASSWORD=mia-admin
 ADMIN_SECRET=change-this-secret
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
+NEXT_PUBLIC_YANDEX_MAPS_API_KEY=your-yandex-maps-api-key
+NEXT_PUBLIC_DEV_ADMIN_PASSWORD=mia-admin
+DATA_SOURCE=json
+DUAL_WRITE=false
+# DATABASE_URL=postgresql://...
+# DIRECT_URL=postgresql://...
 ```
 
 ## NPM-скрипты
@@ -105,6 +125,9 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 - `npm run start` — запуск production-сборки
 - `npm run lint` — eslint
 - `npm run typecheck` — проверка TypeScript
+- `npm run test` — тесты (vitest)
+- `npm run db:migrate` — prisma migrate dev
+- `npm run db:seed` — prisma db seed
 
 ## API (MVP)
 
@@ -146,7 +169,7 @@ vercel
 ## Важно для production
 
 - JSON-хранилище подходит для MVP/демо и локального запуска.
-- Для боевого режима рекомендуется перенести данные в БД.
+- На Vercel в production файловая система read-only, поэтому при настроенной БД проект читает/пишет через БД.
 - Не храните реальные секреты в репозитории.
 - Ограничьте доступ к админке и задайте сильный пароль.
 

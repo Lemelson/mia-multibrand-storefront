@@ -21,6 +21,17 @@ const orderLimiter = createRateLimiter("create-order", {
   windowMs: 60 * 1000 // 10 orders per minute per IP
 });
 
+function getStorageErrorMessage(error: unknown, fallback: string): string {
+  if (error instanceof Error) {
+    if (/EROFS|read-only|EACCES|EPERM/i.test(error.message)) {
+      return "Текущий деплой работает с read-only файловой системой. Для Vercel включите БД-режим: DATA_SOURCE=db и корректные DATABASE_URL/DIRECT_URL.";
+    }
+    return error.message || fallback;
+  }
+
+  return fallback;
+}
+
 function createRequestHash(payload: CreateOrderInput): string {
   return crypto.createHash("sha256").update(JSON.stringify(payload)).digest("hex");
 }
@@ -189,31 +200,36 @@ export async function POST(request: Request) {
     );
   }
 
-  const result = await createOrderWithIdempotency({
-    key: idempotencyKey,
-    requestHash,
-    order: {
-      customer: {
-        name: payload.customer.name.trim(),
-        phone: payload.customer.phone.trim(),
-        email: payload.customer.email?.trim() || undefined,
-        comment: payload.customer.comment?.trim() || undefined
-      },
-      items,
-      totalAmount,
-      delivery: payload.delivery,
-      paymentMethod: payload.paymentMethod,
-      storeId: payload.storeId
+  try {
+    const result = await createOrderWithIdempotency({
+      key: idempotencyKey,
+      requestHash,
+      order: {
+        customer: {
+          name: payload.customer.name.trim(),
+          phone: payload.customer.phone.trim(),
+          email: payload.customer.email?.trim() || undefined,
+          comment: payload.customer.comment?.trim() || undefined
+        },
+        items,
+        totalAmount,
+        delivery: payload.delivery,
+        paymentMethod: payload.paymentMethod,
+        storeId: payload.storeId
+      }
+    });
+
+    if (result.kind === "conflict") {
+      return NextResponse.json({ message: result.message }, { status: 409 });
     }
-  });
 
-  if (result.kind === "conflict") {
-    return NextResponse.json({ message: result.message }, { status: 409 });
+    if (result.kind === "existing") {
+      return NextResponse.json(result.order);
+    }
+
+    return NextResponse.json(result.order, { status: 201 });
+  } catch (error) {
+    const message = getStorageErrorMessage(error, "Не удалось создать заказ");
+    return NextResponse.json({ message }, { status: 500 });
   }
-
-  if (result.kind === "existing") {
-    return NextResponse.json(result.order);
-  }
-
-  return NextResponse.json(result.order, { status: 201 });
 }
