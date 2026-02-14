@@ -7,6 +7,7 @@
   { "id": "cat-w-knitwear", "slug": "knitwear", "name": "Трикотаж", "gender": "women" },
   { "id": "cat-w-jeans", "slug": "jeans", "name": "Джинсы", "gender": "women" },
   { "id": "cat-w-shoes", "slug": "shoes", "name": "Обувь", "gender": "women" },
+  { "id": "cat-w-bags", "slug": "bags", "name": "Сумки", "gender": "women" },
   { "id": "cat-w-accessories", "slug": "accessories", "name": "Аксессуары", "gender": "women" },
   { "id": "cat-m-shirts", "slug": "men-shirts", "name": "Рубашки", "gender": "men" },
   { "id": "cat-m-tshirts", "slug": "men-tshirts-polo", "name": "Футболки и поло", "gender": "men" },

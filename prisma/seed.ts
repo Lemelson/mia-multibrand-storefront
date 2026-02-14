@@ -128,6 +128,11 @@ async function main() {
     readJson<Order[]>("orders.json")
   ]);
 
+  // Clear products first to avoid SKU unique constraint conflicts
+  // (old DB entries may have different IDs for same SKUs)
+  console.log("Clearing existing products...");
+  await prisma.product.deleteMany({});
+
   await seedStores(stores);
   await seedCategories(categories);
   await seedProducts(products);
