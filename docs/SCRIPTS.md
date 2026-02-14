@@ -14,6 +14,9 @@
   - локализует изображения в `public/media/products/...`
 - `scripts/normalize-maxmara-products.mjs`
   - нормализация данных (названия/состав и т.п.)
+- `scripts/dedupe-products-by-signature.mjs`
+  - деактивирует дубли карточек в `src/data/products.json` (оставляет один активный товар на группу)
+  - группировка по совпадению фото (хеши локальных файлов в `public/`) + описанию/цене/структуре цветов
 - `scripts/sync-maxmara-products-to-db.mjs`
   - синхронизирует Max Mara товары из `src/data/products.json` в Postgres
   - полезно, когда production читает из DB

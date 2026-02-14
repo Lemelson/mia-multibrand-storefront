@@ -213,6 +213,32 @@ function stripQuery(url) {
   return s.split("?")[0];
 }
 
+function normalizeUrlKey(url) {
+  const base = stripQuery(url).trim();
+  if (!base) return "";
+  return base.replace(/\/+$/, "").toLowerCase();
+}
+
+function pageSource(page) {
+  return normalizeSpace(page?.source || "").toLowerCase();
+}
+
+function pagePrimaryUrl(page) {
+  return (
+    normalizeSpace(page?.canonical || "") ||
+    normalizeSpace(page?.url || "") ||
+    normalizeSpace(page?.product_url || "")
+  );
+}
+
+function getLsnetOnlyPageKey(sitePages) {
+  if (!Array.isArray(sitePages) || sitePages.length === 0) return "";
+  const sources = new Set(sitePages.map((p) => pageSource(p)).filter(Boolean));
+  if (sources.size !== 1 || !sources.has("lsnet")) return "";
+  const key = normalizeUrlKey(pagePrimaryUrl(sitePages[0]));
+  return key ? `lsnet|${key}` : "";
+}
+
 function groupDownloadedImagesByBase(files) {
   // files: ["detail_1200__ALBIO_004_1.webp", "detail_600__ALBIO_004_1.webp", ...]
   // base key: "ALBIO_004_1"
@@ -415,6 +441,7 @@ async function main() {
   const existingSkus = new Set(
     products.map((p) => normalizeSpace(p.sku || "").toUpperCase()).filter(Boolean)
   );
+  const seenLsnetPageKeys = new Map(); // key -> style that was kept
 
   let nextNumericId = parseMaxId(products) + 1;
   const created = [];
@@ -434,6 +461,16 @@ async function main() {
     if (!sitePages.length && !includeUnmatched) {
       skipped.push({ style, reason: "unmatched_no_site_data" });
       continue;
+    }
+
+    const lsnetPageKey = getLsnetOnlyPageKey(sitePages);
+    if (lsnetPageKey) {
+      const duplicateOf = seenLsnetPageKeys.get(lsnetPageKey);
+      if (duplicateOf) {
+        skipped.push({ style, reason: "duplicate_lsnet_page", duplicateOf });
+        continue;
+      }
+      seenLsnetPageKeys.set(lsnetPageKey, style);
     }
 
     const sku = style.toUpperCase();

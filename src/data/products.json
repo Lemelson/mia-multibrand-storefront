@@ -6392,9 +6392,9 @@
       }
     ],
     "isNew": true,
-    "isActive": true,
+    "isActive": false,
     "createdAt": "2026-02-12T10:22:42.586Z",
-    "updatedAt": "2026-02-12T10:24:14.842Z"
+    "updatedAt": "2026-02-13T19:43:07.567Z"
   },
   {
     "id": "p-107",
@@ -6501,9 +6501,9 @@
       }
     ],
     "isNew": true,
-    "isActive": true,
+    "isActive": false,
     "createdAt": "2026-02-12T10:22:42.586Z",
-    "updatedAt": "2026-02-12T10:24:14.842Z"
+    "updatedAt": "2026-02-13T19:43:07.567Z"
   },
   {
     "id": "p-109",
@@ -6668,9 +6668,9 @@
       }
     ],
     "isNew": true,
-    "isActive": true,
+    "isActive": false,
     "createdAt": "2026-02-12T10:22:42.587Z",
-    "updatedAt": "2026-02-12T10:24:14.842Z"
+    "updatedAt": "2026-02-13T19:43:07.567Z"
   },
   {
     "id": "p-112",
@@ -7060,9 +7060,9 @@
       }
     ],
     "isNew": true,
-    "isActive": true,
+    "isActive": false,
     "createdAt": "2026-02-12T10:22:42.588Z",
-    "updatedAt": "2026-02-12T10:24:14.842Z"
+    "updatedAt": "2026-02-13T19:43:07.567Z"
   },
   {
     "id": "p-119",
@@ -7115,9 +7115,9 @@
       }
     ],
     "isNew": true,
-    "isActive": true,
+    "isActive": false,
     "createdAt": "2026-02-12T10:22:42.588Z",
-    "updatedAt": "2026-02-12T10:24:14.842Z"
+    "updatedAt": "2026-02-13T19:43:07.567Z"
   },
   {
     "id": "p-120",
@@ -7170,9 +7170,9 @@
       }
     ],
     "isNew": true,
-    "isActive": true,
+    "isActive": false,
     "createdAt": "2026-02-12T10:22:42.588Z",
-    "updatedAt": "2026-02-12T10:24:14.842Z"
+    "updatedAt": "2026-02-13T19:43:07.567Z"
   },
   {
     "id": "p-121",
@@ -7216,9 +7216,9 @@
       }
     ],
     "isNew": true,
-    "isActive": true,
+    "isActive": false,
     "createdAt": "2026-02-12T10:22:42.588Z",
-    "updatedAt": "2026-02-12T10:24:14.842Z"
+    "updatedAt": "2026-02-13T19:43:07.567Z"
   },
   {
     "id": "p-122",
@@ -7421,5 +7421,2708 @@
     "isActive": true,
     "createdAt": "2026-02-12T10:22:42.589Z",
     "updatedAt": "2026-02-12T10:24:14.842Z"
+  },
+  {
+    "id": "p-126",
+    "sku": "252TP3322",
+    "slug": "twinset-252tp3322",
+    "name": "Смесовая шерсть Юбка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Юбка от Twinset Milano из коллекции Осень-Зима 2025. Стиль: повседневный. Материал: смесовая шерсть. Длинная модель.",
+    "composition": "35% полиамид, 30% шерсть, 22% вискоза, 8% полиэстер, 5% кашемир. Подкладка: 35% полиамид",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "skirts",
+    "gender": "women",
+    "price": 14600,
+    "oldPrice": 31500,
+    "colors": [
+      {
+        "id": "p-126-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tp3322/p-126-c1/detail/01.jpg",
+          "/media/products/twinset-252tp3322/p-126-c1/detail/02.jpg",
+          "/media/products/twinset-252tp3322/p-126-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:28:24.579Z",
+    "updatedAt": "2026-02-14T18:28:24.579Z"
+  },
+  {
+    "id": "p-127",
+    "sku": "252TP3240",
+    "slug": "twinset-252tp3240",
+    "name": "Смесовая вискоза Топ Twinset",
+    "brand": "Twinset Milano",
+    "description": "Топ от Twinset Milano из коллекции Осень-Зима 2025. Стиль: базовый. Материал: смесовая вискоза. Круглый вырез.",
+    "composition": "72% вискоза, 28% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 12900,
+    "oldPrice": 23500,
+    "colors": [
+      {
+        "id": "p-127-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tp3240/p-127-c1/detail/01.jpg",
+          "/media/products/twinset-252tp3240/p-127-c1/detail/02.jpg",
+          "/media/products/twinset-252tp3240/p-127-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:28:30.343Z",
+    "updatedAt": "2026-02-14T18:28:30.343Z"
+  },
+  {
+    "id": "p-128",
+    "sku": "252TP3570",
+    "slug": "twinset-252tp3570",
+    "name": "Кашемир Свитер Twinset",
+    "brand": "Twinset Milano",
+    "description": "Свитер от Twinset Milano из коллекции Осень-Зима 2025. Материал: кашемир, шерсть.",
+    "composition": "Состав уточняется.",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 18700,
+    "oldPrice": 44500,
+    "colors": [
+      {
+        "id": "p-128-c1",
+        "name": "Серый",
+        "hex": "#808080",
+        "images": [
+          "/media/products/twinset-252tp3570/p-128-c1/detail/01.jpg",
+          "/media/products/twinset-252tp3570/p-128-c1/detail/02.jpg",
+          "/media/products/twinset-252tp3570/p-128-c1/detail/03.jpg",
+          "/media/products/twinset-252tp3570/p-128-c1/detail/04.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:28:36.289Z",
+    "updatedAt": "2026-02-14T18:28:36.289Z"
+  },
+  {
+    "id": "p-129",
+    "sku": "252TP3084",
+    "slug": "twinset-252tp3084",
+    "name": "Вискоза Платье Twinset",
+    "brand": "Twinset Milano",
+    "description": "Платье от Twinset Milano из коллекции Осень-Зима 2025. Стиль: повседневный. Материал: вискоза. Длина миди. Круглый вырез.",
+    "composition": "72% вискоза, 28% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "dresses",
+    "gender": "women",
+    "price": 17800,
+    "oldPrice": 57500,
+    "colors": [
+      {
+        "id": "p-129-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tp3084/p-129-c1/detail/01.jpg",
+          "/media/products/twinset-252tp3084/p-129-c1/detail/02.jpg",
+          "/media/products/twinset-252tp3084/p-129-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:28:40.461Z",
+    "updatedAt": "2026-02-14T18:28:40.461Z"
+  },
+  {
+    "id": "p-130",
+    "sku": "252TP3083",
+    "slug": "twinset-252tp3083",
+    "name": "Смесовая вискоза Платье Twinset",
+    "brand": "Twinset Milano",
+    "description": "Платье от Twinset Milano из коллекции Осень-Зима 2025. Стиль: повседневный. Материал: смесовая вискоза. Мини-длина. Круглый вырез.",
+    "composition": "72% вискоза, 28% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "dresses",
+    "gender": "women",
+    "price": 12700,
+    "oldPrice": 27500,
+    "colors": [
+      {
+        "id": "p-130-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tp3083/p-130-c1/detail/01.jpg",
+          "/media/products/twinset-252tp3083/p-130-c1/detail/02.jpg",
+          "/media/products/twinset-252tp3083/p-130-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:28:44.911Z",
+    "updatedAt": "2026-02-14T18:28:44.911Z"
+  },
+  {
+    "id": "p-131",
+    "sku": "252TP2621",
+    "slug": "twinset-252tp2621",
+    "name": "Вискоза Жилет Twinset",
+    "brand": "Twinset Milano",
+    "description": "Жилет от Twinset Milano из коллекции Осень-Зима 2025. Стиль: классический. Материал: вискоза. V-образный вырез.",
+    "composition": "80% вискоза, 19% полиэстер, 1% эластан. Подкладка: 68% акрил, 32% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 17700,
+    "oldPrice": 42000,
+    "colors": [
+      {
+        "id": "p-131-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tp2621/p-131-c1/detail/01.jpg",
+          "/media/products/twinset-252tp2621/p-131-c1/detail/02.jpg",
+          "/media/products/twinset-252tp2621/p-131-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:28:49.050Z",
+    "updatedAt": "2026-02-14T18:28:49.050Z"
+  },
+  {
+    "id": "p-132",
+    "sku": "252TP2610",
+    "slug": "twinset-252tp2610",
+    "name": "Полиэстер Аксессуар Twinset",
+    "brand": "Twinset Milano",
+    "description": "Аксессуар от Twinset Milano из коллекции Осень-Зима 2025. Стиль: спортивный. Материал: полиэстер. Удлинённая модель. Высокий ворот.",
+    "composition": "94%полиэстер, 6%эластан, 100% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "dresses",
+    "gender": "women",
+    "price": 30300,
+    "oldPrice": 72000,
+    "colors": [
+      {
+        "id": "p-132-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tp2610/p-132-c1/detail/01.jpg",
+          "/media/products/twinset-252tp2610/p-132-c1/detail/02.jpg",
+          "/media/products/twinset-252tp2610/p-132-c1/detail/03.jpg",
+          "/media/products/twinset-252tp2610/p-132-c1/detail/04.jpg",
+          "/media/products/twinset-252tp2610/p-132-c1/detail/05.jpg",
+          "/media/products/twinset-252tp2610/p-132-c1/detail/06.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:28:58.526Z",
+    "updatedAt": "2026-02-14T18:28:58.526Z"
+  },
+  {
+    "id": "p-133",
+    "sku": "252TF3030",
+    "slug": "twinset-252tf3030",
+    "name": "Смесовая вискоза Топ Twinset",
+    "brand": "Twinset Milano",
+    "description": "Топ от Twinset Milano из коллекции Осень-Зима 2025. Стиль: базовый. Материал: смесовая вискоза. Водолазка.",
+    "composition": "72% вискоза, 28% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 15000,
+    "colors": [
+      {
+        "id": "p-133-c1",
+        "name": "Серый",
+        "hex": "#808080",
+        "images": [
+          "/media/products/twinset-252tf3030/p-133-c1/detail/01.jpg",
+          "/media/products/twinset-252tf3030/p-133-c1/detail/02.jpg",
+          "/media/products/twinset-252tf3030/p-133-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:29:02.533Z",
+    "updatedAt": "2026-02-14T18:29:02.533Z"
+  },
+  {
+    "id": "p-134",
+    "sku": "252TF3010",
+    "slug": "twinset-252tf3010",
+    "name": "Смесовая шерсть Свитер Twinset",
+    "brand": "Twinset Milano",
+    "description": "Свитер от Twinset Milano из коллекции Осень-Зима 2025. Материал: смесовая шерсть.",
+    "composition": "29% шерсть, 24% хлопок, 19% полиакрил, 14% полиамид, 14% шерсть мериноса",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 13400,
+    "oldPrice": 26600,
+    "colors": [
+      {
+        "id": "p-134-c1",
+        "name": "Голубино-серый",
+        "hex": "#B0B0B0",
+        "images": [
+          "/media/products/twinset-252tf3010/p-134-c1/detail/01.jpg",
+          "/media/products/twinset-252tf3010/p-134-c1/detail/02.jpg",
+          "/media/products/twinset-252tf3010/p-134-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:29:08.693Z",
+    "updatedAt": "2026-02-14T18:29:08.693Z"
+  },
+  {
+    "id": "p-135",
+    "sku": "252TB7334",
+    "slug": "twinset-252tb7334",
+    "name": "Техническая ткань Сумка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Сумка от Twinset Milano из коллекции Осень-Зима 2025. Стиль: спортивный. Материал: техническая ткань.",
+    "composition": "100% полиэтилен, 100% полиуретан. Подкладка: 100% полиуретан",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "bags",
+    "gender": "women",
+    "price": 18200,
+    "oldPrice": 36000,
+    "colors": [
+      {
+        "id": "p-135-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tb7334/p-135-c1/detail/01.jpg",
+          "/media/products/twinset-252tb7334/p-135-c1/detail/02.jpg",
+          "/media/products/twinset-252tb7334/p-135-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:29:12.978Z",
+    "updatedAt": "2026-02-14T18:29:12.978Z"
+  },
+  {
+    "id": "p-136",
+    "sku": "252TA4290",
+    "slug": "twinset-252ta4290",
+    "name": "Модал Шарф Twinset",
+    "brand": "Twinset Milano",
+    "description": "Шарф от Twinset Milano из коллекции Осень-Зима 2025. Материал: модал.",
+    "composition": "100% модал",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 14700,
+    "oldPrice": 23500,
+    "colors": [
+      {
+        "id": "p-136-c1",
+        "name": "Мультиколор",
+        "hex": "#D4AF37",
+        "images": [
+          "/media/products/twinset-252ta4290/p-136-c1/detail/01.jpg",
+          "/media/products/twinset-252ta4290/p-136-c1/detail/02.jpg",
+          "/media/products/twinset-252ta4290/p-136-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:29:17.136Z",
+    "updatedAt": "2026-02-14T18:29:17.136Z"
+  },
+  {
+    "id": "p-137",
+    "sku": "252TF3042",
+    "slug": "twinset-252tf3042",
+    "name": "Кашемир Юбка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Юбка от Twinset Milano из коллекции Осень-Зима 2025. Стиль: минималистичный. Материал: кашемир, шерсть. Длинная модель.",
+    "composition": "85% шерсть, 15% кашемир",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "skirts",
+    "gender": "women",
+    "price": 16400,
+    "oldPrice": 39000,
+    "colors": [
+      {
+        "id": "p-137-c1",
+        "name": "Серый",
+        "hex": "#808080",
+        "images": [
+          "/media/products/twinset-252tf3042/p-137-c1/detail/01.jpg",
+          "/media/products/twinset-252tf3042/p-137-c1/detail/02.jpg",
+          "/media/products/twinset-252tf3042/p-137-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:29:21.382Z",
+    "updatedAt": "2026-02-14T18:29:21.382Z"
+  },
+  {
+    "id": "p-138",
+    "sku": "252AT2190",
+    "slug": "twinset-252at2190",
+    "name": "Искусственный мех Шуба Twinset",
+    "brand": "Twinset Actitude",
+    "description": "Шуба от Twinset Milano из коллекции Осень-Зима 2025. Стиль: современный. Материал: искусственный мех. Удлинённая модель. Лацканы.",
+    "composition": "100% полиэстер. Подкладка: 100% полиэстер; 100% полиэстер",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 15000,
+    "colors": [
+      {
+        "id": "p-138-c1",
+        "name": "Коричневый",
+        "hex": "#7A5A44",
+        "images": [
+          "/media/products/twinset-252at2190/p-138-c1/detail/01.jpg",
+          "/media/products/twinset-252at2190/p-138-c1/detail/02.jpg",
+          "/media/products/twinset-252at2190/p-138-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:29:25.911Z",
+    "updatedAt": "2026-02-14T18:29:25.911Z"
+  },
+  {
+    "id": "p-139",
+    "sku": "252TT3200",
+    "slug": "twinset-252tt3200",
+    "name": "Шерсть мериноса Свитер Twinset",
+    "brand": "Twinset Milano",
+    "description": "Свитер от Twinset Milano из коллекции Осень-Зима 2025. Стиль: повседневный. Материал: шерсть мериноса. V-образный вырез.",
+    "composition": "46% шерсть мериноса, 4% шерсть, 50% полиамид",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 14900,
+    "oldPrice": 35400,
+    "colors": [
+      {
+        "id": "p-139-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tt3200/p-139-c1/detail/01.jpg",
+          "/media/products/twinset-252tt3200/p-139-c1/detail/02.jpg",
+          "/media/products/twinset-252tt3200/p-139-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:29:30.315Z",
+    "updatedAt": "2026-02-14T18:29:30.315Z"
+  },
+  {
+    "id": "p-140",
+    "sku": "252TT2190",
+    "slug": "twinset-252tt2190",
+    "name": "Хлопковый деним Джинсы Twinset",
+    "brand": "Twinset Milano",
+    "description": "Джинсы от Twinset Milano из коллекции Осень-Зима 2025. Материал: хлопковый деним.",
+    "composition": "100% хлопок. Подкладка: 52% полиэстер, 48% хлопок",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "pants",
+    "gender": "women",
+    "price": 14500,
+    "oldPrice": 31300,
+    "colors": [
+      {
+        "id": "p-140-c1",
+        "name": "Деним",
+        "hex": "#5B7FAD",
+        "images": [
+          "/media/products/twinset-252tt2190/p-140-c1/detail/01.jpg",
+          "/media/products/twinset-252tt2190/p-140-c1/detail/02.jpg",
+          "/media/products/twinset-252tt2190/p-140-c1/detail/03.jpg",
+          "/media/products/twinset-252tt2190/p-140-c1/detail/04.jpg",
+          "/media/products/twinset-252tt2190/p-140-c1/detail/05.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:29:38.065Z",
+    "updatedAt": "2026-02-14T18:29:38.065Z"
+  },
+  {
+    "id": "p-141",
+    "sku": "252TT2210",
+    "slug": "twinset-252tt2210",
+    "name": "Хлопковый деним Джинсы Twinset",
+    "brand": "Twinset Milano",
+    "description": "Джинсы от Twinset Milano из коллекции Осень-Зима 2025. Стиль: повседневный. Материал: хлопковый деним.",
+    "composition": "Состав уточняется.",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "pants",
+    "gender": "women",
+    "price": 14500,
+    "oldPrice": 31300,
+    "colors": [
+      {
+        "id": "p-141-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tt2210/p-141-c1/detail/01.jpg",
+          "/media/products/twinset-252tt2210/p-141-c1/detail/02.jpg",
+          "/media/products/twinset-252tt2210/p-141-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:29:42.567Z",
+    "updatedAt": "2026-02-14T18:29:42.567Z"
+  },
+  {
+    "id": "p-142",
+    "sku": "252LL2SAA",
+    "slug": "twinset-252ll2saa",
+    "name": "Смесовая вискоза Платье Twinset",
+    "brand": "Twinset Milano",
+    "description": "Платье от Twinset Milano из коллекции Осень-Зима 2025. Материал: смесовая вискоза. Мини-длина.",
+    "composition": "43% вискоза, 42% полиамид, 15% шерсть. Подкладка: 36% полиакрил, 31% полиамид",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "dresses",
+    "gender": "women",
+    "price": 21100,
+    "oldPrice": 45500,
+    "colors": [
+      {
+        "id": "p-142-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252ll2saa/p-142-c1/detail/01.jpg",
+          "/media/products/twinset-252ll2saa/p-142-c1/detail/02.jpg",
+          "/media/products/twinset-252ll2saa/p-142-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:29:46.750Z",
+    "updatedAt": "2026-02-14T18:29:46.750Z"
+  },
+  {
+    "id": "p-143",
+    "sku": "252TO5380",
+    "slug": "twinset-252to5380",
+    "name": "Искусственный жемчуг Украшение Twinset",
+    "brand": "Twinset Milano",
+    "description": "Украшение от Twinset Milano из коллекции Осень-Зима 2025. Материал: искусственный жемчуг.",
+    "composition": "100% другое. Подкладка: 100% цинк; 100% стекло",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 15000,
+    "colors": [
+      {
+        "id": "p-143-c1",
+        "name": "Золотой",
+        "hex": "#D4AF37",
+        "images": [
+          "/media/products/twinset-252to5380/p-143-c1/detail/01.jpg",
+          "/media/products/twinset-252to5380/p-143-c1/detail/02.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:29:48.929Z",
+    "updatedAt": "2026-02-14T18:29:48.929Z"
+  },
+  {
+    "id": "p-144",
+    "sku": "252AT2110",
+    "slug": "twinset-252at2110",
+    "name": "Хлопковый деним Джинсы Twinset",
+    "brand": "Twinset Actitude",
+    "description": "Джинсы от Twinset Milano из коллекции Осень-Зима 2025. Материал: хлопковый деним.",
+    "composition": "99% хлопок, 1% эластан. Подкладка: 65% полиэстер, 35% хлопок",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "pants",
+    "gender": "women",
+    "price": 13900,
+    "oldPrice": 30000,
+    "colors": [
+      {
+        "id": "p-144-c1",
+        "name": "Деним",
+        "hex": "#5B7FAD",
+        "images": [
+          "/media/products/twinset-252at2110/p-144-c1/detail/01.jpg",
+          "/media/products/twinset-252at2110/p-144-c1/detail/02.jpg",
+          "/media/products/twinset-252at2110/p-144-c1/detail/03.jpg",
+          "/media/products/twinset-252at2110/p-144-c1/detail/04.jpg",
+          "/media/products/twinset-252at2110/p-144-c1/detail/05.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T18:29:56.641Z",
+    "updatedAt": "2026-02-14T18:29:56.641Z"
+  },
+  {
+    "id": "p-145",
+    "sku": "252TP2622",
+    "slug": "twinset-252tp2622",
+    "name": "Брюки Twinset",
+    "brand": "Twinset Milano",
+    "description": "Брюки от Twinset Milano из коллекции Осень-Зима 2025. Стиль: классический. Материал: stretch viscose.",
+    "composition": "s: Stretch viscose",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "pants",
+    "gender": "women",
+    "price": 20600,
+    "oldPrice": 44500,
+    "colors": [
+      {
+        "id": "p-145-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tp2622/p-145-c1/detail/01.jpg",
+          "/media/products/twinset-252tp2622/p-145-c1/detail/02.jpg",
+          "/media/products/twinset-252tp2622/p-145-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:44:33.827Z",
+    "updatedAt": "2026-02-14T22:44:33.828Z"
+  },
+  {
+    "id": "p-146",
+    "sku": "252TP2172",
+    "slug": "twinset-252tp2172",
+    "name": "Полиэстер Куртка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Куртка от Twinset Milano из коллекции Осень-Зима 2025. Стиль: спортивный. Материал: полиэстер. Удлинённая модель.",
+    "composition": "s: Polyester",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 18900,
+    "oldPrice": 44900,
+    "colors": [
+      {
+        "id": "p-146-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tp2172/p-146-c1/detail/01.jpg",
+          "/media/products/twinset-252tp2172/p-146-c1/detail/02.jpg",
+          "/media/products/twinset-252tp2172/p-146-c1/detail/03.jpg",
+          "/media/products/twinset-252tp2172/p-146-c1/detail/04.jpg",
+          "/media/products/twinset-252tp2172/p-146-c1/detail/05.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:44:41.272Z",
+    "updatedAt": "2026-02-14T22:44:41.272Z"
+  },
+  {
+    "id": "p-147",
+    "sku": "252TP2171",
+    "slug": "twinset-252tp2171",
+    "name": "Нейлон Куртка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Куртка от Twinset Milano из коллекции Осень-Зима 2025. Стиль: спортивный. Материал: нейлон. Укороченная модель.",
+    "composition": "s: Nylon",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 27800,
+    "oldPrice": 66000,
+    "colors": [
+      {
+        "id": "p-147-c1",
+        "name": "Белый",
+        "hex": "#F5F5F5",
+        "images": [
+          "/media/products/twinset-252tp2171/p-147-c1/detail/01.jpg",
+          "/media/products/twinset-252tp2171/p-147-c1/detail/02.jpg",
+          "/media/products/twinset-252tp2171/p-147-c1/detail/03.jpg",
+          "/media/products/twinset-252tp2171/p-147-c1/detail/04.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:44:47.372Z",
+    "updatedAt": "2026-02-14T22:44:47.372Z"
+  },
+  {
+    "id": "p-148",
+    "sku": "252TP2060",
+    "slug": "twinset-252tp2060",
+    "name": "Тренч Twinset",
+    "brand": "Twinset Milano",
+    "description": "Тренч от Twinset Milano из коллекции Осень-Зима 2025. Стиль: классический. Материал: cotton blend.",
+    "composition": "s: Cotton blend",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 26300,
+    "oldPrice": 62500,
+    "colors": [
+      {
+        "id": "p-148-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tp2060/p-148-c1/detail/01.jpg",
+          "/media/products/twinset-252tp2060/p-148-c1/detail/02.jpg",
+          "/media/products/twinset-252tp2060/p-148-c1/detail/03.jpg",
+          "/media/products/twinset-252tp2060/p-148-c1/detail/04.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:44:53.302Z",
+    "updatedAt": "2026-02-14T22:44:53.302Z"
+  },
+  {
+    "id": "p-149",
+    "sku": "252TF3041",
+    "slug": "twinset-252tf3041",
+    "name": "Кашемир Топ Twinset",
+    "brand": "Twinset Milano",
+    "description": "Топ от Twinset Milano из коллекции Осень-Зима 2025. Материал: кашемир, шерсть.",
+    "composition": "s: Cashmere, Wool",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 20400,
+    "oldPrice": 48500,
+    "colors": [
+      {
+        "id": "p-149-c1",
+        "name": "Серый",
+        "hex": "#808080",
+        "images": [
+          "/media/products/twinset-252tf3041/p-149-c1/detail/01.jpg",
+          "/media/products/twinset-252tf3041/p-149-c1/detail/02.jpg",
+          "/media/products/twinset-252tf3041/p-149-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:44:57.503Z",
+    "updatedAt": "2026-02-14T22:44:57.503Z"
+  },
+  {
+    "id": "p-150",
+    "sku": "252TF2060",
+    "slug": "twinset-252tf2060",
+    "name": "Смесовая шерсть Пальто Twinset",
+    "brand": "Twinset Milano",
+    "description": "Пальто от Twinset Milano из коллекции Осень-Зима 2025. Стиль: повседневный. Материал: смесовая шерсть.",
+    "composition": "s: Wool blend",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 28000,
+    "oldPrice": 66500,
+    "colors": [
+      {
+        "id": "p-150-c1",
+        "name": "Антрацит",
+        "hex": "#4A4A4A",
+        "images": [
+          "/media/products/twinset-252tf2060/p-150-c1/detail/01.jpg",
+          "/media/products/twinset-252tf2060/p-150-c1/detail/02.jpg",
+          "/media/products/twinset-252tf2060/p-150-c1/detail/03.jpg",
+          "/media/products/twinset-252tf2060/p-150-c1/detail/04.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:03.194Z",
+    "updatedAt": "2026-02-14T22:45:03.194Z"
+  },
+  {
+    "id": "p-151",
+    "sku": "252TB7055",
+    "slug": "twinset-252tb7055",
+    "name": "Сумка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Сумка от Twinset Milano из коллекции Осень-Зима 2025. Стиль: классический. Материал: quilted synthetic leather.",
+    "composition": "s: Quilted synthetic кожа",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "bags",
+    "gender": "women",
+    "price": 14700,
+    "oldPrice": 29000,
+    "colors": [
+      {
+        "id": "p-151-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tb7055/p-151-c1/detail/01.jpg",
+          "/media/products/twinset-252tb7055/p-151-c1/detail/02.jpg",
+          "/media/products/twinset-252tb7055/p-151-c1/detail/03.jpg",
+          "/media/products/twinset-252tb7055/p-151-c1/detail/04.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "ONE SIZE",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:09.443Z",
+    "updatedAt": "2026-02-14T22:45:09.443Z"
+  },
+  {
+    "id": "p-152",
+    "sku": "252TB7150",
+    "slug": "twinset-252tb7150",
+    "name": "Экокожа Сумка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Сумка от Twinset Milano из коллекции Осень-Зима 2025. Материал: экокожа.",
+    "composition": "s: Synthetic кожа",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "bags",
+    "gender": "women",
+    "price": 17600,
+    "oldPrice": 23200,
+    "colors": [
+      {
+        "id": "p-152-c1",
+        "name": "Белый",
+        "hex": "#F5F5F5",
+        "images": [
+          "/media/products/twinset-252tb7150/p-152-c1/detail/01.jpg",
+          "/media/products/twinset-252tb7150/p-152-c1/detail/02.jpg",
+          "/media/products/twinset-252tb7150/p-152-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "ONE SIZE",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:14.676Z",
+    "updatedAt": "2026-02-14T22:45:14.676Z"
+  },
+  {
+    "id": "p-153",
+    "sku": "252TB7272",
+    "slug": "twinset-252tb7272",
+    "name": "Экокожа Сумка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Сумка от Twinset Milano из коллекции Осень-Зима 2025. Материал: экокожа.",
+    "composition": "s: Synthetic кожа",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "bags",
+    "gender": "women",
+    "price": 23200,
+    "oldPrice": 55000,
+    "colors": [
+      {
+        "id": "p-153-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tb7272/p-153-c1/detail/01.jpg",
+          "/media/products/twinset-252tb7272/p-153-c1/detail/02.jpg",
+          "/media/products/twinset-252tb7272/p-153-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "ONE SIZE",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:18.568Z",
+    "updatedAt": "2026-02-14T22:45:18.568Z"
+  },
+  {
+    "id": "p-154",
+    "sku": "252TD8283",
+    "slug": "twinset-252td8283",
+    "name": "Экокожа Сумка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Сумка от Twinset Milano из коллекции Осень-Зима 2025. Материал: экокожа.",
+    "composition": "s: Synthetic кожа",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "bags",
+    "gender": "women",
+    "price": 13400,
+    "oldPrice": 26600,
+    "colors": [
+      {
+        "id": "p-154-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252td8283/p-154-c1/detail/01.jpg",
+          "/media/products/twinset-252td8283/p-154-c1/detail/02.jpg",
+          "/media/products/twinset-252td8283/p-154-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "ONE SIZE",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:22.280Z",
+    "updatedAt": "2026-02-14T22:45:22.280Z"
+  },
+  {
+    "id": "p-155",
+    "sku": "252TD8262",
+    "slug": "twinset-252td8262",
+    "name": "Мини-сумка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Мини-сумка от Twinset Milano из коллекции Осень-Зима 2025. Материал: grained synthetic leather.",
+    "composition": "s: Grained synthetic кожа",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "bags",
+    "gender": "women",
+    "price": 18100,
+    "oldPrice": 39000,
+    "colors": [
+      {
+        "id": "p-155-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252td8262/p-155-c1/detail/01.jpg",
+          "/media/products/twinset-252td8262/p-155-c1/detail/02.jpg",
+          "/media/products/twinset-252td8262/p-155-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "ONE SIZE",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:26.397Z",
+    "updatedAt": "2026-02-14T22:45:26.397Z"
+  },
+  {
+    "id": "p-156",
+    "sku": "252TD8112",
+    "slug": "twinset-252td8112",
+    "name": "Сумка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Сумка от Twinset Milano из коллекции Осень-Зима 2025. Материал: quilted synthetic leather.",
+    "composition": "s: Quilted synthetic кожа",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "bags",
+    "gender": "women",
+    "price": 14700,
+    "oldPrice": 29000,
+    "colors": [
+      {
+        "id": "p-156-c1",
+        "name": "Кожаный",
+        "hex": "#8B6914",
+        "images": [
+          "/media/products/twinset-252td8112/p-156-c1/detail/01.jpg",
+          "/media/products/twinset-252td8112/p-156-c1/detail/02.jpg",
+          "/media/products/twinset-252td8112/p-156-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "ONE SIZE",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:30.305Z",
+    "updatedAt": "2026-02-14T22:45:30.305Z"
+  },
+  {
+    "id": "p-157",
+    "sku": "252TGT024",
+    "slug": "twinset-252tgt024",
+    "name": "Кроссовки Twinset",
+    "brand": "Twinset Milano",
+    "description": "Кроссовки от Twinset Milano из коллекции Осень-Зима 2025. Материал: smooth leather.",
+    "composition": "s: Smooth кожа",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shoes",
+    "gender": "women",
+    "price": 15200,
+    "oldPrice": 30000,
+    "colors": [
+      {
+        "id": "p-157-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tgt024/p-157-c1/detail/01.jpg",
+          "/media/products/twinset-252tgt024/p-157-c1/detail/02.jpg",
+          "/media/products/twinset-252tgt024/p-157-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "inStock": true
+          },
+          {
+            "size": "37",
+            "inStock": true
+          },
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "39",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "41",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:34.481Z",
+    "updatedAt": "2026-02-14T22:45:34.481Z"
+  },
+  {
+    "id": "p-158",
+    "sku": "252TGT012",
+    "slug": "twinset-252tgt012",
+    "name": "Смесовая вискоза Кроссовки Twinset",
+    "brand": "Twinset Milano",
+    "description": "Кроссовки от Twinset Milano из коллекции Осень-Зима 2025. Стиль: повседневный. Материал: смесовая вискоза.",
+    "composition": "s: Viscose blend",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shoes",
+    "gender": "women",
+    "price": 13900,
+    "oldPrice": 27500,
+    "colors": [
+      {
+        "id": "p-158-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tgt012/p-158-c1/detail/01.jpg",
+          "/media/products/twinset-252tgt012/p-158-c1/detail/02.jpg",
+          "/media/products/twinset-252tgt012/p-158-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "inStock": true
+          },
+          {
+            "size": "37",
+            "inStock": true
+          },
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "39",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "41",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:38.760Z",
+    "updatedAt": "2026-02-14T22:45:38.760Z"
+  },
+  {
+    "id": "p-159",
+    "sku": "252TGT01G",
+    "slug": "twinset-252tgt01g",
+    "name": "Полиэстер Кроссовки Twinset",
+    "brand": "Twinset Milano",
+    "description": "Кроссовки от Twinset Milano из коллекции Осень-Зима 2025. Материал: полиэстер, rubber.",
+    "composition": "s: Polyester, Rubber",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shoes",
+    "gender": "women",
+    "price": 13400,
+    "oldPrice": 26600,
+    "colors": [
+      {
+        "id": "p-159-c1",
+        "name": "Коричневый",
+        "hex": "#7A5A44",
+        "images": [
+          "/media/products/twinset-252tgt01g/p-159-c1/detail/01.jpg",
+          "/media/products/twinset-252tgt01g/p-159-c1/detail/02.jpg",
+          "/media/products/twinset-252tgt01g/p-159-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "inStock": true
+          },
+          {
+            "size": "37",
+            "inStock": true
+          },
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "39",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "41",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:42.749Z",
+    "updatedAt": "2026-02-14T22:45:42.749Z"
+  },
+  {
+    "id": "p-160",
+    "sku": "252TT2070",
+    "slug": "twinset-252tt2070",
+    "name": "Хлопок Рубашка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Рубашка от Twinset Milano из коллекции Осень-Зима 2025. Материал: хлопок.",
+    "composition": "s: Cotton",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shirts-blouses",
+    "gender": "women",
+    "price": 13100,
+    "oldPrice": 25900,
+    "colors": [
+      {
+        "id": "p-160-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tt2070/p-160-c1/detail/01.jpg",
+          "/media/products/twinset-252tt2070/p-160-c1/detail/02.jpg",
+          "/media/products/twinset-252tt2070/p-160-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:47.054Z",
+    "updatedAt": "2026-02-14T22:45:47.054Z"
+  },
+  {
+    "id": "p-161",
+    "sku": "252TA4610",
+    "slug": "twinset-252ta4610",
+    "name": "Люрекс Шарф Twinset",
+    "brand": "Twinset Milano",
+    "description": "Шарф от Twinset Milano из коллекции Осень-Зима 2025. Материал: люрекс, модал.",
+    "composition": "s: Lurex, Modal",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 11000,
+    "oldPrice": 14500,
+    "colors": [
+      {
+        "id": "p-161-c1",
+        "name": "Мультиколор",
+        "hex": "#D4AF37",
+        "images": [
+          "/media/products/twinset-252ta4610/p-161-c1/detail/01.jpg",
+          "/media/products/twinset-252ta4610/p-161-c1/detail/02.jpg",
+          "/media/products/twinset-252ta4610/p-161-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "ONE SIZE",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:51.538Z",
+    "updatedAt": "2026-02-14T22:45:51.538Z"
+  },
+  {
+    "id": "p-162",
+    "sku": "252TCP190",
+    "slug": "twinset-252tcp190",
+    "name": "Ботинки Twinset",
+    "brand": "Twinset Milano",
+    "description": "Ботинки от Twinset Milano из коллекции Осень-Зима 2025. Материал: smooth leather.",
+    "composition": "s: Smooth кожа",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shoes",
+    "gender": "women",
+    "price": 21800,
+    "oldPrice": 47000,
+    "colors": [
+      {
+        "id": "p-162-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tcp190/p-162-c1/detail/01.jpg",
+          "/media/products/twinset-252tcp190/p-162-c1/detail/02.jpg",
+          "/media/products/twinset-252tcp190/p-162-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "inStock": true
+          },
+          {
+            "size": "37",
+            "inStock": true
+          },
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "39",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "41",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:55.432Z",
+    "updatedAt": "2026-02-14T22:45:55.432Z"
+  },
+  {
+    "id": "p-163",
+    "sku": "252TCP032",
+    "slug": "twinset-252tcp032",
+    "name": "Туфли Twinset",
+    "brand": "Twinset Milano",
+    "description": "Туфли от Twinset Milano из коллекции Осень-Зима 2025. Материал: smooth leather.",
+    "composition": "s: Smooth кожа",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "shoes",
+    "gender": "women",
+    "price": 24700,
+    "oldPrice": 34500,
+    "colors": [
+      {
+        "id": "p-163-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [
+          "/media/products/twinset-252tcp032/p-163-c1/detail/01.jpg",
+          "/media/products/twinset-252tcp032/p-163-c1/detail/02.jpg",
+          "/media/products/twinset-252tcp032/p-163-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "inStock": true
+          },
+          {
+            "size": "37",
+            "inStock": true
+          },
+          {
+            "size": "38",
+            "inStock": true
+          },
+          {
+            "size": "39",
+            "inStock": true
+          },
+          {
+            "size": "40",
+            "inStock": true
+          },
+          {
+            "size": "41",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:45:59.305Z",
+    "updatedAt": "2026-02-14T22:45:59.305Z"
+  },
+  {
+    "id": "p-164",
+    "sku": "252TT3215",
+    "slug": "twinset-252tt3215",
+    "name": "Смесовая шерсть Юбка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Юбка от Twinset Milano из коллекции Осень-Зима 2025. Стиль: классический. Материал: смесовая шерсть. Длина миди.",
+    "composition": "s: Wool blend",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "skirts",
+    "gender": "women",
+    "price": 14500,
+    "oldPrice": 31300,
+    "colors": [
+      {
+        "id": "p-164-c1",
+        "name": "Белый",
+        "hex": "#F5F5F5",
+        "images": [
+          "/media/products/twinset-252tt3215/p-164-c1/detail/01.jpg",
+          "/media/products/twinset-252tt3215/p-164-c1/detail/02.jpg",
+          "/media/products/twinset-252tt3215/p-164-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:46:03.027Z",
+    "updatedAt": "2026-02-14T22:46:03.027Z"
+  },
+  {
+    "id": "p-165",
+    "sku": "252TD8110",
+    "slug": "twinset-252td8110",
+    "name": "Полиэстер Сумка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Сумка от Twinset Milano из коллекции Осень-Зима 2025. Материал: полиэстер, экокожа.",
+    "composition": "s: полиэстер, Synthetic кожа",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "bags",
+    "gender": "women",
+    "price": 11900,
+    "oldPrice": 23500,
+    "colors": [
+      {
+        "id": "p-165-c1",
+        "name": "Кожаный",
+        "hex": "#8B6914",
+        "images": [
+          "/media/products/twinset-252td8110/p-165-c1/detail/01.jpg",
+          "/media/products/twinset-252td8110/p-165-c1/detail/02.jpg",
+          "/media/products/twinset-252td8110/p-165-c1/detail/03.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "ONE SIZE",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T22:46:06.996Z",
+    "updatedAt": "2026-02-14T22:46:06.996Z"
+  },
+  {
+    "id": "p-166",
+    "sku": "252TF3023",
+    "slug": "twinset-252tf3023",
+    "name": "Смесовая шерсть Свитер Twinset",
+    "brand": "Twinset Milano",
+    "description": "Свитер от Twinset Milano из коллекции Осень-Зима 2025. Стиль: базовый. Материал: смесовая шерсть.",
+    "composition": "29% шерсть, 24% хлопок, 19% полиакрил, 14% полиамид, 14% шерсть мериноса",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "knitwear",
+    "gender": "women",
+    "price": 13400,
+    "oldPrice": 26600,
+    "colors": [
+      {
+        "id": "p-166-c1",
+        "name": "Серый",
+        "hex": "#808080",
+        "images": [
+          "/media/products/twinset-252tf3023/p-166-c1/detail/01.jpg",
+          "/media/products/twinset-252tf3023/p-166-c1/detail/02.jpg",
+          "/media/products/twinset-252tf3023/p-166-c1/detail/03.jpg",
+          "/media/products/twinset-252tf3023/p-166-c1/detail/04.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-02-14T23:04:00.390Z",
+    "updatedAt": "2026-02-14T23:04:00.395Z"
+  },
+  {
+    "id": "p-167",
+    "sku": "252TO519B",
+    "slug": "twinset-252to519b",
+    "name": "Акрил Перчатки Twinset",
+    "brand": "Twinset Milano",
+    "description": "Перчатки от Twinset Milano из коллекции Осень-Зима 2025. Стиль: повседневный. Материал: акрил, люрекс, полиэстер.",
+    "composition": "Состав уточняется.",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 5100,
+    "oldPrice": 8200,
+    "colors": [
+      {
+        "id": "p-167-c1",
+        "name": "Розовый",
+        "hex": "#E8A0BF",
+        "images": [],
+        "sizes": [
+          {
+            "size": "ONE SIZE",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": false,
+    "createdAt": "2026-02-14T23:04:00.395Z",
+    "updatedAt": "2026-02-14T23:04:00.395Z"
+  },
+  {
+    "id": "p-168",
+    "sku": "252TP3573",
+    "slug": "twinset-252tp3573",
+    "name": "Кашемир Юбка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Юбка от Twinset Milano из коллекции Осень-Зима 2025. Стиль: классический. Материал: кашемир, шерсть.",
+    "composition": "85% шерсть, 15% кашемир",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "skirts",
+    "gender": "women",
+    "price": 18100,
+    "oldPrice": 39000,
+    "colors": [
+      {
+        "id": "p-168-c1",
+        "name": "Серый",
+        "hex": "#808080",
+        "images": [],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": false,
+    "createdAt": "2026-02-14T23:04:00.395Z",
+    "updatedAt": "2026-02-14T23:04:00.395Z"
+  },
+  {
+    "id": "p-169",
+    "sku": "252TO519A",
+    "slug": "twinset-252to519a",
+    "name": "Акрил Шарф Twinset",
+    "brand": "Twinset Milano",
+    "description": "Шарф от Twinset Milano из коллекции Осень-Зима 2025. Стиль: повседневный. Материал: акрил, люрекс, полиэстер.",
+    "composition": "Состав уточняется.",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "accessories",
+    "gender": "women",
+    "price": 9000,
+    "oldPrice": 14300,
+    "colors": [
+      {
+        "id": "p-169-c1",
+        "name": "Розовый",
+        "hex": "#E8A0BF",
+        "images": [],
+        "sizes": [
+          {
+            "size": "ONE SIZE",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": false,
+    "createdAt": "2026-02-14T23:04:00.395Z",
+    "updatedAt": "2026-02-14T23:04:00.395Z"
+  },
+  {
+    "id": "p-170",
+    "sku": "252TT2060",
+    "slug": "twinset-252tt2060",
+    "name": "Нейлон Куртка Twinset",
+    "brand": "Twinset Milano",
+    "description": "Куртка от Twinset Milano из коллекции Осень-Зима 2025. Стиль: спортивный. Материал: нейлон.",
+    "composition": "100% полиамид. Подкладка: 100% полиамид; 100% полиэстер; 90% полиэфир",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "outerwear",
+    "gender": "women",
+    "price": 33700,
+    "oldPrice": 89000,
+    "colors": [
+      {
+        "id": "p-170-c1",
+        "name": "Белый",
+        "hex": "#F5F5F5",
+        "images": [],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": false,
+    "createdAt": "2026-02-14T23:04:00.395Z",
+    "updatedAt": "2026-02-14T23:04:00.395Z"
+  },
+  {
+    "id": "p-171",
+    "sku": "252TT3140",
+    "slug": "twinset-252tt3140",
+    "name": "Джерси Костюм Twinset",
+    "brand": "Twinset Milano",
+    "description": "Костюм от Twinset Milano из коллекции Осень-Зима 2025. Материал: джерси.",
+    "composition": "Состав уточняется.",
+    "care": "Рекомендуется деликатный уход согласно ярлыку изделия.",
+    "category": "dresses",
+    "gender": "women",
+    "price": 11800,
+    "oldPrice": 18900,
+    "colors": [
+      {
+        "id": "p-171-c1",
+        "name": "Чёрный",
+        "hex": "#1A1A1A",
+        "images": [],
+        "sizes": [
+          {
+            "size": "XS",
+            "inStock": true
+          },
+          {
+            "size": "S",
+            "inStock": true
+          },
+          {
+            "size": "M",
+            "inStock": true
+          },
+          {
+            "size": "L",
+            "inStock": true
+          },
+          {
+            "size": "XL",
+            "inStock": true
+          }
+        ]
+      }
+    ],
+    "stores": [
+      {
+        "storeId": "mantera-sirius",
+        "available": true
+      },
+      {
+        "storeId": "twinset-krasnaya-polyana",
+        "available": true
+      }
+    ],
+    "isNew": true,
+    "isActive": false,
+    "createdAt": "2026-02-14T23:04:00.395Z",
+    "updatedAt": "2026-02-14T23:04:00.395Z"
   }
 ]
