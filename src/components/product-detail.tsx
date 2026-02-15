@@ -10,9 +10,7 @@ import { ProductCard } from "@/components/product-card";
 import {
   getNextImageProxyUrl,
   getProductDetailImageUrl,
-  getProductOriginalImageUrl,
-  getProductThumbImageUrl,
-  isLocalProductImage
+  getProductThumbImageUrl
 } from "@/lib/image";
 
 interface ProductDetailProps {
@@ -25,7 +23,6 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
   const [selectedColorId, setSelectedColorId] = useState(product.colors[0]?.id ?? "");
   const [selectedSize, setSelectedSize] = useState("");
   const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const [failedOriginalIndexes, setFailedOriginalIndexes] = useState<number[]>([]);
   const [sizeError, setSizeError] = useState(false);
   const [added, setAdded] = useState(false);
 
@@ -39,22 +36,11 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
     () => (selectedColor?.images ?? []).map((image) => getProductDetailImageUrl(image)),
     [selectedColor?.images]
   );
-  const originalImages = useMemo(
-    () => (selectedColor?.images ?? []).map((image) => getProductOriginalImageUrl(image)),
-    [selectedColor?.images]
-  );
   const thumbImages = useMemo(
     () => (selectedColor?.images ?? []).map((image) => getProductThumbImageUrl(image)),
     [selectedColor?.images]
   );
-  const activeImageOriginal = originalImages[activeImageIndex] ?? originalImages[0];
-  const activeImageDetail = detailImages[activeImageIndex] ?? detailImages[0];
-  const activeImage =
-    failedOriginalIndexes.includes(activeImageIndex) ||
-    !activeImageOriginal ||
-    activeImageOriginal === activeImageDetail
-      ? activeImageDetail
-      : activeImageOriginal;
+  const activeImage = detailImages[activeImageIndex] ?? detailImages[0];
 
   const alternativeStores = useMemo(() => {
     return product.stores
@@ -72,13 +58,9 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
     for (const src of detailImages.slice(1, 5)) {
       const image = new window.Image();
       image.decoding = "async";
-      image.src = isLocalProductImage(src) ? src : getNextImageProxyUrl(src, preloadWidth, 82);
+      image.src = getNextImageProxyUrl(src, preloadWidth, 82);
     }
   }, [detailImages]);
-
-  useEffect(() => {
-    setFailedOriginalIndexes([]);
-  }, [selectedColorId]);
 
   function handleAddToCart() {
     if (!selectedSize) {
@@ -128,7 +110,6 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
                   sizes="68px"
                   quality={65}
                   className="object-cover"
-                  unoptimized={isLocalProductImage(image)}
                 />
               </button>
             ))}
@@ -142,24 +123,8 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
                 fill
                 priority
                 quality={82}
-                sizes="(max-width: 768px) 100vw, 560px"
+                sizes="(max-width: 768px) 100vw, 760px"
                 className="object-cover"
-                unoptimized={isLocalProductImage(activeImage)}
-                onError={() => {
-                  const originalAtIndex = originalImages[activeImageIndex];
-                  const detailAtIndex = detailImages[activeImageIndex];
-
-                  if (!originalAtIndex || !detailAtIndex || originalAtIndex === detailAtIndex) {
-                    return;
-                  }
-
-                  setFailedOriginalIndexes((current) => {
-                    if (current.includes(activeImageIndex)) {
-                      return current;
-                    }
-                    return [...current, activeImageIndex];
-                  });
-                }}
               />
             ) : (
               <div className="h-full w-full bg-bg-secondary" />

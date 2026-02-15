@@ -7,7 +7,7 @@ import { Heart } from "lucide-react";
 import { useFavorites } from "@/components/providers/favorites-provider";
 import type { Product } from "@/lib/types";
 import { formatPrice } from "@/lib/format";
-import { getCatalogImageUrl, getNextImageProxyUrl, isLocalProductImage } from "@/lib/image";
+import { getCatalogImageUrl, getNextImageProxyUrl } from "@/lib/image";
 
 interface ProductCardProps {
   product: Product;
@@ -56,12 +56,12 @@ export const ProductCard = memo(function ProductCard({ product, priority = false
     for (const src of cardImages.slice(1, 5)) {
       const image = new window.Image();
       image.decoding = "async";
-      image.src = isLocalProductImage(src) ? src : getNextImageProxyUrl(src, 640, 72);
+      image.src = getNextImageProxyUrl(src, 640, 72);
 
       if (retinaWidth) {
         const retinaImage = new window.Image();
         retinaImage.decoding = "async";
-        retinaImage.src = isLocalProductImage(src) ? src : getNextImageProxyUrl(src, retinaWidth, 72);
+        retinaImage.src = getNextImageProxyUrl(src, retinaWidth, 72);
       }
     }
   }, [cardImages]);
@@ -104,7 +104,6 @@ export const ProductCard = memo(function ProductCard({ product, priority = false
               quality={72}
               sizes="(max-width: 768px) 46vw, (max-width: 1280px) 30vw, 320px"
               className="object-cover transition duration-500"
-              unoptimized={isLocalProductImage(currentImage)}
             />
 
             {hasSale ? (
