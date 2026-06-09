@@ -3,7 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { Heart } from "lucide-react";
 import { useCart } from "@/components/providers/cart-provider";
+import { useFavorites } from "@/components/providers/favorites-provider";
 import { formatPrice } from "@/lib/format";
 import type { Product, Store } from "@/lib/types";
 import { ProductCard } from "@/components/product-card";
@@ -27,6 +29,14 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
   const [added, setAdded] = useState(false);
 
   const { addItem } = useCart();
+  const { isFavorite, toggleItem } = useFavorites();
+  const favorite = isFavorite(product.id);
+
+  const hasSale = typeof product.oldPrice === "number" && product.oldPrice > product.price;
+  const discountPercent =
+    hasSale && typeof product.oldPrice === "number"
+      ? Math.max(5, Math.min(95, Math.round(((product.oldPrice - product.price) / product.oldPrice) * 100 / 5) * 5))
+      : null;
 
   const selectedColor =
     product.colors.find((color) => color.id === selectedColorId) ?? product.colors[0];
@@ -143,7 +153,20 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
           {product.sku ? (
             <p className="mt-2 text-xs uppercase tracking-[0.08em] text-text-muted">Артикул: {product.sku}</p>
           ) : null}
-          <p className="mt-4 text-2xl font-medium">{formatPrice(product.price)}</p>
+
+          {hasSale && product.oldPrice ? (
+            <div className="mt-4 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="text-2xl font-medium tabular-nums text-sale">{formatPrice(product.price)}</span>
+              <span className="text-base tabular-nums text-text-muted line-through">
+                {formatPrice(product.oldPrice)}
+              </span>
+              <span className="bg-sale px-2 py-1 text-[11px] uppercase tracking-[0.08em] text-white">
+                −{discountPercent}%
+              </span>
+            </div>
+          ) : (
+            <p className="mt-4 text-2xl font-medium tabular-nums">{formatPrice(product.price)}</p>
+          )}
 
           <div className="mt-6">
             <p className="mb-2 text-sm text-text-secondary">Цвет: {selectedColor?.name}</p>
@@ -209,8 +232,23 @@ export function ProductDetail({ product, stores, related }: ProductDetailProps) 
             {added ? "✓ Добавлено" : "Добавить в корзину"}
           </button>
 
-          <button type="button" className="mt-3 text-sm text-text-secondary">
-            ♡ В избранное
+          <button
+            type="button"
+            aria-pressed={favorite}
+            onClick={() =>
+              toggleItem({
+                productId: product.id,
+                slug: product.slug,
+                name: product.name,
+                brand: product.brand,
+                price: product.price,
+                imageUrl: getProductThumbImageUrl(selectedColor?.images[0] ?? "https://picsum.photos/600/800")
+              })
+            }
+            className="mt-3 inline-flex items-center gap-2 text-sm text-text-secondary transition hover:text-text-primary"
+          >
+            <Heart size={16} strokeWidth={1.9} fill={favorite ? "currentColor" : "transparent"} />
+            {favorite ? "В избранном" : "В избранное"}
           </button>
 
           {alternativeStores.length > 0 && (

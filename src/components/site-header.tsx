@@ -215,14 +215,10 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
             <div className="flex items-center gap-1 md:gap-4">
               <button
                 className="relative inline-flex h-9 w-9 items-center justify-center text-text-primary"
-                onMouseEnter={() => {
-                  if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-                    setMenuOpen(true);
-                  }
-                }}
                 onClick={() => setMenuOpen((value) => !value)}
                 type="button"
                 aria-label="Открыть меню"
+                aria-expanded={menuOpen}
               >
                 <span
                   className={`absolute h-[1.5px] w-4 bg-current transition-transform duration-200 ${
@@ -381,7 +377,7 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
           <Link href="/catalog?sort=new" onClick={() => setMenuOpen(false)} className="block">
             Новинки
           </Link>
-          <Link href="/catalog?brands=" onClick={() => setMenuOpen(false)} className="block">
+          <Link href="/catalog" onClick={() => setMenuOpen(false)} className="block">
             Бренды
           </Link>
 
@@ -390,7 +386,7 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
               Женщинам
             </Link>
             <div className="space-y-2 pl-3 text-xs text-text-secondary">
-              {groupedCategories.women.slice(0, 8).map((item) => (
+              {groupedCategories.women.map((item) => (
                 <Link
                   key={item.id}
                   href={`/catalog/${item.slug}`}
@@ -408,7 +404,7 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
               Мужчинам
             </Link>
             <div className="space-y-2 pl-3 text-xs text-text-secondary">
-              {groupedCategories.men.slice(0, 8).map((item) => (
+              {groupedCategories.men.map((item) => (
                 <Link
                   key={item.id}
                   href={`/catalog/${item.slug}`}
@@ -437,6 +433,32 @@ export function SiteHeader({ categories }: SiteHeaderProps) {
                 </Link>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* Store selector — the header switcher is desktop-only, so surface it here on mobile. */}
+        <div className="my-8 border-t border-border pt-6 md:hidden">
+          <p className="mb-3 text-xs uppercase tracking-[0.1em] text-text-muted">Магазин</p>
+          <div className="space-y-1.5">
+            {stores.map((store) => {
+              const active = selectedStore.id === store.id;
+              return (
+                <button
+                  key={store.id}
+                  type="button"
+                  onClick={() => setSelectedStoreId(store.id)}
+                  className={`flex w-full items-center justify-between rounded px-3 py-2 text-left text-xs uppercase tracking-[0.08em] ${
+                    active ? "bg-text-primary text-white" : "border border-border text-text-secondary"
+                  }`}
+                >
+                  <span className="inline-flex items-center gap-2">
+                    <MapPin size={13} />
+                    {store.name}
+                  </span>
+                  {active && <Check size={13} />}
+                </button>
+              );
+            })}
           </div>
         </div>
 

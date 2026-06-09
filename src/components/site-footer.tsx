@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { Store } from "@/lib/types";
 import { Container } from "@/components/container";
-import { FooterFontSwitcher } from "@/components/footer-font-switcher";
 
 interface SiteFooterProps {
   stores: Store[];
@@ -50,14 +49,13 @@ export function SiteFooter({ stores }: SiteFooterProps) {
           </div>
         </div>
 
-        <div className="mt-10 flex items-center justify-between gap-4 border-t border-border pt-6">
-          <Link
-            href="/admin"
-            className="text-xs uppercase tracking-[0.1em] text-text-secondary hover:text-text-primary"
-          >
-            Панель управления
-          </Link>
-          <FooterFontSwitcher />
+        <div className="mt-10 flex flex-col gap-3 border-t border-border pt-6 text-xs uppercase tracking-[0.1em] text-text-muted md:flex-row md:items-center md:justify-between">
+          <p>© 2026 Mia. Мультибрендовый бутик · Сочи</p>
+          <div className="flex flex-wrap gap-x-5 gap-y-2">
+            <Link href="/privacy" className="hover:text-text-primary">Политика ПДн</Link>
+            <Link href="/offer" className="hover:text-text-primary">Оферта</Link>
+            <Link href="/consent" className="hover:text-text-primary">Согласие ПДн</Link>
+          </div>
         </div>
       </Container>
     </footer>

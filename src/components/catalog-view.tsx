@@ -105,6 +105,7 @@ export function CatalogView({
   const [loadingMore, setLoadingMore] = useState(false);
   const [hasMore, setHasMore] = useState(false);
   const [page, setPage] = useState(1);
+  const [total, setTotal] = useState(0);
 
   const [brands, setBrands] = useState<string[]>([]);
   const [brandCounts, setBrandCounts] = useState<Record<string, number>>({});
@@ -214,6 +215,7 @@ export function CatalogView({
       setSelectedBrand((current) => (current && data.brands.includes(current) ? current : null));
       setColors(data.colors);
       setHasMore(data.hasMore);
+      setTotal(data.total);
       setPriceBounds({ min: data.minPrice, max: data.maxPrice });
       setItems((current) => (mode === "replace" ? data.items : [...current, ...data.items]));
 
@@ -334,6 +336,26 @@ export function CatalogView({
     );
   }
 
+  const hasActiveFilters =
+    Boolean(selectedBrand) ||
+    selectedSizes.length > 0 ||
+    selectedColors.length > 0 ||
+    saleOnly ||
+    priceMinApplied !== undefined ||
+    priceMaxApplied !== undefined;
+
+  function resetAllFilters() {
+    setSelectedBrand(null);
+    setSelectedSizes([]);
+    setSelectedColors([]);
+    setSaleOnly(false);
+    setPriceFromInput("");
+    setPriceToInput("");
+    setPriceMinApplied(undefined);
+    setPriceMaxApplied(undefined);
+    setOpenMenu(null);
+  }
+
   return (
     <section>
       <div className="mb-6">
@@ -346,12 +368,13 @@ export function CatalogView({
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[260px_1fr] xl:gap-8">
-        <aside className="h-fit pr-4 lg:sticky lg:top-28">
-          <nav className="space-y-1 border-l border-border pl-3 text-[15px]">
+        <aside className="h-fit lg:sticky lg:top-28 lg:pr-4">
+          {/* Horizontal chip rail on mobile, vertical sidebar on desktop. */}
+          <nav className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 lg:mx-0 lg:block lg:space-y-1 lg:overflow-visible lg:border-l lg:border-border lg:px-0 lg:pb-0 lg:pl-3 lg:text-[15px]">
             {gender && (
               <Link
                 href={`/catalog/${gender}?sort=new`}
-                className="block px-1 py-2 text-text-secondary hover:text-text-primary"
+                className="shrink-0 whitespace-nowrap rounded-full border border-border px-4 py-1.5 text-[13px] text-text-secondary transition hover:text-text-primary lg:block lg:rounded-none lg:border-0 lg:px-1 lg:py-2 lg:text-[15px]"
               >
                 Новинки
               </Link>
@@ -363,10 +386,10 @@ export function CatalogView({
                 <Link
                   key={item.id}
                   href={`/catalog/${item.slug}`}
-                  className={`block px-2 py-2 transition ${
+                  className={`shrink-0 whitespace-nowrap rounded-full border px-4 py-1.5 text-[13px] transition lg:block lg:rounded-none lg:border-0 lg:px-2 lg:py-2 lg:text-[15px] ${
                     active
-                      ? "bg-[#efe8dd] text-text-primary"
-                      : "text-text-secondary hover:bg-bg-secondary hover:text-text-primary"
+                      ? "border-text-primary bg-text-primary text-white lg:bg-[#efe8dd] lg:text-text-primary"
+                      : "border-border text-text-secondary hover:text-text-primary lg:hover:bg-bg-secondary lg:hover:text-text-primary"
                   }`}
                 >
                   {item.name}
@@ -382,7 +405,7 @@ export function CatalogView({
               <DropdownFilter
                 open={openMenu === "brand"}
                 onToggle={() => setOpenMenu((current) => (current === "brand" ? null : "brand"))}
-                label="Бренд"
+                label={selectedBrand ?? "Бренд"}
               >
                 <div className="space-y-1">
                   <button
@@ -609,6 +632,19 @@ export function CatalogView({
             </DropdownFilter>
           </div>
 
+          <div className="mb-5 flex items-center justify-between gap-4 text-sm text-text-secondary">
+            <span aria-live="polite">{loading ? "Загрузка…" : formatFoundCount(total)}</span>
+            {hasActiveFilters && (
+              <button
+                type="button"
+                onClick={resetAllFilters}
+                className="text-xs uppercase tracking-[0.08em] text-text-secondary underline-offset-4 transition hover:text-text-primary hover:underline"
+              >
+                Сбросить всё
+              </button>
+            )}
+          </div>
+
           {loading ? (
             <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4 xl:gap-4">
               {Array.from({ length: 8 }).map((_, index) => (
@@ -626,9 +662,9 @@ export function CatalogView({
             </div>
           ) : (
             <>
-              <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-3 xl:gap-4">
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4 xl:gap-4">
                 {items.map((product, index) => (
-                  <ProductCard key={product.id} product={product} priority={page === 1 && index < 6} />
+                  <ProductCard key={product.id} product={product} priority={page === 1 && index < 8} />
                 ))}
               </div>
 
@@ -667,6 +703,18 @@ function compareSizes(a: string, b: string): number {
 
 function formatNumber(value: number): string {
   return new Intl.NumberFormat("ru-RU").format(value);
+}
+
+function formatFoundCount(total: number): string {
+  const mod10 = total % 10;
+  const mod100 = total % 100;
+  let noun = "товаров";
+  if (mod10 === 1 && mod100 !== 11) {
+    noun = "товар";
+  } else if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) {
+    noun = "товара";
+  }
+  return `Найдено ${formatNumber(total)} ${noun}`;
 }
 
 function onlyDigits(value: string): string {
