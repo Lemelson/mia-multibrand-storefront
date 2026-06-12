@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import type { Store } from "@/lib/types";
 import { CartProvider, useCart } from "@/components/providers/cart-provider";
 import { FavoritesProvider } from "@/components/providers/favorites-provider";
+import { FontThemeProvider } from "@/components/providers/font-theme-provider";
 import { StoreProvider } from "@/components/providers/store-provider";
 
 interface AppProvidersProps {
@@ -28,13 +29,15 @@ function CartToast() {
 
 export function AppProviders({ stores, initialStoreId, children }: AppProvidersProps) {
   return (
-    <StoreProvider stores={stores} initialStoreId={initialStoreId}>
-      <FavoritesProvider>
-        <CartProvider>
-          {children}
-          <CartToast />
-        </CartProvider>
-      </FavoritesProvider>
-    </StoreProvider>
+    <FontThemeProvider>
+      <StoreProvider stores={stores} initialStoreId={initialStoreId}>
+        <FavoritesProvider>
+          <CartProvider>
+            {children}
+            <CartToast />
+          </CartProvider>
+        </FavoritesProvider>
+      </StoreProvider>
+    </FontThemeProvider>
   );
 }
